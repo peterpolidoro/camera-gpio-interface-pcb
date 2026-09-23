@@ -5,8 +5,8 @@ the camera's documented electrical behaviour rather than the lab's harness
 drawing; to fold in the signal source (pyControl breakout BNCs) and consumer
 (Neuropixels OneBox); and to fold in the rig's actual configuration from
 `~/Repositories/github/joystick-rig/` plus Peter's decisions on ground,
-orientation, cable and parts. No KiCad project yet. Remaining open items are
-at the end and are small.
+orientation, cable, parts, block authoring and camera model. No KiCad
+project yet. The only open item is the silkscreen wording.
 **Purpose:** Replace the hand-built harness (BNC tees, minigrabber clips and a
 hand-soldered pull-up per camera) that connects three FLIR Blackfly S
 `BFS-U3-20S4M-C` cameras to a pyControl breakout and a Neuropixels OneBox
@@ -222,7 +222,7 @@ pin 6 never touching the board); it is not in Rev 0.
 ### `SYNC OUT` (to OneBox `IO0`)
 
 `SN74LVC1G125` at 3.3 V, `~OE` tied to ground, input `SYNC_IN`, output through
-**220 Ω** to its own BNC. A dedicated driver so a fault on the OneBox cable
+**470 Ω, 0603** to its own BNC. A dedicated driver so a fault on the OneBox cable
 cannot disturb the three camera drivers sharing `SYNC_IN`. Shares the output
 ESD array below.
 
@@ -230,18 +230,22 @@ ESD array below.
 
 | Camera pin | Board circuit |
 | --- | --- |
-| 1 (Line 3, green) | `SN74LVC1G125` at 3.3 V, `~OE` tied to ground, input `TRIG_IN`, output through **220 Ω** to the pin. A per-camera buffer means a shorted cable pulls one channel down, not all three; 220 Ω bounds that fault to 15 mA and slows the edge to ~25 ns into the ~100 pF of a 1 m lead, still far faster than the camera's 1 µs input and kinder to an unshielded harness than a bare CMOS edge. |
+| 1 (Line 3, green) | `SN74LVC1G125` at 3.3 V, `~OE` tied to ground, input `TRIG_IN`, output through **220 Ω, 0603** to the pin. A per-camera buffer means a shorted cable pulls one channel down, not all three; 220 Ω bounds that fault to 15 mA (50 mW, so a 1/10 W 0603 rather than a 1/16 W 0402) and slows the edge to ~25 ns into the ~100 pF of a 1 m lead, still far faster than the camera's 1 µs input and kinder to an unshielded harness than a bare CMOS edge. |
 | 2 (Line 0, black) | `SN74LVC1G07` open-drain buffer at 3.3 V, input `SYNC_IN`, output node pulled up through **820 Ω to `+5V_USB`** (≈4.7 V after the USB block's Schottky) and wired to the pin. Signal high → buffer off → the opto LED sees the same drive as FLIR's 5 V / 1 kΩ test condition, ≈4 mA. Signal low → buffer sinks the 820 Ω, LED off. LVC1G07's open-drain output is rated to 5.5 V. |
 | 3 (Line 2, red) | **1 kΩ pull-up to `+3.3V`**, node `CAMn_L2`: 3.1 mA when the camera pulls low, ~0.1 µs rise into ~100 pF. Into channel A of an `SN74LVC2G17` Schmitt → `CAMn_OUT`. |
 | 4 (Line 1, white) | **4.7 kΩ pull-up to `+3.3V`**, node `CAMn_L1`. Weak on purpose: ~0.6 mA keeps the opto transistor's low level near 0.4 V, under the Schmitt's worst-case VT− of 0.8 V. Into channel B of the same `SN74LVC2G17` → `CAMn_L1_BUF`, InstrumentPort only. |
 | 5, 6 (blue, brown) | Ground, both. |
 | pins 1–4 | One `USBLC6-2P6` per connector, four lines, `VBUS` pin on `+5V_USB` (the Line 0 node swings to ~4.7 V, so the clamp has to reference 5 V, not 3.3 V). |
 
-`CAMn_OUT` drives its BNC through **220 Ω**, an activity LED through 680 Ω,
-and an InstrumentPort tap. A shorted BNC costs 15 mA at the Schmitt output,
-and an OneBox DAC left enabled at −5 V on the far end is held at the ESD clamp
-and costs about 18 mA — both inside the LVC2G17's ±50 mA absolute maximum —
-and either way the LED and the tap stay alive.
+`CAMn_OUT` drives its BNC through **470 Ω, 0603**, an activity LED through
+680 Ω, and an InstrumentPort tap. A shorted BNC costs 7 mA at the Schmitt
+output. An OneBox DAC left enabled on the far end is held at the ESD clamp
+(about −0.8 V or +5.5 V) and costs 9–12 mA through the driver, inside the
+LVC2G17's 24 mA recommended sink at 3 V, and at most 64 mW in the resistor
+continuously, inside a 1/10 W 0603. Either way the LED and the tap stay alive.
+(220 Ω was the first choice; it would have put 25 mA through the driver and
+137 mW through the resistor in the +5 V case, which for `SYNC OUT`, low 97 %
+of the time, is continuous.)
 
 Block ports: `TRIG_IN`, `SYNC_IN` in; `CAM_OUT` out; `+3.3V`, `+5V`, `GND`;
 taps `L3_INST`, `L0_INST`, `L2_INST`, `L1_INST`, `OUT_INST` (100 Ω each, T-tap
@@ -252,19 +256,53 @@ Fallback if `SN74LVC1G07` is unwelcome: a second `SN74LVC1G125` with its
 input grounded and the signal on `~OE`, output pulled to 5 V (LVC three-state
 outputs are rated to 5.5 V). It works but reads badly in a schematic.
 
+#### Design block specification: `blackfly_s_gpio_channel_mcv6_vertical`
+
+Authored in `kicad-libs/design_blocks/orb_weaver_private.kicad_blocks/`
+before this schematic starts (Peter, 2026-09-23), placed three times here.
+Everything camera-specific lives inside so the board sheet is just wiring.
+
+| Item | Content |
+| --- | --- |
+| Connector | `J` — `OW-CONN-TBH-1X06-3P5-VERT`, pins 1–6 = camera pins 1–6. Inside the block because the pinout is the camera's, following the `limit_switch_debounced_input_vertical` precedent. |
+| Line 3 driver | `U` — `OW-MISC-SN74LVC1G125DRYR`, `~OE` to `GND`, `A` = `TRIG_IN`, `Y` → 220 Ω (0603) → pin 1 node `L3`. |
+| Line 0 driver | `U` — `SN74LVC1G07DRYR` (new part; pins 1 NC, 2 A, 3 GND, 4 Y, 5 NC, 6 VCC on the existing `orb_weaver_smd:DRY6` footprint), `A` = `SYNC_IN`, `Y` = pin 2 node `L0`, 820 Ω (0402) from `L0` to `+5V`. |
+| Line 2 / Line 1 | 1 kΩ from pin 3 node `L2` to `+3.3V`; 4.7 kΩ from pin 4 node `L1` to `+3.3V`. |
+| Output Schmitt | `U` — `OW-MISC-SN74LVC2G17DRYR`, `1A` = `L2` → `1Y` = `CAM_OUT`; `2A` = `L1` → `2Y` = `L1_BUF`. |
+| BNC drive | 470 Ω (0603) from `CAM_OUT` to port `CAM_OUT_BNC` (the BNC itself stays on the board sheet, as `mouse-joystick-pcb` does). |
+| LED | `OW-MISC-APHHS1005CGCK` + 680 Ω from `CAM_OUT`. |
+| ESD | `OW-MISC-USBLC6-2P6` across pins 1–4 nodes, `VBUS` = `+5V`, `GND`. |
+| Decoupling | 100 nF at each of the three logic packages. |
+| Taps | 100 Ω `OW-PASS-0402WGF1000TCE` T-taps from `L3`, `L0`, `L2`, `L1_BUF`, `CAM_OUT` to ports `L3_INST`, `L0_INST`, `L2_INST`, `L1_INST`, `OUT_INST`. |
+| Ports | in: `TRIG_IN`, `SYNC_IN`, `+3.3V`, `+5V`, `GND`. out: `CAM_OUT_BNC`, `L3_INST`, `L0_INST`, `L2_INST`, `L1_INST`, `OUT_INST`. |
+| Grounds | Camera pins 5 and 6 both to `GND` inside the block. |
+| Refdes band | Pick the next free 5-digit band in `orb_weaver_private` (39xxx is the digital-50 port, 40xxx the RP2040 isolation block); the board re-annotates to 4 digits as usual. |
+| Layout notes | Connector on one block edge with the ESD array hard against it; the three DRY6 packages and pull-ups behind it; the five taps and the two inputs on the opposite, board-facing edge. The 820 Ω / `L0` node and the 220 Ω / `L3` node are the only nets leaving toward the connector besides `L2`, `L1`, ground. |
+| Description must state | line assignment and why; the 5 V / 1 kΩ opto drive rationale; the weak Line 1 pull-up rationale (`OPTOOUT` ~1 V low at 4 mA); that `+5V` must be a 5 V rail (clamp reference and opto drive both assume it); that `V3_3Enable` must be off on Line 2; that the block is common to all cased BFS-U3 models. |
+| Check | `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"` and a pin-by-pin netlist read before the first board placement. |
+
+The two BNC inputs reuse `quadrature_encoder_input_5v_sn74lvc2g17` as-is,
+with the board binding `ENC_A_RAW`/`ENC_B_RAW` to `TRIG_RAW`/`SYNC_RAW` and
+the outputs to `TRIG_IN`/`SYNC_IN`; a generically named copy is optional and
+only cosmetic.
+
 ### Outputs (`SYNC OUT`, `CAM1..3 OUT`)
 
 **Fixed at 3.3 V.** OneBox ADC inputs are high impedance with a ±5 V range,
 and a signal that may one day be fed back into a pyControl BNC has to stay
 under that board's 3.3 V clamps. There is no 5 V option.
 
-3.3 V CMOS through 220 Ω into the coax. Not 50 Ω, because a shorted BNC would
-draw 66 mA from a part rated for 50 mA; and 220 Ω rather than 100 Ω so the
-OneBox's shared DAC/ADC pin, if its ±5 V DAC is left switched in, cannot push
-more than ~18 mA through the driver via the ESD clamp. The mismatch costs a
-few tens of nanoseconds of settling on a 2 m cable, three orders of magnitude
-under the OneBox's 33 µs sample period. One `USBLC6-2P6` covers the four
-output BNCs, `VBUS` pin on `+5V_USB`.
+3.3 V CMOS through **470 Ω (0603, 1/10 W)** into the coax. Not 50 Ω, because
+a shorted BNC would draw 66 mA from a part rated for 50 mA. Sized for the
+OneBox fault case: if the ±5 V, 20 mA DAC sharing the ADC pin is left
+switched in, the ESD clamp holds the node near −0.8 V or +5.5 V and the
+resistor sees up to 5.5 V continuously. At 470 Ω that is 12 mA through the
+driver (recommended sink limit 24 mA) and 64 mW in the resistor (0603 is
+100 mW). At 220 Ω it would have been 25 mA and 137 mW; at 470 Ω on a 1/16 W
+0402 it would have been over rating. Into a ~1 MΩ ADC input the 470 Ω costs
+0.05 % of amplitude and ~140 ns of edge into a 2 m cable, three orders of
+magnitude under the OneBox's 33 µs sample period. One `USBLC6-2P6` covers the
+four output BNCs, `VBUS` pin on `+5V_USB`.
 
 ## InstrumentPort
 
@@ -343,18 +381,10 @@ Vertical, top-entry parts throughout — Peter's decision 2026-09-23, matching
 | Fiducials | 3× | `OW-MECH-FID-1MM-MASK2MM` or similar |
 
 Terminal numbering equals Hirose pin numbering, so the lab wires colours by
-position. Silkscreen at every terminal: `1 GRN L3 TRIG`, `2 BLK L0 SYNC`,
-`3 RED L2 OUT`, `4 WHT L1`, `5 BLU OGND`, `6 BRN GND`.
-
-BNC labels name both ends of each cable:
-
-| BNC | Silk |
-| --- | --- |
-| input | `TRIG IN ← pyControl BNC_1 → cam LINE 3` |
-| input | `SYNC IN ← pyControl DAC_2 → cam LINE 0` |
-| output | `SYNC OUT → OneBox IO0` |
-| output ×3 | `CAM1 OUT → OneBox IO1`, `CAM2 OUT → IO2`, `CAM3 OUT → IO3` |
-| all | `3.3 V LOGIC` |
+position. Silkscreen wording is the one open item; the recommended text is
+in the "Open Item" section at the end. Whatever the wording, each camera
+terminal carries its pin number and wire colour, the two input BNCs name the
+camera line they reach, and the BNC groups are marked `3.3 V LOGIC`.
 
 Mark the FFC `DIGITAL-50 / 3.3 V / OBSERVE ONLY` and pin 1.
 
@@ -387,12 +417,33 @@ exist there today, and nothing open-drain exists at all.
 
 | Qty on board | Part | Notes |
 | --- | --- | --- |
-| 3 | `SN74LVC1G07DRYR` | Open-drain buffer, same DRY6 land pattern as the existing `SN74LVC1G125DRYR` / `SN74LVC2G17DRYR`. Needs symbol, `internal_parts.csv` and `vendor_map_jlcpcb.csv` rows. |
-| 7 | 220 Ω 0402 1 % | Line 3 series ×3, BNC output series ×4. |
-| 6 | 680 Ω 0402 1 % | LEDs. |
-| 3 | 820 Ω 0402 1 % | Line 0 pull-ups to `+5V_USB`. |
-| — | design block `blackfly_s_gpio_channel_mcv6_vertical` | the per-camera circuit above, connector inside because the pinout is the camera's. |
-| — | optional block `logic_input_5v_tolerant_sn74lvc2g17` | generically named sibling of the encoder block; reuse with renamed board nets is acceptable for Rev 0. |
+| 3 | `SN74LVC1G07DRYR` | Open-drain buffer, DRY0006A, same DRY6 land pattern as the existing `SN74LVC1G125DRYR` / `SN74LVC2G17DRYR`. Datasheet checked 2026-09-23 (`tmp/sn74lvc1g07.pdf`, SCES296 rev. Oct 2025), see below. Needs symbol, `internal_parts.csv` and `vendor_map_jlcpcb.csv` rows. **JLCPCB stock unverified**: the LCSC/JLC search pages could not be read; if the DRY part is not stocked, `SN74LVC1G07DCKR` (SC-70-5, LCSC C7830, ~16 k in stock) is the fallback and needs the official `SOT-353_SC-70-5` footprint instead of DRY6. `SN74LVC2G07DRYR` (C2682101) was out of stock. |
+| 3 | 220 Ω **0603** 1 % | Line 3 series. 50 mW in a shorted-cable fault, so 1/10 W. |
+| 4 | 470 Ω **0603** 1 % | BNC output series. Up to 64 mW continuous in the OneBox DAC fault, so 1/10 W. |
+| 6 | 680 Ω 0402 1 % | LEDs, ~3 mW. |
+| 3 | 820 Ω 0402 1 % | Line 0 pull-ups to `+5V_USB`, 27 mW continuous while Rsync is low. |
+
+All resistors are ordinary 1 % thick film; nothing needs a tolerance,
+temperature coefficient or voltage rating beyond that. Only the two series
+values carry a power requirement, hence 0603.
+
+#### `SN74LVC1G07DRYR` datasheet check (2026-09-23)
+
+Against the design's assumptions, from SCES296 (Chinese edition ZHCSM01AG):
+
+| Assumption | Datasheet | OK |
+| --- | --- | --- |
+| Runs at 3.3 V | VCC 1.65–5.5 V recommended | yes |
+| Open-drain output may be pulled to ~4.7 V while VCC = 3.3 V | VO recommended 0–5.5 V independent of VCC; absolute max 6.5 V; "inputs and open-drain output support up to 5.5 V" | yes |
+| Sinks the 820 Ω pull-up, ~5.7 mA | IOL 24 mA at VCC = 3 V (32 mA at 4.5 V); VOL ≤ 0.55 V at 24 mA, so ≈0.15 V at 5.7 mA — well under the camera's 1.4 V input-low ceiling | yes |
+| Non-inverting: `SYNC_IN` high → opto LED on | Function table A = L → Y = L, A = H → Y = Z (pull-up drives the LED) | yes |
+| Driven from the Schmitt output | VIH 2.0 V / VIL 0.8 V at 3–3.6 V; input transition rate must be ≤ 10 ns/V at 3.3 V, which the LVC2G17 output satisfies and a raw BNC would not — the Schmitt stage stays in front of it | yes |
+| Ioff, partial power-down | ±10 µA Ioff at VI or VO = 5.5 V with VCC = 0 | yes |
+| Speed | tpd ≤ 4.2 ns at 3.3 V | irrelevant against an 18 µs opto input |
+| Fits `orb_weaver_smd:DRY6` | DRY0006A USON, 1.0 × 1.45 mm body, 0.5 mm pitch, two rows 0.6 mm apart, TI land example 0.2 × 0.35 mm pads; the DRY6 footprint's 0.3 × 0.4 mm pads at ±0.3 mm, 0.5 mm pitch enclose it. Pinout 1 NC, 2 A, 3 GND, 4 Y, 5 NC, 6 VCC matches the `1G125DRYR` layout (1 `~OE`, 2 A, 3 GND, 4 Y, 5 NC, 6 VCC) pad for pad | yes — but note DRY6 is itself unproven until the ordered `mouse-joystick-pcb` arrives |
+| Temperature, orderable | −40 to 125 °C, `SN74LVC1G07DRYR` active, 5000 per reel, Level-1-260C | yes |
+| Thermal | RθJA 439 °C/W in DRY; dissipation here ≈ 1 mW | yes |
+| — | design block `blackfly_s_gpio_channel_mcv6_vertical` | specified above; authored in `kicad-libs` before this schematic starts. |
 
 Stock substitutes if a value is unavailable: 100 Ω for the Line 3 series
 (not for BNC outputs, see the DAC back-drive case), 1 kΩ for LEDs, 1 kΩ for
@@ -418,7 +469,7 @@ camera-gpio-interface-pcb (root)
 ├── power            → usb2_vertical, 5v_to_3v3_tps73733, power LED
 ├── inputs           → 2× BNC, USBLC6, input Schmitt block, 2 LEDs,
 │                      TRIG_IN/SYNC_IN taps
-├── sync_out         → SN74LVC1G125, 220 Ω, BNC, LED, tap (shares the output USBLC6)
+├── sync_out         → SN74LVC1G125, 470 Ω, BNC, LED, tap (shares the output USBLC6)
 ├── camera_1         → blackfly_s_gpio_channel_mcv6_vertical, CAM1 OUT BNC
 ├── camera_2         → same
 ├── camera_3         → same
@@ -443,34 +494,50 @@ shells floating; minigrabber clips on flying leads. The rig's hardware
 definition flags the floating CAM OUT shell as an open item and lists the
 Line 3 / Line 0 swap as planned. This board closes both.
 
-## Open Items
+## Decisions Recorded 2026-09-23
 
-1. **Library additions and the design block.** Peter is buying the parts and
-   adding them to `kicad-libs`. Still to decide: whether the per-camera block
-   is authored in `kicad-libs` before this repo's schematic starts (preferred,
-   so it is laid out once), and whether the generically named input block is
-   worth authoring or the encoder block is reused.
-2. **Third camera.** The rig runs two cameras today and plans three; the
-   board is built for three from the start. Confirm the third camera is also
-   a `BFS-U3-20S4M-C` (the GPIO pinout is common to all cased BFS-U3 models,
-   so nothing changes electrically either way).
-3. **Where the trigger and Rsync come from on the H7 breakout.** Rev 0.8 has
-   two BNC jacks and the rig has three BNC-type outputs (trigger, Rsync, opto
-   gate). Not this board's problem, but the input silkscreen names
-   `BNC_1`/`DAC_2`, which are Breakout 1.2 names; the H7 names will differ.
-   Silk should say `pyControl trigger` / `pyControl Rsync` rather than pin
-   names if the migration happens before fabrication.
+- Common ground; isolators only if the rig shows a problem.
+- Vertical connectors throughout, matching `mouse-joystick-pcb`; enclosure
+  later if needed.
+- Camera cable: 1 m FLIR flying-lead GPIO cable into a Phoenix
+  `MC 1,5/6-ST-3,5` plug.
+- All three cameras are `BFS-U3-20S4M-C`. A different camera later means a
+  new board iteration, not a jumper.
+- The per-camera design block is authored in `kicad-libs` first; the new
+  parts are ordered after those library changes are finished.
+- Source is the pyControl breakout's BNCs (Breakout 1.2 today, H7 later);
+  consumer is the OneBox ADC via the SDR breakout; outputs fixed at 3.3 V.
+
+## Open Item
+
+**Silkscreen wording** (Peter undecided). Recommendation: label by function
+and camera line, never by controller pin name, because the pin names change
+with the H7 migration while the function does not:
+
+| BNC | Recommended silk |
+| --- | --- |
+| input | `TRIG IN  →  CAM LINE 3` |
+| input | `SYNC IN  →  CAM LINE 0  +  SYNC OUT` |
+| output | `SYNC OUT` |
+| output ×3 | `CAM1 OUT`, `CAM2 OUT`, `CAM3 OUT` |
+| board | `3.3 V LOGIC` near the BNC group; `IN` and `OUT` groups on different edges |
+
+Camera terminals: `1 GRN L3`, `2 BLK L0`, `3 RED L2`, `4 WHT L1`, `5 BLU`,
+`6 BRN`. Which pyControl pin and which OneBox `IO` each cable goes to belongs
+in `docs/harness-pinouts.md` and on cable labels, not in copper.
 
 ## Sequence
 
-1. Land the `kicad-libs` parts and the per-camera design block, run
-   `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"`.
-2. Scaffold this repo, place blocks, wire wrappers, ERC clean.
-3. Layout, four layers, vertical parts, apply the `INSTRUMENT` netclass, DRC
-   clean, `make docs`.
-4. `make fab` for JLCPCB; order with three `MC 1,5/6-ST-3,5` plugs, three 1 m
+1. In `kicad-libs`: add `SN74LVC1G07DRYR` (or the DCKR fallback), the 220 Ω and 470 Ω 0603 rows and the 680 Ω and 820 Ω 0402 rows,
+   author `blackfly_s_gpio_channel_mcv6_vertical` to the specification above,
+   run `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"`.
+2. Order the new parts.
+3. Scaffold this repo, place blocks, wire wrappers, ERC clean.
+4. Layout, four layers, vertical parts, apply the `INSTRUMENT` netclass, DRC
+   clean, `make docs`. Settle the silkscreen wording here.
+5. `make fab` for JLCPCB; order with three `MC 1,5/6-ST-3,5` plugs, three 1 m
    FLIR GPIO cables and four BNC cables for the OneBox.
-5. Bring-up: measure Line 0 LED current at the plug against 3.5–7 mA, Line 2
+6. Bring-up: measure Line 0 LED current at the plug against 3.5–7 mA, Line 2
    and `OPTOOUT` low levels against the Schmitt thresholds, capture all 18
    channels through the LA5032 adapter with pyControl running
    `camera_sync_test.py`, then apply the software change table and run the
