@@ -5,8 +5,11 @@ the camera's documented electrical behaviour rather than the lab's harness
 drawing; to fold in the signal source (pyControl breakout BNCs) and consumer
 (Neuropixels OneBox); and to fold in the rig's actual configuration from
 `~/Repositories/github/joystick-rig/` plus Peter's decisions on ground,
-orientation, cable, parts, block authoring and camera model. No KiCad
-project yet. The only open item is the silkscreen wording.
+orientation, cable, parts, block authoring and camera model. The new parts
+were purchased 2026-09-23. No KiCad project yet: work pauses here until the
+`kicad-libs` additions (parts rows and the per-camera design block) are done,
+then resumes in a new session with the checklist at the end of this file. The
+only open design item is the silkscreen wording.
 **Purpose:** Replace the hand-built harness (BNC tees, minigrabber clips and a
 hand-soldered pull-up per camera) that connects three FLIR Blackfly S
 `BFS-U3-20S4M-C` cameras to a pyControl breakout and a Neuropixels OneBox
@@ -412,12 +415,12 @@ Existing in `kicad-libs`:
 | 7 | `OW-MISC-APHHS1005CGCK` / `SYCK` / `SURCK` 0402 LEDs | power, 2 inputs, 3 camera outputs, sync out |
 | ~32 | 0402 resistors: `OW-PASS-0402WGF1000TCE` 100 Ω (taps), `OW-PASS-RC0402FR-071KL` 1 kΩ (Line 2 pull-ups), `OW-RES-4K7-0402` (Line 1 pull-ups, input series), `OW-RES-10K-0402`, 100 kΩ | |
 
-To buy and add to `kicad-libs` (Peter, 2026-09-23). Checked: none of these
-exist there today, and nothing open-drain exists at all.
+New parts, **purchased 2026-09-23**, still to be added to `kicad-libs`.
+Checked that day: none existed there, and nothing open-drain existed at all.
 
 | Qty on board | Part | Notes |
 | --- | --- | --- |
-| 3 | `SN74LVC1G07DRYR` | Open-drain buffer, DRY0006A, same DRY6 land pattern as the existing `SN74LVC1G125DRYR` / `SN74LVC2G17DRYR`. Datasheet checked 2026-09-23 (`tmp/sn74lvc1g07.pdf`, SCES296 rev. Oct 2025), see below. Needs symbol, `internal_parts.csv` and `vendor_map_jlcpcb.csv` rows. **JLCPCB stock unverified**: the LCSC/JLC search pages could not be read; if the DRY part is not stocked, `SN74LVC1G07DCKR` (SC-70-5, LCSC C7830, ~16 k in stock) is the fallback and needs the official `SOT-353_SC-70-5` footprint instead of DRY6. `SN74LVC2G07DRYR` (C2682101) was out of stock. |
+| 3 | `SN74LVC1G07DRYR` | Open-drain buffer, DRY0006A, same DRY6 land pattern as the existing `SN74LVC1G125DRYR` / `SN74LVC2G17DRYR`. Datasheet checked 2026-09-23 (`tmp/sn74lvc1g07.pdf`, SCES296 rev. Oct 2025), see below. Needs symbol, `internal_parts.csv` and `vendor_map_jlcpcb.csv` rows; if it was not bought through LCSC/JLCPCB, record the actual source in the vendor map so `make fab` does not expect JLCPCB stock. (History: JLCPCB stock could not be verified from here; `SN74LVC1G07DCKR`, SC-70-5, LCSC C7830, was the identified fallback.) |
 | 3 | 220 Ω **0603** 1 % | Line 3 series. 50 mW in a shorted-cable fault, so 1/10 W. |
 | 4 | 470 Ω **0603** 1 % | BNC output series. Up to 64 mW continuous in the OneBox DAC fault, so 1/10 W. |
 | 6 | 680 Ω 0402 1 % | LEDs, ~3 mW. |
@@ -503,8 +506,9 @@ Line 3 / Line 0 swap as planned. This board closes both.
   `MC 1,5/6-ST-3,5` plug.
 - All three cameras are `BFS-U3-20S4M-C`. A different camera later means a
   new board iteration, not a jumper.
-- The per-camera design block is authored in `kicad-libs` first; the new
-  parts are ordered after those library changes are finished.
+- The per-camera design block is authored in `kicad-libs` first. The new
+  parts (`SN74LVC1G07DRYR`; 220 Ω and 470 Ω 0603; 680 Ω and 820 Ω 0402) were
+  purchased 2026-09-23.
 - Source is the pyControl breakout's BNCs (Breakout 1.2 today, H7 later);
   consumer is the OneBox ADC via the SDR breakout; outputs fixed at 3.3 V.
 
@@ -528,10 +532,11 @@ in `docs/harness-pinouts.md` and on cable labels, not in copper.
 
 ## Sequence
 
-1. In `kicad-libs`: add `SN74LVC1G07DRYR` (or the DCKR fallback), the 220 Ω and 470 Ω 0603 rows and the 680 Ω and 820 Ω 0402 rows,
-   author `blackfly_s_gpio_channel_mcv6_vertical` to the specification above,
-   run `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"`.
-2. Order the new parts.
+1. In `kicad-libs` (in progress, Peter): add `SN74LVC1G07DRYR`, the 220 Ω and
+   470 Ω 0603 rows and the 680 Ω and 820 Ω 0402 rows, author
+   `blackfly_s_gpio_channel_mcv6_vertical` to the specification above, run
+   `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"`.
+2. ~~Order the new parts.~~ Done 2026-09-23.
 3. Scaffold this repo, place blocks, wire wrappers, ERC clean.
 4. Layout, four layers, vertical parts, apply the `INSTRUMENT` netclass, DRC
    clean, `make docs`. Settle the silkscreen wording here.
@@ -542,3 +547,47 @@ in `docs/harness-pinouts.md` and on cable labels, not in copper.
    channels through the LA5032 adapter with pyControl running
    `camera_sync_test.py`, then apply the software change table and run the
    rig's `rig1_check.py` against a OneBox recording.
+
+## Resume Checklist (next session)
+
+Read this file first; it is the whole design record so far. Then:
+
+1. **Confirm the `kicad-libs` state.** `git -C ../kicad-libs log --oneline`
+   since `242e907` (2026-09-23). Verify the per-camera block
+   `blackfly_s_gpio_channel_mcv6_vertical` exists, matches the specification
+   in this file (ports, values, footprints), and passes
+   `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"`. Look up the
+   internal part numbers actually created for the 1G07 and the four resistor
+   values in `db/source/internal_parts.csv` rather than assuming names
+   (existing style: `OW-RES-27R-0402`, `OW-RES-4K7-0402`,
+   `OW-MISC-SN74LVC1G125DRYR`). Re-check that nothing changed in the four
+   other blocks this board places (`usb2_vertical` — its PCB side was
+   schematic-only; `5v_to_3v3_tps73733`;
+   `quadrature_encoder_input_5v_sn74lvc2g17`;
+   `instrument_port_digital_50_dut_ffc_boundary_vertical`) and in the
+   Phoenix connector symbols, which were rewritten in `66a6406` and make
+   placed copies report `lib_symbol_mismatch` until *Update Symbols from
+   Library* runs.
+2. **Scaffold.** `orb-weaver-kicad-init-repo` then
+   `orb-weaver-kicad-create-project` with the project in `kicad/`, basename
+   `camera-gpio-interface-pcb`. Commit the generated library tables. Keep
+   `docs/rev0-plan.md`; the scaffold's README gets the generated-docs block.
+3. **Schematic**, per "Schematic Structure": six wrapper sheets, blocks as
+   copies re-annotated to 4-digit bands, `INSTRUMENT` netclass on `/*_INST`,
+   every unused LV541A input tied to ground, ERC clean.
+4. **Silkscreen wording** — the one open decision; settle it at layout.
+5. **Docs to write alongside:** `docs/interface-map.md`,
+   `docs/design-block-map.md`, `docs/harness-pinouts.md` (cable colours, plug
+   wiring, the software change table, OneBox channel map v2 for the rig
+   repo), `docs/validation-plan.md`, `docs/bringup-log.md`.
+6. **External facts that may have moved:** whether the ordered
+   `mouse-joystick-pcb` and `la5032-instrument-port-adapter` boards arrived
+   and whether the DRY6 footprint and the digital-50 port assembled
+   correctly; whether the rig migrated from Breakout 1.2 to the H7 breakout
+   (changes only the silk and the harness doc); whether the third camera is
+   in hand.
+
+Sources that are not in this repo: camera and OneBox documents in the
+gitignored `tmp/`; the rig's configuration in
+`~/Repositories/github/joystick-rig/`; the pyControl H7 breakout in
+`~/Repositories/github/pycontrol-h7-breakout/`.
