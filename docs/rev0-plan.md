@@ -10,6 +10,13 @@ were purchased 2026-09-23. No KiCad project yet: work pauses here until the
 `kicad-libs` additions (parts rows and the per-camera design block) are done,
 then resumes in a new session with the checklist at the end of this file. The
 only open design item is the silkscreen wording.
+
+**Update 2026-09-24:** the kicad-libs work is done. Read
+[kicad-libs-handoff-2026-09-24.md](kicad-libs-handoff-2026-09-24.md) before the
+resume checklist; it corrects four statements in this plan, the most important
+being that the USBLC6-2P6 is a two-line array, so the block carries two and the
+board needs nine, not five.
+
 **Purpose:** Replace the hand-built harness (BNC tees, minigrabber clips and a
 hand-soldered pull-up per camera) that connects three FLIR Blackfly S
 `BFS-U3-20S4M-C` cameras to a pyControl breakout and a Neuropixels OneBox
