@@ -34,12 +34,13 @@ list. Status here mirrors it.
       Makefile and `.guix/` aligned with `mouse-joystick-pcb` (no KiCad
       overlay; the pinned channel is 10.0.6), netclass profiles applied. The
       user commits.
-- [ ] Schematic: the wrapper sheets in the plan's tree (power, inputs,
-      sync_out, camera_1..3, instrument_port); blocks as copies re-annotated
-      to 4-digit bands; the input block's `VENC` to `+5V_USB` and its
-      `ENCA_INST`/`ENCB_INST` as the two input taps; nine ESD arrays; every
-      unused LV541A input to ground; ERC clean; exported netlist compared
-      against the plan's InstrumentPort table.
+- [x] Schematic (2026-09-25): sheets power, inputs (with
+      `logic_input_2ch_5v_schmitt_sn74lvc2g17`), outputs, and the three
+      camera blocks and the InstrumentPort block on the root; nine ESD arrays
+      with `VBUS` on `+5V`; every unused LV541A input to ground; holes and
+      fiducials on the root; annotated per sheet (sheet number × 100); ERC 0
+      violations; netlist read pin by pin, InstrumentPort channels grouped per
+      camera and the plan table rewritten to match.
 - [ ] Layout: four layers, 120 × 80 mm outline per the plan, `INSTRUMENT`
       class on the `_INST` nets, DRC clean with `rule_severities.clearance`
       at error.

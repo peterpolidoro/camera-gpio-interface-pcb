@@ -7,7 +7,7 @@
 	(title_block
 		(title "camera-gpio-interface-pcb")
 		(date "2026-09-25")
-		(rev "v1.0")
+		(rev "1.0")
 		(company "Janelia Research Campus")
 	)
 	(lib_symbols
@@ -719,6 +719,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(no_connect
 		(at 127 66.04)
@@ -741,6 +856,16 @@
 			(type default)
 		)
 		(uuid "1fb0d830-34f3-4876-863a-8446d589e0a4")
+	)
+	(wire
+		(pts
+			(xy 165.1 33.02) (xy 165.1 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2df2e329-fccf-4b1d-af67-cfd04bbebde0")
 	)
 	(wire
 		(pts
@@ -842,6 +967,16 @@
 		)
 		(uuid "f2c2284a-5827-4cdf-b869-54445f988e6b")
 	)
+	(wire
+		(pts
+			(xy 152.4 33.02) (xy 152.4 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa911b2-5dbd-424b-adc4-0a4b1758b9a7")
+	)
 	(label "+5V"
 		(at 175.26 53.34 180)
 		(effects
@@ -861,6 +996,16 @@
 			(justify right bottom)
 		)
 		(uuid "1b243dda-e010-4908-848f-1738e1417c12")
+	)
+	(label "GND"
+		(at 165.1 35.56 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3bb44d0e-68ff-4df2-b044-03aad2d20f6d")
 	)
 	(label "GND"
 		(at 129.54 58.42 0)
@@ -923,6 +1068,16 @@
 		(uuid "aa88da04-e8b9-4cf1-91e2-c576cbe8bf38")
 	)
 	(label "+5V"
+		(at 152.4 35.56 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b37279e5-15bb-47ad-a287-8e44c2a039c5")
+	)
+	(label "+5V"
 		(at 53.34 25.4 0)
 		(effects
 			(font
@@ -976,6 +1131,84 @@
 		(uuid "feb52a69-48f8-4891-8e45-0f8b4c11c3f0")
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 165.1 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2250c055-2d62-46f3-8d47-824ab1e0a427")
+		(property "Reference" "#FLG0202"
+			(at 165.1 31.115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 165.1 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 165.1 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ceaeb22b-7aee-43aa-8954-ea57f9e0c507")
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
+					(reference "#FLG0202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "orb_weaver_internal:All/OW-PASS-RC0402FR-07680RL")
 		(at 228.6 52.07 0)
 		(unit 1)
@@ -987,7 +1220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81c9ff68-de0f-47d2-876a-600326351fc1")
-		(property "Reference" "R3"
+		(property "Reference" "R201"
 			(at 231.14 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1238,7 +1471,85 @@
 		(instances
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
-					(reference "R3")
+					(reference "R201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98f23d20-6188-4c8f-84f6-7c59c86d7e1a")
+		(property "Reference" "#FLG0201"
+			(at 152.4 31.115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 152.4 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 152.4 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df49e6f5-4ef3-4c30-be0f-28b4a4aff876")
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
+					(reference "#FLG0201")
 					(unit 1)
 				)
 			)
@@ -1256,7 +1567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac0209ff-9881-406e-a261-0723baf66020")
-		(property "Reference" "D2"
+		(property "Reference" "D201"
 			(at 232.41 62.5475 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1509,7 +1820,7 @@
 		(instances
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
-					(reference "D2")
+					(reference "D201")
 					(unit 1)
 				)
 			)

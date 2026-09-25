@@ -7,13 +7,623 @@
 	(title_block
 		(title "camera-gpio-interface-pcb")
 		(date "2026-09-25")
-		(rev "v1.0")
+		(rev "1.0")
 		(company "Janelia Research Campus")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "orb_weaver_internal:All/OW-MECH-FID-1MM-MASK2MM"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial 1mm Mask 2mm"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Official KiCad fiducial footprint Fiducial_1mm_Mask2mm"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OW_PART" "OW-MECH-FID-1MM-MASK2MM"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PartID" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "Fiducial 1mm Mask 2mm"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Group" "mechanical"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqType" "fiducial"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqValue" "Fiducial 1mm Mask 2mm"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqFootprint" "Fiducial:Fiducial_1mm_Mask2mm"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPackage" "Fiducial_1mm_Mask2mm"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinVoltage" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinCurrent" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPower" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqTolerance" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqDielectric" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqProtocol" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqRole" "fiducial"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqExactMPN" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqNotes" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OW-MECH-FID-1MM-MASK2MM Fiducial 1mm Mask 2mm mechanical Fiducial 1mm Mask 2mm Official KiCad fiducial footprint Fiducial_1mm_Mask2mm Mechanical:Fiducial Fiducial:Fiducial_1mm_Mask2mm fiducial Fiducial 1mm Mask 2mm Fiducial:Fiducial_1mm_Mask2mm Fiducial_1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial:Fiducial_1mm_Mask2mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "All/OW-MECH-FID-1MM-MASK2MM_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "orb_weaver_internal:All/OW-MECH-MH-3-2MM-M3"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Mounting Hole 3.2mm M3"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Official KiCad mounting-hole footprint MountingHole_3.2mm_M3"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OW_PART" "OW-MECH-MH-3-2MM-M3"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PartID" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "Mounting Hole 3.2mm M3"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Group" "mechanical"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqType" "mounting-hole"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqValue" "Mounting Hole 3.2mm M3"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqFootprint" "MountingHole:MountingHole_3.2mm_M3"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPackage" "MountingHole_3.2mm_M3"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinVoltage" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinCurrent" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPower" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqTolerance" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqDielectric" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqProtocol" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqRole" "mounting-hole"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqExactMPN" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqNotes" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OW-MECH-MH-3-2MM-M3 Mounting Hole 3.2mm M3 mechanical Mounting Hole 3.2mm M3 Official KiCad mounting-hole footprint MountingHole_3.2mm_M3 Mechanical:MountingHole MountingHole:MountingHole_3.2mm_M3 mounting-hole Mounting Hole 3.2mm M3 MountingHole:Mounting"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole:MountingHole_3.2mm_M3"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "All/OW-MECH-MH-3-2MM-M3_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
 	(wire
 		(pts
-			(xy 76.2 55.88) (xy 78.74 55.88)
+			(xy 139.7 27.94) (xy 142.24 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00710ca2-1c46-40da-9128-d9880b386298")
+	)
+	(wire
+		(pts
+			(xy 203.2 142.24) (xy 200.66 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e763b4-48ac-4f35-9efe-adb3b7556e33")
+	)
+	(wire
+		(pts
+			(xy 76.2 81.28) (xy 78.74 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0adca5c8-1fb5-45f8-9e21-befb935b47ef")
+	)
+	(wire
+		(pts
+			(xy 203.2 139.7) (xy 200.66 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba44702-0c83-4ef2-8763-115750e9318e")
+	)
+	(wire
+		(pts
+			(xy 76.2 30.48) (xy 78.74 30.48)
 		)
 		(stroke
 			(width 0)
@@ -23,7 +633,557 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 58.42) (xy 78.74 58.42)
+			(xy 200.66 109.22) (xy 203.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9620ec-63a5-4fb1-81dc-504b2fc93071")
+	)
+	(wire
+		(pts
+			(xy 142.24 139.7) (xy 139.7 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1169cd86-f6ba-45ba-8202-79af1f03f98f")
+	)
+	(wire
+		(pts
+			(xy 203.2 63.5) (xy 200.66 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "126668d0-2432-4836-ae7a-549182d39a70")
+	)
+	(wire
+		(pts
+			(xy 142.24 137.16) (xy 139.7 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "129a6903-1c8b-4e2c-95a2-b51a24b1a943")
+	)
+	(wire
+		(pts
+			(xy 114.3 78.74) (xy 111.76 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12cba821-fb3c-4e05-a7c7-99cb638e5a72")
+	)
+	(wire
+		(pts
+			(xy 203.2 43.18) (xy 200.66 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1781fe5c-e7df-4ce3-aeb8-2146bddd5a8b")
+	)
+	(wire
+		(pts
+			(xy 114.3 132.08) (xy 111.76 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cb1928f-eda0-425c-9e8d-88754de91df8")
+	)
+	(wire
+		(pts
+			(xy 114.3 38.1) (xy 111.76 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2222c958-b6ab-4c32-9d70-241762645e30")
+	)
+	(wire
+		(pts
+			(xy 142.24 33.02) (xy 139.7 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27004584-8538-4c4c-8360-90d77aabf54f")
+	)
+	(wire
+		(pts
+			(xy 228.6 30.48) (xy 231.14 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "288f4720-5d18-4797-a062-05bb34c1c473")
+	)
+	(wire
+		(pts
+			(xy 114.3 40.64) (xy 111.76 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ad3896a-5b93-43f8-a148-61f3f96d981e")
+	)
+	(wire
+		(pts
+			(xy 200.66 101.6) (xy 203.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d8152fa-bf28-4b8e-89a1-4d80ca231654")
+	)
+	(wire
+		(pts
+			(xy 142.24 38.1) (xy 139.7 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d8aff25-5fdb-4275-8975-8651cc270986")
+	)
+	(wire
+		(pts
+			(xy 203.2 71.12) (xy 200.66 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fe7fd62-8275-4c5a-a36b-31877ab8d91d")
+	)
+	(wire
+		(pts
+			(xy 114.3 129.54) (xy 111.76 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30863c09-f461-4998-ba31-77c80f221ce4")
+	)
+	(wire
+		(pts
+			(xy 142.24 86.36) (xy 139.7 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30f7eb67-f23d-4628-a41d-b3ed1013bc00")
+	)
+	(wire
+		(pts
+			(xy 203.2 33.02) (xy 200.66 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335d5106-4c8f-4f35-abb1-3ec4f60b208d")
+	)
+	(wire
+		(pts
+			(xy 142.24 144.78) (xy 139.7 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337059fc-29c1-40ba-8505-7ca00b7c2993")
+	)
+	(wire
+		(pts
+			(xy 200.66 91.44) (xy 203.2 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3842d434-a3ea-4c79-87e9-130d9dfa255f")
+	)
+	(wire
+		(pts
+			(xy 200.66 83.82) (xy 203.2 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ba4bbbe-67fe-48a8-bfe1-4ae0041f2087")
+	)
+	(wire
+		(pts
+			(xy 200.66 106.68) (xy 203.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c8cfcc6-5e7e-4b64-8b03-f6afc363fc70")
+	)
+	(wire
+		(pts
+			(xy 142.24 93.98) (xy 139.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d310181-c83f-4cf1-9f21-58c2eabcf2e1")
+	)
+	(wire
+		(pts
+			(xy 200.66 86.36) (xy 203.2 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3df76ec1-af70-4873-b6ac-5e1810b3cf3b")
+	)
+	(wire
+		(pts
+			(xy 114.3 134.62) (xy 111.76 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40c32bd0-f848-47bf-aa3e-a8d0422b9e58")
+	)
+	(wire
+		(pts
+			(xy 50.8 78.74) (xy 48.26 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4405c3dd-e978-4ec8-9b69-236f9090545d")
+	)
+	(wire
+		(pts
+			(xy 142.24 142.24) (xy 139.7 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ade8de7-6959-4022-9e48-d70879ddd3a3")
+	)
+	(wire
+		(pts
+			(xy 203.2 121.92) (xy 200.66 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3364a8-8db7-4269-9f7f-6453f353873e")
+	)
+	(wire
+		(pts
+			(xy 50.8 81.28) (xy 48.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5000cee4-1a3c-4a21-9950-ca7a1dcce180")
+	)
+	(wire
+		(pts
+			(xy 203.2 73.66) (xy 200.66 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f17a64-a92a-4b59-87db-891de3770bf4")
+	)
+	(wire
+		(pts
+			(xy 203.2 147.32) (xy 200.66 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54d13d71-81f0-4d04-87cc-597ee7e303d2")
+	)
+	(wire
+		(pts
+			(xy 142.24 91.44) (xy 139.7 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5574d5d9-ccd8-4201-a334-182478e8745e")
+	)
+	(wire
+		(pts
+			(xy 142.24 43.18) (xy 139.7 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5693cbf1-fef0-49f5-b93b-1f216bcb96a3")
+	)
+	(wire
+		(pts
+			(xy 200.66 99.06) (xy 203.2 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57afd67c-3f3b-47fc-8c7e-e1100e3edf48")
+	)
+	(wire
+		(pts
+			(xy 114.3 139.7) (xy 111.76 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a4f6e3a-030d-4181-a063-abd4848c6275")
+	)
+	(wire
+		(pts
+			(xy 76.2 78.74) (xy 78.74 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf421fc-f72c-44f1-a744-012535b0d557")
+	)
+	(wire
+		(pts
+			(xy 203.2 45.72) (xy 200.66 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d4907f6-9b58-48ef-9494-97f24c369a39")
+	)
+	(wire
+		(pts
+			(xy 203.2 68.58) (xy 200.66 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e27c02a-5b8e-4e54-93c2-be8467946938")
+	)
+	(wire
+		(pts
+			(xy 203.2 127) (xy 200.66 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fe12473-f287-4dde-ac38-323599a2945b")
+	)
+	(wire
+		(pts
+			(xy 142.24 83.82) (xy 139.7 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b9f90b-149e-49f2-ba81-ae43650157c2")
+	)
+	(wire
+		(pts
+			(xy 142.24 35.56) (xy 139.7 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "627a56aa-d585-4a83-a448-5342a39a5660")
+	)
+	(wire
+		(pts
+			(xy 139.7 78.74) (xy 142.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a20bb6-6e67-45ca-be5f-18c07e98cd1d")
+	)
+	(wire
+		(pts
+			(xy 203.2 132.08) (xy 200.66 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63f0f99a-0826-41c4-8924-c4faedfc5118")
+	)
+	(wire
+		(pts
+			(xy 203.2 124.46) (xy 200.66 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "658560a7-f64c-4d44-b6a5-0ec8fece3164")
+	)
+	(wire
+		(pts
+			(xy 203.2 119.38) (xy 200.66 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "667e8e5f-e195-43f2-a20d-ff94cfa3fa22")
+	)
+	(wire
+		(pts
+			(xy 203.2 116.84) (xy 200.66 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6866cf63-08d8-4eca-9835-17e0500b104b")
+	)
+	(wire
+		(pts
+			(xy 139.7 129.54) (xy 142.24 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f0ba1d7-159f-480f-b992-4ab638b9f283")
+	)
+	(wire
+		(pts
+			(xy 203.2 144.78) (xy 200.66 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84006a5e-bc10-4f72-8ae2-8c7c820b7eef")
+	)
+	(wire
+		(pts
+			(xy 200.66 76.2) (xy 203.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8715176e-f238-4512-9ad0-220217e136a9")
+	)
+	(wire
+		(pts
+			(xy 203.2 60.96) (xy 200.66 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "875360e6-2a63-48cd-b5d0-ef2488c22240")
+	)
+	(wire
+		(pts
+			(xy 114.3 142.24) (xy 111.76 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87a2f197-47c4-4051-8ec6-5d82aa875c99")
+	)
+	(wire
+		(pts
+			(xy 203.2 114.3) (xy 200.66 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dfae926-5ca9-41f2-9fd2-29b2f18177b4")
+	)
+	(wire
+		(pts
+			(xy 200.66 96.52) (xy 203.2 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d6ceb9-e07a-4137-9570-9cb84f8cc259")
+	)
+	(wire
+		(pts
+			(xy 200.66 78.74) (xy 203.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ba0a50d-ace9-4515-9dc8-f353d5047e86")
+	)
+	(wire
+		(pts
+			(xy 200.66 111.76) (xy 203.2 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f5f617b-cb22-46b6-bdb1-9b036db7b116")
+	)
+	(wire
+		(pts
+			(xy 200.66 93.98) (xy 203.2 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a00a1ff7-1665-4e84-8d4a-03032dd37498")
+	)
+	(wire
+		(pts
+			(xy 76.2 33.02) (xy 78.74 33.02)
 		)
 		(stroke
 			(width 0)
@@ -33,7 +1193,237 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 53.34) (xy 78.74 53.34)
+			(xy 114.3 81.28) (xy 111.76 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af2c033d-6b2e-4302-bcca-5570b4806399")
+	)
+	(wire
+		(pts
+			(xy 203.2 129.54) (xy 200.66 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afff58ba-9c37-486b-981b-55452875179b")
+	)
+	(wire
+		(pts
+			(xy 200.66 104.14) (xy 203.2 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0a4c3a4-3d02-4634-98a0-272fb743ad70")
+	)
+	(wire
+		(pts
+			(xy 203.2 137.16) (xy 200.66 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b34a9a81-d73f-4954-88f2-115e0aeee1b0")
+	)
+	(wire
+		(pts
+			(xy 76.2 88.9) (xy 78.74 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46fb940-69dc-455d-8618-32a5835eb36f")
+	)
+	(wire
+		(pts
+			(xy 203.2 40.64) (xy 200.66 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7a8487b-5ee6-424f-81de-a79473df6c47")
+	)
+	(wire
+		(pts
+			(xy 200.66 88.9) (xy 203.2 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b89a60d3-c78b-4cac-95a8-98286df5e7ff")
+	)
+	(wire
+		(pts
+			(xy 200.66 81.28) (xy 203.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9e3e495-1611-4271-a672-5c7d22639597")
+	)
+	(wire
+		(pts
+			(xy 76.2 86.36) (xy 78.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf23fec5-9dd2-49ad-80b5-8c6dd85f84a4")
+	)
+	(wire
+		(pts
+			(xy 114.3 27.94) (xy 111.76 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b4a8b4-ed00-486f-9c27-f71d208e738b")
+	)
+	(wire
+		(pts
+			(xy 114.3 91.44) (xy 111.76 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8d35cf1-733c-4c39-bc81-6b0a0dd69680")
+	)
+	(wire
+		(pts
+			(xy 50.8 83.82) (xy 48.26 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddab8872-3943-4a19-a5b8-7ef3de0a5699")
+	)
+	(wire
+		(pts
+			(xy 203.2 30.48) (xy 200.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e14a9b4f-362f-4c6b-a7fb-1130eba4654c")
+	)
+	(wire
+		(pts
+			(xy 203.2 134.62) (xy 200.66 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6d0e722-467c-4a99-b39b-50f7902f92e0")
+	)
+	(wire
+		(pts
+			(xy 142.24 40.64) (xy 139.7 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e823a7cb-6b20-4b8c-97e5-9b159386b9e4")
+	)
+	(wire
+		(pts
+			(xy 114.3 88.9) (xy 111.76 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed5888d9-de30-441f-b226-c2953572d6bc")
+	)
+	(wire
+		(pts
+			(xy 203.2 38.1) (xy 200.66 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef605fe1-70dd-423f-ab8f-831b88e187c4")
+	)
+	(wire
+		(pts
+			(xy 203.2 27.94) (xy 200.66 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f093bb91-ab40-4085-85a0-dd4f096f0cb2")
+	)
+	(wire
+		(pts
+			(xy 142.24 88.9) (xy 139.7 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1320030-dfab-4883-a195-7523e76da492")
+	)
+	(wire
+		(pts
+			(xy 114.3 30.48) (xy 111.76 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f28b4dd4-1a0b-4d17-ae5c-3cf68be9afb6")
+	)
+	(wire
+		(pts
+			(xy 114.3 83.82) (xy 111.76 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42bbc60-75bf-466a-ae21-d501cbd66600")
+	)
+	(wire
+		(pts
+			(xy 114.3 33.02) (xy 111.76 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8610752-d813-485a-9137-bc28c94f182b")
+	)
+	(wire
+		(pts
+			(xy 142.24 134.62) (xy 139.7 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f94eb6fc-32dc-49b3-9ef2-307b244a7853")
+	)
+	(wire
+		(pts
+			(xy 76.2 27.94) (xy 78.74 27.94)
 		)
 		(stroke
 			(width 0)
@@ -41,8 +1431,88 @@
 		)
 		(uuid "fe089b64-1f64-4453-9b49-c5a78ba3d791")
 	)
+	(label "GND"
+		(at 111.76 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0110f1af-7a1a-4651-a483-70f2e47aec58")
+	)
+	(label "CAM1_L1_INST"
+		(at 200.66 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "062b3ab0-7c60-4eb6-a136-7aed82134f0d")
+	)
 	(label "+5V"
-		(at 78.74 53.34 0)
+		(at 111.76 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "089065c1-cd01-419c-8972-523bc573a5b4")
+	)
+	(label "CAM3_L2_INST"
+		(at 200.66 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c96c7b9-1a27-4027-b6c6-0e5bb0c40465")
+	)
+	(label "CAM3_L3_INST"
+		(at 142.24 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cb8b40e-ef30-4f6a-bd57-f2f152d925d2")
+	)
+	(label "CAM3_OUT_BNC"
+		(at 200.66 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0d484e6f-727b-48ef-8d54-e74cf7ad52dd")
+	)
+	(label "+5V"
+		(at 111.76 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e455fbc-d2c3-49e1-a030-74d9c30d3661")
+	)
+	(label "GND"
+		(at 200.66 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0f054b59-4be1-44a9-aa4e-dbbfc7c19aa6")
+	)
+	(label "+5V"
+		(at 78.74 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -51,8 +1521,178 @@
 		)
 		(uuid "0f63bfa5-4908-479e-9258-48d2f970d069")
 	)
+	(label "CAM2_OUT_BNC"
+		(at 142.24 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11a7781d-d986-42ef-84a6-81d4f7e9f235")
+	)
+	(label "GND"
+		(at 200.66 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15084e9e-a8bb-49a8-b1c4-01cb9e9d4e03")
+	)
+	(label "GND"
+		(at 200.66 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1605016e-dcdc-4aa0-bfe9-c53979146c5d")
+	)
+	(label "CAM1_L1_INST"
+		(at 142.24 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "17f500ff-5922-466d-9511-49a067993ccf")
+	)
 	(label "+3.3V"
-		(at 78.74 55.88 0)
+		(at 200.66 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21a6d6a9-a487-4ebc-ae37-d680ab8271a3")
+	)
+	(label "CAM2_L1_INST"
+		(at 200.66 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21b05a4e-78fc-44ed-9107-2d4278b3c895")
+	)
+	(label "CAM2_L0_INST"
+		(at 142.24 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "250bd392-9e53-45e3-991d-064c91d06017")
+	)
+	(label "+5V"
+		(at 111.76 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "29802bdc-2d06-48a9-a1d0-7ac4be134513")
+	)
+	(label "SYNC_OUT_INST"
+		(at 200.66 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2ce54282-6c20-434d-9403-4ba1a4bdcf11")
+	)
+	(label "TRIG_IN"
+		(at 111.76 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d351e8c-6948-42b1-a8d4-2504052907dd")
+	)
+	(label "GND"
+		(at 111.76 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2ee95b54-4f26-4db4-b2c0-093a75d96519")
+	)
+	(label "SYNC_IN_INST"
+		(at 78.74 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31c44a66-8462-4bb1-8f4e-93742088fd35")
+	)
+	(label "GND"
+		(at 48.26 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35176863-7893-41ab-9d78-ff3be04e541e")
+	)
+	(label "CAM1_OUT_INST"
+		(at 200.66 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35772f9d-b5f9-4f02-8191-d20b9370af20")
+	)
+	(label "CAM1_L2_INST"
+		(at 142.24 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "39ca0861-faea-4510-b692-0545734047b9")
+	)
+	(label "TRIG_IN"
+		(at 78.74 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f1693fb-85d8-4b9e-8426-27b399b683fc")
+	)
+	(label "CAM1_L0_INST"
+		(at 200.66 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "405784a6-347b-4912-8b79-bbc8fe771ac9")
+	)
+	(label "+3.3V"
+		(at 78.74 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -62,7 +1702,507 @@
 		(uuid "470e62bf-107f-4cc1-8864-09c990e3483b")
 	)
 	(label "GND"
-		(at 78.74 58.42 0)
+		(at 200.66 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "47f6fe1d-3658-40c3-b9db-6959f15be5a4")
+	)
+	(label "SYNC_IN"
+		(at 111.76 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "493770e9-f1b8-421c-9832-c99396462e7a")
+	)
+	(label "SYNC_IN"
+		(at 200.66 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "499c8e0e-e2c3-4f36-ae71-f8cf845c0c1a")
+	)
+	(label "+3.3V"
+		(at 200.66 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4a2c9696-65f4-4068-bc9a-c5ccadc6e623")
+	)
+	(label "CAM2_L2_INST"
+		(at 200.66 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4cd40086-162c-4fa0-b85d-dbb1d10ace7e")
+	)
+	(label "GND"
+		(at 200.66 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e0edfe3-ed93-4e61-a53d-777338bd914e")
+	)
+	(label "+5V"
+		(at 200.66 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "550c1f5d-f5f5-4c24-a572-26ea9737a737")
+	)
+	(label "GND"
+		(at 200.66 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a84dcac-a1ee-4371-8868-ec706d446891")
+	)
+	(label "+3.3V"
+		(at 48.26 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a897cd0-8c01-485d-ae80-ccc84d2a8ed6")
+	)
+	(label "CAM2_L2_INST"
+		(at 142.24 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d3a09af-84d0-4007-8c73-ea7be73bc478")
+	)
+	(label "TRIG_IN"
+		(at 111.76 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61247486-e9d4-4645-9663-26a89276649f")
+	)
+	(label "CAM1_L3_INST"
+		(at 200.66 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61350b19-a30d-4389-899b-9073b64a4b59")
+	)
+	(label "TRIG_IN_INST"
+		(at 200.66 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6699f246-fb65-4003-91f4-1c06e6c048f9")
+	)
+	(label "CAM1_L0_INST"
+		(at 142.24 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ade5fde-962a-4e31-8b19-e5b988475532")
+	)
+	(label "TRIG_IN"
+		(at 111.76 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6f21a297-eb59-4c1d-a881-0b74771530d3")
+	)
+	(label "GND"
+		(at 200.66 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6ff41132-e9de-428c-b441-2e0bee0856df")
+	)
+	(label "CAM2_L3_INST"
+		(at 200.66 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "71adbb25-476a-4c49-8596-55b2f425c416")
+	)
+	(label "GND"
+		(at 200.66 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "71afb98d-b7da-4cd9-9fd1-0f516e3c9307")
+	)
+	(label "CAM3_L0_INST"
+		(at 142.24 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77df3497-3e95-4a04-901b-a0abecaf638b")
+	)
+	(label "SYNC_OUT_INST"
+		(at 231.14 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d805780-92a5-4af6-90b4-61cab11f8bd2")
+	)
+	(label "CAM2_OUT_INST"
+		(at 142.24 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7db85ff7-2d8c-4040-a168-774952da924b")
+	)
+	(label "SYNC_IN"
+		(at 111.76 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "805bc8fb-c887-45c2-8a51-6e52eaf24412")
+	)
+	(label "GND"
+		(at 200.66 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b17d566-866b-47e9-bafd-d68078bcf331")
+	)
+	(label "GND"
+		(at 200.66 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8d96f6ce-47c1-4b17-8529-44cabfa0f6ba")
+	)
+	(label "+3.3V"
+		(at 111.76 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8dabf28c-e39b-436e-bfc5-8584b8df1563")
+	)
+	(label "GND"
+		(at 200.66 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8fcc274d-32a9-4d9c-9cdf-0842b5be068d")
+	)
+	(label "+3.3V"
+		(at 111.76 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96ae41bc-91b0-4f51-9793-9bc1c1ca52b3")
+	)
+	(label "CAM1_OUT_BNC"
+		(at 142.24 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98402e93-8809-4566-833f-4a1eef78a0b9")
+	)
+	(label "CAM3_L1_INST"
+		(at 142.24 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9872e5b0-dd79-467f-af55-ebffd7ffa6f7")
+	)
+	(label "CAM3_OUT_BNC"
+		(at 142.24 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a830dd5-7798-45de-90ea-e04bf08e35a3")
+	)
+	(label "CAM2_L0_INST"
+		(at 200.66 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e66f5ad-b650-440a-89fc-c91065fde988")
+	)
+	(label "CAM3_L2_INST"
+		(at 142.24 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fda279f-9e3f-4ce0-9f4c-936cbe490bef")
+	)
+	(label "SYNC_IN"
+		(at 111.76 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a416c2c5-69bd-42c2-81b3-2f2d09595da9")
+	)
+	(label "CAM2_L3_INST"
+		(at 142.24 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a516ec73-65bd-4005-990f-f9139cd6039d")
+	)
+	(label "CAM1_L2_INST"
+		(at 200.66 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a7f6ecf1-ef59-418c-a300-de6f4ac83dc7")
+	)
+	(label "+5V"
+		(at 48.26 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ae43325f-b4ce-4935-94de-7cd7f8d52f2a")
+	)
+	(label "CAM3_L0_INST"
+		(at 200.66 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1c992f3-a475-41b6-93f2-dc95fe71add7")
+	)
+	(label "SYNC_IN_INST"
+		(at 200.66 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b40e94b4-a03f-4a92-9c0d-7668fe9b03dc")
+	)
+	(label "GND"
+		(at 200.66 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b87ffda2-9bcc-42ef-8e33-04fad6f3f482")
+	)
+	(label "CAM2_L1_INST"
+		(at 142.24 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bdf73f9d-1959-4c14-9e8b-39c35fad7db3")
+	)
+	(label "CAM2_OUT_INST"
+		(at 200.66 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c241f2f6-08f2-4bdf-b7f4-4470c9bea895")
+	)
+	(label "GND"
+		(at 200.66 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cb3b4e8f-d1e3-4897-8bc2-718f7a72f736")
+	)
+	(label "CAM2_OUT_BNC"
+		(at 200.66 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd85937c-4744-4a49-aaa8-7c3a2197b499")
+	)
+	(label "SYNC_IN"
+		(at 78.74 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5d46990-e203-4255-a163-49ff48b939ff")
+	)
+	(label "CAM3_L1_INST"
+		(at 200.66 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d97433c9-6b5f-4037-8838-174763fcc5e4")
+	)
+	(label "GND"
+		(at 111.76 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd3162fd-ef01-42e6-ad85-4fd64877de08")
+	)
+	(label "CAM3_OUT_INST"
+		(at 200.66 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd3da30d-978c-40fa-b466-1c033fd03f85")
+	)
+	(label "CAM3_L3_INST"
+		(at 200.66 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e25c1cf2-bd13-4732-9762-2e89ab8ec38c")
+	)
+	(label "TRIG_IN_INST"
+		(at 78.74 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec6ec9e3-67fd-4d26-853f-a87c1ce40377")
+	)
+	(label "CAM1_OUT_INST"
+		(at 142.24 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef7c1e0a-d8b3-491d-8fad-7b98ac5c6667")
+	)
+	(label "GND"
+		(at 78.74 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -71,9 +2211,1940 @@
 		)
 		(uuid "f19183ac-348c-426d-8aef-2a6e48789094")
 	)
+	(label "CAM3_OUT_INST"
+		(at 142.24 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f238fa6e-84eb-4571-b69a-89deeba73819")
+	)
+	(label "CAM1_OUT_BNC"
+		(at 200.66 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f29d70b9-82ef-45b4-9a24-603486b8265f")
+	)
+	(label "GND"
+		(at 200.66 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f4e67840-df37-49b3-9202-15bd3f693f21")
+	)
+	(label "+3.3V"
+		(at 111.76 132.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5522973-4da4-4cf5-b441-7991fcef238e")
+	)
+	(label "GND"
+		(at 200.66 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f78ba0e4-3cbc-4154-9a24-d63d33ce5e74")
+	)
+	(label "GND"
+		(at 200.66 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7eebbb4-9bad-47ee-8207-52e8e49ed041")
+	)
+	(label "CAM1_L3_INST"
+		(at 142.24 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f80122b3-39f1-4363-b7a4-6ffa1759e5f6")
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-MH-3-2MM-M3")
+		(at 25.4 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11103300-3b20-4d8c-b692-ae7d408115d1")
+		(property "Reference" "H103"
+			(at 27.94 161.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting Hole 3.2mm M3"
+			(at 27.94 163.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad mounting-hole footprint MountingHole_3.2mm_M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-MH-3-2MM-M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Mounting Hole 3.2mm M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "mounting-hole"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Mounting Hole 3.2mm M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "MountingHole_3.2mm_M3"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "mounting-hole"
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 25.4 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "H103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-FID-1MM-MASK2MM")
+		(at 76.2 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d5e25cf-f0b8-4a8e-ba01-a17c9c3e8681")
+		(property "Reference" "FID102"
+			(at 78.74 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial 1mm Mask 2mm"
+			(at 78.74 158.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad fiducial footprint Fiducial_1mm_Mask2mm"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-FID-1MM-MASK2MM"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Fiducial 1mm Mask 2mm"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "fiducial"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Fiducial 1mm Mask 2mm"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "Fiducial_1mm_Mask2mm"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "fiducial"
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 76.2 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "FID102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-MH-3-2MM-M3")
+		(at 25.4 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4031d6aa-c251-487f-8aaf-bada234b8855")
+		(property "Reference" "H104"
+			(at 27.94 166.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting Hole 3.2mm M3"
+			(at 27.94 168.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad mounting-hole footprint MountingHole_3.2mm_M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-MH-3-2MM-M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Mounting Hole 3.2mm M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "mounting-hole"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Mounting Hole 3.2mm M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "MountingHole_3.2mm_M3"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "mounting-hole"
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 25.4 167.64 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "H104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-MH-3-2MM-M3")
+		(at 25.4 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78b29be1-e660-442c-9ca4-38ab421a5d12")
+		(property "Reference" "H102"
+			(at 27.94 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting Hole 3.2mm M3"
+			(at 27.94 158.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad mounting-hole footprint MountingHole_3.2mm_M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-MH-3-2MM-M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Mounting Hole 3.2mm M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "mounting-hole"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Mounting Hole 3.2mm M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "MountingHole_3.2mm_M3"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "mounting-hole"
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 25.4 157.48 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-FID-1MM-MASK2MM")
+		(at 76.2 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f47a81d-a83b-41eb-baf4-2130ee811946")
+		(property "Reference" "FID101"
+			(at 78.74 151.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial 1mm Mask 2mm"
+			(at 78.74 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad fiducial footprint Fiducial_1mm_Mask2mm"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-FID-1MM-MASK2MM"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Fiducial 1mm Mask 2mm"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "fiducial"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Fiducial 1mm Mask 2mm"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "Fiducial_1mm_Mask2mm"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "fiducial"
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 76.2 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "FID101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-FID-1MM-MASK2MM")
+		(at 76.2 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4de7100-3175-4112-89ea-623be7630c2b")
+		(property "Reference" "FID103"
+			(at 78.74 161.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial 1mm Mask 2mm"
+			(at 78.74 163.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad fiducial footprint Fiducial_1mm_Mask2mm"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-FID-1MM-MASK2MM"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Fiducial 1mm Mask 2mm"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "fiducial"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Fiducial 1mm Mask 2mm"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "Fiducial:Fiducial_1mm_Mask2mm"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "Fiducial_1mm_Mask2mm"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "fiducial"
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 76.2 162.56 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "FID103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MECH-MH-3-2MM-M3")
+		(at 25.4 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d169ee63-a7d5-4e69-9036-2aa8364074d5")
+		(property "Reference" "H101"
+			(at 27.94 151.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mounting Hole 3.2mm M3"
+			(at 27.94 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Official KiCad mounting-hole footprint MountingHole_3.2mm_M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MECH-MH-3-2MM-M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "Mounting Hole 3.2mm M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "mechanical"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "mounting-hole"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "Mounting Hole 3.2mm M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "MountingHole_3.2mm_M3"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" "mounting-hole"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(group "blackfly_s_gpio_channel_mcv6_vertical_1"
+		(uuid "34c96a41-82ff-43c5-8ffd-5f4cf905cb7f")
+		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(members "15ab78d3-645e-44e2-89f2-97279e1f9280")
+	)
+	(group "blackfly_s_gpio_channel_mcv6_vertical_3"
+		(uuid "3bf8181a-4667-4da1-9ee4-1399d0a7c70a")
+		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(members "cf9287d7-4278-4035-9b01-341de48c7c59")
+	)
+	(group "blackfly_s_gpio_channel_mcv6_vertical_2"
+		(uuid "41ec3c76-c51d-4266-acb1-e1838281c51d")
+		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(members "f7a5e2a5-9d0a-49e2-a363-081660a6c9a8")
+	)
+	(group "instrument_port_digital_50_dut_ffc_boundary_vertical"
+		(uuid "cf84dd25-5365-42e3-af6d-2bb73d4938b1")
+		(lib_id "orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical")
+		(members "716b668d-905d-4ab3-a241-da78699c8ce7")
+	)
 	(sheet
-		(at 127 152.4)
-		(size 25.4 25.4)
+		(at 114.3 25.4)
+		(size 25.4 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -86,9 +4157,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "41e0bb41-bd43-491b-ae71-a58cad699f7c")
-		(property "Sheetname" "camera_3"
-			(at 127 151.6884 0)
+		(uuid "15ab78d3-645e-44e2-89f2-97279e1f9280")
+		(property "Sheetname" "blackfly_s_gpio_channel_mcv6_vertical"
+			(at 114.3 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -98,8 +4169,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "camera_3.kicad_sch"
-			(at 127 178.3846 0)
+		(property "Sheetfile" "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch"
+			(at 114.3 46.3046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -109,17 +4180,127 @@
 				(justify left top)
 			)
 		)
+		(pin "+3.3V" passive
+			(at 114.3 30.48 180)
+			(uuid "20808407-b082-42e5-af35-6b090c7206e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+5V" passive
+			(at 114.3 27.94 180)
+			(uuid "31fe1786-f651-41dc-ad2c-61f35395aa37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM_OUT_BNC" output
+			(at 139.7 27.94 0)
+			(uuid "5ef0a9bc-7800-4ad3-aaec-ffa22a6f1953")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 114.3 33.02 180)
+			(uuid "2d6906c6-b7f7-4372-8b59-bf74fdc11e3f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "L0_INST" output
+			(at 139.7 33.02 0)
+			(uuid "409f0b68-c41a-4ac7-91b6-5d09e60e77a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L1_INST" output
+			(at 139.7 35.56 0)
+			(uuid "d896fbd1-31bd-4c48-a1ac-36efee71f9d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L2_INST" output
+			(at 139.7 38.1 0)
+			(uuid "90963a11-4e82-4dc8-985d-5a238e329d5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L3_INST" output
+			(at 139.7 40.64 0)
+			(uuid "9d113132-34c5-454c-bfcf-44661922311f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT_INST" output
+			(at 139.7 43.18 0)
+			(uuid "b229de61-4415-4f44-a6f5-9d18182a6253")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYNC_IN" input
+			(at 114.3 40.64 180)
+			(uuid "516574fa-90b3-457e-933d-e1a5f49369ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TRIG_IN" input
+			(at 114.3 38.1 180)
+			(uuid "17e9376f-d508-4585-b01a-bd92be0d0fed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
-					(page "8")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 50.8 101.6)
-		(size 25.4 25.4)
+		(at 50.8 76.2)
+		(size 25.4 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -134,7 +4315,7 @@
 		)
 		(uuid "466351ee-30f0-48a7-921b-3bf3872996b2")
 		(property "Sheetname" "inputs"
-			(at 50.8 100.8884 0)
+			(at 50.8 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -145,7 +4326,7 @@
 			)
 		)
 		(property "Sheetfile" "inputs.kicad_sch"
-			(at 50.8 127.5846 0)
+			(at 50.8 92.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -153,6 +4334,76 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+3.3V" passive
+			(at 50.8 81.28 180)
+			(uuid "5f6f68e2-e667-4e15-bcf5-9d791580b56a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" passive
+			(at 50.8 83.82 180)
+			(uuid "1ded268f-b91a-43b8-bdf2-038eb0a138ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYNC_IN" output
+			(at 76.2 81.28 0)
+			(uuid "b70c7685-10a8-458f-b6f0-f28775faf0ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYNC_IN_INST" output
+			(at 76.2 88.9 0)
+			(uuid "4b11938e-709d-4fd4-9adc-36caf6d087f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TRIG_IN" output
+			(at 76.2 78.74 0)
+			(uuid "763ed2bc-3880-4782-9008-2e7db29c443b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TRIG_IN_INST" output
+			(at 76.2 86.36 0)
+			(uuid "90cbd23e-8796-4108-aafd-f462ef30ca19")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" passive
+			(at 50.8 78.74 180)
+			(uuid "504d7f50-eb18-4763-bc38-fd9f4a4e5083")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -164,53 +4415,7 @@
 		)
 	)
 	(sheet
-		(at 127 101.6)
-		(size 25.4 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "5adc9a7f-df2c-48b0-a9b1-a196e465c607")
-		(property "Sheetname" "camera_2"
-			(at 127 100.8884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "camera_2.kicad_sch"
-			(at 127 127.5846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 50.8 50.8)
+		(at 50.8 25.4)
 		(size 25.4 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -226,7 +4431,7 @@
 		)
 		(uuid "5b8333aa-5632-4b02-bed2-f7f06815639a")
 		(property "Sheetname" "power"
-			(at 50.8 50.0884 0)
+			(at 50.8 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -237,7 +4442,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 50.8 61.5446 0)
+			(at 50.8 36.1446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -248,7 +4453,7 @@
 			)
 		)
 		(pin "+3.3V" passive
-			(at 76.2 55.88 0)
+			(at 76.2 30.48 0)
 			(uuid "ef97690e-e91b-46d6-b4fb-ddb30856ea14")
 			(effects
 				(font
@@ -258,7 +4463,7 @@
 			)
 		)
 		(pin "+5V" passive
-			(at 76.2 53.34 0)
+			(at 76.2 27.94 0)
 			(uuid "59646c6e-2873-452a-b5b7-dcecf6e483a4")
 			(effects
 				(font
@@ -268,7 +4473,7 @@
 			)
 		)
 		(pin "GND" passive
-			(at 76.2 58.42 0)
+			(at 76.2 33.02 0)
 			(uuid "c9e53b94-6b90-4098-b0f3-1b90e65a54f7")
 			(effects
 				(font
@@ -286,8 +4491,8 @@
 		)
 	)
 	(sheet
-		(at 203.2 101.6)
-		(size 25.4 25.4)
+		(at 203.2 58.42)
+		(size 25.4 91.44)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -300,9 +4505,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "84ba0da9-7465-42cc-8d9b-4977f744b3ca")
-		(property "Sheetname" "instrument_port"
-			(at 203.2 100.8884 0)
+		(uuid "716b668d-905d-4ab3-a241-da78699c8ce7")
+		(property "Sheetname" "instrument_port_digital_50_dut_ffc_boundary_vertical"
+			(at 203.2 57.7084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -312,8 +4517,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "instrument_port.kicad_sch"
-			(at 203.2 127.5846 0)
+		(property "Sheetfile" "instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch"
+			(at 203.2 150.4446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -321,6 +4526,346 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+3.3V" passive
+			(at 203.2 60.96 180)
+			(uuid "2273b5a2-b8da-41d6-95d4-66f33c1234fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG0" input
+			(at 203.2 68.58 180)
+			(uuid "90420c34-103e-4df5-bab2-fe6c036619fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG1" input
+			(at 203.2 71.12 180)
+			(uuid "3a5a0235-3584-4659-a340-1412811df487")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG2" input
+			(at 203.2 73.66 180)
+			(uuid "a5870173-0c07-4de3-aa95-bb6d8e1893bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG3" input
+			(at 203.2 76.2 180)
+			(uuid "5d6e6ecf-d24c-4a07-abe3-aba08e63113a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG4" input
+			(at 203.2 78.74 180)
+			(uuid "14fc70ad-a11e-4fcd-9b6b-c73600ef9226")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG5" input
+			(at 203.2 81.28 180)
+			(uuid "6d9e1030-80bf-4ba2-9f96-ca7fe8d58d84")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG6" input
+			(at 203.2 83.82 180)
+			(uuid "fd6ae4fb-a2e2-4684-aebd-d6eb8c25cfe5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG7" input
+			(at 203.2 86.36 180)
+			(uuid "86b7324d-418c-4930-80ac-97dde7172630")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG8" input
+			(at 203.2 88.9 180)
+			(uuid "a5cc7dfe-d7fc-4dd8-8d42-a42a0f546320")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG9" input
+			(at 203.2 91.44 180)
+			(uuid "a9b215f8-592e-42ab-8f62-c24a1b795390")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG10" input
+			(at 203.2 93.98 180)
+			(uuid "1c14dbe5-30ca-4603-b655-a7c01a1a213a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG11" input
+			(at 203.2 96.52 180)
+			(uuid "892f3ea7-d2c7-4241-b4e4-405bd80067ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG12" input
+			(at 203.2 99.06 180)
+			(uuid "6a81fbfd-a28c-4be3-a6d7-f98a69f246cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG13" input
+			(at 203.2 101.6 180)
+			(uuid "fb35164f-6fef-47a5-bf47-4092987a935a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG14" input
+			(at 203.2 104.14 180)
+			(uuid "3caf5372-d1d9-46df-b27b-12f20293e247")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG15" input
+			(at 203.2 106.68 180)
+			(uuid "7bbd1f07-abc9-44ac-af43-5013d5eecc78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG16" input
+			(at 203.2 109.22 180)
+			(uuid "5c38c227-0308-4b0d-81c4-e739b6bee2c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG17" input
+			(at 203.2 111.76 180)
+			(uuid "2610d450-099b-4914-ae19-c32df4e4d2aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG18" input
+			(at 203.2 114.3 180)
+			(uuid "c90f3924-8e9c-4f04-9f63-9e80df266a43")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG19" input
+			(at 203.2 116.84 180)
+			(uuid "7b6cfd68-4e50-4b8c-abf7-fa0601df5f28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG20" input
+			(at 203.2 119.38 180)
+			(uuid "6424e80f-ea3b-40a9-91df-e7a8d14e5f55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG21" input
+			(at 203.2 121.92 180)
+			(uuid "28841826-0674-4376-b95d-76883a394d51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG22" input
+			(at 203.2 124.46 180)
+			(uuid "e2195018-bd17-4ac3-8e59-b454079ebb5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG23" input
+			(at 203.2 127 180)
+			(uuid "2ffc4303-7bd3-4e80-8ef7-ca09564cc082")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG24" input
+			(at 203.2 129.54 180)
+			(uuid "1b7fae4b-bb57-4c9a-8c9a-cd5618074862")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG25" input
+			(at 203.2 132.08 180)
+			(uuid "19ce88f7-e399-4497-9862-0a85c756a827")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG26" input
+			(at 203.2 134.62 180)
+			(uuid "0ef0216a-d0f3-4680-956b-1b8ad69fd846")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG27" input
+			(at 203.2 137.16 180)
+			(uuid "0ef7cba8-2ce9-45f5-8bc4-0f65cb10009c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG28" input
+			(at 203.2 139.7 180)
+			(uuid "67b3b42b-0b52-42e7-9f33-3399c534563f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG29" input
+			(at 203.2 142.24 180)
+			(uuid "8e778505-40ef-4737-b3e2-699d0b98cb08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG30" input
+			(at 203.2 144.78 180)
+			(uuid "e0856995-bb0c-42ae-9331-a026590e2b04")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DIG31" input
+			(at 203.2 147.32 180)
+			(uuid "c670e0bf-a88b-4add-a91f-02c70053b25f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" passive
+			(at 203.2 63.5 180)
+			(uuid "fbc091f7-b36d-4dae-ac7e-a2c145f38d58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -332,54 +4877,8 @@
 		)
 	)
 	(sheet
-		(at 127 50.8)
-		(size 25.4 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "919f6c9e-473e-40a5-a6b0-4a238c49d602")
-		(property "Sheetname" "camera_1"
-			(at 127 50.0884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "camera_1.kicad_sch"
-			(at 127 76.7846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 203.2 50.8)
-		(size 25.4 25.4)
+		(at 203.2 25.4)
+		(size 25.4 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -393,8 +4892,8 @@
 			(color 0 0 0 0)
 		)
 		(uuid "9725aba3-a574-435c-a38a-920cc8cd4f24")
-		(property "Sheetname" "sync_out"
-			(at 203.2 50.0884 0)
+		(property "Sheetname" "outputs"
+			(at 203.2 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -404,8 +4903,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sync_out.kicad_sch"
-			(at 203.2 76.7846 0)
+		(property "Sheetfile" "outputs.kicad_sch"
+			(at 203.2 48.8446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -415,10 +4914,402 @@
 				(justify left top)
 			)
 		)
+		(pin "+3.3V" passive
+			(at 203.2 30.48 180)
+			(uuid "62d856c2-1c35-46c1-ad48-21cd418148da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM1_OUT_BNC" input
+			(at 203.2 40.64 180)
+			(uuid "7e0cb797-7b02-4e29-85a1-3ba2756a9471")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM2_OUT_BNC" input
+			(at 203.2 43.18 180)
+			(uuid "084de5f2-2fd0-446e-b7a3-4c9262be4ac5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM3_OUT_BNC" input
+			(at 203.2 45.72 180)
+			(uuid "cb911081-9b90-4810-aa94-da4a02fb0d1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" passive
+			(at 203.2 33.02 180)
+			(uuid "04dde506-bd42-4598-a290-3b0568aeffca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYNC_IN" input
+			(at 203.2 38.1 180)
+			(uuid "f0461877-7e0a-4ac6-94e8-575b74b63190")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYNC_OUT_INST" input
+			(at 228.6 30.48 0)
+			(uuid "f1a6064f-5df9-4b11-a891-a48a432a682a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" passive
+			(at 203.2 27.94 180)
+			(uuid "9ab8b0c5-1ad0-44d8-b64a-541de08c8f4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 127)
+		(size 25.4 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cf9287d7-4278-4035-9b01-341de48c7c59")
+		(property "Sheetname" "blackfly_s_gpio_channel_mcv6_vertical2"
+			(at 114.3 126.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch"
+			(at 114.3 147.9046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3.3V" passive
+			(at 114.3 132.08 180)
+			(uuid "dc54bbb1-8752-4ce9-8624-45c3e0c8d5b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+5V" passive
+			(at 114.3 129.54 180)
+			(uuid "027a042b-5837-4403-8ae1-d54c3a4a1178")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM_OUT_BNC" output
+			(at 139.7 129.54 0)
+			(uuid "11fdf51b-c293-4e49-b8f0-af9ace849d36")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 114.3 134.62 180)
+			(uuid "0e186d34-3735-4b73-911a-bbd67aa52e08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "L0_INST" output
+			(at 139.7 134.62 0)
+			(uuid "f661a770-b642-4d95-9cb7-ee0bb2b92640")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L1_INST" output
+			(at 139.7 137.16 0)
+			(uuid "de8facc7-f636-490b-a105-e00aca2b0c8e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L2_INST" output
+			(at 139.7 139.7 0)
+			(uuid "c4f101d3-28ba-40b3-b53c-915de3f82c2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L3_INST" output
+			(at 139.7 142.24 0)
+			(uuid "3142bfee-2ed6-476b-ba8a-0ef05753229d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT_INST" output
+			(at 139.7 144.78 0)
+			(uuid "d6c0ae64-333e-49d7-b640-f5a8429df199")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYNC_IN" input
+			(at 114.3 142.24 180)
+			(uuid "7d65dc12-982c-4659-aac0-660073d53273")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TRIG_IN" input
+			(at 114.3 139.7 180)
+			(uuid "a556108f-b279-47c1-b6e1-911064098154")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 114.3 76.2)
+		(size 25.4 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f7a5e2a5-9d0a-49e2-a363-081660a6c9a8")
+		(property "Sheetname" "blackfly_s_gpio_channel_mcv6_vertical1"
+			(at 114.3 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch"
+			(at 114.3 97.1046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3.3V" passive
+			(at 114.3 81.28 180)
+			(uuid "e447de45-603c-4930-b315-18b7bc937d5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+5V" passive
+			(at 114.3 78.74 180)
+			(uuid "3b6cd219-0cc5-48ad-b961-44ced4b9a16c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAM_OUT_BNC" output
+			(at 139.7 78.74 0)
+			(uuid "a86dc649-e9c8-479e-85ea-5826da0afb94")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 114.3 83.82 180)
+			(uuid "50ff91ff-11c7-4793-ad2d-38d27af9a5e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "L0_INST" output
+			(at 139.7 83.82 0)
+			(uuid "a05c136d-60ef-4055-9506-b2a575529e8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L1_INST" output
+			(at 139.7 86.36 0)
+			(uuid "9faabc01-5e69-4662-8294-d54605637a3c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L2_INST" output
+			(at 139.7 88.9 0)
+			(uuid "57412823-9f55-41c9-9e9c-705ed12fbbda")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "L3_INST" output
+			(at 139.7 91.44 0)
+			(uuid "f038339f-b836-4138-84ba-4ec2556ebd41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT_INST" output
+			(at 139.7 93.98 0)
+			(uuid "f59b622d-5118-4093-a211-7ba908fc5920")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYNC_IN" input
+			(at 114.3 91.44 180)
+			(uuid "b5af0754-9390-4ae1-be8e-6cc63cc588bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TRIG_IN" input
+			(at 114.3 88.9 180)
+			(uuid "aad3001f-dc85-4bb3-baa9-412c48dd461b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "12")
 				)
 			)
 		)

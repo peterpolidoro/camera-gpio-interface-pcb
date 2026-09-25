@@ -5,8 +5,10 @@
 	(uuid "b78bc2ed-a220-4146-bf60-4c1bdd73a83d")
 	(paper "A4")
 	(title_block
-		(title "Orb Weaver Design Block Mining")
-		(date "2026-07-25")
+		(title "camera-gpio-interface-pcb")
+		(date "2026-09-25")
+		(rev "1.0")
+		(company "Janelia Research Campus")
 		(comment 1 "Copy or recreate old project circuits here, then save cleaned selections as design blocks.")
 	)
 	(lib_symbols
@@ -1115,7 +1117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "243dc86c-09c3-4e67-89d3-884f6d2a89b8")
-		(property "Reference" "U2"
+		(property "Reference" "U1001"
 			(at 119.38 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1394,7 +1396,7 @@
 			)
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794"
-					(reference "U2")
+					(reference "U1001")
 					(unit 1)
 				)
 			)
@@ -1411,7 +1413,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "68459500-01ed-4288-8c6d-971de7f04cb5")
-		(property "Reference" "C3"
+		(property "Reference" "C1002"
 			(at 148.082 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1670,7 +1672,7 @@
 			)
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794"
-					(reference "C3")
+					(reference "C1002")
 					(unit 1)
 				)
 			)
@@ -1687,7 +1689,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91999db7-1f40-49d4-a7fa-8614df73114b")
-		(property "Reference" "C2"
+		(property "Reference" "C1001"
 			(at 87.122 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1946,7 +1948,7 @@
 			)
 			(project "camera-gpio-interface-pcb"
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794"
-					(reference "C2")
+					(reference "C1001")
 					(unit 1)
 				)
 			)

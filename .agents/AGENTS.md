@@ -48,7 +48,7 @@ line tapped, and USB power. No MCU, no firmware.
   copy; re-annotate copies into 4-digit bands as `mouse-joystick-pcb` does.
 - Blocks placed, all from `orb_weaver_private`:
   `blackfly_s_gpio_channel_mcv6_vertical` three times,
-  `quadrature_encoder_input_5v_sn74lvc2g17` for the two BNC inputs,
+  `logic_input_2ch_5v_schmitt_sn74lvc2g17` for the two BNC inputs,
   `usb2_vertical`, `5v_to_3v3_tps73733`,
   `instrument_port_digital_50_dut_ffc_boundary_vertical`.
 - Every BNC output is fixed at 3.3 V through 470 Ω. There is no 5 V option;
