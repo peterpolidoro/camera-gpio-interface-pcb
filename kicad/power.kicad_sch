@@ -1,0 +1,1700 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8a854f1d-3c58-4d76-b63e-9d8e81cddb5a")
+	(paper "A4")
+	(title_block
+		(title "camera-gpio-interface-pcb")
+		(date "2026-09-25")
+		(rev "v1.0")
+		(company "Janelia Research Campus")
+	)
+	(lib_symbols
+		(symbol "orb_weaver_internal:All/OW-MISC-APHHS1005CGCK"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at -4.572 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(bold yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "APHHS1005CGCK"
+				(at -4.572 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(bold yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "orb_weaver_smd:LED_0402-1005_KNB"
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APHHS1005CGCK.pdf"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Green AlGaInP chip LED, 574 nm peak (570 nm dominant), 20 to 50 mcd at 20 mA, 2.1 V typical forward voltage, 30 mA max, 120° viewing angle, 1.0 x 0.5 mm (0402) water clear."
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OW_PART" "OW-MISC-APHHS1005CGCK"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PartID" "sym_orb_weaver_misc_led_knb_20ma_grn_2_1v_0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "APHHS1005CGCK green 0402 LED"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Group" "misc"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqType" "optoelectronics"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqValue" "APHHS1005CGCK"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqFootprint" "orb_weaver_smd:LED_0402-1005_KNB"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPackage" "0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinVoltage" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinCurrent" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPower" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqTolerance" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqDielectric" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqProtocol" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqRole" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqExactMPN" "APHHS1005CGCK"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqNotes" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OW-MISC-APHHS1005CGCK APHHS1005CGCK green 0402 LED misc APHHS1005CGCK Green AlGaInP chip LED, 574 nm peak (570 nm dominant), 20 to 50 mcd at 20 mA, 2.1 V typical forward voltage, 30 mA max, 120° viewing angle, 1.0 x 0.5 mm (0402) water clear. orb_weaver_"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "orb_weaver_smd:LED_0402-1005_KNB"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "All/OW-MISC-APHHS1005CGCK_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "All/OW-MISC-APHHS1005CGCK_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "orb_weaver_internal:All/OW-PASS-RC0402FR-07680RL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "680"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "680 Ω ±1 % 62.5 mW thick-film chip resistor, ±100 ppm/°C, 50 V rated, 0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OW_PART" "OW-PASS-RC0402FR-07680RL"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PartID" "mpn_rc0402fr_07680rl_0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "680 1% 0402 resistor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Group" "passives"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqType" "resistor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqValue" "680"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqFootprint" "Resistor_SMD:R_0402_1005Metric"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPackage" "0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinVoltage" "50V"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinCurrent" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPower" "62.5mW"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqTolerance" "<=1%"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqDielectric" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqProtocol" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqRole" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqExactMPN" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqNotes" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OW-PASS-RC0402FR-07680RL 680 1% 0402 resistor passives 680 680 Ω ±1 % 62.5 mW thick-film chip resistor, ±100 ppm/°C, 50 V rated, 0402 Device:R Resistor_SMD:R_0402_1005Metric resistor 680 Resistor_SMD:R_0402_1005Metric 0402 50V 62.5mW <=1% 0402 resisto"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Resistor_SMD:R_0402_1005Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "All/OW-PASS-RC0402FR-07680RL_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "All/OW-PASS-RC0402FR-07680RL_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 127 66.04)
+		(uuid "312efe0f-2e3b-4d20-b8d0-7230ca5e56b3")
+	)
+	(no_connect
+		(at 127 53.34)
+		(uuid "528512b8-198a-40fd-ac58-2b94ef8b0b5d")
+	)
+	(no_connect
+		(at 127 63.5)
+		(uuid "63f028d1-c7ae-41d5-b741-a025a826a208")
+	)
+	(wire
+		(pts
+			(xy 228.6 48.26) (xy 228.6 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb0d830-34f3-4876-863a-8446d589e0a4")
+	)
+	(wire
+		(pts
+			(xy 50.8 25.4) (xy 53.34 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395a99e8-a107-401b-997a-45341aa289f9")
+	)
+	(wire
+		(pts
+			(xy 228.6 66.04) (xy 228.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3acc2917-baa9-4b7b-9d3f-422257922e18")
+	)
+	(wire
+		(pts
+			(xy 50.8 30.48) (xy 53.34 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab5c894-83f8-40ec-b03a-3691a0ad455d")
+	)
+	(wire
+		(pts
+			(xy 127 55.88) (xy 129.54 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2cf2f5-88b1-4120-a8db-b800f3d8fffa")
+	)
+	(wire
+		(pts
+			(xy 203.2 53.34) (xy 205.74 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8faed740-0aaf-4304-a34f-39f6cf073523")
+	)
+	(wire
+		(pts
+			(xy 228.6 55.88) (xy 228.6 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b44f3ddc-1288-4241-ae6b-0afcc3ff0fba")
+	)
+	(wire
+		(pts
+			(xy 177.8 53.34) (xy 175.26 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9b00001-4575-480b-ae0d-371d46f421e0")
+	)
+	(wire
+		(pts
+			(xy 177.8 55.88) (xy 175.26 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9eb9fd4-6553-48e1-bb4c-8261ae46d789")
+	)
+	(wire
+		(pts
+			(xy 127 58.42) (xy 129.54 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2dd4c2c-c23f-4c93-8422-a63f3f84bfc2")
+	)
+	(wire
+		(pts
+			(xy 50.8 27.94) (xy 53.34 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2c2284a-5827-4cdf-b869-54445f988e6b")
+	)
+	(label "+5V"
+		(at 175.26 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0403769e-e09e-43fd-94b7-b0df076f1788")
+	)
+	(label "GND"
+		(at 228.6 68.58 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b243dda-e010-4908-848f-1738e1417c12")
+	)
+	(label "GND"
+		(at 129.54 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43401e44-d852-4094-baec-43e2c0a75baf")
+	)
+	(label "GND"
+		(at 53.34 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8429d106-4374-4bc5-bade-9950c4c92a4d")
+	)
+	(label "+3.3V"
+		(at 53.34 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a591073-20e4-4ea4-9b95-999cceb78ada")
+	)
+	(label "+5V"
+		(at 129.54 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a989a431-d7dc-439d-a02a-5997bf0b8495")
+	)
+	(label "GND"
+		(at 175.26 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa3b6aa8-1c89-4124-b2f9-0a7f545939e8")
+	)
+	(label "+3.3V"
+		(at 228.6 45.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa88da04-e8b9-4cf1-91e2-c576cbe8bf38")
+	)
+	(label "+5V"
+		(at 53.34 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f847d44f-be6b-4027-acce-3f26a4eb9c32")
+	)
+	(label "+3.3V"
+		(at 205.74 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb5a7b58-e37d-41d9-ba6c-aadd82d204ba")
+	)
+	(hierarchical_label "+5V"
+		(shape passive)
+		(at 50.8 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "57f2389a-952c-494a-a8f7-404a58e38db6")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 50.8 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c897936a-552b-42d9-8a5d-b866f60c1388")
+	)
+	(hierarchical_label "+3.3V"
+		(shape passive)
+		(at 50.8 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "feb52a69-48f8-4891-8e45-0f8b4c11c3f0")
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-PASS-RC0402FR-07680RL")
+		(at 228.6 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81c9ff68-de0f-47d2-876a-600326351fc1")
+		(property "Reference" "R3"
+			(at 231.14 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "680"
+			(at 231.14 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 226.822 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "680 Ω ±1 % 62.5 mW thick-film chip resistor, ±100 ppm/°C, 50 V rated, 0402"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-PASS-RC0402FR-07680RL"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "mpn_rc0402fr_07680rl_0402"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "680 1% 0402 resistor"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "passives"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "resistor"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "680"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "0402"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" "50V"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" "62.5mW"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" "<=1%"
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 228.6 52.07 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e6583170-6f51-4831-a6f4-a3d2673944fe")
+		)
+		(pin "1"
+			(uuid "0ebf0802-a8bc-463e-8c95-a87237ae8e1a")
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-MISC-APHHS1005CGCK")
+		(at 228.6 62.23 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac0209ff-9881-406e-a261-0723baf66020")
+		(property "Reference" "D2"
+			(at 232.41 62.5475 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "APHHS1005CGCK"
+			(at 232.41 65.0875 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "orb_weaver_smd:LED_0402-1005_KNB"
+			(at 219.71 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APHHS1005CGCK.pdf"
+			(at 220.98 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Green AlGaInP chip LED, 574 nm peak (570 nm dominant), 20 to 50 mcd at 20 mA, 2.1 V typical forward voltage, 30 mA max, 120° viewing angle, 1.0 x 0.5 mm (0402) water clear."
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-MISC-APHHS1005CGCK"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "sym_orb_weaver_misc_led_knb_20ma_grn_2_1v_0402"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "APHHS1005CGCK green 0402 LED"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "misc"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "optoelectronics"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "APHHS1005CGCK"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "orb_weaver_smd:LED_0402-1005_KNB"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "0402"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" "APHHS1005CGCK"
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 228.6 62.23 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b03f6e0a-aef6-4b37-b22b-aa9bece48955")
+		)
+		(pin "1"
+			(uuid "c7f0682f-cb9a-42e0-a60f-d557a1ab1934")
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(group "5v_to_3v3_tps73733"
+		(uuid "7bda75cb-ecd4-440c-93bb-2bc6b9691a27")
+		(lib_id "orb_weaver_private:5v_to_3v3_tps73733")
+		(members "49de3487-fcb1-4c17-8949-8797e80b0794")
+	)
+	(group "usb2_vertical"
+		(uuid "bde43339-0fc1-4908-ab18-fb886f043d89")
+		(lib_id "orb_weaver_private:usb2_vertical")
+		(members "891726c4-91ac-4fc5-a699-1590dbecf38b")
+	)
+	(sheet
+		(at 177.8 50.8)
+		(size 25.4 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "49de3487-fcb1-4c17-8949-8797e80b0794")
+		(property "Sheetname" "5v_to_3v3_tps73733"
+			(at 177.8 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "5v_to_3v3_tps73733.kicad_sch"
+			(at 177.8 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3.3V" passive
+			(at 203.2 53.34 0)
+			(uuid "7b31f58d-2a26-4542-8b3d-c704927f9fb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" passive
+			(at 177.8 53.34 180)
+			(uuid "fad05b3d-8ce7-4fc1-b3d2-0b92a4f44058")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" passive
+			(at 177.8 55.88 180)
+			(uuid "3cc3b782-3d65-4e3e-a8e4-75b949c6cae7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 50.8)
+		(size 25.4 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "891726c4-91ac-4fc5-a699-1590dbecf38b")
+		(property "Sheetname" "usb2_vertical"
+			(at 101.6 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb2_vertical.kicad_sch"
+			(at 101.6 69.1646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V_USB" passive
+			(at 127 55.88 0)
+			(uuid "34cd333e-1629-4e09-996f-17518652c604")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 127 58.42 0)
+			(uuid "0f4489d7-d2a6-49fb-9e6a-41ec84e7c5c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_D+" bidirectional
+			(at 127 63.5 0)
+			(uuid "b1097d12-ca11-4e2f-81aa-508de17bda17")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_D-" bidirectional
+			(at 127 66.04 0)
+			(uuid "8c6b02bc-5a47-4735-badb-c7be647d911b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBUS" passive
+			(at 127 53.34 0)
+			(uuid "e7814439-6d93-4ade-b996-bc9c3e181e65")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a"
+					(page "9")
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,1955 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b78bc2ed-a220-4146-bf60-4c1bdd73a83d")
+	(paper "A4")
+	(title_block
+		(title "Orb Weaver Design Block Mining")
+		(date "2026-07-25")
+		(comment 1 "Copy or recreate old project circuits here, then save cleaned selections as design blocks.")
+	)
+	(lib_symbols
+		(symbol "orb_weaver_internal:All/OW-PASS-CL05A105KL5NRNC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 3.302 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(bold yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1uF"
+				(at 3.302 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(bold yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" "1 µF ±10 % 35 V X5R multilayer ceramic capacitor, 0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OW_PART" "OW-PASS-CL05A105KL5NRNC"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PartID" "sym_orb_weaver_passives_c_1uf_35v_0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "1uF 35V 0402 capacitor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Group" "passives"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqType" "capacitor"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqValue" "1uF"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqFootprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPackage" "0402"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinVoltage" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinCurrent" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPower" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqTolerance" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqDielectric" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqProtocol" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqRole" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqExactMPN" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqNotes" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OW-PASS-CL05A105KL5NRNC 1uF 35V 0402 capacitor passives 1uF 1 µF ±10 % 35 V X5R multilayer ceramic capacitor, 0402 orb_weaver_passives:C_1uF_35V_0402 Capacitor_SMD:C_0402_1005Metric capacitor 1uF Capacitor_SMD:C_0402_1005Metric 0402 0402 capacitor capac"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Capacitor_SMD:C_0402_1005Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "All/OW-PASS-CL05A105KL5NRNC_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "All/OW-PASS-CL05A105KL5NRNC_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 4.318)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 4.318)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "orb_weaver_internal:All/OW-PWR-TPS73733QDRBRQ1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(bold yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS73733QDRBRQ1"
+				(at -7.62 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(bold yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "orb_weaver_smd:TPS737Q1"
+				(at 0 8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps737-q1.pdf"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Automotive 1 A low-dropout regulator, 2.2 V to 5.5 V input, fixed 3.3 V output with ±1.5 % accuracy, 130 mV typical dropout at 1 A, reverse-current protection, VSON-8 (DRB)."
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "OW_PART" "OW-PWR-TPS73733QDRBRQ1"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "PartID" "sym_orb_weaver_power_regulator_linear_3_3v_1a_5_5vin_tps73733qdrbrq1"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "TPS73733-Q1 3.3 V 1 A LDO regulator"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Group" "power"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqType" "power-management"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqValue" "TPS73733QDRBRQ1"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqFootprint" "orb_weaver_smd:TPS737Q1"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPackage" "VSON-8-EP(3x3)"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinVoltage" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqMinCurrent" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqPower" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqTolerance" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqDielectric" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqProtocol" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqRole" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqExactMPN" "TPS73733QDRBRQ1"
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ReqNotes" ""
+				(at 0 0 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "OW-PWR-TPS73733QDRBRQ1 TPS73733-Q1 3.3 V 1 A LDO regulator power TPS73733QDRBRQ1 Automotive 1 A low-dropout regulator, 2.2 V to 5.5 V input, fixed 3.3 V output with ±1.5 % accuracy, 130 mV typical dropout at 1 A, reverse-current protection, VSON-8 (DRB)."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "orb_weaver_smd:TPS737Q1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "All/OW-PWR-TPS73733QDRBRQ1_0_1"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "All/OW-PWR-TPS73733QDRBRQ1_1_1"
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "NR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(hide yes)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -7.62 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 106.68 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b3cd2c3-d9c1-4331-80a8-2e3bcdbf06c3")
+	)
+	(no_connect
+		(at 129.54 81.28)
+		(uuid "dfea6c66-ad77-439d-bfe3-a65e48dc6da5")
+	)
+	(wire
+		(pts
+			(xy 109.22 81.28) (xy 106.68 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e80fe48-6afb-4128-8f52-6eab2ae8db29")
+	)
+	(wire
+		(pts
+			(xy 83.82 76.2) (xy 83.82 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a575890-a6e8-41a1-8a8f-c50678010688")
+	)
+	(wire
+		(pts
+			(xy 144.78 86.36) (xy 144.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62bf956e-494f-4b0b-96e5-8ea65f0ff77e")
+	)
+	(wire
+		(pts
+			(xy 106.68 78.74) (xy 106.68 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dbf0109-205d-45e2-a922-b132b4211d77")
+	)
+	(wire
+		(pts
+			(xy 129.54 78.74) (xy 132.08 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7beb5ad5-3830-45a8-b1bf-77ba56530d62")
+	)
+	(wire
+		(pts
+			(xy 109.22 78.74) (xy 106.68 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e30e644-1190-4bc5-b497-b2b3b6b3401a")
+	)
+	(wire
+		(pts
+			(xy 144.78 76.2) (xy 144.78 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98703a3c-8b5d-42ae-92aa-96a3c07faaf4")
+	)
+	(wire
+		(pts
+			(xy 119.38 88.9) (xy 119.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2783938-676a-4cb4-bb05-a041e7c532ab")
+	)
+	(wire
+		(pts
+			(xy 83.82 86.36) (xy 83.82 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a86fe707-ba7b-4fa3-9186-0ff22ba6f54d")
+	)
+	(wire
+		(pts
+			(xy 106.68 78.74) (xy 104.14 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf16ac50-4041-43d4-bc64-e77dbbfcbb03")
+	)
+	(wire
+		(pts
+			(xy 76.2 50.8) (xy 78.74 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cef40462-1298-45c3-919f-4f6b4c7eeffc")
+	)
+	(wire
+		(pts
+			(xy 76.2 55.88) (xy 78.74 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df6ce6a7-84ce-4f16-ae47-5dbbeeb1cc75")
+	)
+	(wire
+		(pts
+			(xy 121.92 88.9) (xy 121.92 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e033e0b5-6c0a-4bc1-a7a9-7daf5ed317c0")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 78.74 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f493cc76-fc48-443a-bd73-6f8889e5443e")
+	)
+	(label "+3.3V"
+		(at 144.78 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2302a204-7e1c-448a-8491-9daef30e36cc")
+	)
+	(label "+5V"
+		(at 78.74 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27ac448b-950b-4312-b7b6-7f8f232e9ee4")
+	)
+	(label "+3.3V"
+		(at 132.08 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "353efcb2-8123-4770-8589-482cbf62dbc2")
+	)
+	(label "+5V"
+		(at 83.82 73.66 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "43861a7b-0524-4b14-9f94-12945516c00a")
+	)
+	(label "+5V"
+		(at 104.14 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a2a7162-0a3c-440a-a4c4-bf4f233656c8")
+	)
+	(label "GND"
+		(at 121.92 91.44 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5ba261b9-6f6e-421d-b669-6cd47bb858c2")
+	)
+	(label "+3.3V"
+		(at 78.74 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "634ffdaa-8a7a-481a-b0a0-7c70a6283aba")
+	)
+	(label "GND"
+		(at 119.38 91.44 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "77800ff8-97df-4421-8464-21898f9b17b8")
+	)
+	(label "GND"
+		(at 83.82 88.9 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "84fd3ce4-8b67-4981-a1a0-1023e5dd1eea")
+	)
+	(label "GND"
+		(at 144.78 88.9 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bae0b167-a61a-4d03-844d-1f725a87d2c7")
+	)
+	(label "GND"
+		(at 78.74 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c04fbb76-e64a-4b3e-b7eb-ddcbe547fc29")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 76.2 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6bf1a2aa-cfb9-45f0-b638-a79ea9ef47c2")
+	)
+	(hierarchical_label "+5V"
+		(shape passive)
+		(at 76.2 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "896a92a4-4543-4a0b-9d91-3a7fcbf7b2af")
+	)
+	(hierarchical_label "+3.3V"
+		(shape passive)
+		(at 76.2 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dee4bc51-a2a5-4b60-988e-ab61430d84d6")
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-PWR-TPS73733QDRBRQ1")
+		(at 119.38 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "243dc86c-09c3-4e67-89d3-884f6d2a89b8")
+		(property "Reference" "U2"
+			(at 119.38 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "TPS73733QDRBRQ1"
+			(at 119.38 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "orb_weaver_smd:TPS737Q1"
+			(at 119.38 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps737-q1.pdf"
+			(at 119.38 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Automotive 1 A low-dropout regulator, 2.2 V to 5.5 V input, fixed 3.3 V output with ±1.5 % accuracy, 130 mV typical dropout at 1 A, reverse-current protection, VSON-8 (DRB)."
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "sym_orb_weaver_power_regulator_linear_3_3v_1a_5_5vin_tps73733qdrbrq1"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "power-management"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "power"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "orb_weaver_smd:TPS737Q1"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "VSON-8-EP(3x3)"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" "TPS73733QDRBRQ1"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "TPS73733QDRBRQ1"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "TPS73733-Q1 3.3 V 1 A LDO regulator"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-PWR-TPS73733QDRBRQ1"
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 119.38 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "aa747a39-164e-4060-a20f-52f974547e31")
+		)
+		(pin "8"
+			(uuid "9b537671-ddec-4645-8416-fc8642fcc5cf")
+		)
+		(pin "3"
+			(uuid "6d734cb5-fb3b-4d64-a2bb-aee6654d8be0")
+		)
+		(pin "1"
+			(uuid "da10607c-a897-467e-969e-18c308049c38")
+		)
+		(pin "5"
+			(uuid "dfae2bd5-6652-4b5e-9ec2-68d86a3a4030")
+		)
+		(pin "4"
+			(uuid "d9f3519d-7512-4bcf-beb8-c10ea1f726a7")
+		)
+		(pin "6"
+			(uuid "af3b253c-c75c-4f5a-8307-f3b5ffbff633")
+		)
+		(pin "2"
+			(uuid "ae837cee-e6e1-4128-b28a-90b62020762a")
+		)
+		(pin "7"
+			(uuid "dc319fd8-6330-4124-8e4a-9f43592abd25")
+		)
+		(instances
+			(project "design_block_mining_project"
+				(path "/27d18e23-f39e-4b17-8d1a-a4f7fdc280ee/1cf24d02-fe38-4277-b45c-71697a106f31"
+					(reference "U14001")
+					(unit 1)
+				)
+			)
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-PASS-CL05A105KL5NRNC")
+		(at 144.78 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68459500-01ed-4288-8c6d-971de7f04cb5")
+		(property "Reference" "C3"
+			(at 148.082 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 148.082 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 145.7452 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" "1 µF ±10 % 35 V X5R multilayer ceramic capacitor, 0402"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "sym_orb_weaver_passives_c_1uf_35v_0402"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "passives"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "capacitor"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-PASS-CL05A105KL5NRNC"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "1uF 35V 0402 capacitor"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "1uF"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "0402"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "83e8360a-6794-47b1-86a6-51e37e61e073")
+		)
+		(pin "1"
+			(uuid "24d3249b-ca05-4e84-af4e-fa80cc94a30f")
+		)
+		(instances
+			(project "design_block_mining_project"
+				(path "/27d18e23-f39e-4b17-8d1a-a4f7fdc280ee/1cf24d02-fe38-4277-b45c-71697a106f31"
+					(reference "C14002")
+					(unit 1)
+				)
+			)
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "orb_weaver_internal:All/OW-PASS-CL05A105KL5NRNC")
+		(at 83.82 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91999db7-1f40-49d4-a7fa-8614df73114b")
+		(property "Reference" "C2"
+			(at 87.122 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 87.122 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 84.7852 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" "1 µF ±10 % 35 V X5R multilayer ceramic capacitor, 0402"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqExactMPN" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartID" "sym_orb_weaver_passives_c_1uf_35v_0402"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Group" "passives"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqType" "capacitor"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "OW_PART" "OW-PASS-CL05A105KL5NRNC"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqFootprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "1uF 35V 0402 capacitor"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqValue" "1uF"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPackage" "0402"
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqTolerance" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqRole" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqProtocol" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqPower" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqNotes" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinVoltage" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqMinCurrent" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ReqDielectric" ""
+			(at 83.82 81.28 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "73560791-7c3c-42c7-bbdf-13893a1ab6cc")
+		)
+		(pin "1"
+			(uuid "03540e06-7e44-461c-8e57-2e9108787a78")
+		)
+		(instances
+			(project "design_block_mining_project"
+				(path "/27d18e23-f39e-4b17-8d1a-a4f7fdc280ee/1cf24d02-fe38-4277-b45c-71697a106f31"
+					(reference "C14001")
+					(unit 1)
+				)
+			)
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

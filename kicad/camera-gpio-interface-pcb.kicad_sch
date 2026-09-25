@@ -4,7 +4,425 @@
 	(generator_version "10.0")
 	(uuid "8c2bf6e9-39ff-46f5-94ad-782f2656bc93")
 	(paper "A4")
+	(title_block
+		(title "camera-gpio-interface-pcb")
+		(date "2026-09-25")
+		(rev "v1.0")
+		(company "Janelia Research Campus")
+	)
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 76.2 55.88) (xy 78.74 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bdde241-b9b0-4024-b641-1bb14eda02ae")
+	)
+	(wire
+		(pts
+			(xy 76.2 58.42) (xy 78.74 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a07caaa1-e279-409a-a7ae-e7f3b28d9761")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 78.74 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe089b64-1f64-4453-9b49-c5a78ba3d791")
+	)
+	(label "+5V"
+		(at 78.74 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f63bfa5-4908-479e-9258-48d2f970d069")
+	)
+	(label "+3.3V"
+		(at 78.74 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "470e62bf-107f-4cc1-8864-09c990e3483b")
+	)
+	(label "GND"
+		(at 78.74 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f19183ac-348c-426d-8aef-2a6e48789094")
+	)
+	(sheet
+		(at 127 152.4)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "41e0bb41-bd43-491b-ae71-a58cad699f7c")
+		(property "Sheetname" "camera_3"
+			(at 127 151.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "camera_3.kicad_sch"
+			(at 127 178.3846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 101.6)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "466351ee-30f0-48a7-921b-3bf3872996b2")
+		(property "Sheetname" "inputs"
+			(at 50.8 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "inputs.kicad_sch"
+			(at 50.8 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 101.6)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5adc9a7f-df2c-48b0-a9b1-a196e465c607")
+		(property "Sheetname" "camera_2"
+			(at 127 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "camera_2.kicad_sch"
+			(at 127 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 50.8)
+		(size 25.4 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5b8333aa-5632-4b02-bed2-f7f06815639a")
+		(property "Sheetname" "power"
+			(at 50.8 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 50.8 61.5446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3.3V" passive
+			(at 76.2 55.88 0)
+			(uuid "ef97690e-e91b-46d6-b4fb-ddb30856ea14")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" passive
+			(at 76.2 53.34 0)
+			(uuid "59646c6e-2873-452a-b5b7-dcecf6e483a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" passive
+			(at 76.2 58.42 0)
+			(uuid "c9e53b94-6b90-4098-b0f3-1b90e65a54f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 101.6)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "84ba0da9-7465-42cc-8d9b-4977f744b3ca")
+		(property "Sheetname" "instrument_port"
+			(at 203.2 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "instrument_port.kicad_sch"
+			(at 203.2 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 50.8)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "919f6c9e-473e-40a5-a6b0-4a238c49d602")
+		(property "Sheetname" "camera_1"
+			(at 127 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "camera_1.kicad_sch"
+			(at 127 76.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 50.8)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9725aba3-a574-435c-a38a-920cc8cd4f24")
+		(property "Sheetname" "sync_out"
+			(at 203.2 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sync_out.kicad_sch"
+			(at 203.2 76.7846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "camera-gpio-interface-pcb"
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

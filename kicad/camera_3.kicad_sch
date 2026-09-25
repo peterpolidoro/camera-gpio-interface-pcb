@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "6c91eef4-9299-432f-9c38-da00ab0cbad1")
+	(paper "A4")
+	(title_block
+		(title "camera-gpio-interface-pcb")
+		(date "2026-09-25")
+		(rev "v1.0")
+		(company "Janelia Research Campus")
+	)
+	(lib_symbols)
+)
