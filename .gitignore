@@ -27,3 +27,5 @@ symbols/*.bak
 db/build/
 fab/
 tmp/
+.codex/handoff.local.md
+.codex/workspace.dirs

@@ -17,6 +17,13 @@ resume checklist; it corrects four statements in this plan, the most important
 being that the USBLC6-2P6 is a two-line array, so the block carries two and the
 board needs nine, not five.
 
+**Update 2026-09-25:** those four corrections are now applied in the text
+below, and the input block was read from its own netlist: its filter
+capacitors are 470 pF, not 47 pF; its ports are `EA`/`EB`, `ENCA`/`ENCB`,
+`ENCA_INST`/`ENCB_INST`, `+3.3V`, `GND` and `VENC`; it already carries the two
+InstrumentPort taps; `VENC` reaches only two decoupling capacitors. The
+repository was scaffolded the same day (Resume Checklist, item 2).
+
 **Purpose:** Replace the hand-built harness (BNC tees, minigrabber clips and a
 hand-soldered pull-up per camera) that connects three FLIR Blackfly S
 `BFS-U3-20S4M-C` cameras to a pyControl breakout and a Neuropixels OneBox
@@ -215,19 +222,27 @@ pin 6 never touching the board); it is not in Rev 0.
 2. `USBLC6-2P6` ESD array (one part covers both inputs), `VBUS` pin on
    `+5V_USB` so the clamp sits above a 5 V logic high and never conducts on a
    3.3 V signal.
-3. Series 4.7 kΩ, 47 pF to ground (≈700 kHz corner), 100 kΩ pull-down on the
-   BNC side, into an `SN74LVC2G17` Schmitt buffer at 3.3 V; 100 kΩ pull-down on
-   each buffer output for Ioff. This is the circuit of the existing
-   `quadrature_encoder_input_5v_sn74lvc2g17` block. An unplugged BNC reads low,
-   so the cameras receive nothing rather than noise.
+3. Series 4.7 kΩ, 470 pF C0G to ground (≈72 kHz corner; a 3.3 V edge reaches
+   the Schmitt threshold about 2 µs later, the same on both inputs, so
+   trigger-to-Rsync timing is preserved), 100 kΩ pull-down on the BNC side,
+   into an `SN74LVC2G17` Schmitt buffer at 3.3 V; 100 kΩ pull-down on each
+   buffer output for Ioff; a 100 Ω InstrumentPort tap on each buffer output.
+   This is the circuit of the existing `quadrature_encoder_input_5v_sn74lvc2g17`
+   block, read from its netlist 2026-09-25 (`R30003`/`R30004` 4.7 kΩ,
+   `C30002`/`C30003` 470 pF, `R30001`/`R30002` and `R30005`/`R30006` 100 kΩ,
+   `R30007`/`R30008` 100 Ω taps); the 47 pF / 700 kHz figures this plan
+   carried until then were wrong. An unplugged BNC reads low, so the cameras
+   receive nothing rather than noise.
 4. Result: `TRIG_IN`, `SYNC_IN`, 3.3 V logic. The chain also tolerates a 5 V
    source or a ±5 V OneBox DAC output plugged in by mistake (LVC inputs are
    5.5 V tolerant; the 4.7 kΩ bounds the negative-side clamp current to about
    1 mA). Hysteresis is ≥0.4 V, so a slow or noisy edge cannot double-trigger.
 5. `TRIG_IN` feeds the three Line 3 drivers; `SYNC_IN` feeds the three Line 0
-   drivers and the `SYNC OUT` driver. Each has an activity LED (0402, ~1.8 mA
-   through 680 Ω) and an InstrumentPort tap. A 25 ms Rsync pulse once a second
-   will be a visible blink; the 150 Hz trigger will look steadily half-lit.
+   drivers and the `SYNC OUT` driver. Each has a board-level activity LED
+   (0402, ~1.8 mA through 680 Ω); its InstrumentPort tap is the input block's
+   own `ENCA_INST`/`ENCB_INST` port, so the board adds none. A 25 ms Rsync
+   pulse once a second will be a visible blink; the 150 Hz trigger will look
+   steadily half-lit.
 
 ### `SYNC OUT` (to OneBox `IO0`)
 
@@ -245,7 +260,7 @@ ESD array below.
 | 3 (Line 2, red) | **1 kΩ pull-up to `+3.3V`**, node `CAMn_L2`: 3.1 mA when the camera pulls low, ~0.1 µs rise into ~100 pF. Into channel A of an `SN74LVC2G17` Schmitt → `CAMn_OUT`. |
 | 4 (Line 1, white) | **4.7 kΩ pull-up to `+3.3V`**, node `CAMn_L1`. Weak on purpose: ~0.6 mA keeps the opto transistor's low level near 0.4 V, under the Schmitt's worst-case VT− of 0.8 V. Into channel B of the same `SN74LVC2G17` → `CAMn_L1_BUF`, InstrumentPort only. |
 | 5, 6 (blue, brown) | Ground, both. |
-| pins 1–4 | One `USBLC6-2P6` per connector, four lines, `VBUS` pin on `+5V_USB` (the Line 0 node swings to ~4.7 V, so the clamp has to reference 5 V, not 3.3 V). |
+| pins 1–4 | Two `USBLC6-2P6` per connector (two-line arrays: Line 3 with Line 0, Line 2 with Line 1; both pins of each pair wired to the node), `VBUS` pins on `+5V_USB` (the Line 0 node swings to ~4.7 V, so the clamp has to reference 5 V, not 3.3 V). |
 
 `CAMn_OUT` drives its BNC through **470 Ω, 0603**, an activity LED through
 680 Ω, and an InstrumentPort tap. A shorted BNC costs 7 mA at the Schmitt
@@ -281,20 +296,26 @@ Everything camera-specific lives inside so the board sheet is just wiring.
 | Output Schmitt | `U` — `OW-MISC-SN74LVC2G17DRYR`, `1A` = `L2` → `1Y` = `CAM_OUT`; `2A` = `L1` → `2Y` = `L1_BUF`. |
 | BNC drive | 470 Ω (0603) from `CAM_OUT` to port `CAM_OUT_BNC` (the BNC itself stays on the board sheet, as `mouse-joystick-pcb` does). |
 | LED | `OW-MISC-APHHS1005CGCK` + 680 Ω from `CAM_OUT`. |
-| ESD | `OW-MISC-USBLC6-2P6` across pins 1–4 nodes, `VBUS` = `+5V`, `GND`. |
+| ESD | Two `OW-MISC-USBLC6-2P6`, footprint `orb_weaver_smd:USBLC6-2P6_SOT-666`: one across the pin 1 and pin 2 nodes, one across pins 3 and 4; `VBUS` = `+5V`, `GND`. |
 | Decoupling | 100 nF at each of the three logic packages. |
 | Taps | 100 Ω `OW-PASS-0402WGF1000TCE` T-taps from `L3`, `L0`, `L2`, `L1_BUF`, `CAM_OUT` to ports `L3_INST`, `L0_INST`, `L2_INST`, `L1_INST`, `OUT_INST`. |
 | Ports | in: `TRIG_IN`, `SYNC_IN`, `+3.3V`, `+5V`, `GND`. out: `CAM_OUT_BNC`, `L3_INST`, `L0_INST`, `L2_INST`, `L1_INST`, `OUT_INST`. |
 | Grounds | Camera pins 5 and 6 both to `GND` inside the block. |
-| Refdes band | Pick the next free 5-digit band in `orb_weaver_private` (39xxx is the digital-50 port, 40xxx the RP2040 isolation block); the board re-annotates to 4 digits as usual. |
+| Refdes band | 23xxx as built (39xxx is the digital-50 port, 40xxx the RP2040 isolation block); the board re-annotates to 4 digits as usual. |
 | Layout notes | Connector on one block edge with the ESD array hard against it; the three DRY6 packages and pull-ups behind it; the five taps and the two inputs on the opposite, board-facing edge. The 820 Ω / `L0` node and the 220 Ω / `L3` node are the only nets leaving toward the connector besides `L2`, `L1`, ground. |
 | Description must state | line assignment and why; the 5 V / 1 kΩ opto drive rationale; the weak Line 1 pull-up rationale (`OPTOOUT` ~1 V low at 4 mA); that `+5V` must be a 5 V rail (clamp reference and opto drive both assume it); that `V3_3Enable` must be off on Line 2; that the block is common to all cased BFS-U3 models. |
 | Check | `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"` and a pin-by-pin netlist read before the first board placement. |
 
-The two BNC inputs reuse `quadrature_encoder_input_5v_sn74lvc2g17` as-is,
-with the board binding `ENC_A_RAW`/`ENC_B_RAW` to `TRIG_RAW`/`SYNC_RAW` and
-the outputs to `TRIG_IN`/`SYNC_IN`; a generically named copy is optional and
-only cosmetic.
+The two BNC inputs reuse `quadrature_encoder_input_5v_sn74lvc2g17` as-is. Its
+schematic ports (read 2026-09-25) are `EA`, `EB` in; `ENCA`, `ENCB` out;
+`ENCA_INST`, `ENCB_INST` tap outputs; `+3.3V`, `GND`, `VENC`. The
+`ENC_A_RAW`/`ENC_A_FILT_BUF` names in the block's JSON description do not
+exist in the schematic. The board binds `EA`/`EB` to `TRIG_RAW`/`SYNC_RAW`,
+`ENCA`/`ENCB` to `TRIG_IN`/`SYNC_IN`, `ENCA_INST`/`ENCB_INST` to
+`TRIG_IN_INST`/`SYNC_IN_INST`, and `VENC` to `+5V_USB`: `VENC` reaches only
+the block's 4.7 µF and 100 nF encoder-supply decoupling, so on the 5 V rail
+those two capacitors add bulk capacitance instead of sitting populated and
+floating. A generically named copy is optional and only cosmetic.
 
 ### Outputs (`SYNC OUT`, `CAM1..3 OUT`)
 
@@ -311,8 +332,11 @@ driver (recommended sink limit 24 mA) and 64 mW in the resistor (0603 is
 100 mW). At 220 Ω it would have been 25 mA and 137 mW; at 470 Ω on a 1/16 W
 0402 it would have been over rating. Into a ~1 MΩ ADC input the 470 Ω costs
 0.05 % of amplitude and ~140 ns of edge into a 2 m cable, three orders of
-magnitude under the OneBox's 33 µs sample period. One `USBLC6-2P6` covers the
-four output BNCs, `VBUS` pin on `+5V_USB`.
+magnitude under the OneBox's 33 µs sample period. Two `USBLC6-2P6` cover the
+four output BNCs, `VBUS` pins on `+5V_USB`: the part is a two-line array (pins
+1/6 one node, 3/4 the other), so one pairs `CAM1 OUT` with `CAM2 OUT` and the
+other `CAM3 OUT` with `SYNC OUT`. Both arrays live on the `sync_out` sheet,
+which the `CAMn OUT` BNC nets reach through sheet pins.
 
 ## InstrumentPort
 
@@ -329,8 +353,8 @@ needs its own pull. Every unused buffer input is tied to ground at the board.
 
 | Strand | Package | Net | What it witnesses |
 | --- | --- | --- | --- |
-| `DIG0` | A | `TRIG_IN_INST` | Conditioned 150 Hz trigger, after the Schmitt |
-| `DIG1` | A | `SYNC_IN_INST` | Conditioned Rsync, after the Schmitt |
+| `DIG0` | A | `TRIG_IN_INST` | Conditioned 150 Hz trigger, after the Schmitt (input block port `ENCA_INST`) |
+| `DIG1` | A | `SYNC_IN_INST` | Conditioned Rsync, after the Schmitt (input block port `ENCB_INST`) |
 | `DIG2` | A | `CAM1_L3_INST` | Camera 1 pin 1 node, after the 220 Ω |
 | `DIG3` | A | `CAM1_L0_INST` | Camera 1 pin 2 node, 0–4.7 V open-drain node (LV541A inputs are 5.5 V tolerant; the cable side is 3.3 V) |
 | `DIG4` | A | `CAM2_L3_INST` | |
@@ -368,8 +392,9 @@ five `LV541A`, four `LVC2G17`, four `LVC1G125`, three `LVC1G07`, seven LEDs,
 pull-ups. Any USB port or wall adapter works; nothing reads the CC
 advertisement. Power LED on `+3.3V`.
 
-The `usb2_vertical` block's PCB side is schematic-only as of 2026-09-23; its
-layout is done on this board, as `mouse-joystick-pcb` did.
+The `usb2_vertical` block has a layout (6 footprints, 55 tracks, 8 vias,
+verified 2026-09-24); its JSON description still calls it schematic-only,
+which is stale.
 
 Not chosen: taking 3.3 V from a camera's `VOUT`. It would force Line 2 back to
 `VOUT`, push the frame output onto the 36 µs opto line, and make the board
@@ -415,15 +440,18 @@ Existing in `kicad-libs`:
 | 1 | `usb2_vertical` block (`OW-CONN-USB-C-USB2-SMD-VERT`, `USBLC6-2P6`, `MBR120VLSFT1G`) | power entry |
 | 1 | `5v_to_3v3_tps73733` block (`OW-PWR-TPS73733QDRBRQ1`) | 3.3 V rail |
 | 1 | `instrument_port_digital_50_dut_ffc_boundary_vertical` block (`OW-CONN-FH12-50S-0-5SVA-54`, 4× `OW-MISC-SN74LV541ARKSR`, 32× 100 Ω) | InstrumentPort |
-| 1 | `quadrature_encoder_input_5v_sn74lvc2g17` block, or a generically named sibling (`OW-MISC-SN74LVC2G17DRYR`) | the two BNC inputs |
+| 1 | `quadrature_encoder_input_5v_sn74lvc2g17` block (`OW-MISC-SN74LVC2G17DRYR`, 4.7 kΩ, 470 pF, 100 kΩ, two 100 Ω taps, 4.7 µF + 100 nF on `VENC`), or a generically named sibling | the two BNC inputs |
 | 3 | `OW-MISC-SN74LVC2G17DRYR` | per-camera output Schmitts |
 | 4 | `OW-MISC-SN74LVC1G125DRYR` | per-camera Line 3 drivers, `SYNC OUT` driver |
-| 5 | `OW-MISC-USBLC6-2P6` | ESD: inputs, outputs, three camera connectors |
+| 9 | `OW-MISC-USBLC6-2P6` | ESD, two lines per array: 1 for the two inputs, 2 for the four outputs, 2 inside each of the three camera blocks |
 | 7 | `OW-MISC-APHHS1005CGCK` / `SYCK` / `SURCK` 0402 LEDs | power, 2 inputs, 3 camera outputs, sync out |
 | ~32 | 0402 resistors: `OW-PASS-0402WGF1000TCE` 100 Ω (taps), `OW-PASS-RC0402FR-071KL` 1 kΩ (Line 2 pull-ups), `OW-RES-4K7-0402` (Line 1 pull-ups, input series), `OW-RES-10K-0402`, 100 kΩ | |
 
-New parts, **purchased 2026-09-23**, still to be added to `kicad-libs`.
-Checked that day: none existed there, and nothing open-drain existed at all.
+New parts, **purchased 2026-09-23** and added to `kicad-libs` the same day as
+`OW-MISC-SN74LVC1G07DRYR`, `OW-PASS-0603WAF2200T5E` (220 Ω),
+`OW-PASS-0603WAF4700T5E` (470 Ω), `OW-PASS-RC0402FR-07680RL` (680 Ω) and
+`OW-PASS-FRC0402F8200TS` (820 Ω). Before that, none existed there and nothing
+open-drain existed at all.
 
 | Qty on board | Part | Notes |
 | --- | --- | --- |
@@ -477,9 +505,10 @@ bands as on `mouse-joystick-pcb`):
 ```
 camera-gpio-interface-pcb (root)
 ├── power            → usb2_vertical, 5v_to_3v3_tps73733, power LED
-├── inputs           → 2× BNC, USBLC6, input Schmitt block, 2 LEDs,
-│                      TRIG_IN/SYNC_IN taps
-├── sync_out         → SN74LVC1G125, 470 Ω, BNC, LED, tap (shares the output USBLC6)
+├── inputs           → 2× BNC, USBLC6, input Schmitt block (its ENCA_INST/ENCB_INST
+│                      are the TRIG_IN/SYNC_IN taps), 2 LEDs, VENC to +5V_USB
+├── sync_out         → SN74LVC1G125, 470 Ω, BNC, LED, tap, both output USBLC6
+│                      arrays (CAM1/CAM2, CAM3/SYNC; CAMn OUT BNC nets via sheet pins)
 ├── camera_1         → blackfly_s_gpio_channel_mcv6_vertical, CAM1 OUT BNC
 ├── camera_2         → same
 ├── camera_3         → same
@@ -539,12 +568,12 @@ in `docs/harness-pinouts.md` and on cable labels, not in copper.
 
 ## Sequence
 
-1. In `kicad-libs` (in progress, Peter): add `SN74LVC1G07DRYR`, the 220 Ω and
+1. Done 2026-09-24 in `kicad-libs`: add `SN74LVC1G07DRYR`, the 220 Ω and
    470 Ω 0603 rows and the 680 Ω and 820 Ω 0402 rows, author
    `blackfly_s_gpio_channel_mcv6_vertical` to the specification above, run
    `make design-blocks-check DESIGN_BLOCK_CHECK_ARGS="--jobs 1"`.
 2. ~~Order the new parts.~~ Done 2026-09-23.
-3. Scaffold this repo, place blocks, wire wrappers, ERC clean.
+3. Scaffold this repo (done 2026-09-25), place blocks, wire wrappers, ERC clean.
 4. Layout, four layers, vertical parts, apply the `INSTRUMENT` netclass, DRC
    clean, `make docs`. Settle the silkscreen wording here.
 5. `make fab` for JLCPCB; order with three `MC 1,5/6-ST-3,5` plugs, three 1 m
@@ -575,10 +604,21 @@ Read this file first; it is the whole design record so far. Then:
    Phoenix connector symbols, which were rewritten in `66a6406` and make
    placed copies report `lib_symbol_mismatch` until *Update Symbols from
    Library* runs.
+   Done 2026-09-25: kicad-libs is committed and pushed at `4331370`; the
+   camera block and the input block each pass the single-block check with
+   0 errors and 0 warnings; the other three blocks are unchanged since their
+   2026-09-24 verification.
 2. **Scaffold.** `orb-weaver-kicad-init-repo` then
    `orb-weaver-kicad-create-project` with the project in `kicad/`, basename
    `camera-gpio-interface-pcb`. Commit the generated library tables. Keep
    `docs/rev0-plan.md`; the scaffold's README gets the generated-docs block.
+   Done 2026-09-25: `orb-weaver-kicad-init-repo` and
+   `orb-weaver-kicad-create-project --name camera-gpio-interface-pcb`, then
+   the Makefile, `.guix/` manifests and agent guidance aligned with
+   `mouse-joystick-pcb` (no KiCad overlay: the pinned channel already carries
+   10.0.6); `instrument-taps` and `hv-power-24v` applied to the project with
+   `orb-weaver-kicad-apply-netclasses`. `make test` passes. Nothing is
+   committed; the user commits.
 3. **Schematic**, per "Schematic Structure": six wrapper sheets, blocks as
    copies re-annotated to 4-digit bands, `INSTRUMENT` netclass on `/*_INST`,
    every unused LV541A input tied to ground, ERC clean.

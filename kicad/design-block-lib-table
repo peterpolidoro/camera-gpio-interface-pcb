@@ -1,0 +1,7 @@
+(design_block_lib_table
+  (version 7)
+  (lib (name "orb_weaver_staging")(type "KiCad")(uri "${ORB_WEAVER_KICAD_LIBS}/design_blocks/orb_weaver_staging.kicad_blocks")(options "")(descr "Orb Weaver staging blocks mined from legacy projects"))
+  (lib (name "orb_weaver_private")(type "KiCad")(uri "${ORB_WEAVER_KICAD_LIBS}/design_blocks/orb_weaver_private.kicad_blocks")(options "")(descr "Orb Weaver private production design blocks"))
+  (lib (name "orb_weaver_tmc5130")(type "KiCad")(uri "${ORB_WEAVER_KICAD_LIBS}/design_blocks/orb_weaver_tmc5130.kicad_blocks")(options "")(descr "TMC5130 family SPI shunt variants; native GUI and hardware qualification pending"))
+  (lib (name "orb_weaver_public")(type "KiCad")(uri "${ORB_WEAVER_KICAD_LIBS}/design_blocks/orb_weaver_public.kicad_blocks")(options "")(descr "Orb Weaver sanitized public design blocks"))
+)
