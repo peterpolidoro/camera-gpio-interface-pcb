@@ -8,8 +8,8 @@ MCU, no firmware, no configuration jumpers.
 
 **Status, 2026-09-25:** the design record is complete in
 [docs/rev0-plan.md](docs/rev0-plan.md) and the KiCad project is scaffolded in
-`kicad/`; the schematic is complete and ERC-clean as of 2026-09-25, layout is
-next. Read the plan first, then
+`kicad/`; the schematic is complete and ERC-clean and the initial placement
+is done as of 2026-09-25; routing is next. Read the plan first, then
 [docs/kicad-libs-handoff-2026-09-24.md](docs/kicad-libs-handoff-2026-09-24.md),
 then the plan's resume checklist.
 
@@ -24,10 +24,10 @@ Do not edit between the markers; run `make docs` instead.
 
 ## Status
 
-Rev 0 schematic complete (2026-09-25), layout not started. The five design
-blocks it places exist in `kicad-libs` and pass their standalone checks; the
-new parts are purchased and in the catalog. The one open design decision is
-the silkscreen wording.
+Rev 0 schematic complete and initial placement done (2026-09-25); routing
+not started. The five design blocks it places exist in `kicad-libs` and pass
+their standalone checks; the new parts are purchased and in the catalog. The
+one open design decision is the silkscreen wording.
 
 ## Environment
 
