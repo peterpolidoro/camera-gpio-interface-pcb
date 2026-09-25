@@ -83,6 +83,10 @@ Prefer Makefile targets:
 - `make agent-reflection`
 - `make validate-db`, `make check-kicad-libs`
 - `make fab`, `make docs`, `make docs-check`
+- `make clearance-baseline` before routing, then `make export-dsn` or
+  `make freeroute`, `make import-ses`, `make clearance-check`: the shared
+  kicad-libs routing helpers, described in
+  `../kicad-libs/docs/freerouting-autorouting.md`
 
 The pinned Guix channel in `.guix/channels.scm` carries KiCad 10.0.6, the
 version the design blocks were saved with, so this repository has no local

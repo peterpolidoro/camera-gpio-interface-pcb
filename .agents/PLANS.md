@@ -43,7 +43,17 @@ list. Status here mirrors it.
       camera and the plan table rewritten to match.
 - [ ] Layout: four layers, 120 × 80 mm outline per the plan, `INSTRUMENT`
       class on the `_INST` nets, DRC clean with `rule_severities.clearance`
-      at error.
+      at error. Initial placement done 2026-09-25 (158 footprints, block
+      layouts applied: 910 track segments, 121 vias, no zones yet).
+      Routing helpers from kicad-libs are wired in: `make clearance-baseline`
+      saved `kicad/clearance-baseline.json` (256 low-voltage clearance
+      advisories inherited from the blocks, 0 voltage-bearing, 116 opens);
+      `make export-dsn` wrote `fab/autoroute/camera-gpio-interface-pcb.dsn`
+      (737 pre-routed wires, 121 vias, 5 netclasses). Before autorouting:
+      pour the ground plane the plan calls for, export with
+      `EXPORT_DSN_OPTIONS="--refill --protect-prerouted"` so the block
+      copper is locked, route with one thread, `make import-ses`, then
+      `make clearance-check`.
 - [ ] Silkscreen wording, the one open design decision.
 - [ ] Docs alongside: `docs/interface-map.md`, `docs/design-block-map.md`,
       `docs/harness-pinouts.md`, `docs/validation-plan.md`,

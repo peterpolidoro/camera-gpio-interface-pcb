@@ -1,0 +1,534 @@
+{
+  "clearance_total": 256,
+  "hv_pairs": {},
+  "ignored_checks": [
+    "footprint_filters_mismatch",
+    "footprint_type_mismatch",
+    "missing_courtyard",
+    "track_not_centered_on_via",
+    "tuning_profile_track_geometries"
+  ],
+  "other_violations": {
+    "warning lib_footprint_issues": 158,
+    "warning via_dangling": 30
+  },
+  "pairs": {
+    "+3.3V <-> GND": {
+      "count": 10,
+      "min_actual": 0.15,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "+3.3V <-> ~{OE1}": {
+      "count": 9,
+      "min_actual": 0.1038,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "+3.3V <-> ~{OE2}": {
+      "count": 9,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "+3.3V <-> ~{OE3}": {
+      "count": 9,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "+3.3V <-> ~{OE4}": {
+      "count": 9,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "+5V <-> unconnected-(U1001-Pad6)": {
+      "count": 1,
+      "min_actual": 0.2,
+      "required": 0.25,
+      "voltage_bearing": false
+    },
+    "+5V <-> unconnected-(U1001-Pad7)": {
+      "count": 1,
+      "min_actual": 0.2,
+      "required": 0.25,
+      "voltage_bearing": false
+    },
+    "CC1 <-> USB_D+": {
+      "count": 1,
+      "min_actual": 0.122,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "CC2 <-> USB_D+": {
+      "count": 5,
+      "min_actual": 0.122,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG0_BUF <-> DIG1_BUF": {
+      "count": 4,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG0_BUF <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG0_ISO <-> DIG1_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG0_ISO <-> DIG1_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG10_BUF <-> DIG11_ISO": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG10_ISO <-> DIG11_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG10_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG12_BUF <-> DIG13_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG12_ISO <-> DIG13_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG12_ISO <-> DIG13_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG13_BUF <-> DIG14_BUF": {
+      "count": 3,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG13_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG14_BUF <-> DIG15_BUF": {
+      "count": 2,
+      "min_actual": 0.1219,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG14_BUF <-> DIG15_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG14_ISO <-> DIG15_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG14_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG15_BUF <-> ~{OE2}": {
+      "count": 3,
+      "min_actual": 0.1818,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG16_BUF <-> DIG17_BUF": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG16_BUF <-> DIG17_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG16_ISO <-> DIG17_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG16_ISO <-> GND": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG18_BUF <-> DIG19_BUF": {
+      "count": 3,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG18_ISO <-> DIG19_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG18_ISO <-> DIG19_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG19_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG1_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG20_BUF <-> DIG21_BUF": {
+      "count": 5,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG20_BUF <-> DIG21_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG20_ISO <-> DIG21_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG20_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG21_BUF <-> DIG22_BUF": {
+      "count": 3,
+      "min_actual": 0.1788,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG22_BUF <-> DIG23_BUF": {
+      "count": 7,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG22_ISO <-> DIG23_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG22_ISO <-> DIG23_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG23_BUF <-> ~{OE3}": {
+      "count": 4,
+      "min_actual": 0.1182,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG23_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG24_BUF <-> DIG25_BUF": {
+      "count": 3,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG24_BUF <-> DIG25_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG24_ISO <-> DIG25_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG24_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG26_ISO <-> DIG27_BUF": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG26_ISO <-> DIG27_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG27_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG28_BUF <-> DIG29_ISO": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG28_ISO <-> DIG29_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG28_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG2_BUF <-> DIG3_BUF": {
+      "count": 4,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG2_BUF <-> DIG3_ISO": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG2_ISO <-> DIG3_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG2_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG30_BUF <-> DIG31_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG30_ISO <-> DIG31_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG30_ISO <-> DIG31_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG31_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG3_BUF <-> DIG4_BUF": {
+      "count": 3,
+      "min_actual": 0.1788,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG4_BUF <-> DIG5_BUF": {
+      "count": 7,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG4_ISO <-> DIG5_BUF": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG4_ISO <-> DIG5_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG5_BUF <-> DIG6_BUF": {
+      "count": 10,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG5_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG6_BUF <-> DIG7_BUF": {
+      "count": 3,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG6_BUF <-> DIG7_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG6_ISO <-> DIG7_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG6_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG7_BUF <-> ~{OE1}": {
+      "count": 4,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG8_ISO <-> DIG9_BUF": {
+      "count": 1,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG8_ISO <-> DIG9_ISO": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "DIG9_ISO <-> GND": {
+      "count": 2,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "GND <-> VBUS": {
+      "count": 1,
+      "min_actual": 0.1051,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "GND <-> ~{OE1}": {
+      "count": 8,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "GND <-> ~{OE2}": {
+      "count": 8,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "GND <-> ~{OE3}": {
+      "count": 8,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "GND <-> ~{OE4}": {
+      "count": 8,
+      "min_actual": 0.1,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "USB_D+ <-> VBUS": {
+      "count": 1,
+      "min_actual": 0.1375,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "USB_D- <-> VBUS": {
+      "count": 1,
+      "min_actual": 0.1375,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "USB_D- <-> unconnected-(J901-SBU1-PadA8)": {
+      "count": 1,
+      "min_actual": 0.122,
+      "required": 0.2,
+      "voltage_bearing": false
+    },
+    "USB_D- <-> unconnected-(J901-SBU2-PadB8)": {
+      "count": 1,
+      "min_actual": 0.122,
+      "required": 0.2,
+      "voltage_bearing": false
+    }
+  },
+  "unconnected": 116
+}
