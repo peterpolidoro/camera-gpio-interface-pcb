@@ -17,6 +17,9 @@ Then read, in this order:
   them.
 - `docs/kicad-libs-handoff-2026-09-24.md`: what `kicad-libs` prepared for this
   board and which plan statements it corrected.
+- `docs/autoroute-log.md`: the layout record, run by run, with every hand
+  repair; then `docs/session-handoff-2026-09-26.md`: where the routed board
+  stands and what is left before fabrication.
 
 If sibling checkouts exist, also read:
 
@@ -64,7 +67,11 @@ line tapped, and USB power. No MCU, no firmware.
 - Fab floors (0.1 mm clearance and track width) live in Board Setup >
   Constraints, never as unconditional `.kicad_dru` rules; such a rule replaces
   every netclass clearance instead of flooring it. `rule_severities.clearance`
-  stays at error.
+  stays at error. Known since 2026-09-26: 146 findings between 0.10 and
+  0.19 mm inherited from the InstrumentPort and USB block layouts stand
+  against the 0.20 mm default class; whether the blocks get re-routed in
+  kicad-libs or fab-floor copper inside blocks is accepted is an open
+  decision, see `docs/session-handoff-2026-09-26.md`.
 - A JLCPCB placement rotation correction goes in
   `kicad-libs/vendor_specs/jlcpcb/footprint-rotations.csv`, never in a
   footprint. This board is the first to place the Phoenix MCV 6 vertical;
@@ -86,7 +93,10 @@ Prefer Makefile targets:
 - `make clearance-baseline` before routing, then `make export-dsn` or
   `make freeroute`, `make import-ses`, `make clearance-check`: the shared
   kicad-libs routing helpers, described in
-  `../kicad-libs/docs/freerouting-autorouting.md`
+  `../kicad-libs/docs/freerouting-autorouting.md`. This board exports with
+  `EXPORT_DSN_OPTIONS="--refill --protect-prerouted --power-layer In1.Cu"`
+  because In1.Cu carries the `/GND` plane; the routed result and its checks
+  are in `docs/autoroute-log.md`
 
 The pinned Guix channel in `.guix/channels.scm` carries KiCad 10.0.6, the
 version the design blocks were saved with, so this repository has no local

@@ -66,7 +66,11 @@ list. Status here mirrors it.
       the 23 closed by hand with the tracks and vias listed in the log.
       **DRC: 0 unconnected, 146 block-inherited clearance advisories, 6
       block dangling vias; clearance check clean against the baseline.**
-      Next: review in the PCB editor, silkscreen, `make docs`.
+      Next: review in the PCB editor; decide the 146 block-inherited
+      clearance findings (InstrumentPort and USB block copper at the 0.10 mm
+      fab floor against the 0.20 mm default class; see the log's "Next");
+      clear the 158 footprint-field parity warnings (`OW_PART` and three
+      other symbol fields) with Update PCB from Schematic; silkscreen; `make docs`.
 - [ ] Silkscreen wording, the one open design decision.
 - [ ] Docs alongside: `docs/interface-map.md`, `docs/design-block-map.md`,
       `docs/harness-pinouts.md`, `docs/validation-plan.md`,

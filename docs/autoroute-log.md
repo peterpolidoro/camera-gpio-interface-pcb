@@ -233,9 +233,29 @@ import. The repair script's coordinates are the table above.
 
 ### Next
 
-1. Review the repairs and the router's routing in the PCB editor; the
-   run-1 copper the user kept was never re-optimised.
-2. Silkscreen wording, `make docs`, `make fab`.
-3. Feed back to kicad-libs: the LV541A grounded-input pattern and the
+1. Review in the PCB editor: the hand repairs above, the run-1 copper the user
+   kept (never re-optimised), and the B.Cu pour where router traces cut it.
+2. **The 146 remaining clearance findings.** All require 0.20 mm (the default
+   class); 90 sit at 0.10 mm, the rest between 0.11 and 0.19 mm. Every one is
+   inside the InstrumentPort block (R5xx, U5xx, J5xx: `+3.3V`/`GND`/`~OEn`
+   and `DIGn_BUF` pairs) or the USB block (J9xx). They are the block layouts'
+   0.10 mm authoring floor meeting this board's 0.20 mm class, not routing.
+   This board's rules keep `rule_severities.clearance` at error, so they
+   block a clean DRC until either the block layouts are re-routed at 0.20 mm
+   in kicad-libs or this board records a decision to accept the fab-floor
+   copper (the mouse-joystick precedent is the clearance check as the gate).
+3. Schematic parity: `kicad-cli pcb drc --schematic-parity` reports 158
+   `footprint_symbol_field_mismatch` items ("Missing symbol field ... in
+   footprint": `OW_PART` on 142 footprints, `ow_note` on 10, `ReqExactMPN` on
+   4, `ReqMinCurrent` on 2) and no net differences. Update PCB from
+   Schematic with footprint fields enabled clears them.
+4. Silkscreen wording, `make docs`, `make fab`; promote the Phoenix MCV 6
+   vertical rotation row from the first JLCPCB preview.
+5. Housekeeping: the importer backups `kicad/*.kicad_pcb.pre-ses-*` are not
+   ignored by `.gitignore`; delete them or add the pattern before committing.
+6. Feed back to kicad-libs: the LV541A grounded-input pattern and the
    0402/SOT-666 GND pads next to BNCs are the two things this router cannot
-   fan out; a block-level GND via per package would remove most of them.
+   fan out; a block-level GND via per package would remove most of them. The
+   pin-neck proposal that would let the shared rail classes stay wide is
+   recorded in kicad-libs (`docs/freerouting-autorouting.md`, "Pin necks",
+   and its `.agents/PLANS.md`).

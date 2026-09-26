@@ -29,3 +29,4 @@ fab/
 tmp/
 .codex/handoff.local.md
 .codex/workspace.dirs
+**/*.kicad_pcb.pre-ses-*

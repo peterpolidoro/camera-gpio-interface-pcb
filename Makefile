@@ -96,7 +96,7 @@ help:
 	  '  DOCS_OUTPUT_DIR=docs/generated                                 # board documentation output directory' \
 	  '  DOCS_OPTIONS="--skip-renders"                                  # extra orb-weaver-kicad-docs options' \
 	  '  DSN=fab/autoroute/<board>.dsn  SES=fab/autoroute/<board>.ses  # routing exchange files' \
-	  '  EXPORT_DSN_OPTIONS="--refill --protect-prerouted"           # extra orb-weaver-kicad-export-dsn options' \
+	  '  EXPORT_DSN_OPTIONS="--refill --protect-prerouted --power-layer In1.Cu"  # extra orb-weaver-kicad-export-dsn options' \
 	  '  IMPORT_SES_OPTIONS="--dry-run"                                # extra orb-weaver-kicad-import-ses options' \
 	  '  ORB_WEAVER_KICAD_LIBS=/path/to/orb-weaver-kicad-libs-root     # explicit override' \
 	  '  ORB_WEAVER_KICAD_LIBS_CHECKOUT=/path/to/kicad-libs             # editable checkout, preferred when present' \

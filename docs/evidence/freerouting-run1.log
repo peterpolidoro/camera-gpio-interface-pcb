@@ -1,0 +1,155 @@
+2026-09-25 19:19:46.421 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-25 19:19:51.055 INFO   [050F46\3574E2] Loading board file 'camera-gpio-interface-pcb.dsn'...
+2026-09-25 19:19:54.307 INFO   [050F46\3574E2] Job '050F46\3574E2' started at 2026-09-25T23:19:54.307686028Z.
+2026-09-25 19:19:59.807 INFO   [050F46\3574E2] Fanout stage started on board '379c962ce14554534934d840602320f9' with 317 of 520 SMD pins needing fanout (196 already connected, 7 netless).
+2026-09-25 19:20:28.354 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/blackfly_s_gpio_channel_mcv6_vertical2/L1' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-09-25 19:20:33.634 INFO   [050F46\3574E2] Fanout pass #1 on board '6c0261c0153499227aee6e1c92cebdfa' completed in 29.04 seconds with 93 SMD pins fanouted, 47 not routed, 0 insert errors, +7 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-25 19:20:54.430 INFO   [050F46\3574E2] Fanout pass #2 on board '37e243204608720bc369674369564176' completed in 20.77 seconds with 63 SMD pins fanouted, 54 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-25 19:21:15.192 INFO   [050F46\3574E2] Fanout pass #3 on board 'e14cde27a1b9e6f4eb2045e0e6f16a08' completed in 20.74 seconds with 60 SMD pins fanouted, 55 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=300).
+2026-09-25 19:21:35.758 INFO   [050F46\3574E2] Fanout pass #4 on board '3b0ca3e5df3d3c85d99a482059728c1d' completed in 20.54 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-09-25 19:21:56.209 INFO   [050F46\3574E2] Fanout pass #5 on board '4a1e9d8cd26b8893d1a834211cd7b1a2' completed in 20.43 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-09-25 19:22:16.668 INFO   [050F46\3574E2] Fanout pass #6 on board '32ff956bc3fe5c7beb975d4e7c1eabb9' completed in 20.43 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-09-25 19:22:37.081 INFO   [050F46\3574E2] Fanout pass #7 on board '9a02241683d795cdad0ddd5008c249f6' completed in 20.39 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-09-25 19:22:57.528 INFO   [050F46\3574E2] Fanout pass #8 on board '43fda81ce9eeaba270e346fc0e8c440b' completed in 20.42 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=800).
+2026-09-25 19:23:17.914 INFO   [050F46\3574E2] Fanout pass #9 on board 'a3860c46dac7305990ec9b9efeb12aa3' completed in 20.36 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-09-25 19:23:38.321 INFO   [050F46\3574E2] Fanout pass #10 on board '4fdada0afbd0421571bcf4b14ad54d15' completed in 20.38 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1000).
+2026-09-25 19:23:58.811 INFO   [050F46\3574E2] Fanout pass #11 on board '38fe4e0ab6d106ab86bbfd0669f7a79f' completed in 20.47 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1100).
+2026-09-25 19:24:19.261 INFO   [050F46\3574E2] Fanout pass #12 on board '9477837b7524d26847e1b432260cc715' completed in 20.43 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1200).
+2026-09-25 19:24:39.678 INFO   [050F46\3574E2] Fanout pass #13 on board '2bc6bf703376bb3d0c2c325e4d190288' completed in 20.39 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1300).
+2026-09-25 19:25:00.091 INFO   [050F46\3574E2] Fanout pass #14 on board '7973d70c4abf25d0b5c321f798a3c2be' completed in 20.39 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1400).
+2026-09-25 19:25:20.609 INFO   [050F46\3574E2] Fanout pass #15 on board '56fd26cd3395563d98f65f39f5159535' completed in 20.49 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1500).
+2026-09-25 19:25:41.062 INFO   [050F46\3574E2] Fanout pass #16 on board '046f1f3d2d3ed4cbd6b280c019a68661' completed in 20.43 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1600).
+2026-09-25 19:26:01.455 INFO   [050F46\3574E2] Fanout pass #17 on board 'f9f5de4145bd30129f2f567cb41d30e3' completed in 20.37 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1700).
+2026-09-25 19:26:21.876 INFO   [050F46\3574E2] Fanout pass #18 on board 'f24df36f2fba945cdad2fc47530ba51d' completed in 20.39 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1800).
+2026-09-25 19:26:42.323 INFO   [050F46\3574E2] Fanout pass #19 on board '494d4aa0286e0e9ad8c416ad1c765c76' completed in 20.42 seconds with 59 SMD pins fanouted, 55 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1900).
+2026-09-25 19:27:02.817 INFO   [050F46\3574E2] Fanout pass #20 on board 'b89c4f62961257e4beef0d4767564018' completed in 20.47 seconds with 58 SMD pins fanouted, 56 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=2000).
+2026-09-25 19:27:07.796 INFO   [050F46\3574E2] Fanout stage completed: started with 513 total SMD pins, completed in 423.22 seconds, escaped pins: 352/513 (68.6%), using 430.00 total CPU seconds, 3631.93 GB total allocated, and 772.3 MB peak heap usage.
+2026-09-25 19:27:07.906 INFO   [050F46\3574E2] Auto-routing stage started on board 'b89c4f62961257e4beef0d4767564018' for 128 unrouted items.
+2026-09-25 19:29:47.659 INFO   [050F46\3574E2] Auto-routing pass #1 on board 'b89c4f62961257e4beef0d4767564018' was completed in 149.03 seconds with score 610.90 (82 unrouted and 411 violations), using 588.63 CPU seconds and the job allocated 4888.43 GB of memory so far.
+2026-09-25 19:31:33.064 INFO   [050F46\3574E2] Auto-routing pass #2 on board '51ed4b67977974490f687d536698e01e' was completed in 94.30 seconds with score 625.12 (76 unrouted and 411 violations), using 692.89 CPU seconds and the job allocated 5719.88 GB of memory so far.
+2026-09-25 19:33:11.354 INFO   [050F46\3574E2] Auto-routing pass #3 on board '155660eac518ada89578b2d8321dea0d' was completed in 87.07 seconds with score 627.49 (75 unrouted and 411 violations), using 790.20 CPU seconds and the job allocated 6495.77 GB of memory so far.
+2026-09-25 19:34:48.697 INFO   [050F46\3574E2] Auto-routing pass #4 on board 'a139c2e7c8ebd8feb26238da4bf8e000' was completed in 86.10 seconds with score 627.49 (75 unrouted and 411 violations), using 887.52 CPU seconds and the job allocated 7273.79 GB of memory so far.
+2026-09-25 19:36:25.887 INFO   [050F46\3574E2] Auto-routing pass #5 on board '57fb862ab2115611cded21b562b14c2a' was completed in 85.95 seconds with score 627.49 (75 unrouted and 411 violations), using 983.84 CPU seconds and the job allocated 8043.69 GB of memory so far.
+2026-09-25 19:38:03.422 INFO   [050F46\3574E2] Auto-routing pass #6 on board '5c503415cb3fe32dd8c5117d3c476eb6' was completed in 86.29 seconds with score 627.49 (75 unrouted and 411 violations), using 1080.17 CPU seconds and the job allocated 8812.66 GB of memory so far.
+2026-09-25 19:39:40.385 INFO   [050F46\3574E2] Auto-routing pass #7 on board 'ad24c1fd500d4cca28ea22ba307c5932' was completed in 85.74 seconds with score 627.49 (75 unrouted and 411 violations), using 1176.48 CPU seconds and the job allocated 9582.51 GB of memory so far.
+2026-09-25 19:41:16.621 INFO   [050F46\3574E2] Auto-routing pass #8 on board '5182fd9d383fff6b9f8fd5d988296d54' was completed in 85.10 seconds with score 627.49 (75 unrouted and 411 violations), using 1272.81 CPU seconds and the job allocated 10357.54 GB of memory so far.
+2026-09-25 19:42:52.309 INFO   [050F46\3574E2] Auto-routing pass #9 on board '6268bebba2458d657d17cafd9e3dfb74' was completed in 84.53 seconds with score 627.49 (75 unrouted and 411 violations), using 1367.14 CPU seconds and the job allocated 11116.58 GB of memory so far.
+2026-09-25 19:44:27.631 INFO   [050F46\3574E2] Auto-routing pass #10 on board '4846da6c4a4899b70ec5c7af0e43b956' was completed in 84.21 seconds with score 627.49 (75 unrouted and 411 violations), using 1462.49 CPU seconds and the job allocated 11885.19 GB of memory so far.
+2026-09-25 19:46:02.621 INFO   [050F46\3574E2] Auto-routing pass #11 on board '696bd8d0630d54c178c6c52b481332f3' was completed in 83.87 seconds with score 627.49 (75 unrouted and 411 violations), using 1556.84 CPU seconds and the job allocated 12645.33 GB of memory so far.
+2026-09-25 19:47:43.789 INFO   [050F46\3574E2] Auto-routing pass #12 on board 'dcf0977dd26d44e6ca336a7b10916dd9' was completed in 84.49 seconds with score 627.49 (75 unrouted and 411 violations), using 1657.17 CPU seconds and the job allocated 13452.69 GB of memory so far.
+2026-09-25 19:49:21.426 INFO   [050F46\3574E2] Auto-routing pass #13 on board 'a77ce901e6d2482b74bf50c9d33ad012' was completed in 86.49 seconds with score 627.49 (75 unrouted and 411 violations), using 1753.50 CPU seconds and the job allocated 14224.11 GB of memory so far.
+2026-09-25 19:50:56.517 INFO   [050F46\3574E2] Auto-routing pass #14 on board '6cea8447d1b76fa67da93f5ca9004a3a' was completed in 83.97 seconds with score 627.49 (75 unrouted and 411 violations), using 1847.85 CPU seconds and the job allocated 14984.42 GB of memory so far.
+2026-09-25 19:52:32.424 INFO   [050F46\3574E2] Auto-routing pass #15 on board '72d528f521906719048a8897f3bd3bd2' was completed in 84.77 seconds with score 627.49 (75 unrouted and 411 violations), using 1943.19 CPU seconds and the job allocated 15751.81 GB of memory so far.
+2026-09-25 19:54:15.229 INFO   [050F46\3574E2] Auto-routing pass #16 on board 'a139c2e7c8ebd8feb26238da4bf8e000' was completed in 0.00 seconds with score 627.49 (75 unrouted and 411 violations), using 2045.46 CPU seconds and the job allocated 16566.94 GB of memory so far.
+2026-09-25 19:55:36.646 INFO   [050F46\3574E2] Auto-routing pass #17 on board 'a139c2e7c8ebd8feb26238da4bf8e000' was completed in 76.14 seconds with score 627.49 (75 unrouted and 411 violations), using 2125.84 CPU seconds and the job allocated 17258.54 GB of memory so far.
+2026-09-25 19:57:03.156 INFO   [050F46\3574E2] Auto-routing pass #18 on board 'fed120a91fc916345e8aa97ec2e50f7e' was completed in 76.02 seconds with score 627.49 (75 unrouted and 411 violations), using 2212.20 CPU seconds and the job allocated 18001.28 GB of memory so far.
+2026-09-25 19:57:03.371 INFO   [050F46\3574E2] The router's best score (627.49) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (75 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/GND' (54 unrouted connections):
+    - J901-B12  ->  conductionarea
+    - conductionarea  ->  U1001-9@4
+    - conductionarea  ->  U1001-9@1
+    - conductionarea  ->  U1001-9@3
+    - conductionarea  ->  U1001-9
+    - conductionarea  ->  U504-2
+    - conductionarea  ->  U503-2
+    - U503-6  ->  U503-7
+    - U503-6  ->  U503-5
+    - U503-4  ->  U503-5
+    - U503-3  ->  U503-4
+    - U503-3  ->  U503-2
+    - U504-8  ->  U504-9
+    - U504-7  ->  U504-8
+    - U504-7  ->  U504-6
+    - U504-6  ->  U504-5
+    - U504-5  ->  U504-4
+    - U504-4  ->  U504-3
+    - U504-3  ->  U504-2
+    - R504-2  ->  conductionarea
+    - conductionarea  ->  J301-2@1
+    - conductionarea  ->  J301-2
+    - conductionarea  ->  J402-2@1
+    - conductionarea  ->  J402-2
+    - conductionarea  ->  J301-2@3
+    - conductionarea  ->  J402-2@2
+    - conductionarea  ->  J301-2@2
+    - J402-2@3  ->  conductionarea
+    - conductionarea  ->  J403-2
+    - conductionarea  ->  J302-2@1
+    - conductionarea  ->  J302-2
+    - conductionarea  ->  J403-2@1
+    - conductionarea  ->  J302-2@3
+    - conductionarea  ->  J302-2@2
+    - conductionarea  ->  J403-2@2
+    - J403-2@3  ->  conductionarea
+    - conductionarea  ->  J401-2
+    - conductionarea  ->  J404-2
+    - conductionarea  ->  J401-2@1
+    - conductionarea  ->  J404-2@1
+    - conductionarea  ->  J401-2@3
+    - conductionarea  ->  J404-2@2
+    - conductionarea  ->  J401-2@2
+    - conductionarea  ->  J404-2@3
+    - U401-1  ->  U401-3
+    - D201-1  ->  C1001-2
+    - U901-2  ->  via
+    - U403-2  ->  D401-1
+    - conductionarea  ->  D301-1
+    - conductionarea  ->  D302-1
+    - conductionarea  ->  D401-1
+    - conductionarea  ->  U301-2
+    - C401-2  ->  conductionarea
+    - U402-2  ->  conductionarea
+  Net '/blackfly_s_gpio_channel_mcv6_vertical/L2' (1 unrouted connection):
+    - U705-6  ->  U705-1
+  Net '/blackfly_s_gpio_channel_mcv6_vertical/L1' (1 unrouted connection):
+    - U705-3  ->  U705-4
+  Net '/+3.3V' (2 unrouted connections):
+    - C401-1  ->  U401-6
+    - via  ->  C401-1
+  Net '/power/usb2_vertical/VBUS' (2 unrouted connections):
+    - via  ->  J901-B4
+    - J901-B4  ->  J901-B9
+  Net '/inputs/SYNC_RAW' (1 unrouted connection):
+    - R1102-1  ->  U301-4
+  Net '/+5V' (5 unrouted connections):
+    - U704-5  ->  U1205-5
+    - U1204-5  ->  U1405-5
+    - U402-5  ->  U704-5
+    - U402-5  ->  U301-5
+    - U403-5  ->  U1404-5
+  Net '/blackfly_s_gpio_channel_mcv6_vertical2/L0' (1 unrouted connection):
+    - U1404-3  ->  U1404-4
+  Net '/blackfly_s_gpio_channel_mcv6_vertical1/L2' (1 unrouted connection):
+    - U1205-6  ->  U1205-1
+  Net '/blackfly_s_gpio_channel_mcv6_vertical2/L3' (1 unrouted connection):
+    - U1404-6  ->  U1404-1
+  Net '/blackfly_s_gpio_channel_mcv6_vertical1/L1' (1 unrouted connection):
+    - U1205-3  ->  U1205-4
+  Net '/blackfly_s_gpio_channel_mcv6_vertical1/L3' (1 unrouted connection):
+    - U1204-1  ->  U1204-6
+  Net '/blackfly_s_gpio_channel_mcv6_vertical1/L0' (1 unrouted connection):
+    - U1204-3  ->  U1204-4
+  Net '/blackfly_s_gpio_channel_mcv6_vertical/L3' (1 unrouted connection):
+    - U704-6  ->  U704-1
+  Net '/blackfly_s_gpio_channel_mcv6_vertical/L0' (1 unrouted connection):
+    - U704-3  ->  U704-4
+  Net '/blackfly_s_gpio_channel_mcv6_vertical2/L2' (1 unrouted connection):
+    - U1405-1  ->  U1405-6
+2026-09-25 19:57:13.719 INFO   [050F46\3574E2] Auto-routing stage completed: started with 163 unrouted nets, completed in 2234.21 seconds, final score: 627.49 (75 unrouted and 411 violations), using 2223.12 total CPU seconds, 18095.34 GB total allocated, and 988.0 MB peak heap usage.
+2026-09-25 19:57:19.254 INFO   [050F46\3574E2] Optimization stage started on board '45b091071bbda64272e4cf3ab43c31f5' with score 627.49 (75 unrouted and 411 violations).
+2026-09-25 20:06:18.140 INFO   [050F46\3574E2] Stopping optimization pass #1 early after 50 consecutive items could not be improved.
+2026-09-25 20:06:23.689 INFO   [050F46\3574E2] Optimizer pass #1 on board '512aa346c251d4525f3a6b19be5e52aa' was completed in 527.81 seconds with the score of 627.49 (75 unrouted and 411 violations).
+2026-09-25 20:06:29.198 INFO   [050F46\3574E2] Stopping optimizer because the improvement in this pass (0.0000%) is below the threshold (1.00%).
+2026-09-25 20:06:34.717 INFO   [050F46\3574E2] Optimization stage completed: started with score 627.49 (75 unrouted and 411 violations), completed in 549.95 seconds, final score: 627.49 (75 unrouted and 411 violations), using 546.18 total CPU seconds, 4566.62 GB total allocated, and 939.7 MB peak heap usage.
+2026-09-25 20:06:34.738 INFO   [050F46\3574E2] Job '050F46\3574E2' finished with state: COMPLETED (elapsed: 46 minutes 40.43 seconds, finished at UTC: 2026-09-26T00:06:34.737853871Z).
+2026-09-25 20:06:34.828 INFO   Saving output file '/home/polidorop/Repositories/orb-weaver/camera-gpio-interface-pcb/fab/autoroute/camera-gpio-interface-pcb.ses' (SES)...
+2026-09-25 20:06:34.830 INFO   Successfully saved output file '/home/polidorop/Repositories/orb-weaver/camera-gpio-interface-pcb/fab/autoroute/camera-gpio-interface-pcb.ses' (160365 bytes).
+
+????????????????????????????????????????????????????????????????????
+?           Thank you for using Freerouting!                       ?
+?                                                                  ?
+?  If you would like to support the project, please visit          ?
+?  https://www.freerouting.app/donate.html                         ?
+?  Every contribution helps keep this project open and active!     ?
+????????????????????????????????????????????????????????????????????
