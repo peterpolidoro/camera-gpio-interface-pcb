@@ -28,7 +28,7 @@ AGENT_MEMORY_REPO_CHECKOUT ?= $(abspath ../agent-memory)
 AGENT_MEMORY_ENV = $(if $(wildcard $(AGENT_MEMORY_REPO_CHECKOUT)/AGENTS.md),GUIX_AGENT_TOOLS_MEMORY_REPO=$(AGENT_MEMORY_REPO_CHECKOUT),)
 AGENT_EXTRA_DIRS ?=
 PROJECT ?= $(firstword $(wildcard kicad/*.kicad_pro *.kicad_pro examples/*/*.kicad_pro))
-FAB_TOOL ?= orb-weaver-kicad-fab
+FAB_TOOL ?= $(if $(wildcard $(ORB_WEAVER_KICAD_LIBS_CHECKOUT)/bin/orb-weaver-kicad-fab),$(ORB_WEAVER_KICAD_LIBS_CHECKOUT)/bin/orb-weaver-kicad-fab,orb-weaver-kicad-fab)
 FAB_OUTPUT_DIR ?= $(if $(PROJECT),fab/$(basename $(notdir $(PROJECT))),fab)
 FAB_OPTIONS ?=
 # Prefer an editable kicad-libs checkout, the way the library path already does.

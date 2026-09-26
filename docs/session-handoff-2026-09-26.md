@@ -33,6 +33,13 @@ by run, is [autoroute-log.md](autoroute-log.md); the design record is
   `docs/rev0-plan.md`, the "Next" section of `docs/autoroute-log.md`,
   `.agents/PLANS.md`, `.agents/AGENTS.md`, the Makefile help text and
   `.gitignore`.
+- **Later on 2026-09-26:** the 146 clearance findings are accepted by a
+  `.kicad_dru` rule (open item 2 below); the six dangling vias and one
+  stub are removed (`autoroute-log.md`, "Cleanup"); kicad-libs `d50c723`
+  fixed the BOM/CPL exporter for repeated sheets and added catalog and
+  parity gates; the Makefile's `FAB_TOOL` prefers the checkout's launcher;
+  `make fab` exits 0 with all 151 parts. The current task list is
+  `.agents/PLANS.md`, "Fabrication readiness".
 
 ## What happened, in order
 
@@ -89,6 +96,13 @@ kicad-libs helpers, and were checked with kicad-cli DRC afterwards.
    records that fab-floor copper inside blocks is accepted (mouse-joystick's
    precedent: severity ignore, `make clearance-check` as the gate). Tracked
    in `../kicad-libs/.agents/PLANS.md`.
+   **Decided later on 2026-09-26:** accepted as fab-floor copper inside
+   blocks. The `.kicad_dru` rule "Low-voltage block clearance is advisory"
+   (the mouse-joystick demote form, not severity ignore) turns the 146 into
+   warnings; `kicad-cli pcb drc --severity-error` exits 0 and
+   `make clearance-check` still counts 254 findings, 0 voltage-bearing, no
+   regressions. Recorded in `.agents/AGENTS.md`; the re-route stays a
+   kicad-libs task.
 3. **Field parity.** 158 `footprint_symbol_field_mismatch` warnings:
    `OW_PART` missing on 142 footprints, `ow_note` on 10, `ReqExactMPN` on 4,
    `ReqMinCurrent` on 2. Update PCB from Schematic with footprint fields

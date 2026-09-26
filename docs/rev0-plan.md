@@ -37,12 +37,15 @@ plane and on B.Cu. `/+5V` and `/+3.3V` carry 0.20 mm board-local classes
 0.50 mm and 0.30 mm rail classes cannot enter the 0.5 mm-pitch SOT-666 and
 DRY6 pads they feed; both rails carry only logic and ESD-array current, so
 the narrower class is the decision for this board. Still open before
-fabrication: the 146 clearance findings inherited from the InstrumentPort and
-USB block layouts (authored to the 0.10 mm fab floor, against this board's
-0.20 mm default class), the 158 footprint-field parity warnings (`OW_PART` on 142
+fabrication: the 158 footprint-field parity warnings (`OW_PART` on 142
 footprints, `ow_note`, `ReqExactMPN`, `ReqMinCurrent` on the rest; Update PCB
 from Schematic with footprint fields), the silkscreen wording,
-`make docs` and `make fab`.
+`make docs` and `make fab`. The 146 clearance findings inherited from the
+InstrumentPort and USB block layouts (authored to the 0.10 mm fab floor,
+against this board's 0.20 mm default class) were accepted later that day as
+fab-floor copper inside blocks: the `.kicad_dru` rule "Low-voltage block
+clearance is advisory" demotes them to warnings and `make clearance-check`
+is the gate; see `.agents/AGENTS.md`.
 
 **Purpose:** Replace the hand-built harness (BNC tees, minigrabber clips and a
 hand-soldered pull-up per camera) that connects three FLIR Blackfly S

@@ -259,3 +259,33 @@ import. The repair script's coordinates are the table above.
    pin-neck proposal that would let the shared rail classes stay wide is
    recorded in kicad-libs (`docs/freerouting-autorouting.md`, "Pin necks",
    and its `.agents/PLANS.md`).
+
+## Cleanup, 2026-09-26: unused block escape vias
+
+After the fabrication-readiness assessment (`.agents/PLANS.md`) and per the
+kicad-libs layout convention written the same day (block port stubs must not
+leave dangling vias on a board), the six `via_dangling` items, all
+block-authored port escape vias the router did not use, were removed with a
+pcbnew script in the managed KiCad 10.0.6 shell. Each was checked to meet
+tracks on F.Cu only before removal. Removing the `SYNC_IN` via left its
+1.00 mm F.Cu stub with an open end, which was removed the same way; the
+stub's far end at (139.500, 109.000) is a junction of two other segments.
+Zones refilled and the board saved by pcbnew. The scripts were session
+scratch; this table is the record.
+
+| Item | Net | Position (mm) |
+| --- | --- | --- |
+| via 0.6/0.3 | `/power/usb2_vertical/USB_D+` | (106.500, 93.500) |
+| via 0.6/0.3 | `/power/usb2_vertical/USB_D+` | (105.500, 94.500) |
+| via 0.6/0.3 | `/SYNC_IN` | (138.500, 109.000) |
+| via 0.6/0.3 | `/CAM2_L3_INST` | (157.500, 82.250) |
+| via 0.6/0.3 | `/CAM2_L0_INST` | (156.500, 82.250) |
+| via 0.6/0.3 | `/CAM1_L3_INST` | (132.500, 82.250) |
+| 0.20 mm F.Cu segment | `/SYNC_IN` | (138.500, 109.000) -> (139.500, 109.000) |
+
+Result: 170 vias, 1174 segments. kicad-cli DRC at all severities: 144
+clearance warnings (under the "Low-voltage block clearance is advisory"
+rule of the same day), 0 dangling items, 0 unconnected, 0 net differences,
+158 field-parity warnings. `make clearance-check`: 252 findings against the
+256 baseline, 0 voltage-bearing, no new or worsened findings. `make fab`:
+exit 0, `bom_rows=26 resolved=26 designators=151`, `position_rows=151`.

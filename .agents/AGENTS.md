@@ -67,11 +67,16 @@ line tapped, and USB power. No MCU, no firmware.
 - Fab floors (0.1 mm clearance and track width) live in Board Setup >
   Constraints, never as unconditional `.kicad_dru` rules; such a rule replaces
   every netclass clearance instead of flooring it. `rule_severities.clearance`
-  stays at error. Known since 2026-09-26: 146 findings between 0.10 and
-  0.19 mm inherited from the InstrumentPort and USB block layouts stand
-  against the 0.20 mm default class; whether the blocks get re-routed in
-  kicad-libs or fab-floor copper inside blocks is accepted is an open
-  decision, see `docs/session-handoff-2026-09-26.md`.
+  stays at error. Decided 2026-09-26: the 146 findings between 0.10 and
+  0.19 mm inherited from the InstrumentPort and USB block layouts (all
+  against the 0.20 mm default class, none voltage-bearing) are accepted as
+  fab-floor copper inside blocks. The `.kicad_dru` rule "Low-voltage block
+  clearance is advisory" demotes every pair where neither side is a
+  voltage-bearing class to warning, the mouse-joystick form, never severity
+  ignore; `make fab`'s error-level DRC gate passes and `make clearance-check`
+  (254 findings, 0 voltage-bearing, against the 256 baseline) is the gate for
+  new or worsened findings. Delete the rule when kicad-libs re-routes the two
+  blocks at 0.20 mm and they are re-placed here.
 - A JLCPCB placement rotation correction goes in
   `kicad-libs/vendor_specs/jlcpcb/footprint-rotations.csv`, never in a
   footprint. This board is the first to place the Phoenix MCV 6 vertical;

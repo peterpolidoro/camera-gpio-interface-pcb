@@ -16,6 +16,40 @@
 	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD'")
 	(constraint clearance (min 0.15mm)))
 
+# Block-internal copper at the 0.10 mm fab floor is accepted on this board,
+# decided 2026-09-26. The clearance violation TYPE stays "error" in Board Setup
+# > Violation Severities (the .agents/AGENTS.md rule), and the rule below
+# demotes every pair where NEITHER side is a voltage-bearing class to
+# "warning". On this board no net matches PWR_HV_* or PWR_12V*: the rails are
+# +5V (USB), +3.3V and GND, so the rule reaches every pair. It is the same form
+# as mouse-joystick-pcb's "Legacy low-voltage block clearance is advisory".
+#
+# What it covers, from the DRC of commit c16b534: 146 findings, all required
+# 0.20 mm (the Default class), actual 0.10-0.19 mm, 140 on F.Cu and 6 pad-to-
+# via pairs through to B.Cu; every one inside the two block layouts authored to
+# the 0.10 mm JLCPCB floor before the 0.20 mm class existed:
+# instrument_port_digital_50_dut_ffc_boundary_vertical (J501, U501-U504,
+# R501-R536: +3.3V/GND/~{OEn} against DIGn_BUF and DIGn_ISO tracks) and
+# usb2_vertical (J901: USB_D+, USB_D-, CC2). None is routed board copper, and
+# 0.10 mm is inside JLCPCB's 4-layer capability. Re-routing the two blocks at
+# 0.20 mm is a kicad-libs task (its .agents/PLANS.md, "Block layouts at the
+# 0.10 mm floor"); when that lands and the blocks are re-placed, delete this
+# rule.
+#
+# The demote form is deliberate: if the rule ever stops matching, a finding
+# falls back to error and fails loud. Do not set the clearance type to
+# "ignore" (KiCad then skips the test and no rule can bring it back). The gate
+# for new or worsened findings is `make clearance-check` against
+# kicad/clearance-baseline.json, which restores clearance to error on a copy.
+#
+# Must stay AFTER the SMD pad-to-pad rule above (later matching rules win, and
+# this one carries no `min`, so it changes severity only).
+
+(rule "Low-voltage block clearance is advisory"
+	(condition "A.NetClass != 'PWR_HV_ENTRY' && A.NetClass != 'PWR_HV_BUS' && A.NetClass != 'PWR_HV_RETURN' && A.NetClass != 'PWR_HV_LOCAL' && A.NetClass != 'PWR_12V' && A.NetClass != 'PWR_12V_LOCAL' && B.NetClass != 'PWR_HV_ENTRY' && B.NetClass != 'PWR_HV_BUS' && B.NetClass != 'PWR_HV_RETURN' && B.NetClass != 'PWR_HV_LOCAL' && B.NetClass != 'PWR_12V' && B.NetClass != 'PWR_12V_LOCAL'")
+	(constraint clearance)
+	(severity warning))
+
 (rule "JLCPCB rigid FR4 routine via diameter"
 	(condition "A.Type == 'Via'")
 	(constraint via_diameter (min 0.45mm)))
