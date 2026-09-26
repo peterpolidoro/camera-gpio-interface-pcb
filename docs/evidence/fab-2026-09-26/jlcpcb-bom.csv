@@ -1,0 +1,27 @@
+Comment,Designator,Footprint,LCSC
+1uF 35V X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C1001 C1002,0402,C307413
+100V 470pF C0G ±5% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C1101 C1102,0402,C1518202
+100V 100nF X5R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C1103 C1201 C1202 C1203 C1401 C1402 C1403 C401 C502 C503 C504 C505 C701 C702 C703 C901,0402,C162178
+25V 4.7uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS,C501,0402,C2858031
+-40℃~+85℃ 120° 2.1V 20mA 50mcd 570nm 574nm 75mW Discrete Diode Emerald Green Water Clear 0402 LED Indication - Discrete ROHS,D1201 D1401 D201 D301 D302 D401 D701,0402,C2853065
+-65℃~+125℃ 1 Independent 1A 20V 300mV@1A 45A 600uA@20V SOD-123FL Schottky Diodes ROHS,D901,SOD-123FL,C223608
+"1 1x6P 3.5mm 300V 6 6P 8A Board Side/Socket - Closed Green Through Hole 插件,P=3.5mm Pluggable System Terminal Block ROHS",J1201 J1401 J701,"Plugin,P=3.5mm",C5443576
+-55℃~+125℃ 1 4GHz 50Ω 9.5mm BNC Board Side Inner hole Positive Pin Plugin Coaxial Connectors (RF) ROHS,J301 J302 J401 J402 J403 J404,Plugin,C19712152
+"-40℃~+85℃ 0.3mm 0.5mm 3.6mm 50P Gold Hinged Lid Phosphor bronze Single-side Contact/Vertical Surface Mount,Vertical SMD,P=0.5mm FFC, FPC (Flat Flexible) Connector Assemblies ROHS",J501,"SMD,P=0.5mm",C597991
+"-25℃~+85℃ 1 12P 48V 5A Black Female Surface Mount,Vertical Type-C USB 2.0 SMD USB Connectors ROHS",J901,SMD,C5815189
+-55℃~+155℃ 100kΩ 50V 62.5mW Thick Film Resistor ±100ppm/℃ ±5% 0402 Chip Resistor - Surface Mount ROHS,R1101 R1102 R1105 R1106,0402,C106234
+-55℃~+155℃ 4.7kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS,R1103 R1104 R1202 R1402 R702,0402,C25900
+-55℃~+155℃ 100Ω 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS,R1107 R1108 R1207 R1208 R1209 R1210 R1211 R1407 R1408 R1409 R1410 R1411 R403 R505 R506 R507 R508 R509 R510 R511 R512 R513 R514 R515 R516 R517 R518 R519 R520 R521 R522 R523 R524 R525 R526 R527 R528 R529 R530 R531 R532 R533 R534 R535 R536 R707 R708 R709 R710 R711,0402,C25076
+-55℃~+155℃ 1kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS,R1201 R1401 R701,0402,C106235
+-55℃~+155℃ 50V 62.5mW 820Ω Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS,R1203 R1403 R703,0402,C2909387
+-55℃~+155℃ 100mW 220Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS,R1204 R1404 R704,0603,C22962
+-55℃~+155℃ 100mW 470Ω 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS,R1205 R1405 R402 R705,0603,C23179
+-55℃~+155℃ 50V 62.5mW 680Ω Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS,R1206 R1406 R201 R301 R302 R401 R706,0402,C137948
+-55℃~+155℃ 100V 100mW 10kΩ Thick Film Resistor ±200ppm/℃ ±5% 0402 Chip Resistor - Surface Mount ROHS,R501 R502 R503 R504,0402,C278577
+-55℃~+155℃ 100mW 5.1kΩ Thick Film Resistor ±200ppm/℃ ±5% 0402 Chip Resistor - Surface Mount ROHS,R901 R902,0402,C413002
+"-40℃~+125℃@(Tj) 1 1A 25uA 3.3V 37dB@(10kHz) 5.5V 500mV@(1A) Fixed Over Current Protection、Over Temperature Protection、Enable Positive VSON-8-EP(3x3) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS",U1001,VSON-8-EP(3x3),C523768
+"-40℃~+125℃ 1 1.65V~5.5V 10uA 2 32mA 32mA 5.4ns@3.3V,50pF 74LVC Schmitt trigger SON-6(1x1.5) Buffers, Drivers, Receivers, Transceivers ROHS",U1101 U1201 U1401 U701,SON-6(1x1.5),C2675856
+"-40℃~+85℃ 1 1 1.65V~5.5V 10uA 3.1ns@3.3V,15pF 32mA 32mA 74LVC Tri-State Unidirectional USON-6(1x1.5) Buffers, Drivers, Receivers, Transceivers ROHS",U1202 U1402 U401 U702,USON-6(1x1.5),C527546
+"-40℃~+125℃ 1 1 1.65V~5.5V 10uA 32mA 4.2ns@3.3V 74LVC Open-drain Power-off isolation、Level shifting Unidirectional UFDFN-6(1x1.5) Buffers, Drivers, Receivers, Transceivers ROHS",U1203 U1403 U703,UFDFN-6(1x1.5),C2675513
+2-line plus VBUS ESD protection array for USB 2.0 up to 480 Mb/s; IEC 61000-4-2 level 4 (15kV air / 8kV contact); 3.5pF max I/O-to-GND; 1.2pF typ I/O-to-I/O; 150nA max leakage at 5.25V; 6V min VBUS breakdown; -40℃~+150℃ junction; SOT-666-6 ESD and Surge Protection (TVS/ESD) ROHS,U1204 U1205 U1404 U1405 U301 U402 U403 U704 U705 U901,SOT-666-6,C2827693
+"-40℃~+125℃ 1 16mA 16mA 20uA 2V~5.5V 74LV 7ns@5V,50pF 8 Power-off isolation、Output enable Tri-State Unidirectional VQFN-20(2.5x4.5) Buffers, Drivers, Receivers, Transceivers ROHS",U501 U502 U503 U504,VQFN-20(2.5x4.5),C7364695

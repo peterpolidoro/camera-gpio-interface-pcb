@@ -4,6 +4,14 @@ Use this file for multi-step or cross-session work in this repository.
 
 ## Current Focus
 
+- 2026-09-26 (evening): **v1.0 ordered from JLCPCB, five assembled boards**,
+  from commit `5ddb425`; the record is `docs/fabrication-log.md`, the
+  evidence `docs/evidence/fab-2026-09-26/`. The placement preview showed
+  every part oriented correctly, which verifies the MCV 6 vertical and
+  0402 LED rotation rows; handed to kicad-libs in
+  `../kicad-libs/tmp/camera-gpio-interface-pcb-rotation-evidence-2026-09-26.md`.
+  Next here, when the boards arrive: `docs/bringup-log.md` (seeded), then
+  the bring-up documents and the rig software changes in `rev0-plan.md`.
 - 2026-09-26: fabrication readiness for JLCPCB; the checklist is the
   "Active Task: 2026-09-26 Fabrication readiness" section below, which
   supersedes the Layout item of the Rev 0 task. The three blockers are
@@ -214,20 +222,30 @@ Before the order:
       (gitignored; regenerate after silkscreen and field-parity edits). The
       rotation report matches the dry run. Still pending, after the upload:
       the two rotation rows (kicad-libs `.agents/PLANS.md` step 0b).
-- [ ] **Order options to choose**: 4 layers, 1.6 mm, 100 x 60 mm; top-side
+- [x] **Order options to choose**: 4 layers, 1.6 mm, 100 x 60 mm; top-side
       assembly only; through-hole parts are 6 BNC and 3 MCV 6 (the USB-C
       pegs are 0.6 mm slots); surface finish (unspecified in the project, as
       on mouse-joystick-pcb); "Confirm Parts Placement" on, because of the
       inferred MCV 6 row and the unverified LEDs. Every BOM line is in the
       JLCPCB inventory export of 2026-09-24; the 88 BNCs limit a run to 14
       boards, everything else allows more.
+      Done 2026-09-26: five boards ordered from commit `5ddb425`
+      (`docs/fabrication-log.md`); every part oriented correctly in the
+      preview. The finish and the other order-page options are not
+      recorded; the log says which to fill in.
 - [ ] Housekeeping: `git rm --cached kicad/*.kicad_pcb.pre-ses-*` (two
       94,000-line importer backups are still tracked although now ignored);
       `make docs` (never run: `docs/generated/` is absent and the README
       status still says "routing not started"); `make docs-check` before
       tagging.
+      Done 2026-09-26: `make docs` run, `docs-check` up to date, README
+      status rewritten for v1.0. The two importer backups are still
+      tracked; remove them at the next convenient commit if unwanted.
 
 After the order, not blocking it: `docs/interface-map.md`,
 `docs/design-block-map.md`, `docs/harness-pinouts.md`,
-`docs/validation-plan.md`, `docs/bringup-log.md`; the three plugs, cables and
-four BNC leads listed in the plan's Sequence step 5.
+`docs/validation-plan.md`; `docs/bringup-log.md` is seeded 2026-09-26 with
+the arrival inspection and the plan's bench measurements; the three plugs,
+cables and four BNC leads listed in the plan's Sequence step 5 (ordered or
+not is unrecorded, see `docs/fabrication-log.md`). After the boards arrive:
+tag the ordered commit `5ddb425` as v1.0 if that is the convention.

@@ -37,7 +37,10 @@ plane and on B.Cu. `/+5V` and `/+3.3V` carry 0.20 mm board-local classes
 0.50 mm and 0.30 mm rail classes cannot enter the 0.5 mm-pitch SOT-666 and
 DRY6 pads they feed; both rails carry only logic and ESD-array current, so
 the narrower class is the decision for this board. Still open before
-fabrication: `make docs` and the order itself. The field-parity warnings
+fabrication: nothing; five assembled boards were ordered from JLCPCB later
+that day from commit `5ddb425` ([fabrication-log.md](fabrication-log.md)),
+and the placement preview showed every part oriented correctly. The
+field-parity warnings
 were cleared and the silkscreen settled by Peter in the PCB editor later
 that day (the silk as built is the v1.0 wording, see "Open Item"); `/GND`
 is now poured on all four layers; `make fab` passes every gate with all
@@ -608,6 +611,9 @@ in `docs/harness-pinouts.md` and on cable labels, not in copper.
    clean, `make docs`. Settle the silkscreen wording here.
 5. `make fab` for JLCPCB; order with three `MC 1,5/6-ST-3,5` plugs, three 1 m
    FLIR GPIO cables and four BNC cables for the OneBox.
+   Done 2026-09-26: five assembled boards ordered from JLCPCB from commit
+   `5ddb425` ([fabrication-log.md](fabrication-log.md)); whether the plugs
+   and cables went in the same order is not recorded there yet.
 6. Bring-up: measure Line 0 LED current at the plug against 3.5–7 mA, Line 2
    and `OPTOOUT` low levels against the Schmitt thresholds, capture all 18
    channels through the LA5032 adapter with pyControl running

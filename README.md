@@ -93,9 +93,11 @@ with 144 block-inherited clearance findings accepted as warnings (fab-floor
 copper inside the InstrumentPort and USB block layouts, see
 `.agents/AGENTS.md`); `make clearance-check` passes against the routing
 baseline; `make fab` builds the JLCPCB package with all 151 parts in the BOM
-and placement files. Not yet ordered. After the first JLCPCB placement
-preview, two rotation rows go back to `kicad-libs` (the Phoenix MCV 6
-vertical, inferred, and the 0402 LED, unverified).
+and placement files. **Five assembled boards were ordered from JLCPCB on
+2026-09-26 from commit `5ddb425`** ([docs/fabrication-log.md](docs/fabrication-log.md));
+the placement preview showed every part oriented correctly, which verifies
+the Phoenix MCV 6 vertical and 0402 LED rotation rows for `kicad-libs`.
+Bring-up results go in [docs/bringup-log.md](docs/bringup-log.md).
 
 ## Environment
 
@@ -112,3 +114,5 @@ vertical, inferred, and the 0402 LED, unverified).
 - [Generated board documentation](docs/generated/README.md): written by `make docs`
 - [Autoroute log](docs/autoroute-log.md): the layout record, run by run, with every hand repair
 - [Session handoff, 2026-09-26](docs/session-handoff-2026-09-26.md): where the routed board stands
+- [Fabrication log](docs/fabrication-log.md): what was ordered, from which commit, with which package hashes
+- [Bring-up log](docs/bringup-log.md): bench results per board serial

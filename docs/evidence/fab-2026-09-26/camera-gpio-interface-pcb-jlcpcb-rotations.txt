@@ -1,0 +1,26 @@
+JLCPCB CPL rotation report
+rotation table: /home/polidorop/Repositories/orb-weaver/kicad-libs/vendor_specs/jlcpcb/footprint-rotations.csv
+
+Position rows dropped because the BOM does not list them:
+  fiducials, expected: FID101 FID102 FID103
+  other, a BOM/board disagreement: (none)
+
+Corrected footprints:
+  +270  DRY6  [verified]  U1101 U1201 U1202 U1203 U1401 U1402 U1403 U401 U701 U702 U703
+  +180  PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical  [inferred]  J1201 J1401 J701
+  +270  Texas_RKS0020A_VQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x3mm  [verified]  U501 U502 U503 U504
+  +270  USBLC6-2P6_SOT-666  [verified]  U1204 U1205 U1404 U1405 U301 U402 U403 U704 U705 U901
+
+Confirmed correct as exported, no offset needed:
+        CONN_BNC_HL-BNC-KHDA  J301 J302 J401 J402 J403 J404
+        C_0402_1005Metric  C1001 C1002 C1101 C1102 C1103 C1201 C1202 C1203 C1401 C1402 C1403 C401 C501 C502 C503 C504 C505 C701 C702 C703 C901
+        Hirose_FH12-50S-0.5SVA_1x50-4MP_P0.5mm_Vertical  J501
+        R_0402_1005Metric  R1101 R1102 R1103 R1104 R1105 R1106 R1107 R1108 R1201 R1202 R1203 R1206 R1207 R1208 R1209 R1210 R1211 R1401 R1402 R1403 R1406 R1407 R1408 R1409 R1410 R1411 R201 R301 R302 R401 R403 R501 R502 R503 R504 R505 R506 R507 R508 R509 R510 R511 R512 R513 R514 R515 R516 R517 R518 R519 R520 R521 R522 R523 R524 R525 R526 R527 R528 R529 R530 R531 R532 R533 R534 R535 R536 R701 R702 R703 R706 R707 R708 R709 R710 R711 R901 R902
+        R_0603_1608Metric  R1204 R1205 R1404 R1405 R402 R704 R705
+        SOD-123FL  D901
+        TPS737Q1  U1001
+        USB_C_Receptacle_GCT_USB4145-03-0070-C_16P_Vertical  J901
+
+Footprints with no rotation entry. Nobody has checked these; confirm each
+in the JLCPCB placement viewer, then record the result in the table:
+        LED_0402-1005_KNB  D1201 D1401 D201 D301 D302 D401 D701

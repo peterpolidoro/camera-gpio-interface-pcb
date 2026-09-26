@@ -51,6 +51,11 @@ by run, is [autoroute-log.md](autoroute-log.md); the design record is
   `make clearance-check` 252 with no regressions, `make fab` exit 0 with
   151 designators in BOM and CPL. Open items 1-5 below are closed except the
   bring-up documents (6) and the two rotation rows after the first upload.
+- **Ordered, 2026-09-26:** five assembled boards from JLCPCB, from commit
+  `5ddb425` (`docs/fabrication-log.md`, evidence in
+  `docs/evidence/fab-2026-09-26/`). The placement preview showed every part
+  oriented correctly; the two rotation rows are verified and handed to
+  kicad-libs. `docs/bringup-log.md` is seeded for the arrival.
 
 ## What happened, in order
 

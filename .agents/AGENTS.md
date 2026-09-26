@@ -79,8 +79,10 @@ line tapped, and USB power. No MCU, no firmware.
   blocks at 0.20 mm and they are re-placed here.
 - A JLCPCB placement rotation correction goes in
   `kicad-libs/vendor_specs/jlcpcb/footprint-rotations.csv`, never in a
-  footprint. This board is the first to place the Phoenix MCV 6 vertical;
-  promote its inferred row from the first placement preview.
+  footprint. This board was the first to place the Phoenix MCV 6 vertical
+  and the `LED_0402-1005_KNB` footprint at JLCPCB; the placement preview of
+  the 2026-09-26 order showed both oriented correctly (MCV 6 at +180, LED at
+  0), which kicad-libs records as verified rows.
 - Mark unverified pinouts, cable orientation and electrical limits as open
   decisions. Record bench results in `docs/bringup-log.md`.
 
