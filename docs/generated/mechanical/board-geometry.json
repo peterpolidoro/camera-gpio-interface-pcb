@@ -1,0 +1,380 @@
+{
+  "generated_by": "export_board_geometry.py",
+  "board": "camera-gpio-interface-pcb",
+  "source": {
+    "file": "camera-gpio-interface-pcb.kicad_pcb",
+    "sha256": "c393574f3046a57b01784274fa07e7e30921cae464252d028df40104bacb008e"
+  },
+  "units": "mm",
+  "frame": {
+    "origin": "centre of the board outline bounding box",
+    "x_axis": "right",
+    "y_axis": "up",
+    "rotation": "degrees counter-clockwise"
+  },
+  "kicad_origin_of_frame_mm": {
+    "x": 150.0,
+    "y": 95.0
+  },
+  "outline": {
+    "shape": "rounded_rectangle",
+    "width_mm": 100.0,
+    "height_mm": 60.0,
+    "corner_radius_mm": 5.0,
+    "bbox": {
+      "min_x": -50.0,
+      "min_y": -30.0,
+      "max_x": 50.0,
+      "max_y": 30.0
+    },
+    "edges": [
+      {
+        "kind": "gr_rect",
+        "bbox": {
+          "min_x": -50.0,
+          "min_y": -30.0,
+          "max_x": 50.0,
+          "max_y": 30.0
+        },
+        "corner_radius_mm": 5.0
+      }
+    ]
+  },
+  "stackup": {
+    "board_thickness_mm": 1.6,
+    "stackup_thickness_mm": 1.6,
+    "copper_layers": 4,
+    "layers": [
+      {
+        "name": "F.SilkS",
+        "type": "Top Silk Screen",
+        "thickness_mm": null,
+        "material": null
+      },
+      {
+        "name": "F.Paste",
+        "type": "Top Solder Paste",
+        "thickness_mm": null,
+        "material": null
+      },
+      {
+        "name": "F.Mask",
+        "type": "Top Solder Mask",
+        "thickness_mm": 0.01,
+        "material": null
+      },
+      {
+        "name": "F.Cu",
+        "type": "copper",
+        "thickness_mm": 0.035,
+        "material": null
+      },
+      {
+        "name": "dielectric 1",
+        "type": "core",
+        "thickness_mm": 0.48,
+        "material": "FR4"
+      },
+      {
+        "name": "In1.Cu",
+        "type": "copper",
+        "thickness_mm": 0.035,
+        "material": null
+      },
+      {
+        "name": "dielectric 2",
+        "type": "prepreg",
+        "thickness_mm": 0.48,
+        "material": "FR4"
+      },
+      {
+        "name": "In2.Cu",
+        "type": "copper",
+        "thickness_mm": 0.035,
+        "material": null
+      },
+      {
+        "name": "dielectric 3",
+        "type": "core",
+        "thickness_mm": 0.48,
+        "material": "FR4"
+      },
+      {
+        "name": "B.Cu",
+        "type": "copper",
+        "thickness_mm": 0.035,
+        "material": null
+      },
+      {
+        "name": "B.Mask",
+        "type": "Bottom Solder Mask",
+        "thickness_mm": 0.01,
+        "material": null
+      },
+      {
+        "name": "B.Paste",
+        "type": "Bottom Solder Paste",
+        "thickness_mm": null,
+        "material": null
+      },
+      {
+        "name": "B.SilkS",
+        "type": "Bottom Silk Screen",
+        "thickness_mm": null,
+        "material": null
+      }
+    ]
+  },
+  "mounting_holes": [
+    {
+      "reference": "H101",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x_mm": -45.0,
+      "y_mm": 25.0,
+      "drill_diameter_mm": 3.2,
+      "plated": false
+    },
+    {
+      "reference": "H102",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x_mm": 45.0,
+      "y_mm": 25.0,
+      "drill_diameter_mm": 3.2,
+      "plated": false
+    },
+    {
+      "reference": "H103",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x_mm": 45.0,
+      "y_mm": -25.0,
+      "drill_diameter_mm": 3.2,
+      "plated": false
+    },
+    {
+      "reference": "H104",
+      "footprint": "MountingHole:MountingHole_3.2mm_M3",
+      "x_mm": -45.0,
+      "y_mm": -25.0,
+      "drill_diameter_mm": 3.2,
+      "plated": false
+    }
+  ],
+  "auxiliary_holes": [
+    {
+      "reference": "J901",
+      "footprint": "orb_weaver_connectors:USB_C_Receptacle_GCT_USB4145-03-0070-C_16P_Vertical",
+      "x_mm": -44.0,
+      "y_mm": -3.0,
+      "drill_diameter_mm": 0.71,
+      "plated": false
+    },
+    {
+      "reference": "J901",
+      "footprint": "orb_weaver_connectors:USB_C_Receptacle_GCT_USB4145-03-0070-C_16P_Vertical",
+      "x_mm": -44.0,
+      "y_mm": 5.0,
+      "drill_diameter_mm": 0.71,
+      "plated": false
+    }
+  ],
+  "connectors": [
+    {
+      "reference": "J301",
+      "value": "HL-BNC-KHDA",
+      "footprint": "orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA",
+      "side": "top",
+      "x_mm": -24.0,
+      "y_mm": -23.0,
+      "rotation_deg": 0.0,
+      "courtyard": {
+        "min_x": -30.5,
+        "min_y": -29.5,
+        "max_x": -17.5,
+        "max_y": -16.5,
+        "width_mm": 13.0,
+        "height_mm": 13.0
+      },
+      "through_holes": 5
+    },
+    {
+      "reference": "J302",
+      "value": "HL-BNC-KHDA",
+      "footprint": "orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA",
+      "side": "top",
+      "x_mm": 0.0,
+      "y_mm": -23.0,
+      "rotation_deg": 0.0,
+      "courtyard": {
+        "min_x": -6.5,
+        "min_y": -29.5,
+        "max_x": 6.5,
+        "max_y": -16.5,
+        "width_mm": 13.0,
+        "height_mm": 13.0
+      },
+      "through_holes": 5
+    },
+    {
+      "reference": "J401",
+      "value": "HL-BNC-KHDA",
+      "footprint": "orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA",
+      "side": "top",
+      "x_mm": 24.0,
+      "y_mm": -23.0,
+      "rotation_deg": 0.0,
+      "courtyard": {
+        "min_x": 17.5,
+        "min_y": -29.5,
+        "max_x": 30.5,
+        "max_y": -16.5,
+        "width_mm": 13.0,
+        "height_mm": 13.0
+      },
+      "through_holes": 5
+    },
+    {
+      "reference": "J402",
+      "value": "HL-BNC-KHDA",
+      "footprint": "orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA",
+      "side": "top",
+      "x_mm": -24.0,
+      "y_mm": 1.0,
+      "rotation_deg": 0.0,
+      "courtyard": {
+        "min_x": -30.5,
+        "min_y": -5.5,
+        "max_x": -17.5,
+        "max_y": 7.5,
+        "width_mm": 13.0,
+        "height_mm": 13.0
+      },
+      "through_holes": 5
+    },
+    {
+      "reference": "J403",
+      "value": "HL-BNC-KHDA",
+      "footprint": "orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA",
+      "side": "top",
+      "x_mm": 0.0,
+      "y_mm": 1.0,
+      "rotation_deg": 0.0,
+      "courtyard": {
+        "min_x": -6.5,
+        "min_y": -5.5,
+        "max_x": 6.5,
+        "max_y": 7.5,
+        "width_mm": 13.0,
+        "height_mm": 13.0
+      },
+      "through_holes": 5
+    },
+    {
+      "reference": "J404",
+      "value": "HL-BNC-KHDA",
+      "footprint": "orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA",
+      "side": "top",
+      "x_mm": 24.0,
+      "y_mm": 1.0,
+      "rotation_deg": 0.0,
+      "courtyard": {
+        "min_x": 17.5,
+        "min_y": -5.5,
+        "max_x": 30.5,
+        "max_y": 7.5,
+        "width_mm": 13.0,
+        "height_mm": 13.0
+      },
+      "through_holes": 5
+    },
+    {
+      "reference": "J501",
+      "value": "FH12-50S-0.5SVA(54)",
+      "footprint": "orb_weaver_connectors:Hirose_FH12-50S-0.5SVA_1x50-4MP_P0.5mm_Vertical",
+      "side": "top",
+      "x_mm": 44.0,
+      "y_mm": -4.0,
+      "rotation_deg": 270.0,
+      "courtyard": {
+        "min_x": 41.2,
+        "min_y": -18.75,
+        "max_x": 46.8,
+        "max_y": 10.75,
+        "width_mm": 5.6,
+        "height_mm": 29.5
+      },
+      "through_holes": 0
+    },
+    {
+      "reference": "J701",
+      "value": "TBH-1x06-3.5mm",
+      "footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+      "side": "top",
+      "x_mm": -25.0,
+      "y_mm": 24.0,
+      "rotation_deg": 180.0,
+      "courtyard": {
+        "min_x": -36.7,
+        "min_y": 19.25,
+        "max_x": -13.3,
+        "max_y": 27.5,
+        "width_mm": 23.4,
+        "height_mm": 8.25
+      },
+      "through_holes": 6
+    },
+    {
+      "reference": "J901",
+      "value": "USB-C",
+      "footprint": "orb_weaver_connectors:USB_C_Receptacle_GCT_USB4145-03-0070-C_16P_Vertical",
+      "side": "top",
+      "x_mm": -44.0,
+      "y_mm": 1.0,
+      "rotation_deg": 90.0,
+      "courtyard": {
+        "min_x": -46.31,
+        "min_y": -4.05,
+        "max_x": -41.69,
+        "max_y": 6.05,
+        "width_mm": 4.62,
+        "height_mm": 10.1
+      },
+      "through_holes": 6
+    },
+    {
+      "reference": "J1201",
+      "value": "TBH-1x06-3.5mm",
+      "footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+      "side": "top",
+      "x_mm": 0.0,
+      "y_mm": 24.0,
+      "rotation_deg": 180.0,
+      "courtyard": {
+        "min_x": -11.7,
+        "min_y": 19.25,
+        "max_x": 11.7,
+        "max_y": 27.5,
+        "width_mm": 23.4,
+        "height_mm": 8.25
+      },
+      "through_holes": 6
+    },
+    {
+      "reference": "J1401",
+      "value": "TBH-1x06-3.5mm",
+      "footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+      "side": "top",
+      "x_mm": 25.0,
+      "y_mm": 24.0,
+      "rotation_deg": 180.0,
+      "courtyard": {
+        "min_x": 13.3,
+        "min_y": 19.25,
+        "max_x": 36.7,
+        "max_y": 27.5,
+        "width_mm": 23.4,
+        "height_mm": 8.25
+      },
+      "through_holes": 6
+    }
+  ]
+}

@@ -289,3 +289,21 @@ rule of the same day), 0 dangling items, 0 unconnected, 0 net differences,
 158 field-parity warnings. `make clearance-check`: 252 findings against the
 256 baseline, 0 voltage-bearing, no new or worsened findings. `make fab`:
 exit 0, `bom_rows=26 resolved=26 designators=151`, `position_rows=151`.
+
+### Peter's PCB-editor pass and its two repairs, later on 2026-09-26
+
+Peter revised the silkscreen, ran Update PCB from Schematic (field parity
+158 -> 0) and poured `/GND` on the two remaining layers as one zone on F.Cu
+and In2.Cu (0.50 mm clearance, 0.25 mm minimum width, 0.25 mm thermal gap
+and spokes, priority 1; the In1.Cu and B.Cu zones keep 0.20 mm clearance
+and 0.5/0.5 mm reliefs). Two consequences, both repaired with pcbnew
+scripts in the managed shell:
+
+| Finding | Cause | Repair |
+| --- | --- | --- |
+| `starved_thermal` error: J404 pad 2 (SYNC OUT BNC ground pin at 179.0, 89.0), "2 spokes connected to isolated island" on In2.Cu | the In2.Cu pour around that pin is an 18 mm² pocket boxed in by the `CAM3_OUT_INST` track at x = 177.40, the `CAM3_L1_INST` track at x = 180.96 and its diagonal above; only the pad's spokes reach it | `/GND` through-via 0.6/0.3 mm at (179.000, 93.500), inside the pocket, no other-net copper within 0.55 mm on any layer; the pocket now joins the In1.Cu plane |
+| `make fab` position guard: `dropped_by_bom=H101,H102,H103,H104` | Update PCB from Schematic rewrote the footprint attributes from the symbols, and a symbol has no exclude-from-position flag, so the four M3 holes lost `exclude_from_pos_files` (the committed board had it) | attribute restored on H101-H104; the fiducials keep theirs as before |
+
+Result: 171 vias, four `/GND` pours. kicad-cli DRC at all severities: 144
+clearance warnings, 0 errors, 0 unconnected, 0 schematic parity issues.
+`make clearance-check`: 252 findings, 0 voltage-bearing, no regressions.

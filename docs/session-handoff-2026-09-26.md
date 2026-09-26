@@ -40,6 +40,17 @@ by run, is [autoroute-log.md](autoroute-log.md); the design record is
   parity gates; the Makefile's `FAB_TOOL` prefers the checkout's launcher;
   `make fab` exits 0 with all 151 parts. The current task list is
   `.agents/PLANS.md`, "Fabrication readiness".
+- **Later still, 2026-09-26:** Peter revised the silkscreen (the v1.0
+  wording, `rev0-plan.md` "Open Item"), ran Update PCB from Schematic (field
+  parity 0) and poured `/GND` on F.Cu and In2.Cu, so all four layers carry a
+  pour. Two repairs followed (`autoroute-log.md`, "Peter's PCB-editor
+  pass"): a `/GND` stitching via at (179.0, 93.5) for the `starved_thermal`
+  error at J404 pad 2, and the `exclude_from_pos_files` attribute restored
+  on H101-H104, which the update had cleared. Every gate passes: ERC 0, DRC
+  0 errors / 0 unconnected / 0 parity, 144 clearance warnings,
+  `make clearance-check` 252 with no regressions, `make fab` exit 0 with
+  151 designators in BOM and CPL. Open items 1-5 below are closed except the
+  bring-up documents (6) and the two rotation rows after the first upload.
 
 ## What happened, in order
 

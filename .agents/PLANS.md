@@ -164,7 +164,7 @@ Blocking `make fab` and the assembly order:
 
 Before the order:
 
-- [ ] **Silkscreen wording.** Present on F.SilkS: title `camera-gpio-interface-pcb
+- [x] **Silkscreen wording.** Present on F.SilkS: title `camera-gpio-interface-pcb
       v1.0 09/26`, `CAMERA 1..3`, the block wire colours BRN..GRN over the
       terminals, `CAMERA n OUT`, `TRIG IN`, `SYNC IN`, `SYNC OUT`, `50-PIN`,
       `+5V`, `+3.3V`. Missing against the plan's recommendation: terminal
@@ -175,10 +175,20 @@ Before the order:
       in the camera-block rows and the InstrumentPort column; keep, shrink or
       hide them. Silk DRC (text height 1.0 mm, thickness 0.15 mm, silk over
       copper) is clean today.
-- [ ] **Field parity.** Update PCB from Schematic with footprint fields
+      Decided 2026-09-26 by Peter: the silk as revised in the PCB editor is
+      the v1.0 wording (`CAMn OUT`, `TRIG IN`, `SYNC IN`, `SYNC OUT`,
+      `USB 5V`, `+5V`, `+3.3V`, `50-PIN`, title, block wire colours;
+      designators hidden). Recorded in `docs/rev0-plan.md`, "Open Item".
+- [x] **Field parity.** Update PCB from Schematic with footprint fields
       enabled clears the 158 `footprint_symbol_field_mismatch` warnings
       (`OW_PART` 142, `ow_note` 10, `ReqExactMPN` 4, `ReqMinCurrent` 2).
       Warnings only; `make fab` does not gate on them.
+      Done 2026-09-26 by Peter: parity 0. Side effect: the update rewrote
+      footprint attributes from the symbols, which carry no
+      exclude-from-position flag, so H101-H104 lost `exclude_from_pos_files`
+      and the kicad-libs position guard failed `make fab` with
+      `dropped_by_bom=H101,H102,H103,H104`; restored with pcbnew. Re-check
+      after any future Update PCB from Schematic.
 - [ ] **Review in the PCB editor**: the run-2 hand repairs (table in
       `docs/autoroute-log.md`), the protected run-1 copper, the B.Cu pour
       cuts. The 6 dangling block-stub vias (USB_D+ x2, SYNC_IN,
@@ -187,6 +197,12 @@ Before the order:
       managed shell; coordinates in `docs/autoroute-log.md`, "Cleanup".
       DRC now has 0 dangling items; `make clearance-check` 252 findings, no
       regressions.
+      Peter's PCB-editor pass, 2026-09-26: silkscreen revised, `/GND` poured
+      on F.Cu and In2.Cu as one zone (0.50 mm clearance, 0.25 mm thermal gap
+      and spokes), Update PCB from Schematic. The pour left J404 pad 2's
+      In2.Cu spokes on an isolated pocket (`starved_thermal`, error); a
+      `/GND` stitching via at (179.0, 93.5) ties the pocket to the In1.Cu
+      plane. Table in `docs/autoroute-log.md`, "Peter's PCB-editor pass".
 - [x] **`make fab`** once the three blockers are closed, then read
       `fab/camera-gpio-interface-pcb/reports/*-jlcpcb-rotations.txt`. Today's
       dry run: DRY6, SOT-666 and RKS corrected +270 (verified), MCV 6 +180

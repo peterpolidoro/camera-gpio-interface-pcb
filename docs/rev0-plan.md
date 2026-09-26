@@ -37,10 +37,11 @@ plane and on B.Cu. `/+5V` and `/+3.3V` carry 0.20 mm board-local classes
 0.50 mm and 0.30 mm rail classes cannot enter the 0.5 mm-pitch SOT-666 and
 DRY6 pads they feed; both rails carry only logic and ESD-array current, so
 the narrower class is the decision for this board. Still open before
-fabrication: the 158 footprint-field parity warnings (`OW_PART` on 142
-footprints, `ow_note`, `ReqExactMPN`, `ReqMinCurrent` on the rest; Update PCB
-from Schematic with footprint fields), the silkscreen wording,
-`make docs` and `make fab`. The 146 clearance findings inherited from the
+fabrication: `make docs` and the order itself. The field-parity warnings
+were cleared and the silkscreen settled by Peter in the PCB editor later
+that day (the silk as built is the v1.0 wording, see "Open Item"); `/GND`
+is now poured on all four layers; `make fab` passes every gate with all
+151 parts in the BOM and CPL. The 146 clearance findings inherited from the
 InstrumentPort and USB block layouts (authored to the 0.10 mm fab floor,
 against this board's 0.20 mm default class) were accepted later that day as
 fab-floor copper inside blocks: the `.kicad_dru` rule "Low-voltage block
@@ -570,7 +571,16 @@ Line 3 / Line 0 swap as planned. This board closes both.
 
 ## Open Item
 
-**Silkscreen wording** (Peter undecided). Recommendation: label by function
+**Silkscreen wording**: decided 2026-09-26 by Peter in the PCB editor; the
+silk as built is enough for v1.0: board title `camera-gpio-interface-pcb /
+v1.0 / 09/26`; `CAMERA 1`, `CAMERA 2`, `CAMERA 3` with the wire colours
+`BRN BLU WHT RED BLK GRN` over terminals 6 to 1 (block silk); `CAM1 OUT`,
+`CAM2 OUT`, `CAM3 OUT`, `TRIG IN`, `SYNC IN`, `SYNC OUT` at the BNCs;
+`USB 5V` at the USB-C; `+5V` and `+3.3V` at the LDO; `50-PIN` at the FFC.
+Reference designators are hidden. The camera-line and `3.3 V LOGIC`
+annotations recommended below stay in `docs/harness-pinouts.md` and on
+cable labels. The recommendation is kept for the record:
+label by function
 and camera line, never by controller pin name, because the pin names change
 with the H7 migration while the function does not:
 

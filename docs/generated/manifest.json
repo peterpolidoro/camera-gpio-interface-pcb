@@ -1,0 +1,61 @@
+{
+  "generated_by": "orb-weaver-kicad-docs",
+  "generated_at": "2026-09-26T20:48:32Z",
+  "kicad_cli_version": "10.0.6",
+  "board": "camera-gpio-interface-pcb",
+  "sources": {
+    "kicad/5v_to_3v3_tps73733.kicad_sch": "02400739ee9fc7e566430401f1591b5181d1e4848cdb7fa6aa0e32199278bc8d",
+    "kicad/blackfly_s_gpio_channel_mcv6_vertical.kicad_sch": "39069f0f90e8a7128f49bea3ecca0d3a93be06b8560a7c701df76c8814deb101",
+    "kicad/camera-gpio-interface-pcb.kicad_dru": "4e6db7c7370536f28afe11489d10120cc86d9b1f78dc3d9ac407f0d20f8eaf5d",
+    "kicad/camera-gpio-interface-pcb.kicad_pcb": "c393574f3046a57b01784274fa07e7e30921cae464252d028df40104bacb008e",
+    "kicad/camera-gpio-interface-pcb.kicad_pro": "8816dc7d3abb4c8d36101550eff5f4445ae8349ec8c8598d335ce6cb040bed64",
+    "kicad/camera-gpio-interface-pcb.kicad_sch": "a3f68aa834d6f16d4d6ebd5cb251f7399ae6c2ac85b54cc891aa4da3916668b3",
+    "kicad/inputs.kicad_sch": "3e3847e5c7fac032cf8d42038ef78789c045586e155f18b27963fb36380b3e2d",
+    "kicad/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch": "d68f1fb2f560238982d1ffae40ea8e506279d20346e56e6550c97ecb27bb26e1",
+    "kicad/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_sch": "7eb3aaabe5fa88c19c821577c0816ec55aba49245597661b9eb8bbc645ae946b",
+    "kicad/outputs.kicad_sch": "aa57dc1f04549c96b8d144560264640da69ad539b0feefa5b66a69bd690fd88c",
+    "kicad/power.kicad_sch": "ca278df26d98225b847de4a47bcdf3a128efe8a55eb5fd6b04d389a57bc9595e",
+    "kicad/usb2_vertical.kicad_sch": "6e55e0102eb80c0f01784fb40561db73a6dd2f0d99427986b71467a39537efda"
+  },
+  "artifacts": {
+    "schematic_pdf": "schematic/camera-gpio-interface-pcb-schematic.pdf",
+    "schematic_svgs": [
+      "camera-gpio-interface-pcb-blackfly_s_gpio_channel_mcv6_vertical.svg",
+      "camera-gpio-interface-pcb-blackfly_s_gpio_channel_mcv6_vertical1.svg",
+      "camera-gpio-interface-pcb-blackfly_s_gpio_channel_mcv6_vertical2.svg",
+      "camera-gpio-interface-pcb-inputs-logic_input_2ch_5v_schmitt_sn74lvc2g17.svg",
+      "camera-gpio-interface-pcb-inputs.svg",
+      "camera-gpio-interface-pcb-instrument_port_digital_50_dut_ffc_boundary_vertical.svg",
+      "camera-gpio-interface-pcb-outputs.svg",
+      "camera-gpio-interface-pcb-power-5v_to_3v3_tps73733.svg",
+      "camera-gpio-interface-pcb-power-usb2_vertical.svg",
+      "camera-gpio-interface-pcb-power.svg",
+      "camera-gpio-interface-pcb.svg"
+    ],
+    "layout": [
+      "layout/assembly-top.svg",
+      "layout/assembly-bottom.svg"
+    ],
+    "renders": [
+      "3d/top.png",
+      "3d/bottom.png",
+      "3d/iso-front-left.png",
+      "3d/iso-front-right.png",
+      "3d/iso-rear-left.png",
+      "3d/iso-rear-right.png",
+      "3d/elevation-front.png",
+      "3d/elevation-left.png"
+    ],
+    "step": "3d/camera-gpio-interface-pcb-assembled.step",
+    "mechanical": [
+      "mechanical/board-dimensions.md",
+      "mechanical/board-geometry.json",
+      "mechanical/connectors.csv",
+      "mechanical/mounting-holes.csv"
+    ],
+    "bom": [
+      "bom/camera-gpio-interface-pcb-bom.csv",
+      "bom/camera-gpio-interface-pcb-bom.md"
+    ]
+  }
+}

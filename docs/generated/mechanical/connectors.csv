@@ -1,0 +1,12 @@
+reference,value,footprint,side,x_mm,y_mm,rotation_deg,courtyard_min_x_mm,courtyard_min_y_mm,courtyard_max_x_mm,courtyard_max_y_mm
+J301,HL-BNC-KHDA,orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA,top,-24.0,-23.0,0.0,-30.5,-29.5,-17.5,-16.5
+J302,HL-BNC-KHDA,orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA,top,0.0,-23.0,0.0,-6.5,-29.5,6.5,-16.5
+J401,HL-BNC-KHDA,orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA,top,24.0,-23.0,0.0,17.5,-29.5,30.5,-16.5
+J402,HL-BNC-KHDA,orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA,top,-24.0,1.0,0.0,-30.5,-5.5,-17.5,7.5
+J403,HL-BNC-KHDA,orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA,top,0.0,1.0,0.0,-6.5,-5.5,6.5,7.5
+J404,HL-BNC-KHDA,orb_weaver_connectors:CONN_BNC_HL-BNC-KHDA,top,24.0,1.0,0.0,17.5,-5.5,30.5,7.5
+J501,FH12-50S-0.5SVA(54),orb_weaver_connectors:Hirose_FH12-50S-0.5SVA_1x50-4MP_P0.5mm_Vertical,top,44.0,-4.0,270.0,41.2,-18.75,46.8,10.75
+J701,TBH-1x06-3.5mm,"orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",top,-25.0,24.0,180.0,-36.7,19.25,-13.3,27.5
+J901,USB-C,orb_weaver_connectors:USB_C_Receptacle_GCT_USB4145-03-0070-C_16P_Vertical,top,-44.0,1.0,90.0,-46.31,-4.05,-41.69,6.05
+J1201,TBH-1x06-3.5mm,"orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",top,0.0,24.0,180.0,-11.7,19.25,11.7,27.5
+J1401,TBH-1x06-3.5mm,"orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",top,25.0,24.0,180.0,13.3,19.25,36.7,27.5
