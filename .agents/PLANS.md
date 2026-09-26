@@ -41,7 +41,8 @@ list. Status here mirrors it.
       fiducials on the root; annotated per sheet (sheet number × 100); ERC 0
       violations; netlist read pin by pin, InstrumentPort channels grouped per
       camera and the plan table rewritten to match.
-- [ ] Layout: four layers, 120 × 80 mm outline per the plan, `INSTRUMENT`
+- [ ] Layout: four layers, 100 × 60 mm outline as placed (the plan
+      estimated 120 × 80 mm), `INSTRUMENT`
       class on the `_INST` nets, DRC clean with `rule_severities.clearance`
       at error. Initial placement done 2026-09-25 (158 footprints, block
       layouts applied: 910 track segments, 121 vias, no zones yet).
@@ -49,11 +50,23 @@ list. Status here mirrors it.
       saved `kicad/clearance-baseline.json` (256 low-voltage clearance
       advisories inherited from the blocks, 0 voltage-bearing, 116 opens);
       `make export-dsn` wrote `fab/autoroute/camera-gpio-interface-pcb.dsn`
-      (737 pre-routed wires, 121 vias, 5 netclasses). Before autorouting:
-      pour the ground plane the plan calls for, export with
-      `EXPORT_DSN_OPTIONS="--refill --protect-prerouted"` so the block
-      copper is locked, route with one thread, `make import-ses`, then
-      `make clearance-check`.
+      (737 pre-routed wires, 121 vias, 5 netclasses). Autorouted 2026-09-25, run 1 in
+      `docs/autoroute-log.md`: `/GND` poured on In1.Cu (the solid plane) and
+      B.Cu; exported with
+      `EXPORT_DSN_OPTIONS="--refill --protect-prerouted --power-layer In1.Cu"`
+      (the new exporter option keeps the router off the plane layer);
+      Freerouting 2.4.1 headless, one thread, 46 min; `make import-ses
+      IMPORT_SES_OPTIONS="--refill"`; `make clearance-check` unchanged
+      against the baseline, opens 116 -> 32, no wire of any net on In1.Cu.
+      Run 2 the same day after the user rotated U402: board-local profile
+      `kicad/netclass-profiles/camera-gpio-narrow-rails.json` gives `/+5V`
+      and `/+3.3V` 0.20 mm classes that fit their SOT-666 and DRY6 pins
+      (the user's rule: a class wider than its pin gets a narrower local
+      class); re-routed with the run-1 copper protected, opens 34 -> 23;
+      the 23 closed by hand with the tracks and vias listed in the log.
+      **DRC: 0 unconnected, 146 block-inherited clearance advisories, 6
+      block dangling vias; clearance check clean against the baseline.**
+      Next: review in the PCB editor, silkscreen, `make docs`.
 - [ ] Silkscreen wording, the one open design decision.
 - [ ] Docs alongside: `docs/interface-map.md`, `docs/design-block-map.md`,
       `docs/harness-pinouts.md`, `docs/validation-plan.md`,

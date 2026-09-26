@@ -102,8 +102,15 @@ written by `make docs`. Never hand-edit either.
 Netclass profiles applied 2026-09-25 with
 `../kicad-libs/bin/orb-weaver-kicad-apply-netclasses`: `instrument-taps` and
 `hv-power-24v` (its HV classes match nothing here; it supplies `PWR_5V`,
-`PWR_3V3` and the `_LOCAL` variants). Re-apply if `--check` reports drift; the
-helper preserves unrelated classes and patterns.
+`PWR_3V3` and the `_LOCAL` variants), plus the board-local
+`kicad/netclass-profiles/camera-gpio-narrow-rails.json`, which puts
+`PWR_5V_NARROW` and `PWR_3V3_NARROW` (0.20 mm track, 0.20 mm clearance,
+0.6/0.3 mm via) one priority step above the shared rail classes so `/+5V`
+and `/+3.3V` can enter the 0.5 mm-pitch SOT-666 and DRY6 pads they feed.
+The shared widths cannot reach those pins (`docs/autoroute-log.md`, run 2);
+a class that is wider than the pin it must connect to gets a narrower local
+class rather than a hand-routed neck. Re-apply any of the three if `--check`
+reports drift; the helper preserves unrelated classes and patterns.
 
 ## Validation
 

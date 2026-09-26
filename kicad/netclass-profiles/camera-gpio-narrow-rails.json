@@ -1,0 +1,62 @@
+{
+  "id": "camera-gpio-narrow-rails",
+  "profile_version": 1,
+  "title": "camera-gpio-interface-pcb board-local narrow supply rails",
+  "description": "Board-local override for the two board-level supply nets. The shared hv-power-24v profile gives /+5V a 0.50 mm track with 0.25 mm clearance and /+3.3V 0.30 mm with 0.20 mm, sized for boards with real load. On this board both rails feed only logic and ESD arrays (under 20 mA on +5V, well under 100 mA on +3.3V) and both have to enter 0.5 mm-pitch SOT-666 and DRY6 pads, where dsn_escape_margin.py measured -0.178 mm and 0.000 mm of escape margin: the shared widths cannot reach the pins. These two classes sit one priority step above PWR_5V and PWR_3V3 so the aggregate netclass for the two root nets takes their geometry, while the shared profile's classes and patterns stay untouched and `orb-weaver-kicad-apply-netclasses --check --profile hv-power-24v` stays clean. Decision recorded 2026-09-25 (docs/autoroute-log.md, run 2).",
+  "source_profiles": [
+    "kicad-libs/kicad/netclass-profiles/hv-power-24v.json"
+  ],
+  "kicad_net_settings_meta_version": 5,
+  "net_settings": {
+    "classes": [
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_5V_NARROW",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 9,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR_3V3_NARROW",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 19,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      }
+    ],
+    "netclass_patterns": [
+      {
+        "netclass": "PWR_5V_NARROW",
+        "pattern": "/+5V"
+      },
+      {
+        "netclass": "PWR_3V3_NARROW",
+        "pattern": "/+3.3V"
+      }
+    ]
+  }
+}
