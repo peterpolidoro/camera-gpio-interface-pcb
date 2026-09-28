@@ -14,7 +14,6 @@
      "python"
      "git"
      "nss-certs"
-     "openjdk@25"
      "ripgrep"
      "sqlite"
      "unixodbc"))))

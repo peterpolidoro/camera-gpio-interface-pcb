@@ -16,7 +16,6 @@
      "python"
      "git"
      "nss-certs"
-     "openjdk@25"
      "ripgrep"
      "poppler"
      "sqlite"
