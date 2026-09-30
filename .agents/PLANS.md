@@ -249,3 +249,28 @@ the arrival inspection and the plan's bench measurements; the three plugs,
 cables and four BNC leads listed in the plan's Sequence step 5 (ordered or
 not is unrecorded, see `docs/fabrication-log.md`). After the boards arrive:
 tag the ordered commit `5ddb425` as v1.0 if that is the convention.
+
+## Planned Task — OBS-HW-CAMERA: camera electrical observation and native-record correlation (2026-09-29)
+
+The new [board observability plan](../docs/observability-plan.md) owns this
+workstream's detailed queue. The [central roadmap](../../orb-weaver-context/context/experimental-system-observability-plan.md)
+owns cross-repository gates and parallel workstreams. Existing dated board
+decisions and measured bring-up records remain authoritative; this entry
+records intent and no new hardware validation.
+
+- [ ] Claim `.1` and prepare overlay, harness and pending validation documents
+      from the current design record and camera settings (G0).
+- [ ] On actual board arrival, complete `.2` with the existing per-unit
+      bring-up procedure and qualified adapter/cable path (G1).
+- [ ] Coordinate `.3` with `OBS-HOST`: correlate trigger/camera output edges
+      with native frame/acquisition records, including missing-data fixtures
+      and timing uncertainty (G4).
+- [ ] Hand `.4` to `OBS-RUN` for bounded experiment observations after local
+      acceptance. This board has no MCU and needs no QP/debug/trace addition.
+
+Claim file ownership before parallel edits and reserve shared bench resources
+through the central session record before measurements. Offline fixture and
+documentation work can proceed in parallel. Keep current manufactured-board
+qualification separate from future revision design; do not edit `kicad-libs`
+for this documentation task. Report evidence-linked results and limits to the
+central roadmap owner before marking a gate complete.

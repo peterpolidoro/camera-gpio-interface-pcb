@@ -109,6 +109,7 @@ Bring-up results go in [docs/bringup-log.md](docs/bringup-log.md).
 
 ## Key Documents
 
+- [Observability development plan](docs/observability-plan.md): board workstream, parallel tasks and evidence gates
 - [Rev 0 plan](docs/rev0-plan.md): the whole design record and the resume checklist
 - [kicad-libs handoff, 2026-09-24](docs/kicad-libs-handoff-2026-09-24.md): what the library prepared for this board
 - [Generated board documentation](docs/generated/README.md): written by `make docs`
