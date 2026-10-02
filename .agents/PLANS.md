@@ -274,3 +274,7 @@ documentation work can proceed in parallel. Keep current manufactured-board
 qualification separate from future revision design; do not edit `kicad-libs`
 for this documentation task. Report evidence-linked results and limits to the
 central roadmap owner before marking a gate complete.
+
+## Progress Log
+
+- 2026-10-02: `kicad/board-manifest.yaml` derived (kicad-libs step 6): 7 placements, 3 board sheets, 28 nets, `make board-manifest-check` ok with 7 warnings (the three Blackfly channel blocks are the retired private block, since replaced by the `orb_weaver_blackfly_s_gpio_channel` family; their PCB groups are numbered `_1`..`_3` where the sheets say `name`, `name1`, `name2`; four blocks in the root). First interface map written at `docs/interface-map.md` (a rendering). Makefile and AGENTS gained the manifest, compose, source and refresh targets from the kicad-libs template.

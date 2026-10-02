@@ -138,3 +138,26 @@ did not catch earlier electrical findings on `mouse-joystick-pcb`.
 
 `ORB_WEAVER_KICAD_LIBS` must resolve for KiCad to find the database, footprint
 and design-block libraries.
+
+## Board Manifest
+
+`kicad/board-manifest.yaml` is the board's manifest (kicad-libs decision D20,
+derived 2026-10-02): every placed block with its anchor from
+`docs/generated/mechanical-datums.json`, each port mapped to the label it meets
+in its parent sheet or `open` with a reason, the board-authored sheets, the
+netclass profiles and every net's class. After placing, wiring or moving a
+block run `make mechanical-datums`, then `make board-manifest-derive` (keeps the
+written meanings and reasons) and `make board-manifest-check`; `make
+board-manifest-render` regenerates the block between the markers at the top of
+`docs/interface-map.md`, which is a rendering of the manifest and is never
+edited by hand; the narrative below the block is. A port the manifest neither
+maps nor leaves open with a reason is an error, not a note.
+
+`make compose` makes the project agree with the manifest (D28), creating the
+sheet instances, pin connections and PCB groups it lacks and never moving or
+renaming; `make compose-check` is the dry run. `make refresh-block INSTANCE=`
+brings one placed block up to its library block and reports what changed
+(D22). `kicad/board.yaml` with subsystem recipes is the board's source (D27)
+when one is written: `make expand` writes the manifest from it and `make
+expand-check` compares. The Makefile targets come from kicad-libs
+`templates/kicad-repo/Makefile` and call the sibling checkout's launchers.

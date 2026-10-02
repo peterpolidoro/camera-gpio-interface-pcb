@@ -1,0 +1,416 @@
+{
+ "schema_version": 1,
+ "board": "/home/peter/Repositories/orb-weaver/camera-gpio-interface-pcb/kicad/camera-gpio-interface-pcb.kicad_pcb",
+ "datum": {
+  "kind": "aux axis origin",
+  "kicad_mm": [
+   150.0,
+   95.0
+  ]
+ },
+ "axes": "KiCad board frame: x right, y down, millimetres, relative to the datum",
+ "connectors": [
+  {
+   "reference": "J1201",
+   "footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+   "value": "TBH-1x06-3.5mm",
+   "family": "Phoenix MCV 1,5 / G-3.5",
+   "positions": 6,
+   "pitch_mm": 3.5,
+   "side": "front",
+   "rotation_degrees": 180.0,
+   "footprint_origin_mm": [
+    0.0,
+    -24.0
+   ],
+   "pad_array_centre_mm": [
+    0.0,
+    -24.0
+   ],
+   "pin_1_mm": [
+    8.75,
+    -24.0
+   ],
+   "mating_centre_mm": [
+    0.0,
+    -24.0
+   ],
+   "mating_direction": "+z",
+   "wire_exit": "+z",
+   "entry": "top",
+   "plug_series": "FKC 2,5 / MC 1,5 ST",
+   "courtyard_corners_mm": [
+    [
+     11.7,
+     -19.25
+    ],
+    [
+     -11.7,
+     -19.25
+    ],
+    [
+     -11.7,
+     -27.5
+    ],
+    [
+     11.7,
+     -27.5
+    ]
+   ]
+  },
+  {
+   "reference": "J1401",
+   "footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+   "value": "TBH-1x06-3.5mm",
+   "family": "Phoenix MCV 1,5 / G-3.5",
+   "positions": 6,
+   "pitch_mm": 3.5,
+   "side": "front",
+   "rotation_degrees": 180.0,
+   "footprint_origin_mm": [
+    25.0,
+    -24.0
+   ],
+   "pad_array_centre_mm": [
+    25.0,
+    -24.0
+   ],
+   "pin_1_mm": [
+    33.75,
+    -24.0
+   ],
+   "mating_centre_mm": [
+    25.0,
+    -24.0
+   ],
+   "mating_direction": "+z",
+   "wire_exit": "+z",
+   "entry": "top",
+   "plug_series": "FKC 2,5 / MC 1,5 ST",
+   "courtyard_corners_mm": [
+    [
+     36.7,
+     -19.25
+    ],
+    [
+     13.3,
+     -19.25
+    ],
+    [
+     13.3,
+     -27.5
+    ],
+    [
+     36.7,
+     -27.5
+    ]
+   ]
+  },
+  {
+   "reference": "J701",
+   "footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+   "value": "TBH-1x06-3.5mm",
+   "family": "Phoenix MCV 1,5 / G-3.5",
+   "positions": 6,
+   "pitch_mm": 3.5,
+   "side": "front",
+   "rotation_degrees": 180.0,
+   "footprint_origin_mm": [
+    -25.0,
+    -24.0
+   ],
+   "pad_array_centre_mm": [
+    -25.0,
+    -24.0
+   ],
+   "pin_1_mm": [
+    -16.25,
+    -24.0
+   ],
+   "mating_centre_mm": [
+    -25.0,
+    -24.0
+   ],
+   "mating_direction": "+z",
+   "wire_exit": "+z",
+   "entry": "top",
+   "plug_series": "FKC 2,5 / MC 1,5 ST",
+   "courtyard_corners_mm": [
+    [
+     -13.3,
+     -19.25
+    ],
+    [
+     -36.7,
+     -19.25
+    ],
+    [
+     -36.7,
+     -27.5
+    ],
+    [
+     -13.3,
+     -27.5
+    ]
+   ]
+  }
+ ],
+ "placement_record": [
+  {
+   "group": "5v_to_3v3_tps73733",
+   "lib_id": "orb_weaver_private:5v_to_3v3_tps73733",
+   "sheet_path": "/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794",
+   "anchor_reference": "U1001",
+   "anchor_footprint": "orb_weaver_smd:TPS737Q1",
+   "anchor_rule": "declared: the largest package, footprint origin",
+   "anchor_declared": true,
+   "grid_mm": 1.0,
+   "anchor_mm": [
+    -40.0,
+    -15.0
+   ],
+   "rotation_degrees": 180.0,
+   "side": "front",
+   "members": [
+    "C1001",
+    "C1002",
+    "U1001"
+   ]
+  },
+  {
+   "group": "blackfly_s_gpio_channel_mcv6_vertical_1",
+   "lib_id": "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical",
+   "sheet_path": "/15ab78d3-645e-44e2-89f2-97279e1f9280",
+   "anchor_reference": "J701",
+   "anchor_footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+   "anchor_rule": "inferred (block not in the anchor table): the group's one connector, pad-array centre",
+   "anchor_declared": false,
+   "grid_mm": null,
+   "anchor_mm": [
+    -25.0,
+    -24.0
+   ],
+   "rotation_degrees": 180.0,
+   "side": "front",
+   "members": [
+    "C701",
+    "C702",
+    "C703",
+    "D701",
+    "J701",
+    "R701",
+    "R702",
+    "R703",
+    "R704",
+    "R705",
+    "R706",
+    "R707",
+    "R708",
+    "R709",
+    "R710",
+    "R711",
+    "U701",
+    "U702",
+    "U703",
+    "U704",
+    "U705"
+   ]
+  },
+  {
+   "group": "blackfly_s_gpio_channel_mcv6_vertical_2",
+   "lib_id": "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical",
+   "sheet_path": "/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8",
+   "anchor_reference": "J1201",
+   "anchor_footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+   "anchor_rule": "inferred (block not in the anchor table): the group's one connector, pad-array centre",
+   "anchor_declared": false,
+   "grid_mm": null,
+   "anchor_mm": [
+    0.0,
+    -24.0
+   ],
+   "rotation_degrees": 180.0,
+   "side": "front",
+   "members": [
+    "C1201",
+    "C1202",
+    "C1203",
+    "D1201",
+    "J1201",
+    "R1201",
+    "R1202",
+    "R1203",
+    "R1204",
+    "R1205",
+    "R1206",
+    "R1207",
+    "R1208",
+    "R1209",
+    "R1210",
+    "R1211",
+    "U1201",
+    "U1202",
+    "U1203",
+    "U1204",
+    "U1205"
+   ]
+  },
+  {
+   "group": "blackfly_s_gpio_channel_mcv6_vertical_3",
+   "lib_id": "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical",
+   "sheet_path": "/cf9287d7-4278-4035-9b01-341de48c7c59",
+   "anchor_reference": "J1401",
+   "anchor_footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
+   "anchor_rule": "inferred (block not in the anchor table): the group's one connector, pad-array centre",
+   "anchor_declared": false,
+   "grid_mm": null,
+   "anchor_mm": [
+    25.0,
+    -24.0
+   ],
+   "rotation_degrees": 180.0,
+   "side": "front",
+   "members": [
+    "C1401",
+    "C1402",
+    "C1403",
+    "D1401",
+    "J1401",
+    "R1401",
+    "R1402",
+    "R1403",
+    "R1404",
+    "R1405",
+    "R1406",
+    "R1407",
+    "R1408",
+    "R1409",
+    "R1410",
+    "R1411",
+    "U1401",
+    "U1402",
+    "U1403",
+    "U1404",
+    "U1405"
+   ]
+  },
+  {
+   "group": "instrument_port_digital_50_dut_ffc_boundary_vertical",
+   "lib_id": "orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical",
+   "sheet_path": "/716b668d-905d-4ab3-a241-da78699c8ce7",
+   "anchor_reference": "J501",
+   "anchor_footprint": "orb_weaver_connectors:Hirose_FH12-50S-0.5SVA_1x50-4MP_P0.5mm_Vertical",
+   "anchor_rule": "declared: the one connector, pad-array centre",
+   "anchor_declared": true,
+   "grid_mm": 1.0,
+   "anchor_mm": [
+    44.0,
+    4.0
+   ],
+   "rotation_degrees": 270.0,
+   "side": "front",
+   "members": [
+    "C501",
+    "C502",
+    "C503",
+    "C504",
+    "C505",
+    "J501",
+    "R501",
+    "R502",
+    "R503",
+    "R504",
+    "R505",
+    "R506",
+    "R507",
+    "R508",
+    "R509",
+    "R510",
+    "R511",
+    "R512",
+    "R513",
+    "R514",
+    "R515",
+    "R516",
+    "R517",
+    "R518",
+    "R519",
+    "R520",
+    "R521",
+    "R522",
+    "R523",
+    "R524",
+    "R525",
+    "R526",
+    "R527",
+    "R528",
+    "R529",
+    "R530",
+    "R531",
+    "R532",
+    "R533",
+    "R534",
+    "R535",
+    "R536",
+    "U501",
+    "U502",
+    "U503",
+    "U504"
+   ]
+  },
+  {
+   "group": "logic_input_2ch_5v_schmitt_sn74lvc2g17",
+   "lib_id": "orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17",
+   "sheet_path": "/466351ee-30f0-48a7-921b-3bf3872996b2/f735ca8a-380e-46a5-ab9d-94d578027087",
+   "anchor_reference": "U1101",
+   "anchor_footprint": "orb_weaver_smd:DRY6",
+   "anchor_rule": "declared: the largest package, footprint origin",
+   "anchor_declared": true,
+   "grid_mm": 1.0,
+   "anchor_mm": [
+    -12.0,
+    17.0
+   ],
+   "rotation_degrees": 90.0,
+   "side": "front",
+   "members": [
+    "C1101",
+    "C1102",
+    "C1103",
+    "R1101",
+    "R1102",
+    "R1103",
+    "R1104",
+    "R1105",
+    "R1106",
+    "R1107",
+    "R1108",
+    "U1101"
+   ]
+  },
+  {
+   "group": "usb2_vertical",
+   "lib_id": "orb_weaver_private:usb2_vertical",
+   "sheet_path": "/5b8333aa-5632-4b02-bed2-f7f06815639a/891726c4-91ac-4fc5-a699-1590dbecf38b",
+   "anchor_reference": "J901",
+   "anchor_footprint": "orb_weaver_connectors:USB_C_Receptacle_GCT_USB4145-03-0070-C_16P_Vertical",
+   "anchor_rule": "declared: the one connector, pad-array centre",
+   "anchor_declared": true,
+   "grid_mm": 1.0,
+   "anchor_mm": [
+    -44.0,
+    -1.0
+   ],
+   "rotation_degrees": 90.0,
+   "side": "front",
+   "members": [
+    "C901",
+    "D901",
+    "J901",
+    "R901",
+    "R902",
+    "U901"
+   ]
+  }
+ ]
+}

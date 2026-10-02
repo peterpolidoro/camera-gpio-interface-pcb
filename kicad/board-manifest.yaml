@@ -1,0 +1,416 @@
+schema: orb-weaver/board-manifest/1
+board: camera-gpio-interface-pcb
+project: camera-gpio-interface-pcb.kicad_pro
+rules:
+  profiles:
+  - instrument-taps
+  - hv-power-24v
+  grid_mm: 1.0
+  datum:
+    kind: aux axis origin
+    kicad_mm: [150.0, 95.0]
+sheets:
+- name: inputs
+  file: inputs.kicad_sch
+  parent: /
+  ports:
+    +3.3V: +3.3V
+    +5V: +5V
+    GND: GND
+    SYNC_IN: SYNC_IN
+    SYNC_IN_INST: SYNC_IN_INST
+    TRIG_IN: TRIG_IN
+    TRIG_IN_INST: TRIG_IN_INST
+  note: board-authored sheet, 7 parts
+- name: power
+  file: power.kicad_sch
+  parent: /
+  ports:
+    +3.3V: +3.3V
+    +5V: +5V
+    GND: GND
+  note: board-authored sheet, 2 parts
+- name: outputs
+  file: outputs.kicad_sch
+  parent: /
+  ports:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM1_OUT_BNC: CAM1_OUT_BNC
+    CAM2_OUT_BNC: CAM2_OUT_BNC
+    CAM3_OUT_BNC: CAM3_OUT_BNC
+    GND: GND
+    SYNC_IN: SYNC_IN
+    SYNC_OUT_INST: SYNC_OUT_INST
+  note: board-authored sheet, 12 parts
+placements:
+- name: blackfly_s_gpio_channel_mcv6_vertical
+  block: orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical
+  parent: /
+  anchor_mm: [-25.0, -24.0]
+  rotation_degrees: 180
+  side: front
+  anchor_rule: 'inferred (block not in the anchor table): the group''s one connector, pad-array centre'
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM_OUT_BNC: CAM1_OUT_BNC
+    GND: GND
+    L0_INST: CAM1_L0_INST
+    L1_INST: CAM1_L1_INST
+    L2_INST: CAM1_L2_INST
+    L3_INST: CAM1_L3_INST
+    OUT_INST: CAM1_OUT_INST
+    SYNC_IN: SYNC_IN
+    TRIG_IN: TRIG_IN
+- name: logic_input_2ch_5v_schmitt_sn74lvc2g17
+  block: orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17
+  parent: /inputs
+  anchor_mm: [-12.0, 17.0]
+  rotation_degrees: 90
+  side: front
+  connections:
+    +3.3V: +3.3V
+    GND: GND
+    IN_A: TRIG_IN
+    IN_A_INST: TRIG_IN_INST
+    IN_A_RAW: TRIG_RAW
+    IN_B: SYNC_IN
+    IN_B_INST: SYNC_IN_INST
+    IN_B_RAW: SYNC_RAW
+- name: 5v_to_3v3_tps73733
+  block: orb_weaver_private:5v_to_3v3_tps73733
+  parent: /power
+  anchor_mm: [-40.0, -15.0]
+  rotation_degrees: 180
+  side: front
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    GND: GND
+- name: usb2_vertical
+  block: orb_weaver_private:usb2_vertical
+  parent: /power
+  anchor_mm: [-44.0, -1.0]
+  rotation_degrees: 90
+  side: front
+  connections:
+    +5V_USB: +5V
+    GND: GND
+    USB_D+:
+      open: no-connect flag
+    USB_D-:
+      open: no-connect flag
+    VBUS:
+      open: no-connect flag
+- name: instrument_port_digital_50_dut_ffc_boundary_vertical
+  block: orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical
+  parent: /
+  anchor_mm: [44.0, 4.0]
+  rotation_degrees: 270
+  side: front
+  sheet_pins:
+    size_mm: [25.4, 91.44]
+    pins:
+      +3.3V:
+        edge: west
+        offset_mm: 2.54
+        angle: 180
+        shape: passive
+      GND:
+        edge: west
+        offset_mm: 5.08
+        angle: 180
+        shape: passive
+      DIG0:
+        edge: west
+        offset_mm: 10.16
+        angle: 180
+        shape: input
+      DIG1:
+        edge: west
+        offset_mm: 12.7
+        angle: 180
+        shape: input
+      DIG2:
+        edge: west
+        offset_mm: 15.24
+        angle: 180
+        shape: input
+      DIG3:
+        edge: west
+        offset_mm: 17.78
+        angle: 180
+        shape: input
+      DIG4:
+        edge: west
+        offset_mm: 20.32
+        angle: 180
+        shape: input
+      DIG5:
+        edge: west
+        offset_mm: 22.86
+        angle: 180
+        shape: input
+      DIG6:
+        edge: west
+        offset_mm: 25.4
+        angle: 180
+        shape: input
+      DIG7:
+        edge: west
+        offset_mm: 27.94
+        angle: 180
+        shape: input
+      DIG8:
+        edge: west
+        offset_mm: 30.48
+        angle: 180
+        shape: input
+      DIG9:
+        edge: west
+        offset_mm: 33.02
+        angle: 180
+        shape: input
+      DIG10:
+        edge: west
+        offset_mm: 35.56
+        angle: 180
+        shape: input
+      DIG11:
+        edge: west
+        offset_mm: 38.1
+        angle: 180
+        shape: input
+      DIG12:
+        edge: west
+        offset_mm: 40.64
+        angle: 180
+        shape: input
+      DIG13:
+        edge: west
+        offset_mm: 43.18
+        angle: 180
+        shape: input
+      DIG14:
+        edge: west
+        offset_mm: 45.72
+        angle: 180
+        shape: input
+      DIG15:
+        edge: west
+        offset_mm: 48.26
+        angle: 180
+        shape: input
+      DIG16:
+        edge: west
+        offset_mm: 50.8
+        angle: 180
+        shape: input
+      DIG17:
+        edge: west
+        offset_mm: 53.34
+        angle: 180
+        shape: input
+      DIG18:
+        edge: west
+        offset_mm: 55.88
+        angle: 180
+        shape: input
+      DIG19:
+        edge: west
+        offset_mm: 58.42
+        angle: 180
+        shape: input
+      DIG20:
+        edge: west
+        offset_mm: 60.96
+        angle: 180
+        shape: input
+      DIG21:
+        edge: west
+        offset_mm: 63.5
+        angle: 180
+        shape: input
+      DIG22:
+        edge: west
+        offset_mm: 66.04
+        angle: 180
+        shape: input
+      DIG23:
+        edge: west
+        offset_mm: 68.58
+        angle: 180
+        shape: input
+      DIG24:
+        edge: west
+        offset_mm: 71.12
+        angle: 180
+        shape: input
+      DIG25:
+        edge: west
+        offset_mm: 73.66
+        angle: 180
+        shape: input
+      DIG26:
+        edge: west
+        offset_mm: 76.2
+        angle: 180
+        shape: input
+      DIG27:
+        edge: west
+        offset_mm: 78.74
+        angle: 180
+        shape: input
+      DIG28:
+        edge: west
+        offset_mm: 81.28
+        angle: 180
+        shape: input
+      DIG29:
+        edge: west
+        offset_mm: 83.82
+        angle: 180
+        shape: input
+      DIG30:
+        edge: west
+        offset_mm: 86.36
+        angle: 180
+        shape: input
+      DIG31:
+        edge: west
+        offset_mm: 88.9
+        angle: 180
+        shape: input
+  connections:
+    +3.3V: +3.3V
+    DIG0: TRIG_IN_INST
+    DIG1: SYNC_IN_INST
+    DIG2: SYNC_OUT_INST
+    DIG3: CAM1_L0_INST
+    DIG4: CAM1_L1_INST
+    DIG5: CAM1_L2_INST
+    DIG6: CAM1_L3_INST
+    DIG7: CAM1_OUT_INST
+    DIG8: CAM2_L0_INST
+    DIG9: CAM2_L1_INST
+    DIG10: CAM2_L2_INST
+    DIG11: CAM2_L3_INST
+    DIG12: CAM2_OUT_INST
+    DIG13: CAM3_L0_INST
+    DIG14: CAM3_L1_INST
+    DIG15: CAM3_L2_INST
+    DIG16: CAM3_L3_INST
+    DIG17: CAM3_OUT_INST
+    DIG18: GND
+    DIG19: GND
+    DIG20: GND
+    DIG21: GND
+    DIG22: GND
+    DIG23: GND
+    DIG24: GND
+    DIG25: GND
+    DIG26: GND
+    DIG27: GND
+    DIG28: GND
+    DIG29: GND
+    DIG30: GND
+    DIG31: GND
+    GND: GND
+- name: blackfly_s_gpio_channel_mcv6_vertical2
+  block: orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical
+  parent: /
+  file: blackfly_s_gpio_channel_mcv6_vertical.kicad_sch
+  anchor_mm: [25.0, -24.0]
+  rotation_degrees: 180
+  side: front
+  anchor_rule: 'inferred (block not in the anchor table): the group''s one connector, pad-array centre'
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM_OUT_BNC: CAM3_OUT_BNC
+    GND: GND
+    L0_INST: CAM3_L0_INST
+    L1_INST: CAM3_L1_INST
+    L2_INST: CAM3_L2_INST
+    L3_INST: CAM3_L3_INST
+    OUT_INST: CAM3_OUT_INST
+    SYNC_IN: SYNC_IN
+    TRIG_IN: TRIG_IN
+- name: blackfly_s_gpio_channel_mcv6_vertical1
+  block: orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical
+  parent: /
+  file: blackfly_s_gpio_channel_mcv6_vertical.kicad_sch
+  anchor_mm: [0.0, -24.0]
+  rotation_degrees: 180
+  side: front
+  anchor_rule: 'inferred (block not in the anchor table): the group''s one connector, pad-array centre'
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM_OUT_BNC: CAM2_OUT_BNC
+    GND: GND
+    L0_INST: CAM2_L0_INST
+    L1_INST: CAM2_L1_INST
+    L2_INST: CAM2_L2_INST
+    L3_INST: CAM2_L3_INST
+    OUT_INST: CAM2_OUT_INST
+    SYNC_IN: SYNC_IN
+    TRIG_IN: TRIG_IN
+nets:
+  /+3.3V:
+    class: PWR_3V3_NARROW
+  /+5V:
+    class: PWR_5V_NARROW
+  /CAM1_L0_INST:
+    class: INSTRUMENT
+  /CAM1_L1_INST:
+    class: INSTRUMENT
+  /CAM1_L2_INST:
+    class: INSTRUMENT
+  /CAM1_L3_INST:
+    class: INSTRUMENT
+  /CAM1_OUT_BNC:
+    class: Default
+  /CAM1_OUT_INST:
+    class: INSTRUMENT
+  /CAM2_L0_INST:
+    class: INSTRUMENT
+  /CAM2_L1_INST:
+    class: INSTRUMENT
+  /CAM2_L2_INST:
+    class: INSTRUMENT
+  /CAM2_L3_INST:
+    class: INSTRUMENT
+  /CAM2_OUT_BNC:
+    class: Default
+  /CAM2_OUT_INST:
+    class: INSTRUMENT
+  /CAM3_L0_INST:
+    class: INSTRUMENT
+  /CAM3_L1_INST:
+    class: INSTRUMENT
+  /CAM3_L2_INST:
+    class: INSTRUMENT
+  /CAM3_L3_INST:
+    class: INSTRUMENT
+  /CAM3_OUT_BNC:
+    class: Default
+  /CAM3_OUT_INST:
+    class: INSTRUMENT
+  /GND:
+    class: PWR_RETURN_LOCAL
+  /SYNC_IN:
+    class: Default
+  /SYNC_IN_INST:
+    class: INSTRUMENT
+  /SYNC_OUT_INST:
+    class: INSTRUMENT
+  /TRIG_IN:
+    class: Default
+  /TRIG_IN_INST:
+    class: INSTRUMENT
+  /inputs/SYNC_RAW:
+    class: Default
+  /inputs/TRIG_RAW:
+    class: Default
