@@ -36,4 +36,4 @@
   (name 'orb-weaver-kicad-libs)
   (url "https://codeberg.org/orb-weaver/kicad-libs.git")
   (branch "main")
-  (commit "768a00bb4cdb2926bcd5846f2db2aced0711e8b9")))
+  (commit "f1910778e44efde6884fe31c8dae74df32774f31")))
