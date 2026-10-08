@@ -20,6 +20,7 @@
      "kicad-packages3d"
      "kicad-templates"
      "bash"
+     "make"
      "python"
      "git"
      "nss-certs"

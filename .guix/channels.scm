@@ -31,7 +31,7 @@
   (name 'guix-agent-tools)
   (url "https://codeberg.org/orb-weaver/guix-agent-tools.git")
   (branch "main")
-  (commit "267a880c323735687592286e8d69bf880b5e224e"))
+  (commit "788874ea3af208c30d66bd4e415b18e35ec14c2b"))
  (channel
   (name 'orb-weaver-kicad-libs)
   (url "https://codeberg.org/orb-weaver/kicad-libs.git")

@@ -11,6 +11,7 @@
   ((@ (gnu packages) specifications->manifest)
    '("freecad"
      "bash"
+     "make"
      "python"
      "git"
      "nss-certs"

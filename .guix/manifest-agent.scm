@@ -13,8 +13,10 @@
          (@ (orb-weaver packages) sqliteodbc)))
   ((@ (gnu packages) specifications->manifest)
    '("bash"
+     "make"
      "python"
      "git"
+     "guix"
      "nss-certs"
      "ripgrep"
      "poppler"
