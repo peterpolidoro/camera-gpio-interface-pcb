@@ -1,0 +1,50 @@
+ERC report (2026-10-12T11:33:00, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[lib_symbol_mismatch]: Symbol 'All/OW-MISC-SN74LVC2G17DRYR' doesn't match copy in library 'orb_weaver_internal'
+    ; warning
+    @(172.72 mm, 88.90 mm): Symbol U1101 [All/OW-MISC-SN74LVC2G17DRYR]
+[lib_symbol_mismatch]: Symbol 'All/OW-MISC-SN74LVC2G17DRYR' doesn't match copy in library 'orb_weaver_internal'
+    ; warning
+    @(172.72 mm, 119.38 mm): Symbol U1101 [All/OW-MISC-SN74LVC2G17DRYR]
+[lib_symbol_mismatch]: Symbol 'All/OW-MISC-SN74LVC2G17DRYR' doesn't match copy in library 'orb_weaver_internal'
+    ; warning
+    @(218.44 mm, 55.88 mm): Symbol U1101 [All/OW-MISC-SN74LVC2G17DRYR]
+[lib_symbol_mismatch]: Symbol 'All/OW-MISC-SN74LVC2G17DRYR' doesn't match copy in library 'orb_weaver_internal'
+    ; warning
+    @(109.22 mm, 127.00 mm): Symbol U1401 [All/OW-MISC-SN74LVC2G17DRYR]
+[lib_symbol_mismatch]: Symbol 'All/OW-MISC-SN74LVC2G17DRYR' doesn't match copy in library 'orb_weaver_internal'
+    ; warning
+    @(109.22 mm, 152.40 mm): Symbol U1401 [All/OW-MISC-SN74LVC2G17DRYR]
+[lib_symbol_mismatch]: Symbol 'All/OW-MISC-SN74LVC2G17DRYR' doesn't match copy in library 'orb_weaver_internal'
+    ; warning
+    @(139.70 mm, 111.76 mm): Symbol U1401 [All/OW-MISC-SN74LVC2G17DRYR]
+
+***** Sheet /power/
+
+***** Sheet /inputs/
+
+***** Sheet /outputs/
+
+***** Sheet /instrument_port_digital_50_dut_ffc_boundary_vertical/
+
+***** Sheet /blackfly_s_gpio_channel_mcv6_vertical/
+
+***** Sheet /power/usb2_vertical/
+
+***** Sheet /power/5v_to_3v3_tps73733/
+
+***** Sheet /inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17/
+
+***** Sheet /blackfly_s_gpio_channel_mcv6_vertical1/
+
+***** Sheet /blackfly_s_gpio_channel_mcv6_vertical2/
+
+ ** ERC messages: 6  Errors 0  Warnings 6
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

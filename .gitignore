@@ -25,7 +25,6 @@ symbols/*.bak
 **/*.dsn
 **/*.ses
 db/build/
-fab/
 tmp/
 .codex/handoff.local.md
 .codex/workspace.dirs

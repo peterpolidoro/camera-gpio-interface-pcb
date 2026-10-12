@@ -96,14 +96,16 @@ what a panel cutout has to clear. Full tables in [board-dimensions.md](docs/gene
 
 The v1.0 boards were ordered assembled from JLCPCB from the package built at
 commit `5ddb425`. [The fabrication log](docs/fabrication-log.md) records the
-commit, the source hashes and the hash of every file in that package, so a
-rebuilt package can be checked against what was ordered; the package itself
-is not committed. To order boards with plain KiCad 10, plot the four copper
-layers, both masks, pastes and silkscreens and the edge cuts, export the
-Excellon drill files, and export the BOM and placement file from
-`kicad/camera-gpio-interface-pcb.kicad_pcb`. JLCPCB's placement rotation
-differs from KiCad's for some footprints, so check the assembly preview
-before confirming an order.
+commit, the source hashes and the hash of every file JLCPCB received.
+[fab/camera-gpio-interface-pcb/](fab/camera-gpio-interface-pcb/) holds the
+package rebuilt from the same sources on 2026-10-12: upload
+`camera-gpio-interface-pcb-jlcpcb.zip`, `jlcpcb-bom.csv` and
+`jlcpcb-camera-gpio-interface-pcb-all-pos.csv` to order more boards. The BOM
+and placement files are byte-identical to the uploaded ones; the gerbers
+differ only by the creation time in their headers. To fabricate elsewhere,
+plot the layers and drill files from `kicad/camera-gpio-interface-pcb.kicad_pcb`
+in KiCad. JLCPCB's placement rotation differs from KiCad's for some
+footprints, so check the assembly preview before confirming an order.
 
 ## Related Repositories
 

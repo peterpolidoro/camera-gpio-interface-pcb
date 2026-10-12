@@ -1,0 +1,31 @@
+Drill report for camera-gpio-interface-pcb.kicad_pcb
+Created on 2026-10-12T11:33:12
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'camera-gpio-interface-pcb.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (169 holes))
+    T2  0.300mm  0.0118"  (4 holes))
+    T3  0.400mm  0.0157"  (2 holes))
+    T4  0.600mm  0.0236"  (4 holes)  (with 4 slots)
+    T5  1.100mm  0.0433"  (30 holes))
+    T6  1.200mm  0.0472"  (18 holes))
+
+    Total plated holes count 227
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T7  0.710mm  0.0280"  (2 holes))
+    T8  3.200mm  0.1260"  (4 holes))
+
+    Total unplated holes count 6

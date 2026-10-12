@@ -1,0 +1,3350 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T11:33:09",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "camera-gpio-interface-pcb.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3960 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 93.3
+                    },
+                    "uuid": "317fdf54-317e-4d16-b5a1-8f2170b5b293"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6300 mm",
+                    "pos": {
+                        "x": 184.43,
+                        "y": 92.55
+                    },
+                    "uuid": "feb9bf4f-c941-499a-97f6-f59a197d4737"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1790 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 1.0607 mm",
+                    "pos": {
+                        "x": 186.526,
+                        "y": 95.5
+                    },
+                    "uuid": "d0ece43d-38f1-4425-9bb4-72eb52dc165f"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] on F.Cu, length 1.7678 mm",
+                    "pos": {
+                        "x": 186.49,
+                        "y": 95.0
+                    },
+                    "uuid": "e0906239-ae21-4e16-9cf0-4b7f1b3c83ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Via [/+3.3V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 136.25,
+                        "y": 111.5
+                    },
+                    "uuid": "2b5590cf-b6a9-4c25-8a40-5b51fcfa0fe1"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 1.1400 mm",
+                    "pos": {
+                        "x": 136.8,
+                        "y": 111.95
+                    },
+                    "uuid": "ee38af71-d30c-418d-96d5-1a551a87c0de"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG29_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 88.73
+                    },
+                    "uuid": "138da97e-c596-4339-86c3-30ac34c2aaa8"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28_BUF] of R533 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 89.25
+                    },
+                    "uuid": "863994ab-08ef-43fe-a84a-74f0782367cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 38 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 92.75
+                    },
+                    "uuid": "34fef8a2-0b67-434f-97cb-bc84d6928338"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 92.25
+                    },
+                    "uuid": "eb43616d-0fd2-4600-8c48-9251cfa6b4a5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 93.25
+                    },
+                    "uuid": "5798b478-aa8e-4364-83a4-e4e54bc5848f"
+                },
+                {
+                    "description": "Pad 36 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 93.75
+                    },
+                    "uuid": "c9cf15fa-d1be-40cc-b402-353a06a5352c"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG26_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 90.77
+                    },
+                    "uuid": "87dc1508-67d1-42c5-bdf2-fd71e38a9d12"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG27_BUF] of R532 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 90.25
+                    },
+                    "uuid": "ef53239a-746e-4ff4-83a3-8dabbe8d5f6d"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 108.73
+                    },
+                    "uuid": "1d4d637e-e7e5-430f-a90c-d22bb3428ded"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_BUF] of R507 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 109.25
+                    },
+                    "uuid": "78b57de7-55a4-4f68-b9f8-d4de7801e907"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG10_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 103.25
+                    },
+                    "uuid": "49795db4-272b-4273-9555-18e55baa07f5"
+                },
+                {
+                    "description": "Pad 16 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 103.75
+                    },
+                    "uuid": "fccbcdcd-1da2-4a24-b03e-0f834d61e193"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 42 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG26_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 90.75
+                    },
+                    "uuid": "b8cb590c-3583-4410-b263-9ae09de702b1"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG27_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 90.25
+                    },
+                    "uuid": "eaea3045-8a32-4447-a4a2-127462f932b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] of R528 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 93.25
+                    },
+                    "uuid": "7a6139fb-3569-4dbc-b26a-5d033743c180"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 93.77
+                    },
+                    "uuid": "9483a728-612a-475a-b32e-9770e504de4c"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9_ISO] of R514 on F.Cu",
+                    "pos": {
+                        "x": 190.76,
+                        "y": 104.25
+                    },
+                    "uuid": "350826b8-ae74-4bce-8a69-e8b77603a99f"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG8_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 104.77
+                    },
+                    "uuid": "7e4a72ab-c5f0-4877-8ddc-6c423e17fe4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_ISO] of R511 on F.Cu",
+                    "pos": {
+                        "x": 190.76,
+                        "y": 106.25
+                    },
+                    "uuid": "3f61bb02-150d-41e6-85a8-43e5e8cf936c"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 105.73
+                    },
+                    "uuid": "686a9d9c-2808-44f5-aca4-74bfe627b10f"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1145 mm)",
+            "items": [
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 107.0
+                    },
+                    "uuid": "81ceffdd-e779-40b4-95f3-e407ffc9da8a"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm",
+                    "pos": {
+                        "x": 186.344,
+                        "y": 107.5
+                    },
+                    "uuid": "ad9df7f2-c316-4093-8b27-41a1d1733ddc"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)",
+            "items": [
+                {
+                    "description": "Pad 20 [/+3.3V] of U501 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 106.6
+                    },
+                    "uuid": "6a781d75-cb10-44bc-9d12-4742de31e578"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.3960 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 106.3
+                    },
+                    "uuid": "7eeca781-1ce3-4701-9092-deb0c1c11f24"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Pad 20 [/+3.3V] of U501 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 106.6
+                    },
+                    "uuid": "6a781d75-cb10-44bc-9d12-4742de31e578"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.7380 mm",
+                    "pos": {
+                        "x": 185.03,
+                        "y": 106.02
+                    },
+                    "uuid": "b61bd282-8258-4beb-bd91-695e8875c31f"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R501 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 105.5
+                    },
+                    "uuid": "748cc8e7-676f-4c90-97a4-5330afc3ace0"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.0424 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 105.53
+                    },
+                    "uuid": "e1312f69-17da-4440-be5d-c786d3557d6e"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.2715 mm",
+                    "pos": {
+                        "x": 185.768,
+                        "y": 106.02
+                    },
+                    "uuid": "70402b23-8663-42fe-9d76-8a722cd58267"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R501 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 105.5
+                    },
+                    "uuid": "748cc8e7-676f-4c90-97a4-5330afc3ace0"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm",
+                    "pos": {
+                        "x": 186.344,
+                        "y": 107.5
+                    },
+                    "uuid": "ad9df7f2-c316-4093-8b27-41a1d1733ddc"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.9180 mm",
+                    "pos": {
+                        "x": 186.756,
+                        "y": 106.664
+                    },
+                    "uuid": "b0d0b98b-66c0-4423-9ce8-c40890892cbf"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1300 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R501 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 105.5
+                    },
+                    "uuid": "748cc8e7-676f-4c90-97a4-5330afc3ace0"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.5200 mm",
+                    "pos": {
+                        "x": 185.99,
+                        "y": 105.5
+                    },
+                    "uuid": "d5de713d-0297-445b-9b78-7b114fc5b008"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R501 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 105.5
+                    },
+                    "uuid": "748cc8e7-676f-4c90-97a4-5330afc3ace0"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.2980 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 105.828
+                    },
+                    "uuid": "7912d032-1f67-41fd-8d5d-21a4edd344b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.4752 mm",
+                    "pos": {
+                        "x": 186.42,
+                        "y": 107.0
+                    },
+                    "uuid": "99432934-027c-439f-9986-c884fcb269d0"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm",
+                    "pos": {
+                        "x": 186.344,
+                        "y": 107.5
+                    },
+                    "uuid": "ad9df7f2-c316-4093-8b27-41a1d1733ddc"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] of R518 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 101.25
+                    },
+                    "uuid": "426fde95-fe7a-48e1-a67a-ec888619d7f6"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 101.77
+                    },
+                    "uuid": "e42a387e-a397-442c-af40-4608d3fad832"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.2700 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 107.0
+                    },
+                    "uuid": "25b7326b-8f42-40f6-9c4d-3f5fd0cef27f"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm",
+                    "pos": {
+                        "x": 186.344,
+                        "y": 107.5
+                    },
+                    "uuid": "ad9df7f2-c316-4093-8b27-41a1d1733ddc"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 26 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 98.75
+                    },
+                    "uuid": "10a968d6-08c0-47e0-b9a9-27ebaafc69ce"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 98.25
+                    },
+                    "uuid": "8fe2d2a4-24ad-40c8-bef8-de409bf45480"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 188.78,
+                        "y": 96.77
+                    },
+                    "uuid": "58ba37be-c1f3-4287-9784-6bc9c935bd45"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] of R524 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 96.25
+                    },
+                    "uuid": "813a6c41-6f98-4a9b-a323-e04553832b68"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R504 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 86.0
+                    },
+                    "uuid": "c5acb5de-f03b-4dfa-96a1-5ee4cd9eb620"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.0566 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 86.04
+                    },
+                    "uuid": "c96b1aaa-206b-41a1-9cd6-37db95fc1a10"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Pad 20 [/+3.3V] of U504 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 87.1
+                    },
+                    "uuid": "000be9f6-8c79-4a86-b50e-343cdeb78af9"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.7380 mm",
+                    "pos": {
+                        "x": 185.03,
+                        "y": 86.52
+                    },
+                    "uuid": "d5bc3e25-8954-4e2b-847a-c7a4dc9d34e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R504 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 86.0
+                    },
+                    "uuid": "c5acb5de-f03b-4dfa-96a1-5ee4cd9eb620"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.2875 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 86.3275
+                    },
+                    "uuid": "ca122cca-8d50-4f5e-9976-198eea5879b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)",
+            "items": [
+                {
+                    "description": "Pad 20 [/+3.3V] of U504 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 87.1
+                    },
+                    "uuid": "000be9f6-8c79-4a86-b50e-343cdeb78af9"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.3960 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 86.8
+                    },
+                    "uuid": "678fb383-aeee-4b33-b563-d299e2df9523"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 92.27
+                    },
+                    "uuid": "74a18796-1441-4170-b24e-3ec3abf9768c"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_BUF] of R530 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 91.75
+                    },
+                    "uuid": "f9bd6a80-bf23-4ca6-a408-712ab004d074"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.2719 mm",
+                    "pos": {
+                        "x": 185.768,
+                        "y": 86.52
+                    },
+                    "uuid": "773a6050-90e0-4150-bf34-beecf8a5d961"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R504 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 86.0
+                    },
+                    "uuid": "c5acb5de-f03b-4dfa-96a1-5ee4cd9eb620"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] on F.Cu, length 1.2304 mm",
+                    "pos": {
+                        "x": 186.592,
+                        "y": 91.4
+                    },
+                    "uuid": "6be81533-7b77-4f79-9502-749b9dd9352f"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_BUF] of R530 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 91.75
+                    },
+                    "uuid": "f9bd6a80-bf23-4ca6-a408-712ab004d074"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] on F.Cu, length 1.3420 mm",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 91.4
+                    },
+                    "uuid": "c86f0bad-551d-4a3b-80b8-d6e4d7688f9c"
+                },
+                {
+                    "description": "Pad 12 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_BUF] of U504 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 91.0
+                    },
+                    "uuid": "d587328d-91b2-4df2-81bf-de759dc74ec9"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1400 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.5100 mm",
+                    "pos": {
+                        "x": 186.0,
+                        "y": 86.0
+                    },
+                    "uuid": "0aa3faab-de62-424e-b2b7-bf6bbc1ad39c"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R504 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 86.0
+                    },
+                    "uuid": "c5acb5de-f03b-4dfa-96a1-5ee4cd9eb620"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 46 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG29_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 88.75
+                    },
+                    "uuid": "ef68649c-8936-4b7d-a830-5cdef682c7a6"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 89.25
+                    },
+                    "uuid": "fb15561f-be37-425f-aaa5-c0aa6eefff27"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 101.25
+                    },
+                    "uuid": "de46156c-2b3c-4829-8f0a-8c62878dcddf"
+                },
+                {
+                    "description": "Pad 20 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 101.75
+                    },
+                    "uuid": "e2140005-afda-48c2-8795-11e93985cf08"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 94.73
+                    },
+                    "uuid": "78907905-6beb-4a0e-a997-5732f059bf66"
+                },
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_ISO] of R525 on F.Cu",
+                    "pos": {
+                        "x": 190.76,
+                        "y": 95.25
+                    },
+                    "uuid": "b0f4e1fa-ec27-4a98-a9f6-3643161e3342"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 32 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 95.75
+                    },
+                    "uuid": "1f1abfe9-2c95-4e7f-898b-2f8d89b9e3d1"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 96.25
+                    },
+                    "uuid": "d92e9c3a-9ef5-4d8b-bec3-7a21a7e76c13"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 0.2715 mm",
+                    "pos": {
+                        "x": 187.27,
+                        "y": 107.422
+                    },
+                    "uuid": "283ad7f9-8580-43fb-9a30-5a165ec65251"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 107.75
+                    },
+                    "uuid": "f6575e48-4e34-4144-8819-8db75c3c5796"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 0.3080 mm",
+                    "pos": {
+                        "x": 187.27,
+                        "y": 107.73
+                    },
+                    "uuid": "135ff651-fe85-4c68-a6ab-d160bb9b8986"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 107.75
+                    },
+                    "uuid": "f6575e48-4e34-4144-8819-8db75c3c5796"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 108.5
+                    },
+                    "uuid": "7beed1bc-5633-4118-906b-2e5ef3d72ec1"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 107.75
+                    },
+                    "uuid": "f6575e48-4e34-4144-8819-8db75c3c5796"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 107.23
+                    },
+                    "uuid": "c5b6e317-2071-4899-91bc-cd8fa749ac00"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 107.75
+                    },
+                    "uuid": "f6575e48-4e34-4144-8819-8db75c3c5796"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 8 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 107.75
+                    },
+                    "uuid": "6245178b-7b83-41d1-a9cc-8f98193322d4"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 107.25
+                    },
+                    "uuid": "7a91d032-2d0d-46c7-b509-bbc430aef494"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_BUF] on F.Cu, length 1.0607 mm",
+                    "pos": {
+                        "x": 186.526,
+                        "y": 109.5
+                    },
+                    "uuid": "2269b393-9118-4a4d-8d96-a46965af946d"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_BUF] on F.Cu, length 0.7071 mm",
+                    "pos": {
+                        "x": 186.45,
+                        "y": 110.0
+                    },
+                    "uuid": "ca663a10-a6b0-4b2b-bdc5-2c06d7df8cd6"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 4 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 109.75
+                    },
+                    "uuid": "4a1c8cb0-0922-4514-852d-a82e0f0e9f01"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 109.25
+                    },
+                    "uuid": "e38c4034-8a53-423d-9b20-266a1ee7f21e"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_BUF] on F.Cu, length 1.0607 mm",
+                    "pos": {
+                        "x": 186.526,
+                        "y": 109.5
+                    },
+                    "uuid": "2269b393-9118-4a4d-8d96-a46965af946d"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_BUF] on F.Cu, length 2.5400 mm",
+                    "pos": {
+                        "x": 186.95,
+                        "y": 109.5
+                    },
+                    "uuid": "65325871-ff81-47bf-864a-78ff2834d0d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 108.5
+                    },
+                    "uuid": "7beed1bc-5633-4118-906b-2e5ef3d72ec1"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.4260 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 108.0
+                    },
+                    "uuid": "de96eb26-8db9-4a92-a502-9857eaa842d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 108.5
+                    },
+                    "uuid": "7beed1bc-5633-4118-906b-2e5ef3d72ec1"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.5572 mm",
+                    "pos": {
+                        "x": 186.576,
+                        "y": 108.0
+                    },
+                    "uuid": "b2c4bd5e-f4a1-4231-953c-3f687c9c04e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.3080 mm",
+                    "pos": {
+                        "x": 186.97,
+                        "y": 107.606
+                    },
+                    "uuid": "262fe53b-e052-4702-9bac-61bcff50a652"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 108.5
+                    },
+                    "uuid": "7beed1bc-5633-4118-906b-2e5ef3d72ec1"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG17_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 188.78,
+                        "y": 97.73
+                    },
+                    "uuid": "11bc3827-58db-47f1-a0db-7d30af467233"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16_BUF] of R521 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 98.25
+                    },
+                    "uuid": "e9fec62c-241e-4771-b906-37d7e405ddb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG10_BUF] of R515 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 103.25
+                    },
+                    "uuid": "42376065-fe7d-42bb-beb3-000ac34b2763"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG11_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 102.73
+                    },
+                    "uuid": "8f5d3489-1772-4ca4-ae88-80667ced57b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.7750 mm",
+                    "pos": {
+                        "x": 186.97,
+                        "y": 107.298
+                    },
+                    "uuid": "215c44a8-efc6-4b95-9622-c1f8d8bd658b"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 107.23
+                    },
+                    "uuid": "c5b6e317-2071-4899-91bc-cd8fa749ac00"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 106.25
+                    },
+                    "uuid": "4bbe0d55-8192-421f-8976-0de96781332c"
+                },
+                {
+                    "description": "Pad 10 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 106.75
+                    },
+                    "uuid": "953503cc-6e93-43ec-9f45-ae4721b19ea5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm",
+                    "pos": {
+                        "x": 186.344,
+                        "y": 107.5
+                    },
+                    "uuid": "ad9df7f2-c316-4093-8b27-41a1d1733ddc"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.2320 mm",
+                    "pos": {
+                        "x": 187.518,
+                        "y": 106.75
+                    },
+                    "uuid": "b27b1072-cc60-4b83-89be-f5cd5eb5e8bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 1.4900 mm",
+                    "pos": {
+                        "x": 188.23,
+                        "y": 106.27
+                    },
+                    "uuid": "4945156c-e02e-4fd1-9651-5a4b58448875"
+                },
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_ISO] of R512 on F.Cu",
+                    "pos": {
+                        "x": 188.76,
+                        "y": 105.75
+                    },
+                    "uuid": "d82a513b-980a-44ff-9b3a-ced71d15fdf9"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1818 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 94.5
+                    },
+                    "uuid": "74969b05-7406-4c47-b364-e3dd88a3756f"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] on F.Cu, length 1.7678 mm",
+                    "pos": {
+                        "x": 186.49,
+                        "y": 95.0
+                    },
+                    "uuid": "e0906239-ae21-4e16-9cf0-4b7f1b3c83ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)",
+            "items": [
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] of U503 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 94.0
+                    },
+                    "uuid": "893b51a1-db18-4931-905c-d107147b8df0"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm",
+                    "pos": {
+                        "x": 186.45,
+                        "y": 94.5
+                    },
+                    "uuid": "ab438674-84b5-4449-8604-b28f5848dccf"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 0.2575 mm",
+                    "pos": {
+                        "x": 187.25,
+                        "y": 93.7
+                    },
+                    "uuid": "707f88af-4ff8-4fce-a86d-fef64dba144d"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] of R527 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 93.75
+                    },
+                    "uuid": "c5f09c85-c6bf-4fa0-9e69-d4170d5f3d51"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1790 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 0.4640 mm",
+                    "pos": {
+                        "x": 187.276,
+                        "y": 94.75
+                    },
+                    "uuid": "3848528f-f885-4ec3-81bf-45dea2f90ce7"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] on F.Cu, length 1.7678 mm",
+                    "pos": {
+                        "x": 186.49,
+                        "y": 95.0
+                    },
+                    "uuid": "e0906239-ae21-4e16-9cf0-4b7f1b3c83ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] of R527 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 93.75
+                    },
+                    "uuid": "c5f09c85-c6bf-4fa0-9e69-d4170d5f3d51"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 0.3002 mm",
+                    "pos": {
+                        "x": 187.25,
+                        "y": 93.4425
+                    },
+                    "uuid": "fdc54cbe-f397-44ed-b3e3-024ffbee67e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] of R527 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 93.75
+                    },
+                    "uuid": "c5f09c85-c6bf-4fa0-9e69-d4170d5f3d51"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 93.23
+                    },
+                    "uuid": "e728a315-e8ef-441a-afe1-a6101cb007d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] on F.Cu, length 0.3818 mm",
+                    "pos": {
+                        "x": 187.192,
+                        "y": 96.5
+                    },
+                    "uuid": "99cba59f-3882-4409-9ef4-d3ec6826a60d"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_BUF] of R523 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 96.75
+                    },
+                    "uuid": "b63bad04-3d5f-4d2a-8ea5-bb3688d4da48"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG17_BUF] of R522 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 97.75
+                    },
+                    "uuid": "4b6f9973-6a4f-4f1b-b197-dbb668da1535"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16_BUF] on F.Cu, length 4.1000 mm",
+                    "pos": {
+                        "x": 185.62,
+                        "y": 98.27
+                    },
+                    "uuid": "c544e6f3-f31a-44b3-85cf-e7f129ef9b61"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_BUF] of R523 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 96.75
+                    },
+                    "uuid": "b63bad04-3d5f-4d2a-8ea5-bb3688d4da48"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 96.23
+                    },
+                    "uuid": "fe0c282b-d3ce-435d-83f9-d462674449be"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1831 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] on F.Cu, length 1.0420 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 96.5
+                    },
+                    "uuid": "1240be4a-7301-4c70-afd0-ed9528787d33"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_BUF] of R523 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 96.75
+                    },
+                    "uuid": "b63bad04-3d5f-4d2a-8ea5-bb3688d4da48"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.2975 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 92.8275
+                    },
+                    "uuid": "8176528a-a4a9-4820-991a-a49d06dcb233"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R503 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 92.5
+                    },
+                    "uuid": "d074464e-f4f2-42db-b6ce-1a1b25c12c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.2719 mm",
+                    "pos": {
+                        "x": 185.768,
+                        "y": 93.02
+                    },
+                    "uuid": "a7c81fc1-52eb-4ddb-93ad-0667984c414c"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R503 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 92.5
+                    },
+                    "uuid": "d074464e-f4f2-42db-b6ce-1a1b25c12c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.7380 mm",
+                    "pos": {
+                        "x": 185.03,
+                        "y": 93.02
+                    },
+                    "uuid": "4983af86-a91c-4fc5-bd0f-9df7e908e8e4"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R503 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 92.5
+                    },
+                    "uuid": "d074464e-f4f2-42db-b6ce-1a1b25c12c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.0424 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 92.53
+                    },
+                    "uuid": "41d410ab-f837-4cc8-8659-763a6b1de6d1"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R503 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 92.5
+                    },
+                    "uuid": "d074464e-f4f2-42db-b6ce-1a1b25c12c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1182 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm",
+                    "pos": {
+                        "x": 186.45,
+                        "y": 94.5
+                    },
+                    "uuid": "ab438674-84b5-4449-8604-b28f5848dccf"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 1.0100 mm",
+                    "pos": {
+                        "x": 186.75,
+                        "y": 93.75
+                    },
+                    "uuid": "f206feff-b493-4413-ba78-77cc946d77bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1182 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm",
+                    "pos": {
+                        "x": 186.45,
+                        "y": 94.5
+                    },
+                    "uuid": "ab438674-84b5-4449-8604-b28f5848dccf"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3536 mm",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 94.0
+                    },
+                    "uuid": "e2a1d0e1-13c1-4efe-9966-9aa3f62528fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)",
+            "items": [
+                {
+                    "description": "Pad 20 [/+3.3V] of U503 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 93.6
+                    },
+                    "uuid": "0f187659-1346-4e35-a86e-b6e3d9001611"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3960 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 93.3
+                    },
+                    "uuid": "317fdf54-317e-4d16-b5a1-8f2170b5b293"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1300 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.5200 mm",
+                    "pos": {
+                        "x": 185.99,
+                        "y": 92.5
+                    },
+                    "uuid": "6ac9f42f-0af6-44b9-a3dc-af50efee78db"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R503 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 92.5
+                    },
+                    "uuid": "d074464e-f4f2-42db-b6ce-1a1b25c12c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1182 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3500 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 94.0
+                    },
+                    "uuid": "0e464ac1-20e3-4773-9c38-f9a2f7dda8cc"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm",
+                    "pos": {
+                        "x": 186.45,
+                        "y": 94.5
+                    },
+                    "uuid": "ab438674-84b5-4449-8604-b28f5848dccf"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] of R510 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 107.25
+                    },
+                    "uuid": "12c1968a-b53d-4f5c-aeda-e47276056630"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 107.77
+                    },
+                    "uuid": "4b7e476d-cb67-47ab-9556-417fafe6225b"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1790 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_BUF] on F.Cu, length 1.0607 mm",
+                    "pos": {
+                        "x": 186.526,
+                        "y": 109.5
+                    },
+                    "uuid": "2269b393-9118-4a4d-8d96-a46965af946d"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] on F.Cu, length 0.3400 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 109.0
+                    },
+                    "uuid": "f1e24d55-431e-41b2-a934-e2916938589d"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1465 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] on F.Cu, length 1.7678 mm",
+                    "pos": {
+                        "x": 186.49,
+                        "y": 109.0
+                    },
+                    "uuid": "31a5bd12-7fae-460e-a08e-9e2d5f10e41b"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.5,
+                        "y": 108.5
+                    },
+                    "uuid": "7beed1bc-5633-4118-906b-2e5ef3d72ec1"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 91.73
+                    },
+                    "uuid": "81cf3163-bad1-446d-9b25-d28d0da11077"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] of R529 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 92.25
+                    },
+                    "uuid": "d4cf8cc9-3090-4d5c-94dc-7d2dadb4beb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_ISO] of R517 on F.Cu",
+                    "pos": {
+                        "x": 188.76,
+                        "y": 101.75
+                    },
+                    "uuid": "6fc3f01f-b251-41e6-9194-cf3f479a564d"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 101.23
+                    },
+                    "uuid": "9a0b10f6-eaaf-40c0-ade5-eb90c285b3ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.692,
+                        "y": 102.0
+                    },
+                    "uuid": "27cf7dae-9baa-4647-875a-4b4ea609e07d"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_BUF] of R517 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 101.75
+                    },
+                    "uuid": "d6fb93c6-ec00-4b7c-bee6-f1e92abad87d"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 87.77
+                    },
+                    "uuid": "40e2ab32-6250-47c0-83f2-2e16aa927456"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_BUF] of R536 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 87.25
+                    },
+                    "uuid": "63918324-0a6e-4e7d-b20c-f888697395e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R502 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 99.0
+                    },
+                    "uuid": "db7b8ec7-6317-44a9-96ac-e81758aa1461"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.2875 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 99.3275
+                    },
+                    "uuid": "f510b054-c131-4ab0-bba7-d1a98f5dc379"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.7380 mm",
+                    "pos": {
+                        "x": 185.03,
+                        "y": 99.52
+                    },
+                    "uuid": "bf561ce1-9fdb-46e4-a306-0023c31a5b3d"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R502 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 99.0
+                    },
+                    "uuid": "db7b8ec7-6317-44a9-96ac-e81758aa1461"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/GND] of R502 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 99.0
+                    },
+                    "uuid": "db7b8ec7-6317-44a9-96ac-e81758aa1461"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.2719 mm",
+                    "pos": {
+                        "x": 185.768,
+                        "y": 99.52
+                    },
+                    "uuid": "e2ae129a-29d9-4e44-8232-8a67ac4ffff2"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)",
+            "items": [
+                {
+                    "description": "Pad 20 [/+3.3V] of U502 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 100.1
+                    },
+                    "uuid": "8559d199-fddd-42c2-a8e0-43da1a21d97c"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.3960 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 99.8
+                    },
+                    "uuid": "cf834f84-a507-4c0f-badc-784debfac995"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.0566 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 99.04
+                    },
+                    "uuid": "cf72f7be-5350-4645-8ec5-0cc92309bcd2"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R502 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 99.0
+                    },
+                    "uuid": "db7b8ec7-6317-44a9-96ac-e81758aa1461"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1400 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.5100 mm",
+                    "pos": {
+                        "x": 186.0,
+                        "y": 99.0
+                    },
+                    "uuid": "89560d71-7d50-4113-bbb0-9020f9437731"
+                },
+                {
+                    "description": "Pad 2 [/GND] of R502 on F.Cu",
+                    "pos": {
+                        "x": 185.49,
+                        "y": 99.0
+                    },
+                    "uuid": "db7b8ec7-6317-44a9-96ac-e81758aa1461"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 110.75
+                    },
+                    "uuid": "336569c5-5b42-484f-8fb3-00d00385d739"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 110.25
+                    },
+                    "uuid": "7b3ba66b-23e8-490d-9ec6-2c9a4216e3d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] on F.Cu, length 0.3818 mm",
+                    "pos": {
+                        "x": 187.192,
+                        "y": 110.5
+                    },
+                    "uuid": "48eb8f91-3ce6-45ae-9046-f7dc7cc8219e"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of R505 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 110.75
+                    },
+                    "uuid": "d0228e68-6aa4-4141-906d-d137165605a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1831 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] on F.Cu, length 1.0420 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 110.5
+                    },
+                    "uuid": "b60f3c7f-7aeb-4d3d-adfc-85ee4ed309bd"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of R505 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 110.75
+                    },
+                    "uuid": "d0228e68-6aa4-4141-906d-d137165605a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 110.23
+                    },
+                    "uuid": "b89896a2-dc02-4164-a52c-6da9a6392536"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of R505 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 110.75
+                    },
+                    "uuid": "d0228e68-6aa4-4141-906d-d137165605a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 104.25
+                    },
+                    "uuid": "5793e159-388f-4ba7-9033-d2c6ffebe21c"
+                },
+                {
+                    "description": "Pad 14 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG8_ISO] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 104.75
+                    },
+                    "uuid": "eb18e42b-2aa8-4d41-94c5-daf5907c1e82"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] of R506 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 110.25
+                    },
+                    "uuid": "2c95f49f-4204-410b-8709-e5f6fb620f12"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 110.77
+                    },
+                    "uuid": "b0e56c38-3eb1-456f-9cee-e288b202cf74"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Pad 12 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] of U501 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 110.5
+                    },
+                    "uuid": "21a638e4-2faa-48c3-ba8b-f2bdbc099509"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] on F.Cu, length 2.3400 mm",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 110.9
+                    },
+                    "uuid": "93f80541-e5fa-4f6f-9067-dbab1f4fa9e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 50 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 86.75
+                    },
+                    "uuid": "4bd4ef57-4cc5-4052-bb5a-b4f8b69edfea"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 87.25
+                    },
+                    "uuid": "565ec6a7-30e8-43df-b8a0-d6252ddf8253"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.692,
+                        "y": 88.0
+                    },
+                    "uuid": "1d6b1659-eeb1-40aa-a9d4-2708f30e3d3a"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30_BUF] of R535 on F.Cu",
+                    "pos": {
+                        "x": 187.74,
+                        "y": 87.75
+                    },
+                    "uuid": "5fc74c7d-0884-4c1e-9fc7-1923919e150a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30_ISO] of R535 on F.Cu",
+                    "pos": {
+                        "x": 188.76,
+                        "y": 87.75
+                    },
+                    "uuid": "24ca6349-8ad1-4a20-81a5-30a88c27f496"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_BUF] on F.Cu, length 2.2580 mm",
+                    "pos": {
+                        "x": 187.462,
+                        "y": 87.23
+                    },
+                    "uuid": "54d2691a-505d-4d87-b89c-0db3aa3c80c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 100.25
+                    },
+                    "uuid": "5e21ec6d-8851-4d6f-9482-ce00ad1e2022"
+                },
+                {
+                    "description": "Pad 22 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 100.75
+                    },
+                    "uuid": "965a8416-f508-45b0-a527-a6fa7594ed29"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.692,
+                        "y": 102.0
+                    },
+                    "uuid": "27cf7dae-9baa-4647-875a-4b4ea609e07d"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] on F.Cu, length 1.7395 mm",
+                    "pos": {
+                        "x": 186.768,
+                        "y": 101.5
+                    },
+                    "uuid": "c5009e7c-34a2-460a-918d-2cf5d03ab8af"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15_ISO] of R520 on F.Cu",
+                    "pos": {
+                        "x": 188.76,
+                        "y": 99.75
+                    },
+                    "uuid": "9f3faade-99ce-476e-814c-5c36e91cbd79"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] on F.Cu, length 1.7220 mm",
+                    "pos": {
+                        "x": 187.998,
+                        "y": 100.27
+                    },
+                    "uuid": "d075c4f2-99e3-456c-8b33-9d5e52b7cc91"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 1.0889 mm",
+                    "pos": {
+                        "x": 186.692,
+                        "y": 102.0
+                    },
+                    "uuid": "27cf7dae-9baa-4647-875a-4b4ea609e07d"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] on F.Cu, length 0.6180 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 101.5
+                    },
+                    "uuid": "3995ea42-274f-460f-8161-2aad04d96460"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1539 mm)",
+            "items": [
+                {
+                    "description": "Track [/power/usb2_vertical/USB_D+] on F.Cu, length 0.4069 mm",
+                    "pos": {
+                        "x": 108.26,
+                        "y": 93.75
+                    },
+                    "uuid": "c8a3f640-24a2-4cac-8cc5-ce45af52c5fc"
+                },
+                {
+                    "description": "Track [/power/usb2_vertical/CC2] on F.Cu, length 0.7750 mm",
+                    "pos": {
+                        "x": 107.485,
+                        "y": 93.25
+                    },
+                    "uuid": "c9bd2928-240f-4dfd-8917-a8849cc0d253"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1051 mm)",
+            "items": [
+                {
+                    "description": "Track [/power/usb2_vertical/VBUS] on F.Cu, length 2.3335 mm",
+                    "pos": {
+                        "x": 107.75,
+                        "y": 92.0
+                    },
+                    "uuid": "0ebf765d-78c4-4900-83c5-d27832262a36"
+                },
+                {
+                    "description": "Pad B1 [/GND] of J901 on F.Cu",
+                    "pos": {
+                        "x": 107.485,
+                        "y": 91.25
+                    },
+                    "uuid": "d87b9593-5ab3-40ef-965c-849315a84f64"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1579 mm)",
+            "items": [
+                {
+                    "description": "Track [/power/usb2_vertical/USB_D+] on F.Cu, length 1.6020 mm",
+                    "pos": {
+                        "x": 108.548,
+                        "y": 93.4625
+                    },
+                    "uuid": "9dd6dca2-7355-474a-931e-728e225c75b7"
+                },
+                {
+                    "description": "Track [/power/usb2_vertical/CC2] on F.Cu, length 0.7750 mm",
+                    "pos": {
+                        "x": 107.485,
+                        "y": 93.25
+                    },
+                    "uuid": "c9bd2928-240f-4dfd-8917-a8849cc0d253"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1220 mm)",
+            "items": [
+                {
+                    "description": "Pad A8 [unconnected-(J901-SBU1-PadA8)] of J901 on F.Cu",
+                    "pos": {
+                        "x": 104.515,
+                        "y": 93.25
+                    },
+                    "uuid": "8d517cfb-a73a-4237-99eb-c4489130c765"
+                },
+                {
+                    "description": "Via [/power/usb2_vertical/USB_D-] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 93.5
+                    },
+                    "uuid": "f8951ac3-ca91-4852-a5c0-6d3ce0adf1e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 32 [/GND] of J501 on F.Cu",
+                    "pos": {
+                        "x": 192.5,
+                        "y": 95.75
+                    },
+                    "uuid": "1f1abfe9-2c95-4e7f-898b-2f8d89b9e3d1"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 95.25
+                    },
+                    "uuid": "72a1bb75-dba1-4fbe-b59b-a49369e26a39"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 0.3760 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 95.5
+                    },
+                    "uuid": "4fa67a14-eafd-4e47-8008-ccda039efa40"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_BUF] on F.Cu, length 1.0324 mm",
+                    "pos": {
+                        "x": 186.45,
+                        "y": 96.0
+                    },
+                    "uuid": "b62f568e-5874-42d1-bb0a-13aeca087053"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1220 mm)",
+            "items": [
+                {
+                    "description": "Pad B8 [unconnected-(J901-SBU2-PadB8)] of J901 on F.Cu",
+                    "pos": {
+                        "x": 107.485,
+                        "y": 94.75
+                    },
+                    "uuid": "05ddaeae-1847-49cf-9956-0e4fdef196b0"
+                },
+                {
+                    "description": "Via [/power/usb2_vertical/USB_D-] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 106.5,
+                        "y": 94.5
+                    },
+                    "uuid": "2f4ca311-897b-4095-b39b-4936f369f155"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1375 mm)",
+            "items": [
+                {
+                    "description": "Track [/power/usb2_vertical/USB_D-] on F.Cu, length 1.6020 mm",
+                    "pos": {
+                        "x": 108.548,
+                        "y": 94.5375
+                    },
+                    "uuid": "1b953b4b-dd6f-4edb-9c74-9a577e6358bc"
+                },
+                {
+                    "description": "Via [/power/usb2_vertical/VBUS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 94.0
+                    },
+                    "uuid": "6c5046fb-bbd1-439f-9ec2-65ef18e3dbae"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_BUF] on F.Cu, length 2.5400 mm",
+                    "pos": {
+                        "x": 187.18,
+                        "y": 95.27
+                    },
+                    "uuid": "4459582e-109f-4fe4-81d2-efea430b2903"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 1.0607 mm",
+                    "pos": {
+                        "x": 186.526,
+                        "y": 95.5
+                    },
+                    "uuid": "d0ece43d-38f1-4425-9bb4-72eb52dc165f"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1818 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 100.5
+                    },
+                    "uuid": "72f0509a-33b4-4c95-9f3a-9d26db35d465"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15_BUF] on F.Cu, length 1.7678 mm",
+                    "pos": {
+                        "x": 186.49,
+                        "y": 101.0
+                    },
+                    "uuid": "c1773ce2-37fa-4e9c-8aeb-a1646b12fbb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15_ISO] on F.Cu, length 3.7000 mm",
+                    "pos": {
+                        "x": 192.48,
+                        "y": 99.73
+                    },
+                    "uuid": "0b2b2cd7-7240-46e2-9519-8b3b36499d6c"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] of R519 on F.Cu",
+                    "pos": {
+                        "x": 189.74,
+                        "y": 100.25
+                    },
+                    "uuid": "c4dc5d1f-9e19-4375-9180-24fd9dc7cc70"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1037 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.2719 mm",
+                    "pos": {
+                        "x": 185.768,
+                        "y": 99.52
+                    },
+                    "uuid": "e2ae129a-29d9-4e44-8232-8a67ac4ffff2"
+                },
+                {
+                    "description": "Via [/+3.3V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 186.25,
+                        "y": 99.75
+                    },
+                    "uuid": "f5b87032-6f93-4624-8af3-a8d9ef885c8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1125 mm)",
+            "items": [
+                {
+                    "description": "Via [/+3.3V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 186.25,
+                        "y": 93.25
+                    },
+                    "uuid": "79559b9d-7f66-42fa-a156-5c284d1ca024"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.2975 mm",
+                    "pos": {
+                        "x": 185.96,
+                        "y": 92.8275
+                    },
+                    "uuid": "8176528a-a4a9-4820-991a-a49d06dcb233"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1060 mm)",
+            "items": [
+                {
+                    "description": "Via [/+3.3V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 186.25,
+                        "y": 106.25
+                    },
+                    "uuid": "75c387c4-1320-4795-a6f9-2e301bd533b2"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.9180 mm",
+                    "pos": {
+                        "x": 186.756,
+                        "y": 106.664
+                    },
+                    "uuid": "b0d0b98b-66c0-4423-9ce8-c40890892cbf"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1341 mm)",
+            "items": [
+                {
+                    "description": "Via [/+3.3V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 186.25,
+                        "y": 86.75
+                    },
+                    "uuid": "38b8f6e7-c041-4832-9815-a406794a06ea"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.7380 mm",
+                    "pos": {
+                        "x": 185.03,
+                        "y": 86.52
+                    },
+                    "uuid": "d5bc3e25-8954-4e2b-847a-c7a4dc9d34e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] of U504 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 87.5
+                    },
+                    "uuid": "5984f636-c26c-4e58-a49e-8372428a428c"
+                },
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.6500 mm",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 87.1
+                    },
+                    "uuid": "f5f2e409-7326-45ce-8d0d-1a8725b2f685"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] of U504 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 87.5
+                    },
+                    "uuid": "5984f636-c26c-4e58-a49e-8372428a428c"
+                },
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 185.9,
+                        "y": 87.1
+                    },
+                    "uuid": "acd43263-06aa-478e-ad17-0679d287ff60"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 107.0
+                    },
+                    "uuid": "81ceffdd-e779-40b4-95f3-e407ffc9da8a"
+                },
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.6500 mm",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 106.6
+                    },
+                    "uuid": "bf140e2e-de1b-481c-83f6-88a6106f12c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 185.9,
+                        "y": 106.6
+                    },
+                    "uuid": "5c40c218-7b0e-4998-8447-1f865f5adfb1"
+                },
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 107.0
+                    },
+                    "uuid": "81ceffdd-e779-40b4-95f3-e407ffc9da8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.6500 mm",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 100.1
+                    },
+                    "uuid": "9a37453a-04da-4927-ab26-ac16a048160f"
+                },
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] of U502 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 100.5
+                    },
+                    "uuid": "9bcfc7bf-a8a0-49ab-889e-2c424564a1ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 185.9,
+                        "y": 93.6
+                    },
+                    "uuid": "6acec6aa-ae6f-43c6-9789-5f0cc6c3ffe8"
+                },
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] of U503 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 94.0
+                    },
+                    "uuid": "893b51a1-db18-4931-905c-d107147b8df0"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.6500 mm",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 93.6
+                    },
+                    "uuid": "1c392d22-7f1c-4412-9209-721fec0f2ad9"
+                },
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] of U503 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 94.0
+                    },
+                    "uuid": "893b51a1-db18-4931-905c-d107147b8df0"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on F.Cu, length 0.4950 mm",
+                    "pos": {
+                        "x": 185.9,
+                        "y": 100.1
+                    },
+                    "uuid": "15381aa7-e218-4c8a-8bea-48ae0cef40fa"
+                },
+                {
+                    "description": "Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] of U502 on F.Cu",
+                    "pos": {
+                        "x": 186.15,
+                        "y": 100.5
+                    },
+                    "uuid": "9bcfc7bf-a8a0-49ab-889e-2c424564a1ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 87.25
+                    },
+                    "uuid": "565ec6a7-30e8-43df-b8a0-d6252ddf8253"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 86.75
+                    },
+                    "uuid": "ee073363-c930-4efc-96e9-d24731c28b37"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 110.25
+                    },
+                    "uuid": "7b3ba66b-23e8-490d-9ec6-2c9a4216e3d5"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 109.75
+                    },
+                    "uuid": "e9195939-4d00-487c-b898-49745b6ccc25"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 104.25
+                    },
+                    "uuid": "5793e159-388f-4ba7-9033-d2c6ffebe21c"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 103.75
+                    },
+                    "uuid": "cf17eb2c-9476-4d2d-b1a5-f8e511975883"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 100.25
+                    },
+                    "uuid": "5e21ec6d-8851-4d6f-9482-ce00ad1e2022"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 100.75
+                    },
+                    "uuid": "a2faf46d-0b94-47a9-9486-65cfcec9d5ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1501 mm)",
+            "items": [
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.25,
+                        "y": 79.45
+                    },
+                    "uuid": "a8820518-db36-42af-bfd3-dc89ff957e6d"
+                },
+                {
+                    "description": "Track [/+3.3V] on B.Cu, length 1.0919 mm",
+                    "pos": {
+                        "x": 122.25,
+                        "y": 79.6722
+                    },
+                    "uuid": "a9b446d4-4f4f-48bc-9696-1c830459e1a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 79.45
+                    },
+                    "uuid": "b7f14abd-166e-4315-9735-f5e85e4f1f78"
+                },
+                {
+                    "description": "Track [/+3.3V] on B.Cu, length 3.6280 mm",
+                    "pos": {
+                        "x": 123.022,
+                        "y": 78.9
+                    },
+                    "uuid": "df637ac6-ded1-494e-932d-377335d47d3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 93.25
+                    },
+                    "uuid": "5798b478-aa8e-4364-83a4-e4e54bc5848f"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 92.75
+                    },
+                    "uuid": "75619f64-da89-48cf-934b-5fa23cf24613"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1501 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on B.Cu, length 1.0919 mm",
+                    "pos": {
+                        "x": 147.25,
+                        "y": 79.6722
+                    },
+                    "uuid": "5717aeb0-77cf-44e8-b6da-d1c5ef28c6a8"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.25,
+                        "y": 79.45
+                    },
+                    "uuid": "8ba25b94-ad66-44a3-8755-afe95be83262"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on B.Cu, length 3.6280 mm",
+                    "pos": {
+                        "x": 173.022,
+                        "y": 78.9
+                    },
+                    "uuid": "3e4e4bde-42eb-4bcf-b12b-73c83342cf06"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 173.25,
+                        "y": 79.45
+                    },
+                    "uuid": "8b96efca-d121-43b1-95a1-d6bd15fd2c47"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 79.45
+                    },
+                    "uuid": "a424fa28-2d33-4e30-8326-19bd9cacd725"
+                },
+                {
+                    "description": "Track [/+3.3V] on B.Cu, length 3.6280 mm",
+                    "pos": {
+                        "x": 148.022,
+                        "y": 78.9
+                    },
+                    "uuid": "a777d103-3ca5-4679-9200-131be2ff2b5a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 106.25
+                    },
+                    "uuid": "4bbe0d55-8192-421f-8976-0de96781332c"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 106.75
+                    },
+                    "uuid": "75377468-dd9f-4172-a604-97d9dddaa01a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 89.75
+                    },
+                    "uuid": "25be1738-09e3-474e-90d1-f036388ea4c3"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 89.25
+                    },
+                    "uuid": "fb15561f-be37-425f-aaa5-c0aa6eefff27"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)",
+            "items": [
+                {
+                    "description": "Track [/+3.3V] on B.Cu, length 3.6280 mm",
+                    "pos": {
+                        "x": 173.022,
+                        "y": 78.9
+                    },
+                    "uuid": "3e4e4bde-42eb-4bcf-b12b-73c83342cf06"
+                },
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 79.45
+                    },
+                    "uuid": "93666f3d-3563-4ffa-9773-76111bdee2af"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Via [/GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 194.0,
+                        "y": 95.75
+                    },
+                    "uuid": "03542474-0865-4512-9261-b6cb6ad89a03"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_ISO] on F.Cu, length 4.7400 mm",
+                    "pos": {
+                        "x": 195.5,
+                        "y": 95.25
+                    },
+                    "uuid": "72a1bb75-dba1-4fbe-b59b-a49369e26a39"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 87.1
+                    },
+                    "uuid": "7cc5181d-159d-4fda-83de-46287d9406fc"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6300 mm",
+                    "pos": {
+                        "x": 184.43,
+                        "y": 86.05
+                    },
+                    "uuid": "d1f29de7-020b-4d95-bbba-aa294370b86f"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Pad 11 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of U501 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 110.9
+                    },
+                    "uuid": "9d3dc533-1247-4e63-87ca-cec0a4beecb7"
+                },
+                {
+                    "description": "Track [/GND] on F.Cu, length 8.7750 mm",
+                    "pos": {
+                        "x": 185.075,
+                        "y": 111.4
+                    },
+                    "uuid": "b809587a-1373-467e-aeef-6c43da8bdb27"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1010 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 0.4596 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 111.075
+                    },
+                    "uuid": "48af5d1a-fa2c-49f5-b4ae-dd6b65229b70"
+                },
+                {
+                    "description": "Pad 11 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of U501 on F.Cu",
+                    "pos": {
+                        "x": 185.25,
+                        "y": 110.9
+                    },
+                    "uuid": "9d3dc533-1247-4e63-87ca-cec0a4beecb7"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6300 mm",
+                    "pos": {
+                        "x": 184.43,
+                        "y": 105.55
+                    },
+                    "uuid": "31ecbfb0-f43e-4e67-8893-83b54e0a0c0f"
+                },
+                {
+                    "description": "Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 106.6
+                    },
+                    "uuid": "93644385-fc9c-4f3d-b9ce-47796037213a"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)",
+            "items": [
+                {
+                    "description": "Track [/GND] on F.Cu, length 2.6300 mm",
+                    "pos": {
+                        "x": 184.43,
+                        "y": 99.05
+                    },
+                    "uuid": "094b97c3-2a54-4abb-bba8-c6ba610218ac"
+                },
+                {
+                    "description": "Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.3000 mm",
+                    "pos": {
+                        "x": 184.75,
+                        "y": 100.1
+                    },
+                    "uuid": "9a30ee29-ad0a-4a4f-986e-6fc13364538e"
+                }
+            ],
+            "severity": "warning",
+            "type": "clearance"
+        }
+    ]
+}

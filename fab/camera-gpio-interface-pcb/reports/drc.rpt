@@ -1,0 +1,594 @@
+** Drc report for camera-gpio-interface-pcb.kicad_pcb **
+** Created on 2026-10-12T11:33:05 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 144 DRC violations **
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(136.2500 mm, 111.5000 mm): Via [/+3.3V] on F.Cu - B.Cu
+    @(136.8000 mm, 111.9500 mm): Track [/GND] on F.Cu, length 1.1400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(184.4300 mm, 105.5500 mm): Track [/GND] on F.Cu, length 2.6300 mm
+    @(184.7500 mm, 106.6000 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 90.7500 mm): Pad 42 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG26_ISO] of J501 on F.Cu
+    @(195.5000 mm, 90.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG27_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 88.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG29_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 89.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28_BUF] of R533 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 92.7500 mm): Pad 38 [/GND] of J501 on F.Cu
+    @(195.5000 mm, 92.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 93.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_ISO] on F.Cu, length 4.7400 mm
+    @(192.5000 mm, 93.7500 mm): Pad 36 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_ISO] of J501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 90.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG26_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 90.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG27_BUF] of R532 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(189.7400 mm, 93.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] of R528 on F.Cu
+    @(192.4800 mm, 93.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 108.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 109.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_BUF] of R507 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(190.7600 mm, 104.2500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9_ISO] of R514 on F.Cu
+    @(192.4800 mm, 104.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG8_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(190.7600 mm, 106.2500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_ISO] of R511 on F.Cu
+    @(192.4800 mm, 105.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1145 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 107.0000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu
+    @(186.3440 mm, 107.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 103.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG10_ISO] on F.Cu, length 4.7400 mm
+    @(192.5000 mm, 103.7500 mm): Pad 16 [/GND] of J501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 106.6000 mm): Pad 20 [/+3.3V] of U501 on F.Cu
+    @(185.0300 mm, 106.0200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.7380 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.3440 mm, 107.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm
+    @(186.7560 mm, 106.6640 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.9180 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.4200 mm, 107.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.4752 mm
+    @(186.3440 mm, 107.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 105.5000 mm): Pad 2 [/GND] of R501 on F.Cu
+    @(185.9600 mm, 105.5300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.0424 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 106.6000 mm): Pad 20 [/+3.3V] of U501 on F.Cu
+    @(184.7500 mm, 106.3000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.3960 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1300 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 105.5000 mm): Pad 2 [/GND] of R501 on F.Cu
+    @(185.9900 mm, 105.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.5200 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 107.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.2700 mm
+    @(186.3440 mm, 107.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.7680 mm, 106.0200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.2715 mm
+    @(185.4900 mm, 105.5000 mm): Pad 2 [/GND] of R501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 105.5000 mm): Pad 2 [/GND] of R501 on F.Cu
+    @(185.9600 mm, 105.8280 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.2980 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(189.7400 mm, 101.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] of R518 on F.Cu
+    @(192.4800 mm, 101.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 98.7500 mm): Pad 26 [/GND] of J501 on F.Cu
+    @(195.5000 mm, 98.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(188.7800 mm, 96.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 96.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] of R524 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.4620 mm, 92.2700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] on F.Cu, length 2.2580 mm
+    @(187.7400 mm, 91.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_BUF] of R530 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 87.1000 mm): Pad 20 [/+3.3V] of U504 on F.Cu
+    @(185.0300 mm, 86.5200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.7380 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 91.4000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] on F.Cu, length 1.3420 mm
+    @(186.1500 mm, 91.0000 mm): Pad 12 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_BUF] of U504 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 86.0000 mm): Pad 2 [/GND] of R504 on F.Cu
+    @(185.9600 mm, 86.0400 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.0566 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 86.0000 mm): Pad 2 [/GND] of R504 on F.Cu
+    @(185.9600 mm, 86.3275 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.2875 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 87.1000 mm): Pad 20 [/+3.3V] of U504 on F.Cu
+    @(184.7500 mm, 86.8000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.3960 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.7680 mm, 86.5200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.2719 mm
+    @(185.4900 mm, 86.0000 mm): Pad 2 [/GND] of R504 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1400 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.0000 mm, 86.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.5100 mm
+    @(185.4900 mm, 86.0000 mm): Pad 2 [/GND] of R504 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5920 mm, 91.4000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] on F.Cu, length 1.2304 mm
+    @(187.7400 mm, 91.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_BUF] of R530 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 101.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_ISO] on F.Cu, length 4.7400 mm
+    @(192.5000 mm, 101.7500 mm): Pad 20 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_ISO] of J501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 88.7500 mm): Pad 46 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG29_ISO] of J501 on F.Cu
+    @(195.5000 mm, 89.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 94.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_ISO] on F.Cu, length 3.7000 mm
+    @(190.7600 mm, 95.2500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_ISO] of R525 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 95.7500 mm): Pad 32 [/GND] of J501 on F.Cu
+    @(195.5000 mm, 96.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.2700 mm, 107.4220 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 0.2715 mm
+    @(187.7400 mm, 107.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5000 mm, 108.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm
+    @(187.7400 mm, 107.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.2700 mm, 107.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 0.3080 mm
+    @(187.7400 mm, 107.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 107.7500 mm): Pad 8 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_ISO] of J501 on F.Cu
+    @(195.5000 mm, 107.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.4620 mm, 107.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 2.2580 mm
+    @(187.7400 mm, 107.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] of R509 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5260 mm, 109.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_BUF] on F.Cu, length 1.0607 mm
+    @(186.4500 mm, 110.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_BUF] on F.Cu, length 0.7071 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 109.7500 mm): Pad 4 [/GND] of J501 on F.Cu
+    @(195.5000 mm, 109.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5260 mm, 109.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_BUF] on F.Cu, length 1.0607 mm
+    @(186.9500 mm, 109.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2_BUF] on F.Cu, length 2.5400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5000 mm, 108.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm
+    @(186.1500 mm, 108.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.4260 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5000 mm, 108.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm
+    @(186.5760 mm, 108.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.5572 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.9700 mm, 107.6060 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.3080 mm
+    @(186.5000 mm, 108.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(188.7800 mm, 97.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG17_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 98.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16_BUF] of R521 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 106.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_ISO] on F.Cu, length 4.7400 mm
+    @(192.5000 mm, 106.7500 mm): Pad 10 [/GND] of J501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(189.7400 mm, 103.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG10_BUF] of R515 on F.Cu
+    @(192.4800 mm, 102.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG11_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.3440 mm, 107.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_BUF] on F.Cu, length 1.9742 mm
+    @(187.5180 mm, 106.7500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.2320 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.9700 mm, 107.2980 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 0.7750 mm
+    @(187.4620 mm, 107.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 2.2580 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(188.2300 mm, 106.2700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_BUF] on F.Cu, length 1.4900 mm
+    @(188.7600 mm, 105.7500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7_ISO] of R512 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1818 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 94.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 0.3000 mm
+    @(186.4900 mm, 95.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] on F.Cu, length 1.7678 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1790 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.2760 mm, 94.7500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 0.4640 mm
+    @(186.4900 mm, 95.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] on F.Cu, length 1.7678 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.7400 mm, 93.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] of R527 on F.Cu
+    @(187.2500 mm, 93.4425 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 0.3002 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 94.0000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] of U503 on F.Cu
+    @(186.4500 mm, 94.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1790 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5260 mm, 95.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 1.0607 mm
+    @(186.4900 mm, 95.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] on F.Cu, length 1.7678 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.2500 mm, 93.7000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 0.2575 mm
+    @(187.7400 mm, 93.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] of R527 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.7400 mm, 97.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG17_BUF] of R522 on F.Cu
+    @(185.6200 mm, 98.2700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16_BUF] on F.Cu, length 4.1000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.1920 mm, 96.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] on F.Cu, length 0.3818 mm
+    @(187.7400 mm, 96.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_BUF] of R523 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.7400 mm, 93.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22_BUF] of R527 on F.Cu
+    @(187.4620 mm, 93.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 2.2580 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.7400 mm, 96.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_BUF] of R523 on F.Cu
+    @(187.4620 mm, 96.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] on F.Cu, length 2.2580 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1831 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 96.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19_BUF] on F.Cu, length 1.0420 mm
+    @(187.7400 mm, 96.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18_BUF] of R523 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9600 mm, 92.8275 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.2975 mm
+    @(185.4900 mm, 92.5000 mm): Pad 2 [/GND] of R503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.0300 mm, 93.0200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.7380 mm
+    @(185.4900 mm, 92.5000 mm): Pad 2 [/GND] of R503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.7680 mm, 93.0200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.2719 mm
+    @(185.4900 mm, 92.5000 mm): Pad 2 [/GND] of R503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1182 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.4500 mm, 94.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm
+    @(186.5000 mm, 94.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3536 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9600 mm, 92.5300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.0424 mm
+    @(185.4900 mm, 92.5000 mm): Pad 2 [/GND] of R503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1182 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.4500 mm, 94.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm
+    @(186.7500 mm, 93.7500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 1.0100 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 93.6000 mm): Pad 20 [/+3.3V] of U503 on F.Cu
+    @(184.7500 mm, 93.3000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3960 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1300 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9900 mm, 92.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.5200 mm
+    @(185.4900 mm, 92.5000 mm): Pad 2 [/GND] of R503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1182 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 94.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3500 mm
+    @(186.4500 mm, 94.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_BUF] on F.Cu, length 1.1314 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(189.7400 mm, 107.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] of R510 on F.Cu
+    @(192.4800 mm, 107.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1790 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.5260 mm, 109.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3_BUF] on F.Cu, length 1.0607 mm
+    @(186.1500 mm, 109.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] on F.Cu, length 0.3400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1465 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.4900 mm, 109.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4_BUF] on F.Cu, length 1.7678 mm
+    @(186.5000 mm, 108.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5_BUF] on F.Cu, length 1.0889 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 91.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 92.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24_BUF] of R529 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(188.7600 mm, 101.7500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_ISO] of R517 on F.Cu
+    @(187.4620 mm, 101.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 2.2580 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 87.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 87.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_BUF] of R536 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.6920 mm, 102.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 1.0889 mm
+    @(187.7400 mm, 101.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12_BUF] of R517 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9600 mm, 99.0400 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.0566 mm
+    @(185.4900 mm, 99.0000 mm): Pad 2 [/GND] of R502 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1028 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 99.0000 mm): Pad 2 [/GND] of R502 on F.Cu
+    @(185.7680 mm, 99.5200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.2719 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.4900 mm, 99.0000 mm): Pad 2 [/GND] of R502 on F.Cu
+    @(185.9600 mm, 99.3275 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.2875 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.0300 mm, 99.5200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.7380 mm
+    @(185.4900 mm, 99.0000 mm): Pad 2 [/GND] of R502 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1894 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 100.1000 mm): Pad 20 [/+3.3V] of U502 on F.Cu
+    @(184.7500 mm, 99.8000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.3960 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1400 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.0000 mm, 99.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.5100 mm
+    @(185.4900 mm, 99.0000 mm): Pad 2 [/GND] of R502 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 110.7500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_ISO] of J501 on F.Cu
+    @(195.5000 mm, 110.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1831 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 110.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] on F.Cu, length 1.0420 mm
+    @(187.7400 mm, 110.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of R505 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.1920 mm, 110.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] on F.Cu, length 0.3818 mm
+    @(187.7400 mm, 110.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of R505 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.4620 mm, 110.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] on F.Cu, length 2.2580 mm
+    @(187.7400 mm, 110.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of R505 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 104.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9_ISO] on F.Cu, length 4.7400 mm
+    @(192.5000 mm, 104.7500 mm): Pad 14 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG8_ISO] of J501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(189.7400 mm, 110.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] of R506 on F.Cu
+    @(192.4800 mm, 110.7700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_ISO] on F.Cu, length 3.7000 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 110.5000 mm): Pad 12 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_BUF] of U501 on F.Cu
+    @(185.2500 mm, 110.9000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] on F.Cu, length 2.3400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 86.7500 mm): Pad 50 [/GND] of J501 on F.Cu
+    @(195.5000 mm, 87.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(188.7600 mm, 87.7500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30_ISO] of R535 on F.Cu
+    @(187.4620 mm, 87.2300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_BUF] on F.Cu, length 2.2580 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1030 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.6920 mm, 88.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_BUF] on F.Cu, length 1.0889 mm
+    @(187.7400 mm, 87.7500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30_BUF] of R535 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 100.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_ISO] on F.Cu, length 4.7400 mm
+    @(192.5000 mm, 100.7500 mm): Pad 22 [/GND] of J501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.6920 mm, 102.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 1.0889 mm
+    @(186.7680 mm, 101.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] on F.Cu, length 1.7395 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.6920 mm, 102.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13_BUF] on F.Cu, length 1.0889 mm
+    @(186.1500 mm, 101.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] on F.Cu, length 0.6180 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(188.7600 mm, 99.7500 mm): Pad 2 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15_ISO] of R520 on F.Cu
+    @(187.9980 mm, 100.2700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] on F.Cu, length 1.7220 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1539 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(108.2600 mm, 93.7500 mm): Track [/power/usb2_vertical/USB_D+] on F.Cu, length 0.4069 mm
+    @(107.4850 mm, 93.2500 mm): Track [/power/usb2_vertical/CC2] on F.Cu, length 0.7750 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1051 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(107.7500 mm, 92.0000 mm): Track [/power/usb2_vertical/VBUS] on F.Cu, length 2.3335 mm
+    @(107.4850 mm, 91.2500 mm): Pad B1 [/GND] of J901 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1579 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(108.5480 mm, 93.4625 mm): Track [/power/usb2_vertical/USB_D+] on F.Cu, length 1.6020 mm
+    @(107.4850 mm, 93.2500 mm): Track [/power/usb2_vertical/CC2] on F.Cu, length 0.7750 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1220 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(104.5150 mm, 93.2500 mm): Pad A8 [unconnected-(J901-SBU1-PadA8)] of J901 on F.Cu
+    @(105.5000 mm, 93.5000 mm): Via [/power/usb2_vertical/USB_D-] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.5000 mm, 95.7500 mm): Pad 32 [/GND] of J501 on F.Cu
+    @(195.5000 mm, 95.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 95.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 0.3760 mm
+    @(186.4500 mm, 96.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_BUF] on F.Cu, length 1.0324 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1220 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(107.4850 mm, 94.7500 mm): Pad B8 [unconnected-(J901-SBU2-PadB8)] of J901 on F.Cu
+    @(106.5000 mm, 94.5000 mm): Via [/power/usb2_vertical/USB_D-] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.0998 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(187.1800 mm, 95.2700 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_BUF] on F.Cu, length 2.5400 mm
+    @(186.5260 mm, 95.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21_BUF] on F.Cu, length 1.0607 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1818 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 100.5000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.3000 mm
+    @(186.4900 mm, 101.0000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15_BUF] on F.Cu, length 1.7678 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1375 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(108.5480 mm, 94.5375 mm): Track [/power/usb2_vertical/USB_D-] on F.Cu, length 1.6020 mm
+    @(109.0000 mm, 94.0000 mm): Via [/power/usb2_vertical/VBUS] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(192.4800 mm, 99.7300 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15_ISO] on F.Cu, length 3.7000 mm
+    @(189.7400 mm, 100.2500 mm): Pad 1 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_BUF] of R519 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1037 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.7680 mm, 99.5200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.2719 mm
+    @(186.2500 mm, 99.7500 mm): Via [/+3.3V] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1125 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.2500 mm, 93.2500 mm): Via [/+3.3V] on F.Cu - B.Cu
+    @(185.9600 mm, 92.8275 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.2975 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1060 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.2500 mm, 106.2500 mm): Via [/+3.3V] on F.Cu - B.Cu
+    @(186.7560 mm, 106.6640 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] on F.Cu, length 0.9180 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1341 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.2500 mm, 86.7500 mm): Via [/+3.3V] on F.Cu - B.Cu
+    @(185.0300 mm, 86.5200 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.7380 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 87.5000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] of U504 on F.Cu
+    @(185.2500 mm, 87.1000 mm): Track [/+3.3V] on F.Cu, length 0.6500 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 87.5000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] of U504 on F.Cu
+    @(185.9000 mm, 87.1000 mm): Track [/+3.3V] on F.Cu, length 0.4950 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(186.1500 mm, 107.0000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu
+    @(185.2500 mm, 106.6000 mm): Track [/+3.3V] on F.Cu, length 0.6500 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9000 mm, 106.6000 mm): Track [/+3.3V] on F.Cu, length 0.4950 mm
+    @(186.1500 mm, 107.0000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE1}] of U501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 100.1000 mm): Track [/+3.3V] on F.Cu, length 0.6500 mm
+    @(186.1500 mm, 100.5000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] of U502 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9000 mm, 93.6000 mm): Track [/+3.3V] on F.Cu, length 0.4950 mm
+    @(186.1500 mm, 94.0000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] of U503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 93.6000 mm): Track [/+3.3V] on F.Cu, length 0.6500 mm
+    @(186.1500 mm, 94.0000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] of U503 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1800 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.9000 mm, 100.1000 mm): Track [/+3.3V] on F.Cu, length 0.4950 mm
+    @(186.1500 mm, 100.5000 mm): Pad 19 [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] of U502 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 87.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31_ISO] on F.Cu, length 4.7400 mm
+    @(194.0000 mm, 86.7500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 110.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1_ISO] on F.Cu, length 4.7400 mm
+    @(194.0000 mm, 109.7500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 104.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9_ISO] on F.Cu, length 4.7400 mm
+    @(194.0000 mm, 103.7500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 100.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14_ISO] on F.Cu, length 4.7400 mm
+    @(194.0000 mm, 100.7500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1501 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(123.2500 mm, 79.4500 mm): Via [/GND] on F.Cu - B.Cu
+    @(122.2500 mm, 79.6722 mm): Track [/+3.3V] on B.Cu, length 1.0919 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(125.0000 mm, 79.4500 mm): Via [/GND] on F.Cu - B.Cu
+    @(123.0220 mm, 78.9000 mm): Track [/+3.3V] on B.Cu, length 3.6280 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 93.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23_ISO] on F.Cu, length 4.7400 mm
+    @(194.0000 mm, 92.7500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1501 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(147.2500 mm, 79.6722 mm): Track [/+3.3V] on B.Cu, length 1.0919 mm
+    @(148.2500 mm, 79.4500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(173.0220 mm, 78.9000 mm): Track [/+3.3V] on B.Cu, length 3.6280 mm
+    @(173.2500 mm, 79.4500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(195.5000 mm, 106.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6_ISO] on F.Cu, length 4.7400 mm
+    @(194.0000 mm, 106.7500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(150.0000 mm, 79.4500 mm): Via [/GND] on F.Cu - B.Cu
+    @(148.0220 mm, 78.9000 mm): Track [/+3.3V] on B.Cu, length 3.6280 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(184.7500 mm, 93.3000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE3}] on F.Cu, length 0.3960 mm
+    @(184.4300 mm, 92.5500 mm): Track [/GND] on F.Cu, length 2.6300 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(194.0000 mm, 89.7500 mm): Via [/GND] on F.Cu - B.Cu
+    @(195.5000 mm, 89.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(194.0000 mm, 95.7500 mm): Via [/GND] on F.Cu - B.Cu
+    @(195.5000 mm, 95.2500 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20_ISO] on F.Cu, length 4.7400 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1500 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(173.0220 mm, 78.9000 mm): Track [/+3.3V] on B.Cu, length 3.6280 mm
+    @(175.0000 mm, 79.4500 mm): Via [/GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(184.7500 mm, 87.1000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE4}] on F.Cu, length 0.3000 mm
+    @(184.4300 mm, 86.0500 mm): Track [/GND] on F.Cu, length 2.6300 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1000 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(185.2500 mm, 110.9000 mm): Pad 11 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of U501 on F.Cu
+    @(185.0750 mm, 111.4000 mm): Track [/GND] on F.Cu, length 8.7750 mm
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1010 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(184.7500 mm, 111.0750 mm): Track [/GND] on F.Cu, length 0.4596 mm
+    @(185.2500 mm, 110.9000 mm): Pad 11 [/instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0_BUF] of U501 on F.Cu
+[clearance]: Clearance violation (rule 'Low-voltage block clearance is advisory' clearance 0.2000 mm; actual 0.1200 mm)
+    Rule: Low-voltage block clearance is advisory; warning
+    @(184.4300 mm, 99.0500 mm): Track [/GND] on F.Cu, length 2.6300 mm
+    @(184.7500 mm, 100.1000 mm): Track [/instrument_port_digital_50_dut_ffc_boundary_vertical/~{OE2}] on F.Cu, length 0.3000 mm
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

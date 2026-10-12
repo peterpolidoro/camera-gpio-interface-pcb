@@ -1,0 +1,32 @@
+ERC report (2026-10-12T11:33:01, Encoding UTF8)
+Report includes: Errors
+
+***** Sheet /
+
+***** Sheet /power/
+
+***** Sheet /inputs/
+
+***** Sheet /outputs/
+
+***** Sheet /instrument_port_digital_50_dut_ffc_boundary_vertical/
+
+***** Sheet /blackfly_s_gpio_channel_mcv6_vertical/
+
+***** Sheet /power/usb2_vertical/
+
+***** Sheet /power/5v_to_3v3_tps73733/
+
+***** Sheet /inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17/
+
+***** Sheet /blackfly_s_gpio_channel_mcv6_vertical1/
+
+***** Sheet /blackfly_s_gpio_channel_mcv6_vertical2/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
