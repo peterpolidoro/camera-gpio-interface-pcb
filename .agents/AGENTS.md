@@ -161,3 +161,24 @@ brings one placed block up to its library block and reports what changed
 when one is written: `make expand` writes the manifest from it and `make
 expand-check` compares. The Makefile targets come from kicad-libs
 `templates/kicad-repo/Makefile` and call the sibling checkout's launchers.
+
+## Publication Layers
+
+This repository is mirrored to GitHub for the rig's researchers, so it has two
+layers (decided 2026-10-12):
+
+- **Citable layer**: `README.md`, `CITATION.cff`, `LICENSE`, `LICENSES/`,
+  `kicad/`, `docs/generated/` and every document the README lists. It must
+  open and read without any Orb Weaver checkout and must not refer to
+  codeberg.org or to `orb-weaver-*` repositories. KiCad library identifiers
+  (`orb_weaver_private:…`, `orb_weaver_smd:…`) and the generated-block
+  comments are allowed; they are library references, not links. Files in
+  other repositories are cited as `<repository>/<path>` with no `../` and no
+  URL; `docs/development.md` maps each repository name to its URL.
+- **Development layer**: `docs/development.md`, the documents it lists,
+  `AGENTS.md`, `.agents/`, `.codex/`, `Makefile` and `.guix/`. These may name
+  the sibling checkouts and the Orb Weaver repositories.
+
+A new document goes into exactly one of the two lists. `LICENSES/NOTICE.md`
+keeps its `kicad-libs` URL: it is the CC-BY-SA attribution for the embedded
+symbols, footprints and blocks.

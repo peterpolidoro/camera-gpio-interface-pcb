@@ -59,7 +59,7 @@ open rows: the MCV 6 vertical at +180 (C5443576, J701 J1201 J1401) and the
 re-confirms DRY6 +270 for `SN74LVC1G125DRYR` (C527546) and
 `SN74LVC1G07DRYR` (C2675513), which the table had verified only with
 `SN74LVC2G17DRYR`. Handed to kicad-libs in
-`../kicad-libs/tmp/camera-gpio-interface-pcb-rotation-evidence-2026-09-26.md`
+`kicad-libs/tmp/camera-gpio-interface-pcb-rotation-evidence-2026-09-26.md`
 for `footprint-rotations.csv`.
 
 **Order options not recorded here:** surface finish, solder-mask colour,

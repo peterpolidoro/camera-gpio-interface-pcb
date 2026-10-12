@@ -3,7 +3,7 @@
 Board-side record of Freerouting runs on `camera-gpio-interface-pcb`, kept the
 way `mouse-joystick-pcb/docs/autoroute-log.md` is. The shared method, the
 router's measured behaviour and the helper commands are in
-`../kicad-libs/docs/freerouting-autorouting.md`; this file records what was
+`kicad-libs/docs/freerouting-autorouting.md`; this file records what was
 done to this board and what the numbers were. Router counts are not KiCad
 connectivity: read the "KiCad verification" section of each run before the
 router's own tallies.
@@ -110,7 +110,7 @@ count unchanged. Backup:
 
 ### The 32 remaining opens
 
-All local. `../kicad-libs/scripts/dsn_escape_margin.py` on the exported DSN
+All local. `kicad-libs/scripts/dsn_escape_margin.py` on the exported DSN
 explains three of the five groups before any run: `PWR_5V` (0.50 mm /
 0.25 mm) has **−0.178 mm** escape margin at a SOT-666 pin 5, `PWR_3V3`
 (0.30 / 0.20) has **0.000 mm** at a DRY6 pin, and the default class

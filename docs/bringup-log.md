@@ -21,7 +21,7 @@ the silk carries no unit identifier.
 
 - [ ] Photograph top and bottom before power.
 - [ ] `DRY6` packages (U401, U701-U703, U1101, U1201-U1203, U1401-U1403):
-      first use of this land pattern on an assembled Orb Weaver board;
+      first use of this land pattern on an assembled board from this library;
       look for tombstoning, bridging, and pad 1 orientation against the
       package dot.
 - [ ] `USBLC6-2P6` SOT-666 (10): orientation and the paired-pad jumpers.

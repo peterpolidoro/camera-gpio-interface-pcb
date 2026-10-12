@@ -3,8 +3,8 @@
 **Workstream:** `OBS-HW-CAMERA` (board slice of `OBS-HW`).
 **Status:** Planned, 2026-09-29. All new work below is pending.
 
-The [system architecture](../../orb-weaver-context/context/experimental-system-observability.md)
-and [development roadmap](../../orb-weaver-context/context/experimental-system-observability-plan.md)
+The system architecture (`orb-weaver-context/context/experimental-system-observability.md`)
+and development roadmap (`orb-weaver-context/context/experimental-system-observability-plan.md`)
 own the cross-repository intent, gate definitions, and workstream dependencies.
 This document owns only this board's contribution. It records planned work,
 not new electrical measurements, hardware validation, or deployment approval.

@@ -68,7 +68,7 @@ by run, is [autoroute-log.md](autoroute-log.md); the design record is
    116 -> 32.
 4. Peter rotated U402 by 180 degrees and deleted its tracks (34 opens).
 5. The narrow-rail profile, applied; every net then had positive escape
-   margin (`../kicad-libs/scripts/dsn_escape_margin.py` on the DSN).
+   margin (`kicad-libs/scripts/dsn_escape_margin.py` on the DSN).
 6. Run 2 with the run-1 copper protected, 44 min: opens 34 -> 23.
 7. The 23 closed with 17 hand-placed 0.20 mm segments and 5 GND vias from a
    pcbnew script in the managed shell; the dangling `CAM1_OUT_BNC` stub and
@@ -111,7 +111,7 @@ kicad-libs helpers, and were checked with kicad-cli DRC afterwards.
    the block layouts are re-routed at 0.20 mm in kicad-libs, or this board
    records that fab-floor copper inside blocks is accepted (mouse-joystick's
    precedent: severity ignore, `make clearance-check` as the gate). Tracked
-   in `../kicad-libs/.agents/PLANS.md`.
+   in `kicad-libs/.agents/PLANS.md`.
    **Decided later on 2026-09-26:** accepted as fab-floor copper inside
    blocks. The `.kicad_dru` rule "Low-voltage block clearance is advisory"
    (the mouse-joystick demote form, not severity ignore) turns the 146 into

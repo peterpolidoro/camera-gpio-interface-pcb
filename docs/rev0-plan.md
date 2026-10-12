@@ -4,7 +4,7 @@
 the camera's documented electrical behaviour rather than the lab's harness
 drawing; to fold in the signal source (pyControl breakout BNCs) and consumer
 (Neuropixels OneBox); and to fold in the rig's actual configuration from
-`~/Repositories/github/joystick-rig/` plus Peter's decisions on ground,
+`joystick-rig/` plus Peter's decisions on ground,
 orientation, cable, parts, block authoring and camera model. The new parts
 were purchased 2026-09-23. No KiCad project yet: work pauses here until the
 `kicad-libs` additions (parts rows and the per-camera design block) are done,
@@ -62,8 +62,8 @@ watched on a logic analyzer during an experiment.
 Source material: `tmp/BFS-U3-20S4-Datasheet.pdf`,
 `tmp/BFS-U3-Getting-Started-1.pdf`, `tmp/General Purpose Input Output
 (GPIO).html`, `tmp/onebox-datasheet.pdf`, `tmp/onebox-user-manual.pdf`
-(v1.0.1), `~/Repositories/github/pycontrol-h7-breakout/pcb/` (rev 0.8,
-2026-08-19), `~/Repositories/github/joystick-rig/` (notably
+(v1.0.1), `pycontrol-h7-breakout/pcb/` (rev 0.8,
+2026-08-19), `joystick-rig/` (notably
 `pycontrol/hardware_definitions/hardware_definition_joystick.py`,
 `notes/README_Cams_260804.txt`, `channel_maps/260804_onebox_aux_map.md`,
 `scripts/rig1_common.py`, `Hardware/rig1_wiring_sheet_20260828.png`), the
@@ -677,5 +677,5 @@ Read this file first; it is the whole design record so far. Then:
 
 Sources that are not in this repo: camera and OneBox documents in the
 gitignored `tmp/`; the rig's configuration in
-`~/Repositories/github/joystick-rig/`; the pyControl H7 breakout in
-`~/Repositories/github/pycontrol-h7-breakout/`.
+`joystick-rig/`; the pyControl H7 breakout in
+`pycontrol-h7-breakout/`.

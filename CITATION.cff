@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this board design in published work, please cite it as below."
+type: software
+title: "camera-gpio-interface-pcb: camera GPIO interface board"
+abstract: >-
+  KiCad design, fabrication outputs and documentation for a passive interface
+  board between three FLIR Blackfly S cameras, a pyControl breakout and a
+  Neuropixels OneBox in the Janelia Dudman lab joystick rig: screw-terminal
+  camera connectors, two BNC inputs, four 3.3 V BNC outputs, a 50-pin digital
+  instrument port and USB power.
+authors:
+  - family-names: Polidoro
+    given-names: Peter
+    email: polidorop@janelia.hhmi.org
+    affiliation: "Janelia Research Campus, Howard Hughes Medical Institute"
+repository-code: "https://github.com/peterpolidoro/camera-gpio-interface-pcb"
+version: "1.0"
+license:
+  - CC-BY-SA-4.0
+  - BSD-3-Clause
+keywords:
+  - pyControl
+  - KiCad
+  - camera synchronization
+  - Neuropixels
+  - behavioral neuroscience
+  - open hardware

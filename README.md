@@ -6,12 +6,11 @@ the pyControl breakout, four 3.3 V BNC outputs to a Neuropixels OneBox, an
 InstrumentPort-Digital-50 with every camera line tapped, and USB power. No
 MCU, no firmware, no configuration jumpers.
 
-**Status, 2026-09-26:** v1.0 is routed, checked and packaged for JLCPCB.
-The design record is [docs/rev0-plan.md](docs/rev0-plan.md); the layout
-record is [docs/autoroute-log.md](docs/autoroute-log.md); the current task
-list is `.agents/PLANS.md`, "Fabrication readiness". Read the plan first,
-then [docs/kicad-libs-handoff-2026-09-24.md](docs/kicad-libs-handoff-2026-09-24.md)
-and [docs/session-handoff-2026-09-26.md](docs/session-handoff-2026-09-26.md).
+**Status, October 2026:** v1.0 is the fabricated revision. Five assembled
+boards were ordered from JLCPCB on 2026-09-26
+([fabrication log](docs/fabrication-log.md)), and one is installed in the
+rig, wired to the three cameras, the pyControl breakout and the OneBox. Bench
+results per board go in [the bring-up log](docs/bringup-log.md).
 
 ## The Board
 
@@ -85,35 +84,49 @@ what a panel cutout has to clear. Full tables in [board-dimensions.md](docs/gene
 
 <!-- END GENERATED BOARD DOCUMENTATION -->
 
-## Status
+## Documents
 
-v1.0, 2026-09-26: four layers, 100 x 60 mm, 158 footprints, `/GND` poured
-on every layer. ERC 0; DRC 0 errors, 0 unconnected, 0 schematic differences,
-with 144 block-inherited clearance findings accepted as warnings (fab-floor
-copper inside the InstrumentPort and USB block layouts, see
-`.agents/AGENTS.md`); `make clearance-check` passes against the routing
-baseline; `make fab` builds the JLCPCB package with all 151 parts in the BOM
-and placement files. **Five assembled boards were ordered from JLCPCB on
-2026-09-26 from commit `5ddb425`** ([docs/fabrication-log.md](docs/fabrication-log.md));
-the placement preview showed every part oriented correctly, which verifies
-the Phoenix MCV 6 vertical and 0402 LED rotation rows for `kicad-libs`.
-Bring-up results go in [docs/bringup-log.md](docs/bringup-log.md).
-
-## Environment
-
-    make help          List the available targets
-    make kicad-edits   Open the project in the managed KiCad
-    make fab           Generate the JLCPCB fabrication package
-    make docs          Regenerate the documentation above
-    make docs-check    Report whether that documentation is stale
-
-## Key Documents
-
-- [Observability development plan](docs/observability-plan.md): board workstream, parallel tasks and evidence gates
-- [Rev 0 plan](docs/rev0-plan.md): the whole design record and the resume checklist
-- [kicad-libs handoff, 2026-09-24](docs/kicad-libs-handoff-2026-09-24.md): what the library prepared for this board
-- [Generated board documentation](docs/generated/README.md): written by `make docs`
-- [Autoroute log](docs/autoroute-log.md): the layout record, run by run, with every hand repair
-- [Session handoff, 2026-09-26](docs/session-handoff-2026-09-26.md): where the routed board stands
+- [Interface map](docs/interface-map.md): what each connector and instrument-port channel carries
+- [Rev 0 plan](docs/rev0-plan.md): the design record
 - [Fabrication log](docs/fabrication-log.md): what was ordered, from which commit, with which package hashes
 - [Bring-up log](docs/bringup-log.md): bench results per board serial
+- [Generated board documentation](docs/generated/README.md): schematic, renders, STEP, BOM and enclosure geometry, rebuilt from the KiCad sources
+
+## Fabrication
+
+The v1.0 boards were ordered assembled from JLCPCB from the package built at
+commit `5ddb425`. [The fabrication log](docs/fabrication-log.md) records the
+commit, the source hashes and the hash of every file in that package, so a
+rebuilt package can be checked against what was ordered; the package itself
+is not committed. To order boards with plain KiCad 10, plot the four copper
+layers, both masks, pastes and silkscreens and the edge cuts, export the
+Excellon drill files, and export the BOM and placement file from
+`kicad/camera-gpio-interface-pcb.kicad_pcb`. JLCPCB's placement rotation
+differs from KiCad's for some footprints, so check the assembly preview
+before confirming an order.
+
+## Related Repositories
+
+- [mouse-joystick-pcb](https://github.com/peterpolidoro/mouse-joystick-pcb): the rig's joystick controller board.
+- [mouse-joystick-firm](https://github.com/peterpolidoro/mouse-joystick-firm): its firmware and the pyControl device class.
+- [joystick-rig](https://github.com/sourishmukh/joystick-rig): the rig's pyControl tasks, hardware definition and operating notes.
+
+## Development
+
+Opening, editing and fabricating the board needs only KiCad 10; the schematic
+and board carry their own copies of every symbol and footprint. The board was
+drawn from a shared KiCad library and toolchain, which is needed only to
+regenerate `docs/generated/`, the fabrication package or the composed sheets.
+[docs/development.md](docs/development.md) describes that toolchain, the
+environment, the sibling repositories and the layout record. Agent guidance is
+in `AGENTS.md` and `.agents/`.
+
+## License
+
+Hardware design files and documentation are CC-BY-SA-4.0; code and automation
+are 3-clause BSD. See [LICENSE](LICENSE).
+
+## Citation
+
+[CITATION.cff](CITATION.cff) carries the citation metadata; GitHub renders it
+under "Cite this repository".
