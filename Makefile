@@ -37,6 +37,7 @@ FAB_OPTIONS ?=
 DOCS_TOOL ?= $(if $(wildcard $(ORB_WEAVER_KICAD_LIBS_CHECKOUT)/bin/orb-weaver-kicad-docs),$(ORB_WEAVER_KICAD_LIBS_CHECKOUT)/bin/orb-weaver-kicad-docs,orb-weaver-kicad-docs)
 DOCS_OUTPUT_DIR ?= docs/generated
 DOCS_OPTIONS ?=
+GLB_OUTPUT_DIR ?= tmp/glb
 # Routing helpers from kicad-libs (bin/orb-weaver-kicad-*). Like DOCS_TOOL they
 # prefer the sibling checkout; the packaged commands appear once the channel pin
 # carries a kicad-libs commit that ships them. See kicad-libs
@@ -82,7 +83,7 @@ MANAGED_SHELL = $(AGENT_MANAGED_SHELL)
 LIBS_WORKSPACE := $(if $(wildcard $(ORB_WEAVER_KICAD_LIBS_CHECKOUT)),$(ORB_WEAVER_KICAD_LIBS_CHECKOUT),$(ORB_WEAVER_KICAD_LIBS))
 PCB_AGENT_EXTRA_DIRS ?= $(BOARD_INTERFACES_CHECKOUT) $(ORB_WEAVER_CONTEXT_CHECKOUT) $(GUIX_AGENT_TOOLS_CHECKOUT) $(MOUSE_JOYSTICK_PCB_CHECKOUT) $(LA5032_ADAPTER_CHECKOUT) $(JOYSTICK_RIG_CHECKOUT) $(PYCONTROL_H7_BREAKOUT_CHECKOUT) $(if $(LIBS_WORKSPACE),$(LIBS_WORKSPACE)) $(if $(wildcard $(AGENT_MEMORY_REPO_CHECKOUT)/AGENTS.md),$(AGENT_MEMORY_REPO_CHECKOUT))
 
-.PHONY: mechanical-datums board-manifest-derive board-manifest-check board-manifest-render sheet-pins compose compose-check expand expand-check refresh-block place-block block-spacing docs docs-check help test prepare-kicad-config check-kicad-libs shell kicad-shell kicad-version agent-reflection codex claude agent-project agent-libs agent-both agent-edits kicad-edits freecad-edits validate-db fab export-dsn freeroute import-ses clearance-baseline clearance-check
+.PHONY: mechanical-datums board-manifest-derive board-manifest-check board-manifest-render sheet-pins compose compose-check expand expand-check refresh-block place-block block-spacing docs docs-check glb help test prepare-kicad-config check-kicad-libs shell kicad-shell kicad-version agent-reflection codex claude agent-project agent-libs agent-both agent-edits kicad-edits freecad-edits validate-db fab export-dsn freeroute import-ses clearance-baseline clearance-check
 
 help:
 	@printf '%s\n' \
@@ -94,6 +95,7 @@ help:
 	  'make fab               Generate Gerber/drill fabrication files for PROJECT' \
 	  'make docs             Generate published board documentation for PROJECT' \
 	  'make docs-check       Report whether the generated documentation is stale' \
+	  'make glb               Export the assembled board as glTF for the rig atlas (tmp/glb/)' \
 	  'make export-dsn        Export the PCB to Specctra DSN for Freerouting (corrected export)' \
 	  'make freeroute         Export the DSN and open it in the Freerouting GUI' \
 	  'make import-ses        Apply the Freerouting .ses to the PCB headlessly, with a backup' \
@@ -233,6 +235,15 @@ docs:
 docs-check:
 	@if [ -z "$(PROJECT)" ]; then echo "PROJECT=/path/to/project.kicad_pro is required"; exit 1; fi
 	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" --check
+
+# The assembled board as binary glTF, with components, silkscreen and soldermask,
+# for the rig atlas in mouse-joysticks-mech (atlas/boards/). Written under tmp/,
+# which is ignored; copy it there and update its PROVENANCE.md.
+glb:
+	@if [ -z "$(PROJECT)" ]; then echo "PROJECT=/path/to/project.kicad_pro is required"; exit 1; fi
+	$(MAKE) prepare-kicad-config
+	mkdir -p "$(GLB_OUTPUT_DIR)"
+	$(KICAD_MANAGED_SHELL) kicad-cli pcb export glb --subst-models --include-silkscreen --include-soldermask --force --output "$(GLB_OUTPUT_DIR)/$(basename $(notdir $(PROJECT))).glb" "$(PROJECT:.kicad_pro=.kicad_pcb)"
 
 freecad-edits:
 	$(MAKE) prepare-kicad-config
