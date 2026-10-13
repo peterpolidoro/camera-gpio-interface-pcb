@@ -227,14 +227,21 @@ fab:
 	$(MAKE) prepare-kicad-config
 	$(KICAD_MANAGED_SHELL) "$(FAB_TOOL)" --project "$(PROJECT)" --output-dir "$(FAB_OUTPUT_DIR)" $(FAB_OPTIONS)
 
+# The block pages (kicad-libs PLANS 2026-10-12 step 2): with the board manifest
+# the documentation gains docs/generated/blocks/<instance>.md per placed block
+# from the library's briefs, and with a board source the subsystem pages and the
+# GPIO allocation; both are passed when the files exist, and --review-schematic
+# adds the per-block review booklet.
+DOCS_BLOCK_OPTIONS = $(if $(wildcard $(BOARD_MANIFEST)),--manifest "$(BOARD_MANIFEST)") $(if $(wildcard $(BOARD_SOURCE)),--board-source "$(BOARD_SOURCE)")
+
 docs:
 	@if [ -z "$(PROJECT)" ]; then echo "PROJECT=/path/to/project.kicad_pro is required"; exit 1; fi
 	$(MAKE) prepare-kicad-config
-	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_OPTIONS)
+	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_BLOCK_OPTIONS) --review-schematic $(DOCS_OPTIONS)
 
 docs-check:
 	@if [ -z "$(PROJECT)" ]; then echo "PROJECT=/path/to/project.kicad_pro is required"; exit 1; fi
-	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" --check
+	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_BLOCK_OPTIONS) --review-schematic --check
 
 # The assembled board as binary glTF, with components, silkscreen and soldermask,
 # for the rig atlas in mouse-joysticks-mech (atlas/boards/). Written under tmp/,

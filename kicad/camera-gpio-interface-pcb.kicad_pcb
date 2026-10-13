@@ -7453,7 +7453,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D1201-A)")
+			(net "/blackfly_s_gpio_channel_mcv6_vertical1/LED_A")
 			(pintype "passive")
 			(uuid "d2cb96b4-9914-4b82-9187-930c44bc7b0f")
 		)
@@ -13186,7 +13186,7 @@
 			(at 0.45 0 90)
 			(size 0.7 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(D701-A)")
+			(net "/blackfly_s_gpio_channel_mcv6_vertical/LED_A")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "10766c23-277a-451b-9a42-057ee8275c17")
@@ -35449,7 +35449,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D1401-A)")
+			(net "/blackfly_s_gpio_channel_mcv6_vertical2/LED_A")
 			(pintype "passive")
 			(uuid "6a3ab103-f3e8-4fd5-b893-2436f9fa90d5")
 		)
@@ -42787,7 +42787,7 @@
 			(at 0.45 0 90)
 			(size 0.7 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(D1401-A)")
+			(net "/blackfly_s_gpio_channel_mcv6_vertical2/LED_A")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "c1336a6b-a57e-4d42-8d0c-abe3fe2bad3a")
@@ -57237,7 +57237,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(D701-A)")
+			(net "/blackfly_s_gpio_channel_mcv6_vertical/LED_A")
 			(pintype "passive")
 			(uuid "38b7fdba-b5d9-4ea3-b6a6-9a77c62208ae")
 		)
@@ -61154,7 +61154,7 @@
 			(at 0.45 0 90)
 			(size 0.7 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(D1201-A)")
+			(net "/blackfly_s_gpio_channel_mcv6_vertical1/LED_A")
 			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "eb885307-dd75-465b-9bad-5d5485c67a36")
@@ -89612,7 +89612,7 @@
 	)
 	(group "blackfly_s_gpio_channel_mcv6_vertical_1"
 		(uuid "486f86df-44f1-5996-8e02-66c193767cda")
-		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(lib_id "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical")
 		(members "01249ea6-ec37-490c-85ab-aadbf7d54ab9" "050a3cbd-effb-4d6f-aec8-d16f08d1e55e"
 			"37383403-7e48-4736-b744-a3515263683a" "424a7bf7-8e51-463e-be8a-738b0f412350"
 			"495f8fce-b2af-4b6b-80a4-77bb92654a2b" "6632b47f-07c4-4c0d-b0df-eddaa7823508"
@@ -89631,7 +89631,7 @@
 	)
 	(group "blackfly_s_gpio_channel_mcv6_vertical_3"
 		(uuid "4c8a956a-662d-5a59-8da1-22c6c207c616")
-		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(lib_id "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical")
 		(members "09ed3c75-0a24-4094-b7ea-1973f4e8fefe" "0af2b6a6-87d3-4824-af12-de84e3514f38"
 			"1db0a239-dff6-48d5-97db-9cd88c83e1d6" "23c1d4ff-e2b3-48c4-83ba-025b3b7963e9"
 			"2d436d24-35cc-4bce-bea6-13bcdaed2cc9" "54ec5c88-ad14-4a9e-b56b-ffeb6bae5226"
@@ -89679,7 +89679,7 @@
 	)
 	(group "blackfly_s_gpio_channel_mcv6_vertical_2"
 		(uuid "f23c622f-240a-54a0-a4ed-97db2eaf1a69")
-		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(lib_id "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical")
 		(members "0bf0736f-8a6c-4cd9-9602-dde66dddd49c" "0c0f5b25-6f1b-465f-8bed-ee975f083adb"
 			"0ef06be0-1b31-491d-9eec-cf805311fd38" "12ee70a8-8364-44ec-b83f-4c13eeaaf00b"
 			"15ad94a1-e439-4af5-a866-b98eadfd4294" "194c500b-c691-4fa7-affc-b2eaa6891594"

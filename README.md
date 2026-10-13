@@ -42,6 +42,8 @@ More views, including both elevations, are in [the generated documentation](docs
 | --- | --- |
 | Schematic, all sheets, PDF | [camera-gpio-interface-pcb-schematic.pdf](docs/generated/schematic/camera-gpio-interface-pcb-schematic.pdf) |
 | Schematic sheets, SVG (11) | [schematic/](docs/generated/schematic/) |
+| Schematic, instance overviews and details, PDF | [Review booklet](docs/generated/schematic/camera-gpio-interface-pcb-schematic-review.pdf) |
+| Design blocks placed (7), one page each | [blocks/README.md](docs/generated/blocks/README.md) |
 | Assembly view, top | [assembly-top.svg](docs/generated/layout/assembly-top.svg) |
 | Assembly view, bottom | [assembly-bottom.svg](docs/generated/layout/assembly-bottom.svg) |
 | Assembled board, STEP, for FreeCAD | [camera-gpio-interface-pcb-assembled.step](docs/generated/3d/camera-gpio-interface-pcb-assembled.step) |

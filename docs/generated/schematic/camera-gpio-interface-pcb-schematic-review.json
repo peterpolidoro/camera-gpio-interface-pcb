@@ -1,0 +1,1279 @@
+{
+  "source_schematic": "camera-gpio-interface-pcb.kicad_sch",
+  "sheets": [
+    {
+      "path": "/",
+      "page": "1",
+      "paper": "A4",
+      "regions": [],
+      "file": "camera-gpio-interface-pcb.kicad_sch",
+      "sha256": "c1557d088fadd35ea5c5889ef9163ea650cee93b002e77e513412d15016a5fba"
+    },
+    {
+      "path": "/blackfly_s_gpio_channel_mcv6_vertical",
+      "page": "7",
+      "paper": "A2",
+      "regions": [
+        {
+          "title": "1. Camera header",
+          "box": [
+            13.97,
+            35.211999999999996,
+            213.15,
+            97.78999999999999
+          ]
+        },
+        {
+          "title": "2. Line 3 trigger drive",
+          "box": [
+            218.23,
+            35.211999999999996,
+            400.77,
+            157.148592
+          ]
+        },
+        {
+          "title": "3. Line 0 sync drive",
+          "box": [
+            13.97,
+            105.156,
+            196.51000000000002,
+            228.268592
+          ]
+        },
+        {
+          "title": "4. Exposure output, BNC drive and LED",
+          "box": [
+            218.23,
+            164.514592,
+            413.116677,
+            327.32859199999996
+          ]
+        },
+        {
+          "title": "5. ESD clamps",
+          "box": [
+            13.97,
+            235.634592,
+            213.15,
+            307.06776199999996
+          ]
+        },
+        {
+          "title": "6. Instrument taps",
+          "box": [
+            13.97,
+            334.694592,
+            225.622198,
+            382.27
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "box": [
+            422.49,
+            35.211999999999996,
+            536.6642082779999,
+            169.16400000000002
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            422.49,
+            180.34,
+            580.03,
+            317.13399999999996
+          ]
+        }
+      ],
+      "file": "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch",
+      "sha256": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf"
+    },
+    {
+      "path": "/inputs",
+      "page": "3",
+      "paper": "A4",
+      "regions": [],
+      "file": "inputs.kicad_sch",
+      "sha256": "3e3847e5c7fac032cf8d42038ef78789c045586e155f18b27963fb36380b3e2d"
+    },
+    {
+      "path": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17",
+      "page": "11",
+      "paper": "A2",
+      "regions": [
+        {
+          "title": "1. Channel A input filter",
+          "box": [
+            13.97,
+            35.211999999999996,
+            111.02,
+            116.508592
+          ]
+        },
+        {
+          "title": "2. Channel B input filter",
+          "box": [
+            116.10000000000001,
+            35.211999999999996,
+            213.15,
+            108.888592
+          ]
+        },
+        {
+          "title": "3. Output pull-downs and instrument taps",
+          "box": [
+            218.23,
+            35.211999999999996,
+            315.28,
+            118.11
+          ]
+        },
+        {
+          "title": "4. Schmitt buffer and supply bypass",
+          "box": [
+            320.36,
+            35.211999999999996,
+            417.40999999999997,
+            268.908592
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "box": [
+            422.49,
+            35.211999999999996,
+            569.989625498,
+            138.684
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            422.49,
+            149.85999999999999,
+            580.03,
+            286.68399999999997
+          ]
+        }
+      ],
+      "file": "logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_sch",
+      "sha256": "768774d53281c8464f43466e0e5c9efe500aa938629a6e3d6167f0cb6d773a98"
+    },
+    {
+      "path": "/power",
+      "page": "2",
+      "paper": "A4",
+      "regions": [],
+      "file": "power.kicad_sch",
+      "sha256": "ca278df26d98225b847de4a47bcdf3a128efe8a55eb5fd6b04d389a57bc9595e"
+    },
+    {
+      "path": "/power/5v_to_3v3_tps73733",
+      "page": "10",
+      "paper": "A4",
+      "regions": [
+        {
+          "title": "1. Regulator and bypass",
+          "box": [
+            13.97,
+            35.211999999999996,
+            190.41,
+            101.268592
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "box": [
+            195.48999999999998,
+            35.211999999999996,
+            271.480167552,
+            75.184
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            195.48999999999998,
+            86.36,
+            283.03,
+            143.174
+          ]
+        }
+      ],
+      "file": "5v_to_3v3_tps73733.kicad_sch",
+      "sha256": "24f58e45fb83dffeafcf86b2f75c212ee888747c1bb2e4a2154ea80c0c6ec62e"
+    },
+    {
+      "path": "/power/usb2_vertical",
+      "page": "9",
+      "paper": "A2",
+      "regions": [
+        {
+          "title": "1. Receptacle and ESD clamp",
+          "box": [
+            13.97,
+            35.211999999999996,
+            213.15,
+            273.49670799999996
+          ]
+        },
+        {
+          "title": "2. CC sink declaration",
+          "box": [
+            218.23,
+            35.211999999999996,
+            400.77,
+            98.72859199999999
+          ]
+        },
+        {
+          "title": "3. Power drive declarations",
+          "box": [
+            218.23,
+            106.094592,
+            400.77,
+            154.397525
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "box": [
+            422.49,
+            35.211999999999996,
+            507.38770066399996,
+            100.584
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            422.49,
+            111.76,
+            580.03,
+            251.464
+          ]
+        }
+      ],
+      "file": "usb2_vertical.kicad_sch",
+      "sha256": "cf27bc17c1a4211a20e229efdb97d578ceabb0dfffdf3586ca81de6864f0609a"
+    },
+    {
+      "path": "/instrument_port_digital_50_dut_ffc_boundary_vertical",
+      "page": "5",
+      "paper": "A1",
+      "regions": [
+        {
+          "title": "1. Octet DIG0 to DIG7: U39001",
+          "box": [
+            13.97,
+            35.211999999999996,
+            196.51000000000002,
+            207.01000000000002
+          ]
+        },
+        {
+          "title": "2. Octet DIG8 to DIG15: U39002",
+          "box": [
+            232.476667,
+            35.211999999999996,
+            415.016667,
+            207.01000000000002
+          ]
+        },
+        {
+          "title": "3. Octet DIG16 to DIG23: U39003",
+          "box": [
+            450.983333,
+            35.211999999999996,
+            633.523333,
+            207.01000000000002
+          ]
+        },
+        {
+          "title": "4. Octet DIG24 to DIG31: U39004",
+          "box": [
+            13.97,
+            214.37599999999998,
+            196.51000000000002,
+            387.34999999999997
+          ]
+        },
+        {
+          "title": "5. Rail-entry bulk bypass",
+          "box": [
+            232.476667,
+            214.37599999999998,
+            415.016667,
+            279.06859199999997
+          ]
+        },
+        {
+          "title": "6. FFC receptacle",
+          "box": [
+            450.983333,
+            214.37599999999998,
+            633.523333,
+            390.144
+          ]
+        },
+        {
+          "title": "Interfaces (1 of 2)",
+          "box": [
+            669.49,
+            35.211999999999996,
+            757.190736587,
+            240.28400000000002
+          ]
+        },
+        {
+          "title": "Interfaces (2 of 2)",
+          "box": [
+            669.49,
+            240.696,
+            739.126542718,
+            435.864
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            13.97,
+            397.51,
+            227.396667,
+            545.764
+          ]
+        }
+      ],
+      "file": "instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch",
+      "sha256": "3ffc84034030a3bd0118b9998b4dbcd493ecc0dbef09417f5b419a2b69fa226b"
+    },
+    {
+      "path": "/outputs",
+      "page": "4",
+      "paper": "A4",
+      "regions": [],
+      "file": "outputs.kicad_sch",
+      "sha256": "aa57dc1f04549c96b8d144560264640da69ad539b0feefa5b66a69bd690fd88c"
+    },
+    {
+      "path": "/blackfly_s_gpio_channel_mcv6_vertical2",
+      "page": "14",
+      "paper": "A2",
+      "regions": [
+        {
+          "title": "1. Camera header",
+          "box": [
+            13.97,
+            35.211999999999996,
+            213.15,
+            97.78999999999999
+          ]
+        },
+        {
+          "title": "2. Line 3 trigger drive",
+          "box": [
+            218.23,
+            35.211999999999996,
+            400.77,
+            157.148592
+          ]
+        },
+        {
+          "title": "3. Line 0 sync drive",
+          "box": [
+            13.97,
+            105.156,
+            196.51000000000002,
+            228.268592
+          ]
+        },
+        {
+          "title": "4. Exposure output, BNC drive and LED",
+          "box": [
+            218.23,
+            164.514592,
+            413.116677,
+            327.32859199999996
+          ]
+        },
+        {
+          "title": "5. ESD clamps",
+          "box": [
+            13.97,
+            235.634592,
+            213.15,
+            307.06776199999996
+          ]
+        },
+        {
+          "title": "6. Instrument taps",
+          "box": [
+            13.97,
+            334.694592,
+            225.622198,
+            382.27
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "box": [
+            422.49,
+            35.211999999999996,
+            540.401633112,
+            169.16400000000002
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            422.49,
+            180.34,
+            580.03,
+            317.13399999999996
+          ]
+        }
+      ],
+      "file": "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch",
+      "sha256": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf"
+    },
+    {
+      "path": "/blackfly_s_gpio_channel_mcv6_vertical1",
+      "page": "12",
+      "paper": "A2",
+      "regions": [
+        {
+          "title": "1. Camera header",
+          "box": [
+            13.97,
+            35.211999999999996,
+            213.15,
+            97.78999999999999
+          ]
+        },
+        {
+          "title": "2. Line 3 trigger drive",
+          "box": [
+            218.23,
+            35.211999999999996,
+            400.77,
+            157.148592
+          ]
+        },
+        {
+          "title": "3. Line 0 sync drive",
+          "box": [
+            13.97,
+            105.156,
+            196.51000000000002,
+            228.268592
+          ]
+        },
+        {
+          "title": "4. Exposure output, BNC drive and LED",
+          "box": [
+            218.23,
+            164.514592,
+            413.116677,
+            327.32859199999996
+          ]
+        },
+        {
+          "title": "5. ESD clamps",
+          "box": [
+            13.97,
+            235.634592,
+            213.15,
+            307.06776199999996
+          ]
+        },
+        {
+          "title": "6. Instrument taps",
+          "box": [
+            13.97,
+            334.694592,
+            225.622198,
+            382.27
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "box": [
+            422.49,
+            35.211999999999996,
+            540.401633112,
+            169.16400000000002
+          ]
+        },
+        {
+          "title": "Operation and PCB guidance",
+          "box": [
+            422.49,
+            180.34,
+            580.03,
+            317.13399999999996
+          ]
+        }
+      ],
+      "file": "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch",
+      "sha256": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        297.0,
+        210.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/"
+    },
+    {
+      "page": 2,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        594.0,
+        420.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 3,
+      "title": "1. Camera header",
+      "box": [
+        13.97,
+        35.211999999999996,
+        213.15,
+        97.78999999999999
+      ],
+      "scale": 1.491,
+      "text_mm": 1.89,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 4,
+      "title": "2. Line 3 trigger drive",
+      "box": [
+        218.23,
+        35.211999999999996,
+        400.77,
+        157.148592
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 5,
+      "title": "3. Line 0 sync drive",
+      "box": [
+        13.97,
+        105.156,
+        196.51000000000002,
+        228.268592
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 6,
+      "title": "4. Exposure output, BNC drive and LED",
+      "box": [
+        218.23,
+        164.514592,
+        413.116677,
+        327.32859199999996
+      ],
+      "scale": 1.29,
+      "text_mm": 1.64,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 7,
+      "title": "5. ESD clamps",
+      "box": [
+        13.97,
+        235.634592,
+        213.15,
+        307.06776199999996
+      ],
+      "scale": 1.491,
+      "text_mm": 1.89,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 8,
+      "title": "6. Instrument taps",
+      "box": [
+        13.97,
+        334.694592,
+        225.622198,
+        382.27
+      ],
+      "scale": 1.403,
+      "text_mm": 1.78,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 9,
+      "title": "Interfaces",
+      "box": [
+        422.49,
+        35.211999999999996,
+        536.6642082779999,
+        169.16400000000002
+      ],
+      "scale": 1.839,
+      "text_mm": 2.34,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 10,
+      "title": "Operation and PCB guidance",
+      "box": [
+        422.49,
+        180.34,
+        580.03,
+        317.13399999999996
+      ],
+      "scale": 1.535,
+      "text_mm": 1.95,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical"
+    },
+    {
+      "page": 11,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        297.0,
+        210.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/inputs"
+    },
+    {
+      "page": 12,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        594.0,
+        420.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 13,
+      "title": "1. Channel A input filter",
+      "box": [
+        13.97,
+        35.211999999999996,
+        111.02,
+        116.508592
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 14,
+      "title": "2. Channel B input filter",
+      "box": [
+        116.10000000000001,
+        35.211999999999996,
+        213.15,
+        108.888592
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 15,
+      "title": "3. Output pull-downs and instrument taps",
+      "box": [
+        218.23,
+        35.211999999999996,
+        315.28,
+        118.11
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 16,
+      "title": "4. Schmitt buffer and supply bypass",
+      "box": [
+        320.36,
+        35.211999999999996,
+        417.40999999999997,
+        268.908592
+      ],
+      "scale": 1.271,
+      "text_mm": 1.61,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 17,
+      "title": "Interfaces",
+      "box": [
+        422.49,
+        35.211999999999996,
+        569.989625498,
+        138.684
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 18,
+      "title": "Operation and PCB guidance",
+      "box": [
+        422.49,
+        149.85999999999999,
+        580.03,
+        286.68399999999997
+      ],
+      "scale": 1.535,
+      "text_mm": 1.95,
+      "instance": "/inputs/logic_input_2ch_5v_schmitt_sn74lvc2g17"
+    },
+    {
+      "page": 19,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        297.0,
+        210.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/power"
+    },
+    {
+      "page": 20,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        297.0,
+        210.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/power/5v_to_3v3_tps73733"
+    },
+    {
+      "page": 21,
+      "title": "1. Regulator and bypass",
+      "box": [
+        13.97,
+        35.211999999999996,
+        190.41,
+        101.268592
+      ],
+      "scale": 1.683,
+      "text_mm": 2.14,
+      "instance": "/power/5v_to_3v3_tps73733"
+    },
+    {
+      "page": 22,
+      "title": "Interfaces",
+      "box": [
+        195.48999999999998,
+        35.211999999999996,
+        271.480167552,
+        75.184
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/power/5v_to_3v3_tps73733"
+    },
+    {
+      "page": 23,
+      "title": "Operation and PCB guidance",
+      "box": [
+        195.48999999999998,
+        86.36,
+        283.03,
+        143.174
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/power/5v_to_3v3_tps73733"
+    },
+    {
+      "page": 24,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        594.0,
+        420.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/power/usb2_vertical"
+    },
+    {
+      "page": 25,
+      "title": "1. Receptacle and ESD clamp",
+      "box": [
+        13.97,
+        35.211999999999996,
+        213.15,
+        273.49670799999996
+      ],
+      "scale": 1.054,
+      "text_mm": 1.34,
+      "instance": "/power/usb2_vertical"
+    },
+    {
+      "page": 26,
+      "title": "2. CC sink declaration",
+      "box": [
+        218.23,
+        35.211999999999996,
+        400.77,
+        98.72859199999999
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/power/usb2_vertical"
+    },
+    {
+      "page": 27,
+      "title": "3. Power drive declarations",
+      "box": [
+        218.23,
+        106.094592,
+        400.77,
+        154.397525
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/power/usb2_vertical"
+    },
+    {
+      "page": 28,
+      "title": "Interfaces",
+      "box": [
+        422.49,
+        35.211999999999996,
+        507.38770066399996,
+        100.584
+      ],
+      "scale": 2.0,
+      "text_mm": 2.54,
+      "instance": "/power/usb2_vertical"
+    },
+    {
+      "page": 29,
+      "title": "Operation and PCB guidance",
+      "box": [
+        422.49,
+        111.76,
+        580.03,
+        251.464
+      ],
+      "scale": 1.503,
+      "text_mm": 1.91,
+      "instance": "/power/usb2_vertical"
+    },
+    {
+      "page": 30,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        841.0,
+        594.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 31,
+      "title": "1. Octet DIG0 to DIG7: U39001",
+      "box": [
+        13.97,
+        35.211999999999996,
+        196.51000000000002,
+        207.01000000000002
+      ],
+      "scale": 1.222,
+      "text_mm": 1.55,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 32,
+      "title": "2. Octet DIG8 to DIG15: U39002",
+      "box": [
+        232.476667,
+        35.211999999999996,
+        415.016667,
+        207.01000000000002
+      ],
+      "scale": 1.222,
+      "text_mm": 1.55,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 33,
+      "title": "3. Octet DIG16 to DIG23: U39003",
+      "box": [
+        450.983333,
+        35.211999999999996,
+        633.523333,
+        207.01000000000002
+      ],
+      "scale": 1.222,
+      "text_mm": 1.55,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 34,
+      "title": "4. Octet DIG24 to DIG31: U39004",
+      "box": [
+        13.97,
+        214.37599999999998,
+        196.51000000000002,
+        387.34999999999997
+      ],
+      "scale": 1.214,
+      "text_mm": 1.54,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 35,
+      "title": "5. Rail-entry bulk bypass",
+      "box": [
+        232.476667,
+        214.37599999999998,
+        415.016667,
+        279.06859199999997
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 36,
+      "title": "6. FFC receptacle",
+      "box": [
+        450.983333,
+        214.37599999999998,
+        633.523333,
+        390.144
+      ],
+      "scale": 1.195,
+      "text_mm": 1.52,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 37,
+      "title": "Interfaces (1 of 2)",
+      "box": [
+        669.49,
+        35.211999999999996,
+        757.190736587,
+        240.28400000000002
+      ],
+      "scale": 1.448,
+      "text_mm": 1.84,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 38,
+      "title": "Interfaces (2 of 2)",
+      "box": [
+        669.49,
+        240.696,
+        739.126542718,
+        435.864
+      ],
+      "scale": 1.522,
+      "text_mm": 1.93,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 39,
+      "title": "Operation and PCB guidance",
+      "box": [
+        13.97,
+        397.51,
+        227.396667,
+        545.764
+      ],
+      "scale": 1.392,
+      "text_mm": 1.77,
+      "instance": "/instrument_port_digital_50_dut_ffc_boundary_vertical"
+    },
+    {
+      "page": 40,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        297.0,
+        210.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/outputs"
+    },
+    {
+      "page": 41,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        594.0,
+        420.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 42,
+      "title": "1. Camera header",
+      "box": [
+        13.97,
+        35.211999999999996,
+        213.15,
+        97.78999999999999
+      ],
+      "scale": 1.491,
+      "text_mm": 1.89,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 43,
+      "title": "2. Line 3 trigger drive",
+      "box": [
+        218.23,
+        35.211999999999996,
+        400.77,
+        157.148592
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 44,
+      "title": "3. Line 0 sync drive",
+      "box": [
+        13.97,
+        105.156,
+        196.51000000000002,
+        228.268592
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 45,
+      "title": "4. Exposure output, BNC drive and LED",
+      "box": [
+        218.23,
+        164.514592,
+        413.116677,
+        327.32859199999996
+      ],
+      "scale": 1.29,
+      "text_mm": 1.64,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 46,
+      "title": "5. ESD clamps",
+      "box": [
+        13.97,
+        235.634592,
+        213.15,
+        307.06776199999996
+      ],
+      "scale": 1.491,
+      "text_mm": 1.89,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 47,
+      "title": "6. Instrument taps",
+      "box": [
+        13.97,
+        334.694592,
+        225.622198,
+        382.27
+      ],
+      "scale": 1.403,
+      "text_mm": 1.78,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 48,
+      "title": "Interfaces",
+      "box": [
+        422.49,
+        35.211999999999996,
+        540.401633112,
+        169.16400000000002
+      ],
+      "scale": 1.781,
+      "text_mm": 2.26,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 49,
+      "title": "Operation and PCB guidance",
+      "box": [
+        422.49,
+        180.34,
+        580.03,
+        317.13399999999996
+      ],
+      "scale": 1.535,
+      "text_mm": 1.95,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical2"
+    },
+    {
+      "page": 50,
+      "title": "Complete sheet",
+      "box": [
+        0,
+        0,
+        594.0,
+        420.0
+      ],
+      "scale": 1.0,
+      "text_mm": 1.27,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 51,
+      "title": "1. Camera header",
+      "box": [
+        13.97,
+        35.211999999999996,
+        213.15,
+        97.78999999999999
+      ],
+      "scale": 1.491,
+      "text_mm": 1.89,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 52,
+      "title": "2. Line 3 trigger drive",
+      "box": [
+        218.23,
+        35.211999999999996,
+        400.77,
+        157.148592
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 53,
+      "title": "3. Line 0 sync drive",
+      "box": [
+        13.97,
+        105.156,
+        196.51000000000002,
+        228.268592
+      ],
+      "scale": 1.627,
+      "text_mm": 2.07,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 54,
+      "title": "4. Exposure output, BNC drive and LED",
+      "box": [
+        218.23,
+        164.514592,
+        413.116677,
+        327.32859199999996
+      ],
+      "scale": 1.29,
+      "text_mm": 1.64,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 55,
+      "title": "5. ESD clamps",
+      "box": [
+        13.97,
+        235.634592,
+        213.15,
+        307.06776199999996
+      ],
+      "scale": 1.491,
+      "text_mm": 1.89,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 56,
+      "title": "6. Instrument taps",
+      "box": [
+        13.97,
+        334.694592,
+        225.622198,
+        382.27
+      ],
+      "scale": 1.403,
+      "text_mm": 1.78,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 57,
+      "title": "Interfaces",
+      "box": [
+        422.49,
+        35.211999999999996,
+        540.401633112,
+        169.16400000000002
+      ],
+      "scale": 1.781,
+      "text_mm": 2.26,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    },
+    {
+      "page": 58,
+      "title": "Operation and PCB guidance",
+      "box": [
+        422.49,
+        180.34,
+        580.03,
+        317.13399999999996
+      ],
+      "scale": 1.535,
+      "text_mm": 1.95,
+      "instance": "/blackfly_s_gpio_channel_mcv6_vertical1"
+    }
+  ]
+}

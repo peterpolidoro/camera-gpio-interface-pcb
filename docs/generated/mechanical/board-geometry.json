@@ -3,7 +3,7 @@
   "board": "camera-gpio-interface-pcb",
   "source": {
     "file": "camera-gpio-interface-pcb.kicad_pcb",
-    "sha256": "c393574f3046a57b01784274fa07e7e30921cae464252d028df40104bacb008e"
+    "sha256": "5e003975c391fb7b3f4294ad65668ae860cd65cbf4a4dec0cee9239719a85a48"
   },
   "units": "mm",
   "frame": {

@@ -179,7 +179,7 @@
   },
   {
    "group": "blackfly_s_gpio_channel_mcv6_vertical_1",
-   "lib_id": "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical",
+   "lib_id": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
    "sheet_path": "/15ab78d3-645e-44e2-89f2-97279e1f9280",
    "anchor_reference": "J701",
    "anchor_footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
@@ -218,7 +218,7 @@
   },
   {
    "group": "blackfly_s_gpio_channel_mcv6_vertical_2",
-   "lib_id": "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical",
+   "lib_id": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
    "sheet_path": "/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8",
    "anchor_reference": "J1201",
    "anchor_footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",
@@ -257,7 +257,7 @@
   },
   {
    "group": "blackfly_s_gpio_channel_mcv6_vertical_3",
-   "lib_id": "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical",
+   "lib_id": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
    "sheet_path": "/cf9287d7-4278-4035-9b01-341de48c7c59",
    "anchor_reference": "J1401",
    "anchor_footprint": "orb_weaver_tht:PhoenixContact_MCV_1,5_6-G-3.5_1x06_P3.50mm_Vertical",

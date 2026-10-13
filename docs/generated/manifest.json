@@ -1,24 +1,58 @@
 {
   "generated_by": "orb-weaver-kicad-docs",
-  "generated_at": "2026-09-26T20:48:32Z",
+  "generated_at": "2026-10-13T18:27:39Z",
   "kicad_cli_version": "10.0.6",
   "board": "camera-gpio-interface-pcb",
   "sources": {
-    "kicad/5v_to_3v3_tps73733.kicad_sch": "02400739ee9fc7e566430401f1591b5181d1e4848cdb7fa6aa0e32199278bc8d",
-    "kicad/blackfly_s_gpio_channel_mcv6_vertical.kicad_sch": "39069f0f90e8a7128f49bea3ecca0d3a93be06b8560a7c701df76c8814deb101",
+    "kicad/5v_to_3v3_tps73733.kicad_sch": "24f58e45fb83dffeafcf86b2f75c212ee888747c1bb2e4a2154ea80c0c6ec62e",
+    "kicad/blackfly_s_gpio_channel_mcv6_vertical.kicad_sch": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf",
     "kicad/camera-gpio-interface-pcb.kicad_dru": "4e6db7c7370536f28afe11489d10120cc86d9b1f78dc3d9ac407f0d20f8eaf5d",
-    "kicad/camera-gpio-interface-pcb.kicad_pcb": "c393574f3046a57b01784274fa07e7e30921cae464252d028df40104bacb008e",
+    "kicad/camera-gpio-interface-pcb.kicad_pcb": "5e003975c391fb7b3f4294ad65668ae860cd65cbf4a4dec0cee9239719a85a48",
     "kicad/camera-gpio-interface-pcb.kicad_pro": "8816dc7d3abb4c8d36101550eff5f4445ae8349ec8c8598d335ce6cb040bed64",
-    "kicad/camera-gpio-interface-pcb.kicad_sch": "a3f68aa834d6f16d4d6ebd5cb251f7399ae6c2ac85b54cc891aa4da3916668b3",
+    "kicad/camera-gpio-interface-pcb.kicad_sch": "c1557d088fadd35ea5c5889ef9163ea650cee93b002e77e513412d15016a5fba",
     "kicad/inputs.kicad_sch": "3e3847e5c7fac032cf8d42038ef78789c045586e155f18b27963fb36380b3e2d",
-    "kicad/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch": "d68f1fb2f560238982d1ffae40ea8e506279d20346e56e6550c97ecb27bb26e1",
-    "kicad/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_sch": "7eb3aaabe5fa88c19c821577c0816ec55aba49245597661b9eb8bbc645ae946b",
+    "kicad/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch": "3ffc84034030a3bd0118b9998b4dbcd493ecc0dbef09417f5b419a2b69fa226b",
+    "kicad/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_sch": "768774d53281c8464f43466e0e5c9efe500aa938629a6e3d6167f0cb6d773a98",
     "kicad/outputs.kicad_sch": "aa57dc1f04549c96b8d144560264640da69ad539b0feefa5b66a69bd690fd88c",
     "kicad/power.kicad_sch": "ca278df26d98225b847de4a47bcdf3a128efe8a55eb5fd6b04d389a57bc9595e",
-    "kicad/usb2_vertical.kicad_sch": "6e55e0102eb80c0f01784fb40561db73a6dd2f0d99427986b71467a39537efda"
+    "kicad/usb2_vertical.kicad_sch": "cf27bc17c1a4211a20e229efdb97d578ceabb0dfffdf3586ca81de6864f0609a",
+    "kicad/board-manifest.yaml": "5a6735f41c825cd749b4f1149fbbfece09d9e72869b5c406b4550a5f03e8654d",
+    "libs:design_block_families/blackfly_s_gpio_channel/family.json": "82c75de25b7fe585a361a06c191fb2f5ae7dd45f29bdea2c717bbad7c5529e05",
+    "libs:design_block_families/blackfly_s_gpio_channel/release.json": "9f2adf8cc54712d09d372e1786e10733f07c190b0aeb5202e5aba49052d1054d",
+    "libs:design_block_families/blackfly_s_gpio_channel/source/blackfly_s_gpio_channel.brief.yaml": "36d3e6e3ab367ef72d86fc3cbf34f0e6c1f8919b8215e140cb9c004e0003d204",
+    "libs:design_blocks/orb_weaver_blackfly_s_gpio_channel.kicad_blocks/blackfly_s_gpio_channel_mcv6_vertical.kicad_block/blackfly_s_gpio_channel_mcv6_vertical.json": "49325838e2cde72a1af08be1c0f4c4dca8449478dfac9e46220ca39daf0f8390",
+    "libs:design_blocks/orb_weaver_blackfly_s_gpio_channel.kicad_blocks/blackfly_s_gpio_channel_mcv6_vertical.kicad_block/blackfly_s_gpio_channel_mcv6_vertical.kicad_pcb": "d81eda2add79dd68942776f2d4544fbe2cf0d94c505fd6e9a7a4c3514d004b59",
+    "libs:design_blocks/orb_weaver_blackfly_s_gpio_channel.kicad_blocks/blackfly_s_gpio_channel_mcv6_vertical.kicad_block/blackfly_s_gpio_channel_mcv6_vertical.kicad_sch": "ca9a3ad30cabe3c6e781568a7f2d770844a3853ab0caa2cef575f86d91cc66b4",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/5v_to_3v3_tps73733.kicad_block/5v_to_3v3_tps73733.brief.yaml": "5ab2eb32198618b5d8fb54f3ed658dcedccf2f6638640f4891ffd23ff7e4ad06",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/5v_to_3v3_tps73733.kicad_block/5v_to_3v3_tps73733.json": "6c947476fa0171b66078e9cffd17ad902acadd37a388e11772fb6f100ebd2770",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/5v_to_3v3_tps73733.kicad_block/5v_to_3v3_tps73733.kicad_pcb": "208b89f498e3fd67efea520c36946b8bff72e9e93ad40400703577583b1cf091",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/5v_to_3v3_tps73733.kicad_block/5v_to_3v3_tps73733.kicad_sch": "0ac5a9899ddfc45c3ade54ac430b74f86c39fb7e6f3df12f59dd94864e8213c9",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_block/instrument_port_digital_50_dut_ffc_boundary_vertical.brief.yaml": "2b1f81ac20ce2d6294d5a9d18a64dfde80b4f664e29446dda6479d25ad8b5d0b",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_block/instrument_port_digital_50_dut_ffc_boundary_vertical.json": "421ea76d1f14f79dec4083fa7645aa21c2bd70f6c04e6e9c7d11bbad25c8c6e3",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_block/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_pcb": "93c8a7ca656d76fb98572d3f2f1be3b08ebdc7cc06c9cde22b6b77cc07c001cf",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_block/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch": "dde3caa331c4da6d1578a8c7d7d9378eb8411aca4455810ddc20a3cccf8a1afa",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_block/logic_input_2ch_5v_schmitt_sn74lvc2g17.brief.yaml": "c7138c8aeb45140af7442f46dd6ce852b852ed0265a8aeb955d1f1aeddb235ca",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_block/logic_input_2ch_5v_schmitt_sn74lvc2g17.json": "ab2417d21145ea63f45ca1f33241d2f6af0e954bd3b1f3d950d97132186682f3",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_block/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_pcb": "5cd9c1c5877073521d822bdea1b935e9506bb6bbc7cb647a8fa6cee812236466",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_block/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_sch": "eb3efe0db8c09f065c233a7b9eebebb35f8203bb41709a8ddb614ced22e34d8b",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/usb2_vertical.kicad_block/usb2_vertical.brief.yaml": "19c8b5debfa5e92eb948e868b2741ed079202ab1aaae52d8c6af2eb70c964178",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/usb2_vertical.kicad_block/usb2_vertical.json": "5363da79c3d3c53a73fb214df354ce1fba37364471c041e9067b0cd01dd1c687",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/usb2_vertical.kicad_block/usb2_vertical.kicad_pcb": "f360a33293e054eb1aee42b05a3cfc1b3de9d339e4d34a2c8bb0da7044ce072e",
+    "libs:design_blocks/orb_weaver_private.kicad_blocks/usb2_vertical.kicad_block/usb2_vertical.kicad_sch": "938d8c968797018e876f19b421bbf47e5f636e9dfceeadde4ee3822d491740c3",
+    "libs:design_blocks/schematic_sources/5v_to_3v3_tps73733/generation.json": "9d7dab7c1a67cbb0be23282cf47d9d24d9aadc99b1cae4851340193992271bba",
+    "libs:design_blocks/schematic_sources/5v_to_3v3_tps73733/publication.json": "cf625904c36f22be3ff91eb5b60cfa96351f9d6494ffd9cf17178532e10be240",
+    "libs:design_blocks/schematic_sources/instrument_port_digital_50_dut_ffc_boundary_vertical/generation.json": "ca22fcd1dec49323456344153d204748ece0e56b5e6d7ec1f8eed1c60695974b",
+    "libs:design_blocks/schematic_sources/instrument_port_digital_50_dut_ffc_boundary_vertical/publication.json": "c8b57802395052aadb19de996c2dbfbd00ef2ec80c5bc4acc016e7db0c2404e4",
+    "libs:design_blocks/schematic_sources/logic_input_2ch_5v_schmitt_sn74lvc2g17/generation.json": "5cc804a16ca5f955e5d23bf078f53d90b0fe697b3550f3cbd3762b42983654a0",
+    "libs:design_blocks/schematic_sources/logic_input_2ch_5v_schmitt_sn74lvc2g17/publication.json": "3fd8baaf41e2238b8e7f2e8715859b48f5a71fc0bf0fa40df8067c0cce5273de",
+    "libs:design_blocks/schematic_sources/usb2_vertical/generation.json": "198125d280f136a5da676b861c157fd3ddc52949fd55ade6d287e8bd67c54270",
+    "libs:design_blocks/schematic_sources/usb2_vertical/publication.json": "7eda38587dce8e62c070541eeeb1df7257cfb727c8a7af53f4e353a841902766",
+    "libs:scripts/board_block_docs.py": "23e4dc5d1377798c3a33a310854447d14172fdfc09efb9457f6f93afc3a78c4d",
+    "review_schematic": "c75ac3acf343289ae79405763ac53e4f0c600037ae9f310a7936e41120b1c978"
   },
   "artifacts": {
     "schematic_pdf": "schematic/camera-gpio-interface-pcb-schematic.pdf",
+    "schematic_review_pdf": "schematic/camera-gpio-interface-pcb-schematic-review.pdf",
     "schematic_svgs": [
       "camera-gpio-interface-pcb-blackfly_s_gpio_channel_mcv6_vertical.svg",
       "camera-gpio-interface-pcb-blackfly_s_gpio_channel_mcv6_vertical1.svg",
@@ -32,6 +66,90 @@
       "camera-gpio-interface-pcb-power.svg",
       "camera-gpio-interface-pcb.svg"
     ],
+    "blocks": {
+      "index": "blocks/README.md",
+      "pages": [
+        "blocks/blackfly_s_gpio_channel_mcv6_vertical.md",
+        "blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.md",
+        "blocks/5v_to_3v3_tps73733.md",
+        "blocks/usb2_vertical.md",
+        "blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.md",
+        "blocks/blackfly_s_gpio_channel_mcv6_vertical2.md",
+        "blocks/blackfly_s_gpio_channel_mcv6_vertical1.md"
+      ],
+      "placements": [
+        {
+          "instance": "blackfly_s_gpio_channel_mcv6_vertical",
+          "status": "exact",
+          "block": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
+          "lifecycle": "routed",
+          "variant": "blackfly_s_gpio_channel `mcv6_vertical` (gpio)",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "blackfly_s_gpio_channel_mcv6_vertical.md"
+        },
+        {
+          "instance": "logic_input_2ch_5v_schmitt_sn74lvc2g17",
+          "status": "exact",
+          "block": "orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17",
+          "lifecycle": "routed",
+          "variant": "",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "logic_input_2ch_5v_schmitt_sn74lvc2g17.md"
+        },
+        {
+          "instance": "5v_to_3v3_tps73733",
+          "status": "exact",
+          "block": "orb_weaver_private:5v_to_3v3_tps73733",
+          "lifecycle": "routed",
+          "variant": "",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "5v_to_3v3_tps73733.md"
+        },
+        {
+          "instance": "usb2_vertical",
+          "status": "exact",
+          "block": "orb_weaver_private:usb2_vertical",
+          "lifecycle": "routed",
+          "variant": "",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "usb2_vertical.md"
+        },
+        {
+          "instance": "instrument_port_digital_50_dut_ffc_boundary_vertical",
+          "status": "exact",
+          "block": "orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical",
+          "lifecycle": "routed",
+          "variant": "",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "instrument_port_digital_50_dut_ffc_boundary_vertical.md"
+        },
+        {
+          "instance": "blackfly_s_gpio_channel_mcv6_vertical2",
+          "status": "exact",
+          "block": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
+          "lifecycle": "routed",
+          "variant": "blackfly_s_gpio_channel `mcv6_vertical` (gpio)",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "blackfly_s_gpio_channel_mcv6_vertical2.md"
+        },
+        {
+          "instance": "blackfly_s_gpio_channel_mcv6_vertical1",
+          "status": "exact",
+          "block": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
+          "lifecycle": "routed",
+          "variant": "blackfly_s_gpio_channel `mcv6_vertical` (gpio)",
+          "sheet": "differs",
+          "check": "not run",
+          "page": "blackfly_s_gpio_channel_mcv6_vertical1.md"
+        }
+      ]
+    },
     "layout": [
       "layout/assembly-top.svg",
       "layout/assembly-bottom.svg"

@@ -45,7 +45,7 @@ sheets:
   note: board-authored sheet, 12 parts
 placements:
 - name: blackfly_s_gpio_channel_mcv6_vertical
-  block: orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical
+  block: orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical
   parent: /
   anchor_mm: [-25.0, -24.0]
   rotation_degrees: 180
@@ -69,6 +69,49 @@ placements:
   anchor_mm: [-12.0, 17.0]
   rotation_degrees: 90
   side: front
+  sheet_pins:
+    size_mm: [25.4, 15.24]
+    pins:
+      +3.3V:
+        edge: west
+        offset_mm: 2.54
+        angle: 180
+        shape: passive
+      GND:
+        edge: west
+        offset_mm: 5.08
+        angle: 180
+        shape: passive
+      IN_A_RAW:
+        edge: west
+        offset_mm: 10.16
+        angle: 180
+        shape: input
+      IN_B_RAW:
+        edge: west
+        offset_mm: 12.7
+        angle: 180
+        shape: input
+      IN_A:
+        edge: east
+        offset_mm: 2.54
+        angle: 0
+        shape: output
+      IN_B:
+        edge: east
+        offset_mm: 5.08
+        angle: 0
+        shape: output
+      IN_A_INST:
+        edge: east
+        offset_mm: 10.16
+        angle: 0
+        shape: output
+      IN_B_INST:
+        edge: east
+        offset_mm: 12.7
+        angle: 0
+        shape: output
   connections:
     +3.3V: +3.3V
     GND: GND
@@ -318,7 +361,7 @@ placements:
     DIG31: GND
     GND: GND
 - name: blackfly_s_gpio_channel_mcv6_vertical2
-  block: orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical
+  block: orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical
   parent: /
   file: blackfly_s_gpio_channel_mcv6_vertical.kicad_sch
   anchor_mm: [25.0, -24.0]
@@ -338,7 +381,7 @@ placements:
     SYNC_IN: SYNC_IN
     TRIG_IN: TRIG_IN
 - name: blackfly_s_gpio_channel_mcv6_vertical1
-  block: orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical
+  block: orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical
   parent: /
   file: blackfly_s_gpio_channel_mcv6_vertical.kicad_sch
   anchor_mm: [0.0, -24.0]

@@ -4124,17 +4124,17 @@
 	)
 	(group "blackfly_s_gpio_channel_mcv6_vertical_1"
 		(uuid "34c96a41-82ff-43c5-8ffd-5f4cf905cb7f")
-		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(lib_id "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical")
 		(members "15ab78d3-645e-44e2-89f2-97279e1f9280")
 	)
 	(group "blackfly_s_gpio_channel_mcv6_vertical_3"
 		(uuid "3bf8181a-4667-4da1-9ee4-1399d0a7c70a")
-		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(lib_id "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical")
 		(members "cf9287d7-4278-4035-9b01-341de48c7c59")
 	)
 	(group "blackfly_s_gpio_channel_mcv6_vertical_2"
 		(uuid "41ec3c76-c51d-4266-acb1-e1838281c51d")
-		(lib_id "orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical")
+		(lib_id "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical")
 		(members "f7a5e2a5-9d0a-49e2-a363-081660a6c9a8")
 	)
 	(group "instrument_port_digital_50_dut_ffc_boundary_vertical"
