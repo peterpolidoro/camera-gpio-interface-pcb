@@ -85,7 +85,7 @@ R31001 and R31002 (5.1 k) pull CC1 and CC2 to GND: the port presents itself as a
 | Resolution | the placed id is in the library |
 | Brief | `design_blocks/orb_weaver_private.kicad_blocks/usb2_vertical.kicad_block/usb2_vertical.brief.yaml`, the block's brief |
 | Published sheet | `938d8c968797018e` |
-| Published PCB | `f360a33293e054eb` |
+| Published PCB | `55ced031728de451` |
 | Source lock | symbol snapshot `40ea67778de8e7b1`, published 2026-10-13 |
 | Placed sheet | `cf27bc17c1a4211a`: differs from the library's sheet; parts: the brief’s 6 by internal part; ports: the brief's |
 | Netlist check | not run (`--brief-check`, kicad-cli) |

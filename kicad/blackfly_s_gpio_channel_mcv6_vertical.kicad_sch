@@ -5527,7 +5527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10c6213d-5751-476b-ac77-4f982af27ee4")
-		(property "Reference" "C1401"
+		(property "Reference" "C1201"
 			(at 260.054571 67.945 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5767,6 +5767,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${f2a309ed-c3a7-4688-9fba-6e6298bb60c4:REFERENCE}.6 (VCC), on +3.3V"
+			(at 251.46 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a347c455-1066-4839-ac5c-0d3e0cf05279")
 		)
@@ -5774,16 +5785,16 @@
 			(uuid "60b14611-b8a3-4849-a1dc-b2076c910cf0")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "C23001") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "C1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "C1201")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "C701")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "C1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "C1401")
 					(unit 1)
 				)
 			)
@@ -5841,7 +5852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51f86269-ea15-4394-96b4-401365e1f3d8")
-		(property "Reference" "C1402"
+		(property "Reference" "C1202"
 			(at 56.854571 139.065 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,6 +6092,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${dd33be72-e19b-47bb-8c97-5f79fc6338dd:REFERENCE}.6 (VCC), on +3.3V"
+			(at 48.26 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "851cc03e-c67d-4807-a932-82d701795508")
 		)
@@ -6088,16 +6110,16 @@
 			(uuid "77c9aee1-60a9-4874-a8c5-3b3c38954850")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "C23002") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "C1402")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "C1202")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "C702")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "C1202")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "C1402")
 					(unit 1)
 				)
 			)
@@ -6155,7 +6177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8715160-be15-46f0-a763-2bd41be97013")
-		(property "Reference" "C1403"
+		(property "Reference" "C1203"
 			(at 321.014571 294.005 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6395,6 +6417,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${7b072c8a-4743-483b-985c-6774fd37fcc8:REFERENCE}.5 (VCC), on +3.3V"
+			(at 312.42 295.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "68d9bf2c-8c2b-4dd1-9e80-eab87124eb82")
 		)
@@ -6402,16 +6435,16 @@
 			(uuid "8c061bda-53d8-4e52-9dd0-d308e1bc8f6d")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "C23003") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "C1403")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "C1203")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "C703")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "C1203")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "C1403")
 					(unit 1)
 				)
 			)
@@ -6469,7 +6502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be5d977c-6c2a-4581-bd66-db9ce884480f")
-		(property "Reference" "D1401"
+		(property "Reference" "D1201"
 			(at 392.388571 202.565 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6716,16 +6749,16 @@
 			(uuid "b99d94e3-1725-47ec-879f-4fa5d177c5f4")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "D23001") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "D1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "D1201")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "D701")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "D1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "D1401")
 					(unit 1)
 				)
 			)
@@ -6783,7 +6816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9870f529-44e6-4b20-b7b7-ad6eefe47ea1")
-		(property "Reference" "J1401"
+		(property "Reference" "J1201"
 			(at 33.02 56.546 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7042,16 +7075,16 @@
 			(uuid "be197059-84c4-4450-9e7e-cc690010d78b")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "J23001") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "J1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "J1201")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "J701")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "J1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "J1401")
 					(unit 1)
 				)
 			)
@@ -7189,7 +7222,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2227e749-0a2c-4f93-a597-7a23f0e525e1")
-		(property "Reference" "R1401"
+		(property "Reference" "R1201"
 			(at 236.432571 202.565 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7429,6 +7462,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${e310c8b3-8386-4c71-bde8-59dd025d7495:REFERENCE}.1 (1A), on L2"
+			(at 228.6 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eeb38b75-6002-46ec-a132-599422e4fc22")
 		)
@@ -7436,16 +7480,16 @@
 			(uuid "01caf967-1056-44a6-8b12-2e1f28798ea5")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23001") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1201")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R701")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1401")
 					(unit 1)
 				)
 			)
@@ -7503,7 +7547,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0eab7050-ae9a-4b12-9155-20dceb5716cb")
-		(property "Reference" "R1402"
+		(property "Reference" "R1202"
 			(at 236.432571 245.745 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7743,6 +7787,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${f6b885c6-bea8-4f63-a8bf-ed54c18ce440:REFERENCE}.3 (2A), on L1"
+			(at 228.6 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39915c34-761b-4e71-b9ce-cd3da1bbd18c")
 		)
@@ -7750,16 +7805,16 @@
 			(uuid "e3a0d143-8d7b-4c4f-864f-cab9ba4a2eb0")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23002") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1402")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1202")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R702")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1202")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1402")
 					(unit 1)
 				)
 			)
@@ -7817,7 +7872,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "178e863a-fc0b-474a-a537-37a978202ec6")
-		(property "Reference" "R1403"
+		(property "Reference" "R1203"
 			(at 86.572571 192.405 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8057,6 +8112,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${dd33be72-e19b-47bb-8c97-5f79fc6338dd:REFERENCE}.4, on L0"
+			(at 78.74 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b81c86b8-dbf4-4589-90b0-c07954728c45")
 		)
@@ -8064,16 +8130,16 @@
 			(uuid "d8352d2c-df32-4d0f-9c0e-b432df6feb34")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23003") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1403")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1203")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R703")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1203")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1403")
 					(unit 1)
 				)
 			)
@@ -8131,7 +8197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2b2fc18-b9db-4fd9-b2bd-7091a09daaf9")
-		(property "Reference" "R1404"
+		(property "Reference" "R1204"
 			(at 298.45 114.966 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8378,16 +8444,16 @@
 			(uuid "4d14907a-eb54-4df2-bbd6-94d042405304")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23004") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1404")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1204")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R704")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1204")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1404")
 					(unit 1)
 				)
 			)
@@ -8445,7 +8511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb6ecb9c-0931-426d-845e-0c0aab3a6240")
-		(property "Reference" "R1405"
+		(property "Reference" "R1205"
 			(at 313.69 196.246 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8692,16 +8758,16 @@
 			(uuid "8548d7db-ea35-4c37-8321-c02da631a35e")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23005") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1405")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1205")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R705")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1205")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1405")
 					(unit 1)
 				)
 			)
@@ -8759,7 +8825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7171eb4e-e966-4be1-9b44-87954c581611")
-		(property "Reference" "R1406"
+		(property "Reference" "R1206"
 			(at 359.41 196.246 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9006,16 +9072,16 @@
 			(uuid "262714b3-41ad-41b7-a79d-57727cda1e86")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23006") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1406")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1206")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R706")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1206")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1406")
 					(unit 1)
 				)
 			)
@@ -9073,7 +9139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "642b01e2-3cf0-4087-9e79-7690710e4ee1")
-		(property "Reference" "R1407"
+		(property "Reference" "R1207"
 			(at 72.39 356.266 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9320,16 +9386,16 @@
 			(uuid "8c10a2a7-9ced-455d-8959-538d69f4c03a")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23007") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1407")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1207")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R707")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1207")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1407")
 					(unit 1)
 				)
 			)
@@ -9387,7 +9453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d801cc5a-56c7-46d3-b83c-08021792d765")
-		(property "Reference" "R1408"
+		(property "Reference" "R1208"
 			(at 153.67 356.266 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9634,16 +9700,16 @@
 			(uuid "5a43699b-a201-406f-9637-11322eacf1e2")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23008") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1408")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1208")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R708")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1208")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1408")
 					(unit 1)
 				)
 			)
@@ -9701,7 +9767,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1c7dcbb-7ba6-4d65-abfe-75ca335b5472")
-		(property "Reference" "R1409"
+		(property "Reference" "R1209"
 			(at 110.49 356.266 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9948,16 +10014,16 @@
 			(uuid "4a05c9d5-3f84-41e9-a1d0-1ce14e8757aa")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23009") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1409")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1209")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R709")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1209")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1409")
 					(unit 1)
 				)
 			)
@@ -10015,7 +10081,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36ae1bf1-62f5-4585-a0a5-cbbeae222810")
-		(property "Reference" "R1410"
+		(property "Reference" "R1210"
 			(at 34.29 356.266 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10262,16 +10328,16 @@
 			(uuid "3d56cf07-5acb-4534-9f92-a416c076845a")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23010") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1410")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1210")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R710")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1210")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1410")
 					(unit 1)
 				)
 			)
@@ -10329,7 +10395,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ee20496-46fb-424b-933f-80f3d28223df")
-		(property "Reference" "R1411"
+		(property "Reference" "R1211"
 			(at 199.39 356.266 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10576,16 +10642,16 @@
 			(uuid "7665b891-1203-4491-914e-92e2b9653216")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "R23011") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "R1411")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "R1211")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "R711")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "R1211")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "R1411")
 					(unit 1)
 				)
 			)
@@ -10643,7 +10709,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e310c8b3-8386-4c71-bde8-59dd025d7495")
-		(property "Reference" "U1401"
+		(property "Reference" "U1201"
 			(at 264.16 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10902,16 +10968,16 @@
 			(uuid "96215091-7f81-40c1-b1ad-e977aa20cc11")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23001") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1201")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U701")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1401")
 					(unit 1)
 				)
 			)
@@ -10969,7 +11035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6b885c6-bea8-4f63-a8bf-ed54c18ce440")
-		(property "Reference" "U1401"
+		(property "Reference" "U1201"
 			(at 264.16 231.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11228,16 +11294,16 @@
 			(uuid "96215091-7f81-40c1-b1ad-e977aa20cc12")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23001") (unit 2)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1201")
 					(unit 2)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U701")
 					(unit 2)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1401")
 					(unit 2)
 				)
 			)
@@ -11295,7 +11361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b072c8a-4743-483b-985c-6774fd37fcc8")
-		(property "Reference" "U1401"
+		(property "Reference" "U1201"
 			(at 264.16 270.496709 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11554,16 +11620,16 @@
 			(uuid "96215091-7f81-40c1-b1ad-e977aa20cc10")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23001") (unit 3)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1401")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1201")
 					(unit 3)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U701")
 					(unit 3)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1201")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1401")
 					(unit 3)
 				)
 			)
@@ -11621,7 +11687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2a309ed-c3a7-4688-9fba-6e6298bb60c4")
-		(property "Reference" "U1402"
+		(property "Reference" "U1202"
 			(at 251.46 97.776709 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11880,16 +11946,16 @@
 			(uuid "4e4fd1c9-8f1b-48f9-b6f6-5facca4ebd8b")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23002") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1402")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1202")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U702")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1202")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1402")
 					(unit 1)
 				)
 			)
@@ -12007,7 +12073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd33be72-e19b-47bb-8c97-5f79fc6338dd")
-		(property "Reference" "U1403"
+		(property "Reference" "U1203"
 			(at 48.26 168.896709 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12266,16 +12332,16 @@
 			(uuid "85befcf0-d8e1-46c0-bb05-6c163d1ac155")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23003") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1403")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1203")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U703")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1203")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1403")
 					(unit 1)
 				)
 			)
@@ -12373,7 +12439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48a9c958-f5c0-40e3-808a-a90231a7600d")
-		(property "Reference" "U1404"
+		(property "Reference" "U1204"
 			(at 33.02 257.125421 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12643,16 +12709,16 @@
 			(uuid "77e828ad-4ba0-476a-b039-5310171e793e")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23004") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1404")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1204")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U704")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1204")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1404")
 					(unit 1)
 				)
 			)
@@ -12790,7 +12856,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7159ba13-fb07-4faf-92f2-3f1d229d5679")
-		(property "Reference" "U1405"
+		(property "Reference" "U1205"
 			(at 73.66 257.125421 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13060,16 +13126,16 @@
 			(uuid "1ad900ab-84b2-439c-949e-b357acd13849")
 		)
 (instances (project "blackfly_s_gpio_channel_mcv6_vertical" (path "/37b88609-bb36-4f47-ab22-582291732584" (reference "U23005") (unit 1)))	(project "camera-gpio-interface-pcb"
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
-					(reference "U1405")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
+					(reference "U1205")
 					(unit 1)
 				)
 				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/15ab78d3-645e-44e2-89f2-97279e1f9280"
 					(reference "U705")
 					(unit 1)
 				)
-				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8"
-					(reference "U1205")
+				(path "/8c2bf6e9-39ff-46f5-94ad-782f2656bc93/cf9287d7-4278-4035-9b01-341de48c7c59"
+					(reference "U1405")
 					(unit 1)
 				)
 			)

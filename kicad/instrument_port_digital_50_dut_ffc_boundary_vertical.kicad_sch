@@ -4328,6 +4328,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${7e0cdabf-d9e1-4b13-ab00-5a4417fdb564:REFERENCE}.20 (VCC), on +3.3V"
+			(at 63.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3dbe860d-aa74-46f7-8dee-b1a42b2a118e")
 		)
@@ -4634,6 +4645,17 @@
 			(at 281.94 72.39 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "beside ${b1707ec3-0f6f-4e89-a1c4-65233bece57d:REFERENCE}.20 (VCC), on +3.3V"
+			(at 281.94 72.39 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -4954,6 +4976,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${69119102-0ebd-473d-a7cb-d952bc88de42:REFERENCE}.20 (VCC), on +3.3V"
+			(at 500.38 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0d8daea5-00b0-4d4e-99de-9773008cbff1")
 		)
@@ -5260,6 +5293,17 @@
 			(at 63.5 252.73 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "beside ${f13cd1d5-28c7-4506-b50d-dbf0bfbd6248:REFERENCE}.20 (VCC), on +3.3V"
+			(at 63.5 252.73 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -6997,6 +7041,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${7e0cdabf-d9e1-4b13-ab00-5a4417fdb564:REFERENCE}.1 (~{OE1}), on ~{OE1}"
+			(at 22.86 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e112c37a-dc44-4eee-9029-fa333aa0c0d5")
 		)
@@ -7303,6 +7358,17 @@
 			(at 241.3 161.29 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "beside ${b1707ec3-0f6f-4e89-a1c4-65233bece57d:REFERENCE}.1 (~{OE1}), on ~{OE2}"
+			(at 241.3 161.29 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -7623,6 +7689,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${69119102-0ebd-473d-a7cb-d952bc88de42:REFERENCE}.1 (~{OE1}), on ~{OE3}"
+			(at 459.74 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "368fbccd-3546-4a4b-8657-2afb2e9eb2d8")
 		)
@@ -7929,6 +8006,17 @@
 			(at 22.86 341.63 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "beside ${f13cd1d5-28c7-4506-b50d-dbf0bfbd6248:REFERENCE}.1 (~{OE1}), on ~{OE4}"
+			(at 22.86 341.63 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font

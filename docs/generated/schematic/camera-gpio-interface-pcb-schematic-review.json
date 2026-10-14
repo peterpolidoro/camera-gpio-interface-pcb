@@ -88,7 +88,7 @@
         }
       ],
       "file": "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch",
-      "sha256": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf"
+      "sha256": "c66fa0c5aaaae95b433f183456c5495d0d6653f6b685d5d23700e88fa437e527"
     },
     {
       "path": "/inputs",
@@ -203,7 +203,7 @@
         }
       ],
       "file": "5v_to_3v3_tps73733.kicad_sch",
-      "sha256": "24f58e45fb83dffeafcf86b2f75c212ee888747c1bb2e4a2154ea80c0c6ec62e"
+      "sha256": "93e1c617af6f6baa37102a600f2a570d70c95f0a5167c11bc42f9737a3b54c0a"
     },
     {
       "path": "/power/usb2_vertical",
@@ -347,7 +347,7 @@
         }
       ],
       "file": "instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_sch",
-      "sha256": "3ffc84034030a3bd0118b9998b4dbcd493ecc0dbef09417f5b419a2b69fa226b"
+      "sha256": "aaabb14ce55246f71e46f0d3ab8d4ad51fa3e80b2efe0464749c02cbf8f5db35"
     },
     {
       "path": "/outputs",
@@ -436,7 +436,7 @@
         }
       ],
       "file": "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch",
-      "sha256": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf"
+      "sha256": "c66fa0c5aaaae95b433f183456c5495d0d6653f6b685d5d23700e88fa437e527"
     },
     {
       "path": "/blackfly_s_gpio_channel_mcv6_vertical1",
@@ -517,7 +517,7 @@
         }
       ],
       "file": "blackfly_s_gpio_channel_mcv6_vertical.kicad_sch",
-      "sha256": "d2b7075c40c766e09fb9ef5c40d865f88ce2a0f33d0d57538384197093ba29bf"
+      "sha256": "c66fa0c5aaaae95b433f183456c5495d0d6653f6b685d5d23700e88fa437e527"
     }
   ],
   "pages": [

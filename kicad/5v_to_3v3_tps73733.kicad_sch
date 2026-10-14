@@ -1059,6 +1059,17 @@
 				)
 			)
 		)
+		(property "Placement" "beside ${243dc86c-09c3-4e67-89d3-884f6d2a89b8:REFERENCE}.5 (EN), on +5V"
+			(at 22.86 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "03540e06-7e44-461c-8e57-2e9108787a78")
 		)
@@ -1365,6 +1376,17 @@
 			(at 93.98 71.12 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Placement" "beside ${243dc86c-09c3-4e67-89d3-884f6d2a89b8:REFERENCE}.1 (OUT), on +3.3V"
+			(at 93.98 71.12 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font

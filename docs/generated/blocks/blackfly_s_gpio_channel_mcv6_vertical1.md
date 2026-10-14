@@ -40,27 +40,27 @@ As placed on the board's sheet; 21 of 21 paired with the brief's references by s
 
 | Reference | Brief | Part | Value | Role | Placement |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| `C1401` | `C23001` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23002 |  |  |
-| `C1402` | `C23002` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23003 |  |  |
-| `C1403` | `C23003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 5 bypass, U23001 |  |  |
-| `D1401` | `D23001` | `OW-MISC-APHHS1005CGCK` | APHHS1005CGCK | Exposure LED, green |  |  |
-| `J1401` | `J23001` | `OW-CONN-TBH-1X06-3P5-VERT` | TBH-1x06-3.5mm | Camera GPIO header, 6-pos 3.5 mm |  |  |
-| `R1401` | `R23001` | `OW-PASS-RC0402FR-071KL` | 1k | L2 pull-up to +3.3V, 1 k |  |  |
-| `R1402` | `R23002` | `OW-RES-4K7-0402` | 4.7k | L1 pull-up to +3.3V, 4.7 k |  |  |
-| `R1403` | `R23003` | `OW-PASS-FRC0402F8200TS` | 820 | L0 opto pull-up to +5V, 820 ohm |  |  |
-| `R1404` | `R23004` | `OW-PASS-0603WAF2200T5E` | 220 | L3 trigger series, 220 ohm |  |  |
-| `R1405` | `R23005` | `OW-PASS-0603WAF4700T5E` | 470 | BNC drive series, 470 ohm |  |  |
-| `R1406` | `R23006` | `OW-PASS-RC0402FR-07680RL` | 680 | LED series, 680 ohm |  |  |
-| `R1407` | `R23007` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L0 to L0_INST |  |  |
-| `R1408` | `R23008` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L1_BUF to L1_INST |  |  |
-| `R1409` | `R23009` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L2 to L2_INST |  |  |
-| `R1410` | `R23010` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L3 to L3_INST |  |  |
-| `R1411` | `R23011` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, CAM_OUT to OUT_INST |  |  |
-| `U1401` | `U23001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt buffers, L2 and L1 |  |  |
-| `U1402` | `U23002` | `OW-MISC-SN74LVC1G125DRYR` | SN74LVC1G125DRYR | Line 3 trigger driver, always enabled |  |  |
-| `U1403` | `U23003` | `OW-MISC-SN74LVC1G07DRYR` | SN74LVC1G07DRYR | Line 0 sync driver, open drain |  |  |
-| `U1404` | `U23004` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L3/L0 |  |  |
-| `U1405` | `U23005` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L2/L1 |  |  |
+| `C1201` | `C23001` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23002 | beside U1202.6 (VCC), on +3.3V |  |
+| `C1202` | `C23002` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23003 | beside U1203.6 (VCC), on +3.3V |  |
+| `C1203` | `C23003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 5 bypass, U23001 | beside U1201C.5 (VCC), on +3.3V |  |
+| `D1201` | `D23001` | `OW-MISC-APHHS1005CGCK` | APHHS1005CGCK | Exposure LED, green |  |  |
+| `J1201` | `J23001` | `OW-CONN-TBH-1X06-3P5-VERT` | TBH-1x06-3.5mm | Camera GPIO header, 6-pos 3.5 mm |  |  |
+| `R1201` | `R23001` | `OW-PASS-RC0402FR-071KL` | 1k | L2 pull-up to +3.3V, 1 k | beside U1201A.1 (1A), on L2 |  |
+| `R1202` | `R23002` | `OW-RES-4K7-0402` | 4.7k | L1 pull-up to +3.3V, 4.7 k | beside U1201B.3 (2A), on L1 |  |
+| `R1203` | `R23003` | `OW-PASS-FRC0402F8200TS` | 820 | L0 opto pull-up to +5V, 820 ohm | beside U1203.4, on L0 |  |
+| `R1204` | `R23004` | `OW-PASS-0603WAF2200T5E` | 220 | L3 trigger series, 220 ohm |  |  |
+| `R1205` | `R23005` | `OW-PASS-0603WAF4700T5E` | 470 | BNC drive series, 470 ohm |  |  |
+| `R1206` | `R23006` | `OW-PASS-RC0402FR-07680RL` | 680 | LED series, 680 ohm |  |  |
+| `R1207` | `R23007` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L0 to L0_INST |  |  |
+| `R1208` | `R23008` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L1_BUF to L1_INST |  |  |
+| `R1209` | `R23009` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L2 to L2_INST |  |  |
+| `R1210` | `R23010` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L3 to L3_INST |  |  |
+| `R1211` | `R23011` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, CAM_OUT to OUT_INST |  |  |
+| `U1201` | `U23001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt buffers, L2 and L1 |  |  |
+| `U1202` | `U23002` | `OW-MISC-SN74LVC1G125DRYR` | SN74LVC1G125DRYR | Line 3 trigger driver, always enabled |  |  |
+| `U1203` | `U23003` | `OW-MISC-SN74LVC1G07DRYR` | SN74LVC1G07DRYR | Line 0 sync driver, open drain |  |  |
+| `U1204` | `U23004` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L3/L0 |  |  |
+| `U1205` | `U23005` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L2/L1 |  |  |
 
 ## Operating Notes
 
@@ -134,9 +134,9 @@ U23004 clamps L3 and L0, U23005 clamps L2 and L1, both referenced to +5V and GND
 | Block | `orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` |
 | Resolution | the placed id is in the library |
 | Brief | `design_block_families/blackfly_s_gpio_channel/source/blackfly_s_gpio_channel.brief.yaml`, the family's brief |
-| Published sheet | `ca9a3ad30cabe3c6` |
-| Published PCB | `d81eda2add79dd68` |
+| Published sheet | `c9f98b3dd751f5b0` |
+| Published PCB | `bc94c2fa85826a2e` |
 | Family release | `blackfly_s_gpio_channel` variant `mcv6_vertical`, profile `gpio`; VERTICAL, top-entry 6-position 3.5 mm pluggable screw-terminal header, Phoenix MCV 1,5/6-G-3,5 (1843648), LCSC C5443576; geometry `76343d3e1fe7bf57`; copper `5697f9a330d24bc3`; hardware unvalidated; qualification matches |
-| Placed sheet | `d2b7075c40c766e0`: differs from the library's sheet; parts: the brief’s 21 by internal part; ports: the brief's |
+| Placed sheet | `c66fa0c5aaaae95b`: differs from the library's sheet; parts: the brief’s 21 by internal part; ports: the brief's |
 | Netlist check | not run (`--brief-check`, kicad-cli) |
 

@@ -45,15 +45,15 @@ As placed on the board's sheet; 12 of 12 paired with the brief's references by s
 
 | Reference | Brief | Part | Value | Role | Placement |  |
 | --- | --- | --- | --- | --- | --- | --- |
-| `C1101` | `C41001` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101.1 (1A), on IN_A_FILT |  |
-| `C1102` | `C41002` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101.3 (2A), on IN_B_FILT |  |
-| `C1103` | `C41003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC bypass for U41001 | beside U1101.5 (VCC), on +3.3V |  |
+| `C1101` | `C41001` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101A.1 (1A), on IN_A_FILT |  |
+| `C1102` | `C41002` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101B.3 (2A), on IN_B_FILT |  |
+| `C1103` | `C41003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC bypass for U41001 | beside U1101C.5 (VCC), on +3.3V |  |
 | `R1101` | `R41001` | `OW-PASS-RC0402JR-07100KL` | 100k | Input idle-low pull-down, 100 k |  |  |
 | `R1102` | `R41002` | `OW-PASS-RC0402JR-07100KL` | 100k | Input idle-low pull-down, 100 k |  |  |
 | `R1103` | `R41003` | `OW-RES-4K7-0402` | 4.7k | Input series filter resistor, 4.7 k |  |  |
 | `R1104` | `R41004` | `OW-RES-4K7-0402` | 4.7k | Input series filter resistor, 4.7 k |  |  |
-| `R1105` | `R41005` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101.6 (1Y), on IN_A |  |
-| `R1106` | `R41006` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101.4 (2Y), on IN_B |  |
+| `R1105` | `R41005` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101A.6 (1Y), on IN_A |  |
+| `R1106` | `R41006` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101B.4 (2Y), on IN_B |  |
 | `R1107` | `R41007` | `OW-PASS-0402WGF1000TCE` | 100 | Instrument tap series resistor |  |  |
 | `R1108` | `R41008` | `OW-PASS-0402WGF1000TCE` | 100 | Instrument tap series resistor |  |  |
 | `U1101` | `U41001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt-trigger buffer |  |  |
@@ -111,7 +111,7 @@ U41001 gates A (1A to 1Y) and B (2A to 2Y) square the filtered inputs into 3.3 V
 | Resolution | the placed id is in the library |
 | Brief | `design_blocks/orb_weaver_private.kicad_blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_block/logic_input_2ch_5v_schmitt_sn74lvc2g17.brief.yaml`, the block's brief |
 | Published sheet | `eb3efe0db8c09f06` |
-| Published PCB | `5cd9c1c587707352` |
+| Published PCB | `75189b4603e8f8c5` |
 | Source lock | symbol snapshot `d0f8273d1ebeb5a2`, published 2026-10-13 |
 | Placed sheet | `768774d53281c846`: differs from the library's sheet; parts: the brief’s 12 by internal part; ports: the brief's |
 | Netlist check | not run (`--brief-check`, kicad-cli) |

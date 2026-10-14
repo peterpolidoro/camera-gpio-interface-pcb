@@ -64,15 +64,15 @@ As placed on the board's sheet; 46 of 46 paired with the brief's references by s
 | Reference | Brief | Part | Value | Role | Placement |  |
 | --- | --- | --- | --- | --- | --- | --- |
 | `C501` | `C39001` | `OW-CAP-4U7-0402-X5R-16V` | 4.7uF | +3.3V rail-entry bulk, 4.7 uF |  |  |
-| `C502` | `C39002` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF |  |  |
-| `C503` | `C39003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF |  |  |
-| `C504` | `C39004` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF |  |  |
-| `C505` | `C39005` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF |  |  |
+| `C502` | `C39002` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF | beside U501.20 (VCC), on +3.3V |  |
+| `C503` | `C39003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF | beside U502.20 (VCC), on +3.3V |  |
+| `C504` | `C39004` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF | beside U503.20 (VCC), on +3.3V |  |
+| `C505` | `C39005` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 20 bypass, 100 nF | beside U504.20 (VCC), on +3.3V |  |
 | `J501` | `J39001` | `OW-CONN-FH12-50S-0-5SVA-54` | FH12-50S-0.5SVA(54) | 50-contact FFC receptacle, top entry |  |  |
-| `R501` | `R39001` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k |  |  |
-| `R502` | `R39002` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k |  |  |
-| `R503` | `R39003` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k |  |  |
-| `R504` | `R39004` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k |  |  |
+| `R501` | `R39001` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k | beside U501.1 (~{OE1}), on ~{OE1} |  |
+| `R502` | `R39002` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k | beside U502.1 (~{OE1}), on ~{OE2} |  |
+| `R503` | `R39003` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k | beside U503.1 (~{OE1}), on ~{OE3} |  |
+| `R504` | `R39004` | `OW-RES-10K-0402` | 10k | ~{OE1}/~{OE2} pull-down, 10 k | beside U504.1 (~{OE1}), on ~{OE4} |  |
 | `R505` | `R39005` | `OW-PASS-0402WGF1000TCE` | 100 | Output source damping |  |  |
 | `R506` | `R39006` | `OW-PASS-0402WGF1000TCE` | 100 | Output source damping |  |  |
 | `R507` | `R39007` | `OW-PASS-0402WGF1000TCE` | 100 | Output source damping |  |  |
@@ -181,9 +181,9 @@ J39001 carries the 32 damped outputs (DIGn_ISO) on the contract's DUT contacts a
 | Block | `orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical` |
 | Resolution | the placed id is in the library |
 | Brief | `design_blocks/orb_weaver_private.kicad_blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.kicad_block/instrument_port_digital_50_dut_ffc_boundary_vertical.brief.yaml`, the block's brief |
-| Published sheet | `dde3caa331c4da6d` |
-| Published PCB | `93c8a7ca656d76fb` |
+| Published sheet | `a88eab295bbfb7cf` |
+| Published PCB | `495b516ac03bc8cc` |
 | Source lock | symbol snapshot `1c2b211b4f8845d5`, published 2026-10-13 |
-| Placed sheet | `3ffc84034030a3bd`: differs from the library's sheet; parts: the brief’s 46 by internal part; ports: the brief's |
+| Placed sheet | `aaabb14ce55246f7`: differs from the library's sheet; parts: the brief’s 46 by internal part; ports: the brief's |
 | Netlist check | not run (`--brief-check`, kicad-cli) |
 
