@@ -12,6 +12,12 @@ Block `orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17` placed in `/in
 | Sheet | `logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_sch`; sheet pins: the board's own arrangement |
 | Drawing | [camera-gpio-interface-pcb-inputs-logic_input_2ch_5v_schmitt_sn74lvc2g17.svg](../schematic/camera-gpio-interface-pcb-inputs-logic_input_2ch_5v_schmitt_sn74lvc2g17.svg) |
 
+## On the Board
+
+![logic_input_2ch_5v_schmitt_sn74lvc2g17 on the board](layout/logic_input_2ch_5v_schmitt_sn74lvc2g17.png)
+
+Block 7 of the [board view](../board-view.md): 5.9 × 8.1 mm on the top side, its centre 12.0 mm left of and 16.1 mm below the board centre (X right, Y up, as the enclosure tables); 12 footprints. The picture is the top render clipped around the block, the rectangle the extent of its footprints' courtyards.
+
 ## Description
 
 Two-channel single-ended logic input conditioner: per-channel series/RC filtering plus an SN74LVC2G17 dual Schmitt-trigger buffer that turns a 3.3 V or 5 V field-wired logic signal into clean 3.3 V logic, with a 100 ohm InstrumentPort tap on each output. Generic sibling of quadrature_encoder_input_5v_sn74lvc2g17: same circuit and values, generic names, no encoder-supply passthrough. Use this one for BNC trigger and sync inputs, sensor and switch logic lines and any other pair of inputs a board conditions; use the encoder block when the harness also carries the encoder supply; place this block twice for four inputs. Connector-agnostic: the jack or terminal lives on the board sheet. Bring the raw lines in on IN_A_RAW and IN_B_RAW, take conditioned 3.3 V logic out on IN_A and IN_B and the taps out on IN_A_INST and IN_B_INST; rails +3.3V and GND.
@@ -112,7 +118,7 @@ U41001 gates A (1A to 1Y) and B (2A to 2Y) square the filtered inputs into 3.3 V
 | Brief | `design_blocks/orb_weaver_private.kicad_blocks/logic_input_2ch_5v_schmitt_sn74lvc2g17.kicad_block/logic_input_2ch_5v_schmitt_sn74lvc2g17.brief.yaml`, the block's brief |
 | Published sheet | `eb3efe0db8c09f06` |
 | Published PCB | `75189b4603e8f8c5` |
-| Source lock | symbol snapshot `d0f8273d1ebeb5a2`, published 2026-10-13 |
+| Source lock | symbol snapshot `d0f8273d1ebeb5a2`, published 2026-10-14 |
 | Placed sheet | `768774d53281c846`: differs from the library's sheet; parts: the brief’s 12 by internal part; ports: the brief's |
 | Netlist check | not run (`--brief-check`, kicad-cli) |
 

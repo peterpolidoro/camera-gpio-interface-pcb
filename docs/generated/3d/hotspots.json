@@ -1,0 +1,601 @@
+{
+  "generated_by": "board_view.py",
+  "board": "camera-gpio-interface-pcb",
+  "view": "top",
+  "image": "3d/top.png",
+  "image_tag": "cb57e14bbde4",
+  "width": 1568,
+  "height": 1264,
+  "map": {
+    "opaque_bbox_px": [
+      166,
+      262,
+      1400,
+      1002
+    ],
+    "alpha_threshold": 128,
+    "outline_kicad_mm": [
+      100.0,
+      65.0,
+      200.0,
+      125.0
+    ],
+    "px_per_mm": [
+      12.35,
+      12.35
+    ],
+    "scale_mismatch": 0.0,
+    "px_of_mm": "x_px = opaque_bbox_px[0] + (x_mm - outline_kicad_mm[0]) * px_per_mm[0]; y likewise, y down in both"
+  },
+  "model": {
+    "file": "3d/camera-gpio-interface-pcb.glb",
+    "units": "m",
+    "axes": "KiCad x along X, KiCad y along Z, Y up; the board's top surface at board_thickness",
+    "board_thickness_m": 0.0016
+  },
+  "frame": {
+    "origin": "centre of the board outline bounding box",
+    "x_axis": "right",
+    "y_axis": "up",
+    "note": "box_frame_mm and centre_frame_mm are in this frame, as the geometry record's tables; box_kicad_mm is KiCad's, y down"
+  },
+  "links": {
+    "page": "board-view.md",
+    "overlay": "3d/top.svg",
+    "block_link": "../blocks/{instance}/",
+    "pictures": "blocks/layout"
+  },
+  "blocks": [
+    {
+      "instance": "blackfly_s_gpio_channel_mcv6_vertical",
+      "page": "blackfly_s_gpio_channel_mcv6_vertical.md",
+      "block": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
+      "sheet": "/",
+      "sheet_path": "/15ab78d3-645e-44e2-89f2-97279e1f9280",
+      "size_gltf": [
+        0.0225,
+        0.0126,
+        0.0182
+      ],
+      "box_frame_mm": [
+        -36.7,
+        8.45,
+        -13.3,
+        27.5
+      ],
+      "centre_frame_mm": [
+        -25.0,
+        17.975
+      ],
+      "side": "top",
+      "references": [
+        "C701",
+        "C702",
+        "C703",
+        "D701",
+        "J701",
+        "R701",
+        "R702",
+        "R703",
+        "R704",
+        "R705",
+        "R706",
+        "R707",
+        "R708",
+        "R709",
+        "R710",
+        "R711",
+        "U701",
+        "U702",
+        "U703",
+        "U704",
+        "U705"
+      ],
+      "footprints": 21,
+      "box_kicad_mm": [
+        113.3,
+        67.5,
+        136.7,
+        86.55
+      ],
+      "centre_kicad_mm": [
+        125.0,
+        77.025
+      ],
+      "box_px": [
+        330.3,
+        292.9,
+        619.2,
+        528.1
+      ],
+      "centre_gltf": [
+        0.125,
+        0.0108,
+        0.07703
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 1,
+      "picture": "blocks/layout/blackfly_s_gpio_channel_mcv6_vertical.png",
+      "picture_px": [
+        272,
+        237,
+        677,
+        586
+      ]
+    },
+    {
+      "instance": "blackfly_s_gpio_channel_mcv6_vertical1",
+      "page": "blackfly_s_gpio_channel_mcv6_vertical1.md",
+      "block": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
+      "sheet": "/",
+      "sheet_path": "/f7a5e2a5-9d0a-49e2-a363-081660a6c9a8",
+      "size_gltf": [
+        0.0224,
+        0.0126,
+        0.0182
+      ],
+      "box_frame_mm": [
+        -11.7,
+        8.45,
+        11.7,
+        27.5
+      ],
+      "centre_frame_mm": [
+        0.0,
+        17.975
+      ],
+      "side": "top",
+      "references": [
+        "C1201",
+        "C1202",
+        "C1203",
+        "D1201",
+        "J1201",
+        "R1201",
+        "R1202",
+        "R1203",
+        "R1204",
+        "R1205",
+        "R1206",
+        "R1207",
+        "R1208",
+        "R1209",
+        "R1210",
+        "R1211",
+        "U1201",
+        "U1202",
+        "U1203",
+        "U1204",
+        "U1205"
+      ],
+      "footprints": 21,
+      "box_kicad_mm": [
+        138.3,
+        67.5,
+        161.7,
+        86.55
+      ],
+      "centre_kicad_mm": [
+        150.0,
+        77.025
+      ],
+      "box_px": [
+        639.0,
+        292.9,
+        928.0,
+        528.1
+      ],
+      "centre_gltf": [
+        0.15,
+        0.0108,
+        0.07703
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 2,
+      "picture": "blocks/layout/blackfly_s_gpio_channel_mcv6_vertical1.png",
+      "picture_px": [
+        581,
+        237,
+        986,
+        586
+      ]
+    },
+    {
+      "instance": "blackfly_s_gpio_channel_mcv6_vertical2",
+      "page": "blackfly_s_gpio_channel_mcv6_vertical2.md",
+      "block": "orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical",
+      "sheet": "/",
+      "sheet_path": "/cf9287d7-4278-4035-9b01-341de48c7c59",
+      "size_gltf": [
+        0.0224,
+        0.0126,
+        0.0182
+      ],
+      "box_frame_mm": [
+        13.3,
+        8.45,
+        36.7,
+        27.5
+      ],
+      "centre_frame_mm": [
+        25.0,
+        17.975
+      ],
+      "side": "top",
+      "references": [
+        "C1401",
+        "C1402",
+        "C1403",
+        "D1401",
+        "J1401",
+        "R1401",
+        "R1402",
+        "R1403",
+        "R1404",
+        "R1405",
+        "R1406",
+        "R1407",
+        "R1408",
+        "R1409",
+        "R1410",
+        "R1411",
+        "U1401",
+        "U1402",
+        "U1403",
+        "U1404",
+        "U1405"
+      ],
+      "footprints": 21,
+      "box_kicad_mm": [
+        163.3,
+        67.5,
+        186.7,
+        86.55
+      ],
+      "centre_kicad_mm": [
+        175.0,
+        77.025
+      ],
+      "box_px": [
+        947.8,
+        292.9,
+        1236.7,
+        528.1
+      ],
+      "centre_gltf": [
+        0.175,
+        0.0108,
+        0.07703
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 3,
+      "picture": "blocks/layout/blackfly_s_gpio_channel_mcv6_vertical2.png",
+      "picture_px": [
+        890,
+        237,
+        1295,
+        586
+      ]
+    },
+    {
+      "instance": "5v_to_3v3_tps73733",
+      "page": "5v_to_3v3_tps73733.md",
+      "block": "orb_weaver_private:5v_to_3v3_tps73733",
+      "sheet": "/power",
+      "sheet_path": "/5b8333aa-5632-4b02-bed2-f7f06815639a/49de3487-fcb1-4c17-8949-8797e80b0794",
+      "size_gltf": [
+        0.003,
+        0.001,
+        0.0043
+      ],
+      "box_frame_mm": [
+        -41.95,
+        12.04,
+        -38.05,
+        16.95
+      ],
+      "centre_frame_mm": [
+        -40.0,
+        14.495
+      ],
+      "side": "top",
+      "references": [
+        "C1001",
+        "C1002",
+        "U1001"
+      ],
+      "footprints": 3,
+      "box_kicad_mm": [
+        108.05,
+        78.05,
+        111.95,
+        82.96
+      ],
+      "centre_kicad_mm": [
+        110.0,
+        80.505
+      ],
+      "box_px": [
+        265.4,
+        423.2,
+        313.6,
+        483.8
+      ],
+      "centre_gltf": [
+        0.11,
+        0.0026,
+        0.0805
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 4,
+      "picture": "blocks/layout/5v_to_3v3_tps73733.png",
+      "picture_px": [
+        141,
+        342,
+        438,
+        565
+      ]
+    },
+    {
+      "instance": "instrument_port_digital_50_dut_ffc_boundary_vertical",
+      "page": "instrument_port_digital_50_dut_ffc_boundary_vertical.md",
+      "block": "orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical",
+      "sheet": "/",
+      "sheet_path": "/716b668d-905d-4ab3-a241-da78699c8ce7",
+      "size_gltf": [
+        0.0124,
+        0.0036,
+        0.0284
+      ],
+      "box_frame_mm": [
+        33.09,
+        -18.75,
+        46.8,
+        10.75
+      ],
+      "centre_frame_mm": [
+        39.945,
+        -4.0
+      ],
+      "side": "top",
+      "references": [
+        "C501",
+        "C502",
+        "C503",
+        "C504",
+        "C505",
+        "J501",
+        "R501",
+        "R502",
+        "R503",
+        "R504",
+        "R505",
+        "R506",
+        "R507",
+        "R508",
+        "R509",
+        "R510",
+        "R511",
+        "R512",
+        "R513",
+        "R514",
+        "R515",
+        "R516",
+        "R517",
+        "R518",
+        "R519",
+        "R520",
+        "R521",
+        "R522",
+        "R523",
+        "R524",
+        "R525",
+        "R526",
+        "R527",
+        "R528",
+        "R529",
+        "R530",
+        "R531",
+        "R532",
+        "R533",
+        "R534",
+        "R535",
+        "R536",
+        "U501",
+        "U502",
+        "U503",
+        "U504"
+      ],
+      "footprints": 46,
+      "box_kicad_mm": [
+        183.09,
+        84.25,
+        196.8,
+        113.75
+      ],
+      "centre_kicad_mm": [
+        189.945,
+        99.0
+      ],
+      "box_px": [
+        1192.2,
+        499.7,
+        1361.5,
+        864.1
+      ],
+      "centre_gltf": [
+        0.18995,
+        0.00519,
+        0.099
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 5,
+      "picture": "blocks/layout/instrument_port_digital_50_dut_ffc_boundary_vertical.png",
+      "picture_px": [
+        1119,
+        427,
+        1426,
+        937
+      ]
+    },
+    {
+      "instance": "usb2_vertical",
+      "page": "usb2_vertical.md",
+      "block": "orb_weaver_private:usb2_vertical",
+      "sheet": "/power",
+      "sheet_path": "/5b8333aa-5632-4b02-bed2-f7f06815639a/891726c4-91ac-4fc5-a699-1590dbecf38b",
+      "size_gltf": [
+        0.0108,
+        0.0082,
+        0.0093
+      ],
+      "box_frame_mm": [
+        -48.43,
+        -4.05,
+        -36.5,
+        6.05
+      ],
+      "centre_frame_mm": [
+        -42.465,
+        1.0
+      ],
+      "side": "top",
+      "references": [
+        "C901",
+        "D901",
+        "J901",
+        "R901",
+        "R902",
+        "U901"
+      ],
+      "footprints": 6,
+      "box_kicad_mm": [
+        101.57,
+        88.95,
+        113.5,
+        99.05
+      ],
+      "centre_kicad_mm": [
+        107.535,
+        94.0
+      ],
+      "box_px": [
+        185.4,
+        557.8,
+        332.7,
+        682.5
+      ],
+      "centre_gltf": [
+        0.10753,
+        0.00906,
+        0.094
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 6,
+      "picture": "blocks/layout/usb2_vertical.png",
+      "picture_px": [
+        141,
+        509,
+        407,
+        731
+      ]
+    },
+    {
+      "instance": "logic_input_2ch_5v_schmitt_sn74lvc2g17",
+      "page": "logic_input_2ch_5v_schmitt_sn74lvc2g17.md",
+      "block": "orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17",
+      "sheet": "/inputs",
+      "sheet_path": "/466351ee-30f0-48a7-921b-3bf3872996b2/f735ca8a-380e-46a5-ab9d-94d578027087",
+      "size_gltf": [
+        0.0055,
+        0.0006,
+        0.0073
+      ],
+      "box_frame_mm": [
+        -14.97,
+        -20.18,
+        -9.03,
+        -12.07
+      ],
+      "centre_frame_mm": [
+        -12.0,
+        -16.125
+      ],
+      "side": "top",
+      "references": [
+        "C1101",
+        "C1102",
+        "C1103",
+        "R1101",
+        "R1102",
+        "R1103",
+        "R1104",
+        "R1105",
+        "R1106",
+        "R1107",
+        "R1108",
+        "U1101"
+      ],
+      "footprints": 12,
+      "box_kicad_mm": [
+        135.03,
+        107.07,
+        140.97,
+        115.18
+      ],
+      "centre_kicad_mm": [
+        138.0,
+        111.125
+      ],
+      "box_px": [
+        598.6,
+        781.6,
+        672.0,
+        881.7
+      ],
+      "centre_gltf": [
+        0.138,
+        0.00219,
+        0.11113
+      ],
+      "normal_gltf": [
+        0,
+        1,
+        0
+      ],
+      "number": 7,
+      "picture": "blocks/layout/logic_input_2ch_5v_schmitt_sn74lvc2g17.png",
+      "picture_px": [
+        487,
+        720,
+        784,
+        943
+      ]
+    }
+  ],
+  "unplaced": []
+}

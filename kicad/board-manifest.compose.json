@@ -458,6 +458,28 @@
    "footprints_kept_by_part": 0,
    "footprints_removed": [],
    "footprints_new": 0
+  },
+  {
+   "instance": "instrument_port_digital_50_dut_ffc_boundary_vertical",
+   "from": "orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical",
+   "to": "orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical",
+   "date": "2026-10-14",
+   "removed_ports": [],
+   "added_ports": [],
+   "renamed": {},
+   "new_items": {
+    "footprint": 46,
+    "gr_text": 1
+   },
+   "pads_moved": [],
+   "pads_gone": [],
+   "pads_new": [],
+   "transform": "copper kept; no new footprint to place",
+   "keep_copper": true,
+   "footprints_kept_by_identity": 46,
+   "footprints_kept_by_part": 0,
+   "footprints_removed": [],
+   "footprints_new": 0
   }
  ]
 }

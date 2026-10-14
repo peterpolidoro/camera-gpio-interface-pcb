@@ -12,6 +12,12 @@ Block `orb_weaver_private:usb2_vertical` placed in `/power` of **camera-gpio-int
 | Sheet | `usb2_vertical.kicad_sch`; sheet pins: the library's arrangement |
 | Drawing | [camera-gpio-interface-pcb-power-usb2_vertical.svg](../schematic/camera-gpio-interface-pcb-power-usb2_vertical.svg) |
 
+## On the Board
+
+![usb2_vertical on the board](layout/usb2_vertical.png)
+
+Block 6 of the [board view](../board-view.md): 11.9 × 10.1 mm on the top side, its centre 42.5 mm left of and 1.0 mm above the board centre (X right, Y up, as the enclosure tables); 6 footprints. The picture is the top render clipped around the block, the rectangle the extent of its footprints' courtyards.
+
 ## Description
 
 USB-C USB2 device-port front end on a VERTICAL, top-entry receptacle: GCT USB4145-03-0070-C, OW-CONN-USB-C-USB2-SMD-VERT, 16P USB2-only, SMT contacts plus four through-hole shell legs, 7.46 mm tall. Electrically identical to the horizontal usb2 block: USBLC6-2P6 ESD clamp on D+/D- and VBUS, 5.1k Rd pulldowns on CC1 (A5) and CC2 (B5) declaring a sink, 100nF on VBUS, a MBR120VLSFT1G series Schottky from VBUS to +5V_USB for diode-ORing with other 5 V sources (pair it with pycontrol_behavior_port_rj45's +5V_PYC), PWR_FLAG on VBUS, SBU1/SBU2 deliberately unconnected, all four shell pads S1-S4 tied to GND. Ports are VBUS, +5V_USB, GND, USB_D+, USB_D-.
@@ -86,7 +92,7 @@ R31001 and R31002 (5.1 k) pull CC1 and CC2 to GND: the port presents itself as a
 | Brief | `design_blocks/orb_weaver_private.kicad_blocks/usb2_vertical.kicad_block/usb2_vertical.brief.yaml`, the block's brief |
 | Published sheet | `938d8c968797018e` |
 | Published PCB | `55ced031728de451` |
-| Source lock | symbol snapshot `40ea67778de8e7b1`, published 2026-10-13 |
+| Source lock | symbol snapshot `40ea67778de8e7b1`, published 2026-10-14 |
 | Placed sheet | `cf27bc17c1a4211a`: differs from the library's sheet; parts: the brief’s 6 by internal part; ports: the brief's |
 | Netlist check | not run (`--brief-check`, kicad-cli) |
 

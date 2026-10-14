@@ -44,9 +44,11 @@ More views, including both elevations, are in [the generated documentation](docs
 | Schematic sheets, SVG (11) | [schematic/](docs/generated/schematic/) |
 | Schematic, instance overviews and details, PDF | [Review booklet](docs/generated/schematic/camera-gpio-interface-pcb-schematic-review.pdf) |
 | Design blocks placed (7), one page each | [blocks/README.md](docs/generated/blocks/README.md) |
+| Board view: the model and the top render with the design blocks numbered | [board-view.md](docs/generated/board-view.md) |
 | Assembly view, top | [assembly-top.svg](docs/generated/layout/assembly-top.svg) |
 | Assembly view, bottom | [assembly-bottom.svg](docs/generated/layout/assembly-bottom.svg) |
 | Assembled board, STEP, for FreeCAD | [camera-gpio-interface-pcb-assembled.step](docs/generated/3d/camera-gpio-interface-pcb-assembled.step) |
+| Assembled board, glTF, for a viewer (the library's materials written in) | [camera-gpio-interface-pcb.glb](docs/generated/3d/camera-gpio-interface-pcb.glb) |
 | Bill of materials | [table](docs/generated/bom/camera-gpio-interface-pcb-bom.md) · [CSV](docs/generated/bom/camera-gpio-interface-pcb-bom.csv) |
 | Board dimensions and stackup | [board-dimensions.md](docs/generated/mechanical/board-dimensions.md) |
 | Board geometry, machine readable | [board-geometry.json](docs/generated/mechanical/board-geometry.json) |
