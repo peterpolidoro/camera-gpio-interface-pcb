@@ -62,6 +62,7 @@ The [board view](board-view.md) numbers the design blocks on the model and on th
 | Schematic, instance overviews and details, PDF | [Review booklet](schematic/camera-gpio-interface-pcb-schematic-review.pdf) |
 | Design blocks placed (7), one page each | [blocks/README.md](blocks/README.md) |
 | Board view: the model and the top render with the design blocks numbered | [board-view.md](board-view.md) |
+| Subsystem sheets (3), from their recipes | [subsystems/README.md](subsystems/README.md) |
 | Assembly view, top | [assembly-top.svg](layout/assembly-top.svg) |
 | Assembly view, bottom | [assembly-bottom.svg](layout/assembly-bottom.svg) |
 | Assembled board, STEP, for FreeCAD | [camera-gpio-interface-pcb-assembled.step](3d/camera-gpio-interface-pcb-assembled.step) |
@@ -86,6 +87,16 @@ Every block the board places, documented from the library: [the index](blocks/RE
 | 5 | [`instrument_port_digital_50_dut_ffc_boundary_vertical`](blocks/instrument_port_digital_50_dut_ffc_boundary_vertical.md) | `orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical` | routed |  | differs |
 | 3 | [`blackfly_s_gpio_channel_mcv6_vertical2`](blocks/blackfly_s_gpio_channel_mcv6_vertical2.md) | `orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` | routed | blackfly_s_gpio_channel `mcv6_vertical` (gpio) | differs |
 | 2 | [`blackfly_s_gpio_channel_mcv6_vertical1`](blocks/blackfly_s_gpio_channel_mcv6_vertical1.md) | `orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` | routed | blackfly_s_gpio_channel `mcv6_vertical` (gpio) | differs |
+
+## Subsystems
+
+The board's subsystem sheets from their recipes: [the index](subsystems/README.md) and one page each.
+
+| Subsystem | Recipe | Blocks |
+| --- | --- | --- |
+| [`inputs`](subsystems/inputs.md) | `subsystems/inputs.subsystem.yaml` | 1 |
+| [`power`](subsystems/power.md) | `subsystems/power.subsystem.yaml` | 2 |
+| [`outputs`](subsystems/outputs.md) | `subsystems/outputs.subsystem.yaml` | 0 |
 
 ### Enclosure Reference
 

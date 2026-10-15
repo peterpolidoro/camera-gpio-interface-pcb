@@ -1,0 +1,212 @@
+schema: orb-weaver/board/1
+board: camera-gpio-interface-pcb
+project: camera-gpio-interface-pcb.kicad_pro
+summary: 'Camera GPIO interface for the three FLIR Blackfly S cameras of the joystick rig: three pluggable screw-terminal
+  camera channels, two BNC inputs from the pyControl breakout, four 3.3 V BNC outputs to a Neuropixels OneBox, an InstrumentPort-Digital-50
+  with every camera line tapped, USB power; no MCU; v1.0 as built.'
+rules:
+  profiles:
+  - instrument-taps
+  - hv-power-24v
+  grid_mm: 1.0
+  datum:
+    kind: aux axis origin
+    kicad_mm: [150.0, 95.0]
+sheet_pins_file: sheet-pins.yaml
+subsystems:
+- name: inputs
+  recipe: subsystems/inputs.subsystem.yaml
+  note: board-authored sheet, 7 parts
+  blocks:
+    logic_input_2ch_5v_schmitt_sn74lvc2g17:
+      anchor_mm: [-12.0, 17.0]
+      rotation_degrees: 90
+      side: front
+- name: power
+  recipe: subsystems/power.subsystem.yaml
+  note: board-authored sheet, 2 parts
+  blocks:
+    5v_to_3v3_tps73733:
+      anchor_mm: [-40.0, -15.0]
+      rotation_degrees: 180
+      side: front
+    usb2_vertical:
+      anchor_mm: [-44.0, -1.0]
+      rotation_degrees: 90
+      side: front
+- name: outputs
+  recipe: subsystems/outputs.subsystem.yaml
+  note: board-authored sheet, 12 parts
+glue:
+  parts:
+  - part: OW-MECH-FID-1MM-MASK2MM
+    references:
+    - FID101
+    - FID102
+    - FID103
+    value: Fiducial 1mm Mask 2mm
+    role: fiducial
+  - part: OW-MECH-MH-3-2MM-M3
+    references:
+    - H101
+    - H102
+    - H103
+    - H104
+    value: Mounting Hole 3.2mm M3
+    role: mounting-hole
+blocks:
+- name: blackfly_s_gpio_channel_mcv6_vertical
+  block: orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical
+  anchor_mm: [-25.0, -24.0]
+  rotation_degrees: 180
+  side: front
+  anchor_rule: 'inferred (block not in the anchor table): the group''s one connector, pad-array centre'
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM_OUT_BNC: CAM1_OUT_BNC
+    GND: GND
+    L0_INST: CAM1_L0_INST
+    L1_INST: CAM1_L1_INST
+    L2_INST: CAM1_L2_INST
+    L3_INST: CAM1_L3_INST
+    OUT_INST: CAM1_OUT_INST
+    SYNC_IN: SYNC_IN
+    TRIG_IN: TRIG_IN
+- name: instrument_port_digital_50_dut_ffc_boundary_vertical
+  block: orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical
+  anchor_mm: [44.0, 4.0]
+  rotation_degrees: 270
+  side: front
+  connections:
+    +3.3V: +3.3V
+    DIG0: TRIG_IN_INST
+    DIG1: SYNC_IN_INST
+    DIG2: SYNC_OUT_INST
+    DIG3: CAM1_L0_INST
+    DIG4: CAM1_L1_INST
+    DIG5: CAM1_L2_INST
+    DIG6: CAM1_L3_INST
+    DIG7: CAM1_OUT_INST
+    DIG8: CAM2_L0_INST
+    DIG9: CAM2_L1_INST
+    DIG10: CAM2_L2_INST
+    DIG11: CAM2_L3_INST
+    DIG12: CAM2_OUT_INST
+    DIG13: CAM3_L0_INST
+    DIG14: CAM3_L1_INST
+    DIG15: CAM3_L2_INST
+    DIG16: CAM3_L3_INST
+    DIG17: CAM3_OUT_INST
+    DIG18: GND
+    DIG19: GND
+    DIG20: GND
+    DIG21: GND
+    DIG22: GND
+    DIG23: GND
+    DIG24: GND
+    DIG25: GND
+    DIG26: GND
+    DIG27: GND
+    DIG28: GND
+    DIG29: GND
+    DIG30: GND
+    DIG31: GND
+    GND: GND
+- name: blackfly_s_gpio_channel_mcv6_vertical2
+  block: orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical
+  file: blackfly_s_gpio_channel_mcv6_vertical.kicad_sch
+  anchor_mm: [25.0, -24.0]
+  rotation_degrees: 180
+  side: front
+  anchor_rule: 'inferred (block not in the anchor table): the group''s one connector, pad-array centre'
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM_OUT_BNC: CAM3_OUT_BNC
+    GND: GND
+    L0_INST: CAM3_L0_INST
+    L1_INST: CAM3_L1_INST
+    L2_INST: CAM3_L2_INST
+    L3_INST: CAM3_L3_INST
+    OUT_INST: CAM3_OUT_INST
+    SYNC_IN: SYNC_IN
+    TRIG_IN: TRIG_IN
+- name: blackfly_s_gpio_channel_mcv6_vertical1
+  block: orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical
+  file: blackfly_s_gpio_channel_mcv6_vertical.kicad_sch
+  anchor_mm: [0.0, -24.0]
+  rotation_degrees: 180
+  side: front
+  anchor_rule: 'inferred (block not in the anchor table): the group''s one connector, pad-array centre'
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    CAM_OUT_BNC: CAM2_OUT_BNC
+    GND: GND
+    L0_INST: CAM2_L0_INST
+    L1_INST: CAM2_L1_INST
+    L2_INST: CAM2_L2_INST
+    L3_INST: CAM2_L3_INST
+    OUT_INST: CAM2_OUT_INST
+    SYNC_IN: SYNC_IN
+    TRIG_IN: TRIG_IN
+nets:
+  /+3.3V:
+    meaning: The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort
+      block requires
+  /+5V:
+    meaning: 'VBUS after the USB block''s Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array''s
+      clamp reference'
+  /CAM1_L0_INST:
+    meaning: 'DIG3: camera 1 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain'
+  /CAM1_L1_INST:
+    meaning: 'DIG4: camera 1 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers'
+  /CAM1_L2_INST:
+    meaning: 'DIG5: camera 1 Line 2 raw open-drain node (ExposureActive)'
+  /CAM1_L3_INST:
+    meaning: 'DIG6: camera 1 pin 1 node (Line 3, the trigger) after the 220 Ω'
+  /CAM1_OUT_BNC:
+    meaning: Camera 1 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM1 OUT BNC
+  /CAM1_OUT_INST:
+    meaning: 'DIG7: what the CAM1 OUT BNC carries'
+  /CAM2_L0_INST:
+    meaning: 'DIG8: camera 2 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain'
+  /CAM2_L1_INST:
+    meaning: 'DIG9: camera 2 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers'
+  /CAM2_L2_INST:
+    meaning: 'DIG10: camera 2 Line 2 raw open-drain node (ExposureActive)'
+  /CAM2_L3_INST:
+    meaning: 'DIG11: camera 2 pin 1 node (Line 3, the trigger) after the 220 Ω'
+  /CAM2_OUT_BNC:
+    meaning: Camera 2 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM2 OUT BNC
+  /CAM2_OUT_INST:
+    meaning: 'DIG12: what the CAM2 OUT BNC carries'
+  /CAM3_L0_INST:
+    meaning: 'DIG13: camera 3 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain'
+  /CAM3_L1_INST:
+    meaning: 'DIG14: camera 3 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers'
+  /CAM3_L2_INST:
+    meaning: 'DIG15: camera 3 Line 2 raw open-drain node (ExposureActive)'
+  /CAM3_L3_INST:
+    meaning: 'DIG16: camera 3 pin 1 node (Line 3, the trigger) after the 220 Ω'
+  /CAM3_OUT_BNC:
+    meaning: Camera 3 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM3 OUT BNC
+  /CAM3_OUT_INST:
+    meaning: 'DIG17: what the CAM3 OUT BNC carries'
+  /GND:
+    meaning: Board ground; every BNC shell and camera pins 5 and 6
+  /SYNC_IN:
+    meaning: Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver
+  /SYNC_IN_INST:
+    meaning: 'DIG1: the conditioned Rsync after the Schmitt (the input block''s IN_B_INST)'
+  /SYNC_OUT_INST:
+    meaning: 'DIG2: what the SYNC OUT BNC carries, at the driver output before the 470 Ω'
+  /TRIG_IN:
+    meaning: Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers
+  /TRIG_IN_INST:
+    meaning: 'DIG0: the conditioned trigger after the Schmitt (the input block''s IN_A_INST)'
+  /inputs/SYNC_RAW:
+    meaning: The SYNC IN jack to the ESD clamp and the input block's IN_B_RAW
+  /inputs/TRIG_RAW:
+    meaning: The TRIG IN jack to the ESD clamp and the input block's IN_A_RAW

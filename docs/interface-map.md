@@ -5,19 +5,21 @@
 
 ## Board Manifest: camera-gpio-interface-pcb
 
+Camera GPIO interface for the three FLIR Blackfly S cameras of the joystick rig: three pluggable screw-terminal camera channels, two BNC inputs from the pyControl breakout, four 3.3 V BNC outputs to a Neuropixels OneBox, an InstrumentPort-Digital-50 with every camera line tapped, USB power; no MCU; v1.0 as built.
+
 **Project:** `camera-gpio-interface-pcb.kicad_pro` **Netclass profiles:** `instrument-taps`, `hv-power-24v` **Datum:** aux axis origin at KiCad (150, 95) mm **Placements:** 7; **board sheets:** 3; **nets:** 28; **open ports:** 3  
 
 ### Placements
 
 | Instance | Block | Parent sheet | Anchor (mm) | Rotation | Side | Sheet pins | Note |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `blackfly_s_gpio_channel_mcv6_vertical` | `orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical` | `/` | (-25, -24) | 180 | front | library |  |
-| `logic_input_2ch_5v_schmitt_sn74lvc2g17` | `orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17` | `/inputs` | (-12, 17) | 90 | front | library |  |
+| `blackfly_s_gpio_channel_mcv6_vertical` | `orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` | `/` | (-25, -24) | 180 | front | library |  |
+| `logic_input_2ch_5v_schmitt_sn74lvc2g17` | `orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17` | `/inputs` | (-12, 17) | 90 | front | own |  |
 | `5v_to_3v3_tps73733` | `orb_weaver_private:5v_to_3v3_tps73733` | `/power` | (-40, -15) | 180 | front | library |  |
 | `usb2_vertical` | `orb_weaver_private:usb2_vertical` | `/power` | (-44, -1) | 90 | front | library |  |
 | `instrument_port_digital_50_dut_ffc_boundary_vertical` | `orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical` | `/` | (44, 4) | 270 | front | own |  |
-| `blackfly_s_gpio_channel_mcv6_vertical2` | `orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical` | `/` | (25, -24) | 180 | front | library |  |
-| `blackfly_s_gpio_channel_mcv6_vertical1` | `orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical` | `/` | (0, -24) | 180 | front | library |  |
+| `blackfly_s_gpio_channel_mcv6_vertical2` | `orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` | `/` | (25, -24) | 180 | front | library |  |
+| `blackfly_s_gpio_channel_mcv6_vertical1` | `orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` | `/` | (0, -24) | 180 | front | library |  |
 
 ### Board Sheets
 
@@ -27,156 +29,170 @@ Board-authored wrapper sheets: their hierarchical labels and what each meets in 
 
 | Port | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- |
-| `+3.3V` | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `GND` | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `SYNC_IN` | `SYNC_IN` | `/SYNC_IN` | Default |  |
-| `SYNC_IN_INST` | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  |
-| `TRIG_IN` | `TRIG_IN` | `/TRIG_IN` | Default |  |
-| `TRIG_IN_INST` | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  |
+| `+3.3V` | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `GND` | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `SYNC_IN` | `SYNC_IN` | `/SYNC_IN` | Default | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `SYNC_IN_INST` | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT | DIG1: the conditioned Rsync after the Schmitt (the input block's IN_B_INST) |
+| `TRIG_IN` | `TRIG_IN` | `/TRIG_IN` | Default | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
+| `TRIG_IN_INST` | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT | DIG0: the conditioned trigger after the Schmitt (the input block's IN_A_INST) |
 
 #### `power` in `/` (board-authored sheet, 2 parts)
 
 | Port | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- |
-| `+3.3V` | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `GND` | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
+| `+3.3V` | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `GND` | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
 
 #### `outputs` in `/` (board-authored sheet, 12 parts)
 
 | Port | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- |
-| `+3.3V` | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `CAM1_OUT_BNC` | `CAM1_OUT_BNC` | `/CAM1_OUT_BNC` | Default |  |
-| `CAM2_OUT_BNC` | `CAM2_OUT_BNC` | `/CAM2_OUT_BNC` | Default |  |
-| `CAM3_OUT_BNC` | `CAM3_OUT_BNC` | `/CAM3_OUT_BNC` | Default |  |
-| `GND` | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `SYNC_IN` | `SYNC_IN` | `/SYNC_IN` | Default |  |
-| `SYNC_OUT_INST` | `SYNC_OUT_INST` | `/SYNC_OUT_INST` | INSTRUMENT |  |
+| `+3.3V` | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `CAM1_OUT_BNC` | `CAM1_OUT_BNC` | `/CAM1_OUT_BNC` | Default | Camera 1 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM1 OUT BNC |
+| `CAM2_OUT_BNC` | `CAM2_OUT_BNC` | `/CAM2_OUT_BNC` | Default | Camera 2 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM2 OUT BNC |
+| `CAM3_OUT_BNC` | `CAM3_OUT_BNC` | `/CAM3_OUT_BNC` | Default | Camera 3 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM3 OUT BNC |
+| `GND` | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `SYNC_IN` | `SYNC_IN` | `/SYNC_IN` | Default | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `SYNC_OUT_INST` | `SYNC_OUT_INST` | `/SYNC_OUT_INST` | INSTRUMENT | DIG2: what the SYNC OUT BNC carries, at the driver output before the 470 Ω |
 
 ### Connections
 
 Per placed block: each port, the label it meets in its parent sheet, the net that resolves to and its class.
 
-#### `blackfly_s_gpio_channel_mcv6_vertical` (`orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical` in `/`)
+#### `blackfly_s_gpio_channel_mcv6_vertical` (`orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` in `/`)
+
+One FLIR Blackfly S camera GPIO channel (trigger, sync, exposure output, instrument taps) on a 6-position 3.5 mm Phoenix header; the connector family pilot: the vertical MCV and the horizontal MC header are pad-identical, so one source publishes both orientations (lifecycle `routed`; family blackfly_s_gpio_channel `mcv6_vertical` (gpio))
 
 | Port | Shape | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `CAM_OUT_BNC` | output | `CAM1_OUT_BNC` | `/CAM1_OUT_BNC` | Default |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `L0_INST` | output | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT |  |
-| `L1_INST` | output | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT |  |
-| `L2_INST` | output | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT |  |
-| `L3_INST` | output | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT |  |
-| `OUT_INST` | output | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT |  |
-| `SYNC_IN` | input | `SYNC_IN` | `/SYNC_IN` | Default |  |
-| `TRIG_IN` | input | `TRIG_IN` | `/TRIG_IN` | Default |  |
+| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `CAM_OUT_BNC` | output | `CAM1_OUT_BNC` | `/CAM1_OUT_BNC` | Default | Camera 1 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM1 OUT BNC |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `L0_INST` | output | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT | DIG3: camera 1 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `L1_INST` | output | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT | DIG4: camera 1 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `L2_INST` | output | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT | DIG5: camera 1 Line 2 raw open-drain node (ExposureActive) |
+| `L3_INST` | output | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT | DIG6: camera 1 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `OUT_INST` | output | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT | DIG7: what the CAM1 OUT BNC carries |
+| `SYNC_IN` | input | `SYNC_IN` | `/SYNC_IN` | Default | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `TRIG_IN` | input | `TRIG_IN` | `/TRIG_IN` | Default | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
 
 #### `logic_input_2ch_5v_schmitt_sn74lvc2g17` (`orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17` in `/inputs`)
 
+Two-channel single-ended logic input conditioner: per-channel series/RC filtering plus an SN74LVC2G17 dual Schmitt-trigger buffer that turns a 3.3 V or 5 V field-wired logic signal into clean 3.3 V logic, with a 100 ohm InstrumentPort tap on each output. (lifecycle `routed`)
+
 | Port | Shape | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `IN_A` | output | `TRIG_IN` | `/TRIG_IN` | Default |  |
-| `IN_A_INST` | output | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  |
-| `IN_A_RAW` | input | `TRIG_RAW` | `/inputs/TRIG_RAW` | Default |  |
-| `IN_B` | output | `SYNC_IN` | `/SYNC_IN` | Default |  |
-| `IN_B_INST` | output | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  |
-| `IN_B_RAW` | input | `SYNC_RAW` | `/inputs/SYNC_RAW` | Default |  |
+| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `IN_A` | output | `TRIG_IN` | `/TRIG_IN` | Default | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
+| `IN_A_INST` | output | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT | DIG0: the conditioned trigger after the Schmitt (the input block's IN_A_INST) |
+| `IN_A_RAW` | input | `TRIG_RAW` | `/inputs/TRIG_RAW` | Default | The TRIG IN jack to the ESD clamp and the input block's IN_A_RAW |
+| `IN_B` | output | `SYNC_IN` | `/SYNC_IN` | Default | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `IN_B_INST` | output | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT | DIG1: the conditioned Rsync after the Schmitt (the input block's IN_B_INST) |
+| `IN_B_RAW` | input | `SYNC_RAW` | `/inputs/SYNC_RAW` | Default | The SYNC IN jack to the ESD clamp and the input block's IN_B_RAW |
 
 #### `5v_to_3v3_tps73733` (`orb_weaver_private:5v_to_3v3_tps73733` in `/power`)
 
+Clean 3.3 V linear regulator from a 5 V input rail using the TI TPS73733 fixed 3.3 V 1 A LDO. (lifecycle `routed`)
+
 | Port | Shape | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
+| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
 
 #### `usb2_vertical` (`orb_weaver_private:usb2_vertical` in `/power`)
 
+USB-C USB2 device-port front end on a VERTICAL, top-entry receptacle: GCT USB4145-03-0070-C, OW-CONN-USB-C-USB2-SMD-VERT, 16P USB2-only, SMT contacts plus four through-hole shell legs, 7.46 mm tall. (lifecycle `routed`)
+
 | Port | Shape | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- | --- |
-| `+5V_USB` | passive | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `USB_D+` | bidirectional | open: no-connect flag |  |  |  |
-| `USB_D-` | bidirectional | open: no-connect flag |  |  |  |
-| `VBUS` | passive | open: no-connect flag |  |  |  |
+| `+5V_USB` | passive | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `USB_D+` | bidirectional | open: no-connect flag |  |  | USB 2.0 D+, J31001 A6 and B6, after the U31001 clamp; USB_HS pair with USB_D-. |
+| `USB_D-` | bidirectional | open: no-connect flag |  |  | USB 2.0 D-, J31001 A7 and B7, after the U31001 clamp; USB_HS pair with USB_D+. |
+| `VBUS` | passive | open: no-connect flag |  |  | Raw bus 5 V, J31001 A4, A9, B4, B9; bypassed by C31001, the clamp's reference. |
 
 #### `instrument_port_digital_50_dut_ffc_boundary_vertical` (`orb_weaver_private:instrument_port_digital_50_dut_ffc_boundary_vertical` in `/`)
 
-| Port | Shape | Wired to | Net | Class | Meaning |
-| --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `DIG0` | input | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  |
-| `DIG1` | input | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  |
-| `DIG2` | input | `SYNC_OUT_INST` | `/SYNC_OUT_INST` | INSTRUMENT |  |
-| `DIG3` | input | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT |  |
-| `DIG4` | input | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT |  |
-| `DIG5` | input | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT |  |
-| `DIG6` | input | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT |  |
-| `DIG7` | input | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT |  |
-| `DIG8` | input | `CAM2_L0_INST` | `/CAM2_L0_INST` | INSTRUMENT |  |
-| `DIG9` | input | `CAM2_L1_INST` | `/CAM2_L1_INST` | INSTRUMENT |  |
-| `DIG10` | input | `CAM2_L2_INST` | `/CAM2_L2_INST` | INSTRUMENT |  |
-| `DIG11` | input | `CAM2_L3_INST` | `/CAM2_L3_INST` | INSTRUMENT |  |
-| `DIG12` | input | `CAM2_OUT_INST` | `/CAM2_OUT_INST` | INSTRUMENT |  |
-| `DIG13` | input | `CAM3_L0_INST` | `/CAM3_L0_INST` | INSTRUMENT |  |
-| `DIG14` | input | `CAM3_L1_INST` | `/CAM3_L1_INST` | INSTRUMENT |  |
-| `DIG15` | input | `CAM3_L2_INST` | `/CAM3_L2_INST` | INSTRUMENT |  |
-| `DIG16` | input | `CAM3_L3_INST` | `/CAM3_L3_INST` | INSTRUMENT |  |
-| `DIG17` | input | `CAM3_OUT_INST` | `/CAM3_OUT_INST` | INSTRUMENT |  |
-| `DIG18` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG19` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG20` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG21` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG22` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG23` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG24` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG25` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG26` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG27` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG28` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG29` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG30` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `DIG31` | input | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-
-#### `blackfly_s_gpio_channel_mcv6_vertical2` (`orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical` in `/`)
+DUT-side InstrumentPort-Digital-50 with integrated read-only buffering, on a VERTICAL, top-entry 50-contact ZIF connector: Hirose FH12-50S-0.5SVA(54), OW-CONN-FH12-50S-0-5SVA-54, LCSC C597991, 0.5mm pitch, symbol Conn_01x50, footprint orb_weaver_connectors:Hirose_FH12-50S-0.5SVA_1x50-4MP_P0.5mm_Vertical; the four mechanical lands are unnumbered pads and carry no net. (lifecycle `routed`)
 
 | Port | Shape | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `CAM_OUT_BNC` | output | `CAM3_OUT_BNC` | `/CAM3_OUT_BNC` | Default |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `L0_INST` | output | `CAM3_L0_INST` | `/CAM3_L0_INST` | INSTRUMENT |  |
-| `L1_INST` | output | `CAM3_L1_INST` | `/CAM3_L1_INST` | INSTRUMENT |  |
-| `L2_INST` | output | `CAM3_L2_INST` | `/CAM3_L2_INST` | INSTRUMENT |  |
-| `L3_INST` | output | `CAM3_L3_INST` | `/CAM3_L3_INST` | INSTRUMENT |  |
-| `OUT_INST` | output | `CAM3_OUT_INST` | `/CAM3_OUT_INST` | INSTRUMENT |  |
-| `SYNC_IN` | input | `SYNC_IN` | `/SYNC_IN` | Default |  |
-| `TRIG_IN` | input | `TRIG_IN` | `/TRIG_IN` | Default |  |
+| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `DIG0` | input | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT | DIG0: the conditioned trigger after the Schmitt (the input block's IN_A_INST) |
+| `DIG1` | input | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT | DIG1: the conditioned Rsync after the Schmitt (the input block's IN_B_INST) |
+| `DIG2` | input | `SYNC_OUT_INST` | `/SYNC_OUT_INST` | INSTRUMENT | DIG2: what the SYNC OUT BNC carries, at the driver output before the 470 Ω |
+| `DIG3` | input | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT | DIG3: camera 1 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `DIG4` | input | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT | DIG4: camera 1 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `DIG5` | input | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT | DIG5: camera 1 Line 2 raw open-drain node (ExposureActive) |
+| `DIG6` | input | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT | DIG6: camera 1 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `DIG7` | input | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT | DIG7: what the CAM1 OUT BNC carries |
+| `DIG8` | input | `CAM2_L0_INST` | `/CAM2_L0_INST` | INSTRUMENT | DIG8: camera 2 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `DIG9` | input | `CAM2_L1_INST` | `/CAM2_L1_INST` | INSTRUMENT | DIG9: camera 2 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `DIG10` | input | `CAM2_L2_INST` | `/CAM2_L2_INST` | INSTRUMENT | DIG10: camera 2 Line 2 raw open-drain node (ExposureActive) |
+| `DIG11` | input | `CAM2_L3_INST` | `/CAM2_L3_INST` | INSTRUMENT | DIG11: camera 2 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `DIG12` | input | `CAM2_OUT_INST` | `/CAM2_OUT_INST` | INSTRUMENT | DIG12: what the CAM2 OUT BNC carries |
+| `DIG13` | input | `CAM3_L0_INST` | `/CAM3_L0_INST` | INSTRUMENT | DIG13: camera 3 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `DIG14` | input | `CAM3_L1_INST` | `/CAM3_L1_INST` | INSTRUMENT | DIG14: camera 3 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `DIG15` | input | `CAM3_L2_INST` | `/CAM3_L2_INST` | INSTRUMENT | DIG15: camera 3 Line 2 raw open-drain node (ExposureActive) |
+| `DIG16` | input | `CAM3_L3_INST` | `/CAM3_L3_INST` | INSTRUMENT | DIG16: camera 3 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `DIG17` | input | `CAM3_OUT_INST` | `/CAM3_OUT_INST` | INSTRUMENT | DIG17: what the CAM3 OUT BNC carries |
+| `DIG18` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG19` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG20` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG21` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG22` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG23` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG24` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG25` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG26` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG27` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG28` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG29` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG30` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG31` | input | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
 
-#### `blackfly_s_gpio_channel_mcv6_vertical1` (`orb_weaver_private:blackfly_s_gpio_channel_mcv6_vertical` in `/`)
+#### `blackfly_s_gpio_channel_mcv6_vertical2` (`orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` in `/`)
+
+One FLIR Blackfly S camera GPIO channel (trigger, sync, exposure output, instrument taps) on a 6-position 3.5 mm Phoenix header; the connector family pilot: the vertical MCV and the horizontal MC header are pad-identical, so one source publishes both orientations (lifecycle `routed`; family blackfly_s_gpio_channel `mcv6_vertical` (gpio))
 
 | Port | Shape | Wired to | Net | Class | Meaning |
 | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  |
-| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW |  |
-| `CAM_OUT_BNC` | output | `CAM2_OUT_BNC` | `/CAM2_OUT_BNC` | Default |  |
-| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL |  |
-| `L0_INST` | output | `CAM2_L0_INST` | `/CAM2_L0_INST` | INSTRUMENT |  |
-| `L1_INST` | output | `CAM2_L1_INST` | `/CAM2_L1_INST` | INSTRUMENT |  |
-| `L2_INST` | output | `CAM2_L2_INST` | `/CAM2_L2_INST` | INSTRUMENT |  |
-| `L3_INST` | output | `CAM2_L3_INST` | `/CAM2_L3_INST` | INSTRUMENT |  |
-| `OUT_INST` | output | `CAM2_OUT_INST` | `/CAM2_OUT_INST` | INSTRUMENT |  |
-| `SYNC_IN` | input | `SYNC_IN` | `/SYNC_IN` | Default |  |
-| `TRIG_IN` | input | `TRIG_IN` | `/TRIG_IN` | Default |  |
+| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `CAM_OUT_BNC` | output | `CAM3_OUT_BNC` | `/CAM3_OUT_BNC` | Default | Camera 3 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM3 OUT BNC |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `L0_INST` | output | `CAM3_L0_INST` | `/CAM3_L0_INST` | INSTRUMENT | DIG13: camera 3 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `L1_INST` | output | `CAM3_L1_INST` | `/CAM3_L1_INST` | INSTRUMENT | DIG14: camera 3 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `L2_INST` | output | `CAM3_L2_INST` | `/CAM3_L2_INST` | INSTRUMENT | DIG15: camera 3 Line 2 raw open-drain node (ExposureActive) |
+| `L3_INST` | output | `CAM3_L3_INST` | `/CAM3_L3_INST` | INSTRUMENT | DIG16: camera 3 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `OUT_INST` | output | `CAM3_OUT_INST` | `/CAM3_OUT_INST` | INSTRUMENT | DIG17: what the CAM3 OUT BNC carries |
+| `SYNC_IN` | input | `SYNC_IN` | `/SYNC_IN` | Default | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `TRIG_IN` | input | `TRIG_IN` | `/TRIG_IN` | Default | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
+
+#### `blackfly_s_gpio_channel_mcv6_vertical1` (`orb_weaver_blackfly_s_gpio_channel:blackfly_s_gpio_channel_mcv6_vertical` in `/`)
+
+One FLIR Blackfly S camera GPIO channel (trigger, sync, exposure output, instrument taps) on a 6-position 3.5 mm Phoenix header; the connector family pilot: the vertical MCV and the horizontal MC header are pad-identical, so one source publishes both orientations (lifecycle `routed`; family blackfly_s_gpio_channel `mcv6_vertical` (gpio))
+
+| Port | Shape | Wired to | Net | Class | Meaning |
+| --- | --- | --- | --- | --- | --- |
+| `+3.3V` | passive | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | passive | `+5V` | `/+5V` | PWR_5V_NARROW | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `CAM_OUT_BNC` | output | `CAM2_OUT_BNC` | `/CAM2_OUT_BNC` | Default | Camera 2 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM2 OUT BNC |
+| `GND` | passive | `GND` | `/GND` | PWR_RETURN_LOCAL | Board ground; every BNC shell and camera pins 5 and 6 |
+| `L0_INST` | output | `CAM2_L0_INST` | `/CAM2_L0_INST` | INSTRUMENT | DIG8: camera 2 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `L1_INST` | output | `CAM2_L1_INST` | `/CAM2_L1_INST` | INSTRUMENT | DIG9: camera 2 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `L2_INST` | output | `CAM2_L2_INST` | `/CAM2_L2_INST` | INSTRUMENT | DIG10: camera 2 Line 2 raw open-drain node (ExposureActive) |
+| `L3_INST` | output | `CAM2_L3_INST` | `/CAM2_L3_INST` | INSTRUMENT | DIG11: camera 2 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `OUT_INST` | output | `CAM2_OUT_INST` | `/CAM2_OUT_INST` | INSTRUMENT | DIG12: what the CAM2 OUT BNC carries |
+| `SYNC_IN` | input | `SYNC_IN` | `/SYNC_IN` | Default | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `TRIG_IN` | input | `TRIG_IN` | `/TRIG_IN` | Default | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
 
 ### Nets
 
@@ -184,34 +200,34 @@ Every net a block port or a board sheet's port reaches, by its qualified name.
 
 | Net | Class | GPIO | Ports | Meaning |
 | --- | --- | --- | --- | --- |
-| `/+3.3V` | PWR_3V3_NARROW |  | `inputs (sheet)/+3.3V`, `power (sheet)/+3.3V`, `outputs (sheet)/+3.3V`, `blackfly_s_gpio_channel_mcv6_vertical/+3.3V`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/+3.3V`, `5v_to_3v3_tps73733/+3.3V`, `instrument_port_digital_50_dut_ffc_boundary_vertical/+3.3V`, `blackfly_s_gpio_channel_mcv6_vertical2/+3.3V`, `blackfly_s_gpio_channel_mcv6_vertical1/+3.3V` |  |
-| `/+5V` | PWR_5V_NARROW |  | `inputs (sheet)/+5V`, `power (sheet)/+5V`, `outputs (sheet)/+5V`, `blackfly_s_gpio_channel_mcv6_vertical/+5V`, `5v_to_3v3_tps73733/+5V`, `usb2_vertical/+5V_USB`, `blackfly_s_gpio_channel_mcv6_vertical2/+5V`, `blackfly_s_gpio_channel_mcv6_vertical1/+5V` |  |
-| `/CAM1_L0_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L0_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3` |  |
-| `/CAM1_L1_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L1_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4` |  |
-| `/CAM1_L2_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L2_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5` |  |
-| `/CAM1_L3_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L3_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6` |  |
-| `/CAM1_OUT_BNC` | Default |  | `outputs (sheet)/CAM1_OUT_BNC`, `blackfly_s_gpio_channel_mcv6_vertical/CAM_OUT_BNC` |  |
-| `/CAM1_OUT_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/OUT_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7` |  |
-| `/CAM2_L0_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG8`, `blackfly_s_gpio_channel_mcv6_vertical1/L0_INST` |  |
-| `/CAM2_L1_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9`, `blackfly_s_gpio_channel_mcv6_vertical1/L1_INST` |  |
-| `/CAM2_L2_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG10`, `blackfly_s_gpio_channel_mcv6_vertical1/L2_INST` |  |
-| `/CAM2_L3_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG11`, `blackfly_s_gpio_channel_mcv6_vertical1/L3_INST` |  |
-| `/CAM2_OUT_BNC` | Default |  | `outputs (sheet)/CAM2_OUT_BNC`, `blackfly_s_gpio_channel_mcv6_vertical1/CAM_OUT_BNC` |  |
-| `/CAM2_OUT_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12`, `blackfly_s_gpio_channel_mcv6_vertical1/OUT_INST` |  |
-| `/CAM3_L0_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13`, `blackfly_s_gpio_channel_mcv6_vertical2/L0_INST` |  |
-| `/CAM3_L1_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14`, `blackfly_s_gpio_channel_mcv6_vertical2/L1_INST` |  |
-| `/CAM3_L2_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15`, `blackfly_s_gpio_channel_mcv6_vertical2/L2_INST` |  |
-| `/CAM3_L3_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16`, `blackfly_s_gpio_channel_mcv6_vertical2/L3_INST` |  |
-| `/CAM3_OUT_BNC` | Default |  | `outputs (sheet)/CAM3_OUT_BNC`, `blackfly_s_gpio_channel_mcv6_vertical2/CAM_OUT_BNC` |  |
-| `/CAM3_OUT_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG17`, `blackfly_s_gpio_channel_mcv6_vertical2/OUT_INST` |  |
-| `/GND` | PWR_RETURN_LOCAL |  | `inputs (sheet)/GND`, `power (sheet)/GND`, `outputs (sheet)/GND`, `blackfly_s_gpio_channel_mcv6_vertical/GND`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/GND`, `5v_to_3v3_tps73733/GND`, `usb2_vertical/GND`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG26`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG27`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG29`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31`, `instrument_port_digital_50_dut_ffc_boundary_vertical/GND`, `blackfly_s_gpio_channel_mcv6_vertical2/GND`, `blackfly_s_gpio_channel_mcv6_vertical1/GND` |  |
-| `/SYNC_IN` | Default |  | `inputs (sheet)/SYNC_IN`, `outputs (sheet)/SYNC_IN`, `blackfly_s_gpio_channel_mcv6_vertical/SYNC_IN`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_B`, `blackfly_s_gpio_channel_mcv6_vertical2/SYNC_IN`, `blackfly_s_gpio_channel_mcv6_vertical1/SYNC_IN` |  |
-| `/SYNC_IN_INST` | INSTRUMENT |  | `inputs (sheet)/SYNC_IN_INST`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_B_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1` |  |
-| `/SYNC_OUT_INST` | INSTRUMENT |  | `outputs (sheet)/SYNC_OUT_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2` |  |
-| `/TRIG_IN` | Default |  | `inputs (sheet)/TRIG_IN`, `blackfly_s_gpio_channel_mcv6_vertical/TRIG_IN`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_A`, `blackfly_s_gpio_channel_mcv6_vertical2/TRIG_IN`, `blackfly_s_gpio_channel_mcv6_vertical1/TRIG_IN` |  |
-| `/TRIG_IN_INST` | INSTRUMENT |  | `inputs (sheet)/TRIG_IN_INST`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_A_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0` |  |
-| `/inputs/SYNC_RAW` | Default |  | `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_B_RAW` |  |
-| `/inputs/TRIG_RAW` | Default |  | `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_A_RAW` |  |
+| `/+3.3V` | PWR_3V3_NARROW |  | `inputs (sheet)/+3.3V`, `power (sheet)/+3.3V`, `outputs (sheet)/+3.3V`, `blackfly_s_gpio_channel_mcv6_vertical/+3.3V`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/+3.3V`, `5v_to_3v3_tps73733/+3.3V`, `instrument_port_digital_50_dut_ffc_boundary_vertical/+3.3V`, `blackfly_s_gpio_channel_mcv6_vertical2/+3.3V`, `blackfly_s_gpio_channel_mcv6_vertical1/+3.3V` | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `/+5V` | PWR_5V_NARROW |  | `inputs (sheet)/+5V`, `power (sheet)/+5V`, `outputs (sheet)/+5V`, `blackfly_s_gpio_channel_mcv6_vertical/+5V`, `5v_to_3v3_tps73733/+5V`, `usb2_vertical/+5V_USB`, `blackfly_s_gpio_channel_mcv6_vertical2/+5V`, `blackfly_s_gpio_channel_mcv6_vertical1/+5V` | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `/CAM1_L0_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L0_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG3` | DIG3: camera 1 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `/CAM1_L1_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L1_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG4` | DIG4: camera 1 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `/CAM1_L2_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L2_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG5` | DIG5: camera 1 Line 2 raw open-drain node (ExposureActive) |
+| `/CAM1_L3_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/L3_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG6` | DIG6: camera 1 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `/CAM1_OUT_BNC` | Default |  | `outputs (sheet)/CAM1_OUT_BNC`, `blackfly_s_gpio_channel_mcv6_vertical/CAM_OUT_BNC` | Camera 1 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM1 OUT BNC |
+| `/CAM1_OUT_INST` | INSTRUMENT |  | `blackfly_s_gpio_channel_mcv6_vertical/OUT_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG7` | DIG7: what the CAM1 OUT BNC carries |
+| `/CAM2_L0_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG8`, `blackfly_s_gpio_channel_mcv6_vertical1/L0_INST` | DIG8: camera 2 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `/CAM2_L1_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG9`, `blackfly_s_gpio_channel_mcv6_vertical1/L1_INST` | DIG9: camera 2 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `/CAM2_L2_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG10`, `blackfly_s_gpio_channel_mcv6_vertical1/L2_INST` | DIG10: camera 2 Line 2 raw open-drain node (ExposureActive) |
+| `/CAM2_L3_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG11`, `blackfly_s_gpio_channel_mcv6_vertical1/L3_INST` | DIG11: camera 2 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `/CAM2_OUT_BNC` | Default |  | `outputs (sheet)/CAM2_OUT_BNC`, `blackfly_s_gpio_channel_mcv6_vertical1/CAM_OUT_BNC` | Camera 2 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM2 OUT BNC |
+| `/CAM2_OUT_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG12`, `blackfly_s_gpio_channel_mcv6_vertical1/OUT_INST` | DIG12: what the CAM2 OUT BNC carries |
+| `/CAM3_L0_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG13`, `blackfly_s_gpio_channel_mcv6_vertical2/L0_INST` | DIG13: camera 3 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `/CAM3_L1_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG14`, `blackfly_s_gpio_channel_mcv6_vertical2/L1_INST` | DIG14: camera 3 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `/CAM3_L2_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG15`, `blackfly_s_gpio_channel_mcv6_vertical2/L2_INST` | DIG15: camera 3 Line 2 raw open-drain node (ExposureActive) |
+| `/CAM3_L3_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG16`, `blackfly_s_gpio_channel_mcv6_vertical2/L3_INST` | DIG16: camera 3 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `/CAM3_OUT_BNC` | Default |  | `outputs (sheet)/CAM3_OUT_BNC`, `blackfly_s_gpio_channel_mcv6_vertical2/CAM_OUT_BNC` | Camera 3 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM3 OUT BNC |
+| `/CAM3_OUT_INST` | INSTRUMENT |  | `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG17`, `blackfly_s_gpio_channel_mcv6_vertical2/OUT_INST` | DIG17: what the CAM3 OUT BNC carries |
+| `/GND` | PWR_RETURN_LOCAL |  | `inputs (sheet)/GND`, `power (sheet)/GND`, `outputs (sheet)/GND`, `blackfly_s_gpio_channel_mcv6_vertical/GND`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/GND`, `5v_to_3v3_tps73733/GND`, `usb2_vertical/GND`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG18`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG19`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG20`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG21`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG22`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG23`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG24`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG25`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG26`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG27`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG28`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG29`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG30`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG31`, `instrument_port_digital_50_dut_ffc_boundary_vertical/GND`, `blackfly_s_gpio_channel_mcv6_vertical2/GND`, `blackfly_s_gpio_channel_mcv6_vertical1/GND` | Board ground; every BNC shell and camera pins 5 and 6 |
+| `/SYNC_IN` | Default |  | `inputs (sheet)/SYNC_IN`, `outputs (sheet)/SYNC_IN`, `blackfly_s_gpio_channel_mcv6_vertical/SYNC_IN`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_B`, `blackfly_s_gpio_channel_mcv6_vertical2/SYNC_IN`, `blackfly_s_gpio_channel_mcv6_vertical1/SYNC_IN` | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `/SYNC_IN_INST` | INSTRUMENT |  | `inputs (sheet)/SYNC_IN_INST`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_B_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG1` | DIG1: the conditioned Rsync after the Schmitt (the input block's IN_B_INST) |
+| `/SYNC_OUT_INST` | INSTRUMENT |  | `outputs (sheet)/SYNC_OUT_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG2` | DIG2: what the SYNC OUT BNC carries, at the driver output before the 470 Ω |
+| `/TRIG_IN` | Default |  | `inputs (sheet)/TRIG_IN`, `blackfly_s_gpio_channel_mcv6_vertical/TRIG_IN`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_A`, `blackfly_s_gpio_channel_mcv6_vertical2/TRIG_IN`, `blackfly_s_gpio_channel_mcv6_vertical1/TRIG_IN` | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
+| `/TRIG_IN_INST` | INSTRUMENT |  | `inputs (sheet)/TRIG_IN_INST`, `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_A_INST`, `instrument_port_digital_50_dut_ffc_boundary_vertical/DIG0` | DIG0: the conditioned trigger after the Schmitt (the input block's IN_A_INST) |
+| `/inputs/SYNC_RAW` | Default |  | `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_B_RAW` | The SYNC IN jack to the ESD clamp and the input block's IN_B_RAW |
+| `/inputs/TRIG_RAW` | Default |  | `logic_input_2ch_5v_schmitt_sn74lvc2g17/IN_A_RAW` | The TRIG IN jack to the ESD clamp and the input block's IN_A_RAW |
 
 ### Open Ports
 

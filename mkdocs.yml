@@ -67,9 +67,8 @@ nav:
   - The board: index.md
   - Documentation: generated/README.md
   - Design blocks: generated/blocks/README.md
-  # No subsystem pages and no MCU pin table: the board has no board source
-  # (kicad/board.yaml) and no MCU. Add "Subsystems: generated/subsystems/README.md"
-  # when `make docs` writes them.
+  - Subsystems: generated/subsystems/README.md
+  # No MCU pin table: the board has no MCU.
   - Interfaces:
       - Interface map: interface-map.md
   - Design:
@@ -88,3 +87,4 @@ nav:
 not_in_nav: |
   generated/board-view.md
   generated/blocks/*.md
+  generated/subsystems/*.md

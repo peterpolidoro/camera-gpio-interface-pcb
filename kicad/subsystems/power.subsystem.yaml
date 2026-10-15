@@ -1,0 +1,78 @@
+schema: orb-weaver/subsystem/1
+name: power
+summary: 'USB power: the usb2_vertical block makes +5V from the USB-C receptacle''s VBUS through its Schottky (the USB2 data
+  pair is unused, the board has no MCU), and the 5v_to_3v3_tps73733 block makes +3.3V, the board''s only logic rail, always
+  on by construction as the InstrumentPort block requires; a power LED on +3.3V.'
+source:
+  board: camera-gpio-interface-pcb
+  sheet: power.kicad_sch
+  derived: '2026-10-15'
+ports:
+- name: +3.3V
+  shape: passive
+  shared: true
+- name: +5V
+  shape: passive
+  shared: true
+- name: GND
+  shape: passive
+  shared: true
+blocks:
+- role: 5v_to_3v3_tps73733
+  block: orb_weaver_private:5v_to_3v3_tps73733
+  connections:
+    +3.3V: +3.3V
+    +5V: +5V
+    GND: GND
+- role: usb2_vertical
+  block: orb_weaver_private:usb2_vertical
+  connections:
+    +5V_USB: +5V
+    GND: GND
+    USB_D+:
+      open: no-connect flag
+    USB_D-:
+      open: no-connect flag
+    VBUS:
+      open: no-connect flag
+glue:
+  parts:
+  - part: OW-MISC-APHHS1005CGCK
+    references:
+    - D201
+    value: APHHS1005CGCK
+    role: power LED on +3.3V
+  - part: OW-PASS-RC0402FR-07680RL
+    references:
+    - R201
+    value: '680'
+    role: power LED series resistor, about 1.8 mA
+  nets:
+  - name: +3.3V
+    kind: port
+    pins:
+    - R201.1
+    meaning: the logic rail, from the LDO block; the LED hangs on it
+  - name: GND
+    kind: port
+    pins:
+    - D201.1
+    meaning: the LED cathode
+  - kind: wire
+    pins:
+    - D201.2
+    - R201.2
+    meaning: the power LED's anode node
+  power_flags:
+  - +5V
+  - GND
+notes:
+- +5V is used only for the three camera channels' Line 0 pull-ups (820 Ω to about 4.7 V, FLIR's 5 V / 1 kΩ opto drive) and
+  as the VBUS reference of every ESD array (nine on the board). The budget is well under 100 mA (five LV541A, four LVC2G17,
+  four LVC1G125, three LVC1G07, seven LEDs, pull-ups), so any USB port or wall adapter works; nothing reads the CC advertisement.
+- 'The USB block''s USB_D+, USB_D- and VBUS ports carry no-connect flags: the data pair is unused, and the board picks the
+  rail up after the diode-OR Schottky as +5V_USB, named +5V here (the block''s port name; the PWR_5V patterns match it).'
+- D201 through R201 (680 Ω) is the power LED on +3.3V. +5V and GND carry PWR_FLAG in this sheet because no power-output pin
+  drives them here.
+- 'Not chosen: 3.3 V from a camera''s VOUT, which would force Line 2 back to VOUT, push the frame output onto the 36 µs opto
+  line and make the board depend on which camera is plugged in.'

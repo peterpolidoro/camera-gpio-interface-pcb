@@ -1,0 +1,171 @@
+schema: orb-weaver/subsystem/1
+name: outputs
+summary: 'The four 3.3 V BNC outputs to the Neuropixels OneBox: SYNC OUT from its own SN74LVC1G125 driver on SYNC_IN through
+  470 Ω, and the three CAMn OUT lines the camera channels drive through their own 470 Ω; two USBLC6 clamps across the four
+  jacks, referenced to +5V; an activity LED and the InstrumentPort tap on SYNC OUT.'
+source:
+  board: camera-gpio-interface-pcb
+  sheet: outputs.kicad_sch
+  derived: '2026-10-15'
+ports:
+- name: +3.3V
+  shape: passive
+  shared: true
+- name: +5V
+  shape: passive
+  shared: true
+- name: CAM1_OUT_BNC
+  shape: input
+- name: CAM2_OUT_BNC
+  shape: input
+- name: CAM3_OUT_BNC
+  shape: input
+- name: GND
+  shape: passive
+  shared: true
+- name: SYNC_IN
+  shape: input
+- name: SYNC_OUT_INST
+  shape: input
+blocks: []
+glue:
+  parts:
+  - part: OW-CAP-100N-0402-X5R-16V
+    references:
+    - C401
+    value: 100nF
+    role: U401 decoupling
+  - part: OW-MISC-APHHS1005CGCK
+    references:
+    - D401
+    value: APHHS1005CGCK
+    role: SYNC OUT activity LED
+  - part: OW-CONN-HL-BNC-KHDA
+    references:
+    - J401
+    - J402
+    - J403
+    - J404
+    value: HL-BNC-KHDA
+    role: 'the output BNC jacks: J401 SYNC OUT, J402 CAM1 OUT, J403 CAM2 OUT, J404 CAM3 OUT'
+  - part: OW-PASS-RC0402FR-07680RL
+    references:
+    - R401
+    value: '680'
+    role: LED series resistor, about 1.8 mA
+  - part: OW-PASS-0603WAF4700T5E
+    references:
+    - R402
+    value: '470'
+    role: SYNC OUT series resistor into the coax, 470 Ω 1/10 W
+  - part: OW-PASS-0402WGF1000TCE
+    references:
+    - R403
+    value: '100'
+    role: InstrumentPort tap on SYNC_OUT, 100 Ω
+  - part: OW-MISC-SN74LVC1G125DRYR
+    references:
+    - U401
+    value: SN74LVC1G125DRYR
+    role: SYNC OUT driver, ~OE grounded, input SYNC_IN
+  - part: OW-MISC-USBLC6-2P6
+    references:
+    - U402
+    - U403
+    value: USBLC6-2P6
+    role: ESD clamps across the four output jacks (U402 CAM1 with CAM2, U403 CAM3 with SYNC OUT), VBUS on +5V
+  nets:
+  - name: +3.3V
+    kind: port
+    pins:
+    - C401.1
+    - U401.6
+    meaning: U401's supply
+  - name: +5V
+    kind: port
+    pins:
+    - U402.5
+    - U403.5
+    meaning: the clamps' reference
+  - name: CAM1_OUT_BNC
+    kind: port
+    pins:
+    - J402.1
+    - U402.1
+    - U402.6
+    meaning: camera 1 ExposureActive, 3.3 V behind the block's 470 Ω, to J402
+  - name: CAM2_OUT_BNC
+    kind: port
+    pins:
+    - J403.1
+    - U402.3
+    - U402.4
+    meaning: camera 2 ExposureActive, 3.3 V behind the block's 470 Ω, to J403
+  - name: CAM3_OUT_BNC
+    kind: port
+    pins:
+    - J404.1
+    - U403.1
+    - U403.6
+    meaning: camera 3 ExposureActive, 3.3 V behind the block's 470 Ω, to J404
+  - name: GND
+    kind: port
+    pins:
+    - C401.2
+    - D401.1
+    - J401.2
+    - J402.2
+    - J403.2
+    - J404.2
+    - U401.1
+    - U401.3
+    - U402.2
+    - U403.2
+    meaning: jack shells, the clamps' and the driver's return, the LED cathode
+  - name: SYNC_IN
+    kind: port
+    pins:
+    - U401.2
+    meaning: conditioned Rsync from the inputs sheet, U401's input
+  - name: SYNC_OUT_INST
+    kind: port
+    pins:
+    - R403.2
+    meaning: 'DIG2: the tap of SYNC_OUT'
+  - name: SYNC_OUT
+    kind: label
+    pins:
+    - R401.1
+    - R402.1
+    - R403.1
+    - U401.4
+    meaning: U401's output, the Rsync copy before the 470 Ω; the LED and the tap hang on it
+  - name: SYNC_OUT_BNC
+    kind: label
+    pins:
+    - J401.1
+    - R402.2
+    - U403.3
+    - U403.4
+    meaning: SYNC OUT to the OneBox IO0 at J401
+  - kind: wire
+    pins:
+    - D401.2
+    - R401.2
+    meaning: the SYNC OUT LED's anode node
+  open_pins:
+  - U401.5
+notes:
+- 'Fixed at 3.3 V: the OneBox ADC inputs are high impedance with a ±5 V range, and anything fed back into a pyControl BNC
+  must stay under that board''s 3.3 V clamps. 470 Ω (0603, 1/10 W) rather than 50 Ω: a shorted BNC costs 7 mA, and a OneBox
+  DAC left switched in on the shared pin holds the node at the clamp (about −0.8 V or +5.5 V) for 12 mA through the driver
+  and 64 mW in the resistor, inside both ratings. Into a ~1 MΩ ADC input the resistor costs 0.05 % of amplitude and about
+  140 ns of edge.'
+- 'U401 (SN74LVC1G125, ~OE to ground) drives SYNC_OUT from SYNC_IN, a driver of its own so a fault on the OneBox cable cannot
+  disturb the three camera drivers that share SYNC_IN; R402 (470 Ω) makes SYNC_OUT_BNC at J401. The CAMn_OUT_BNC nets arrive
+  from the camera blocks already behind their 470 Ω and meet only their jacks and the clamps here: J402 CAM1, J403 CAM2, J404
+  CAM3.'
+- 'USBLC6-2P6 is a two-line array (pins 1/6 one node, 3/4 the other): U402 pairs CAM1 OUT with CAM2 OUT and U403 CAM3 OUT
+  with SYNC OUT, VBUS on +5V. C401 decouples U401; U401 pin 5 is the package''s NC pin, left open.'
+- D401 through R401 (680 Ω) shows activity on SYNC_OUT. R403 (100 Ω) taps SYNC_OUT to SYNC_OUT_INST (DIG2) at the driver output
+  before the 470 Ω, so the InstrumentPort sees what the BNC carries.

@@ -1,0 +1,216 @@
+logic_input_2ch_5v_schmitt_sn74lvc2g17:
+  size_mm: [25.4, 15.24]
+  pins:
+    +3.3V:
+      edge: west
+      offset_mm: 2.54
+      angle: 180
+      shape: passive
+    GND:
+      edge: west
+      offset_mm: 5.08
+      angle: 180
+      shape: passive
+    IN_A_RAW:
+      edge: west
+      offset_mm: 10.16
+      angle: 180
+      shape: input
+    IN_B_RAW:
+      edge: west
+      offset_mm: 12.7
+      angle: 180
+      shape: input
+    IN_A:
+      edge: east
+      offset_mm: 2.54
+      angle: 0
+      shape: output
+    IN_B:
+      edge: east
+      offset_mm: 5.08
+      angle: 0
+      shape: output
+    IN_A_INST:
+      edge: east
+      offset_mm: 10.16
+      angle: 0
+      shape: output
+    IN_B_INST:
+      edge: east
+      offset_mm: 12.7
+      angle: 0
+      shape: output
+instrument_port_digital_50_dut_ffc_boundary_vertical:
+  size_mm: [25.4, 91.44]
+  pins:
+    +3.3V:
+      edge: west
+      offset_mm: 2.54
+      angle: 180
+      shape: passive
+    GND:
+      edge: west
+      offset_mm: 5.08
+      angle: 180
+      shape: passive
+    DIG0:
+      edge: west
+      offset_mm: 10.16
+      angle: 180
+      shape: input
+    DIG1:
+      edge: west
+      offset_mm: 12.7
+      angle: 180
+      shape: input
+    DIG2:
+      edge: west
+      offset_mm: 15.24
+      angle: 180
+      shape: input
+    DIG3:
+      edge: west
+      offset_mm: 17.78
+      angle: 180
+      shape: input
+    DIG4:
+      edge: west
+      offset_mm: 20.32
+      angle: 180
+      shape: input
+    DIG5:
+      edge: west
+      offset_mm: 22.86
+      angle: 180
+      shape: input
+    DIG6:
+      edge: west
+      offset_mm: 25.4
+      angle: 180
+      shape: input
+    DIG7:
+      edge: west
+      offset_mm: 27.94
+      angle: 180
+      shape: input
+    DIG8:
+      edge: west
+      offset_mm: 30.48
+      angle: 180
+      shape: input
+    DIG9:
+      edge: west
+      offset_mm: 33.02
+      angle: 180
+      shape: input
+    DIG10:
+      edge: west
+      offset_mm: 35.56
+      angle: 180
+      shape: input
+    DIG11:
+      edge: west
+      offset_mm: 38.1
+      angle: 180
+      shape: input
+    DIG12:
+      edge: west
+      offset_mm: 40.64
+      angle: 180
+      shape: input
+    DIG13:
+      edge: west
+      offset_mm: 43.18
+      angle: 180
+      shape: input
+    DIG14:
+      edge: west
+      offset_mm: 45.72
+      angle: 180
+      shape: input
+    DIG15:
+      edge: west
+      offset_mm: 48.26
+      angle: 180
+      shape: input
+    DIG16:
+      edge: west
+      offset_mm: 50.8
+      angle: 180
+      shape: input
+    DIG17:
+      edge: west
+      offset_mm: 53.34
+      angle: 180
+      shape: input
+    DIG18:
+      edge: west
+      offset_mm: 55.88
+      angle: 180
+      shape: input
+    DIG19:
+      edge: west
+      offset_mm: 58.42
+      angle: 180
+      shape: input
+    DIG20:
+      edge: west
+      offset_mm: 60.96
+      angle: 180
+      shape: input
+    DIG21:
+      edge: west
+      offset_mm: 63.5
+      angle: 180
+      shape: input
+    DIG22:
+      edge: west
+      offset_mm: 66.04
+      angle: 180
+      shape: input
+    DIG23:
+      edge: west
+      offset_mm: 68.58
+      angle: 180
+      shape: input
+    DIG24:
+      edge: west
+      offset_mm: 71.12
+      angle: 180
+      shape: input
+    DIG25:
+      edge: west
+      offset_mm: 73.66
+      angle: 180
+      shape: input
+    DIG26:
+      edge: west
+      offset_mm: 76.2
+      angle: 180
+      shape: input
+    DIG27:
+      edge: west
+      offset_mm: 78.74
+      angle: 180
+      shape: input
+    DIG28:
+      edge: west
+      offset_mm: 81.28
+      angle: 180
+      shape: input
+    DIG29:
+      edge: west
+      offset_mm: 83.82
+      angle: 180
+      shape: input
+    DIG30:
+      edge: west
+      offset_mm: 86.36
+      angle: 180
+      shape: input
+    DIG31:
+      edge: west
+      offset_mm: 88.9
+      angle: 180
+      shape: input

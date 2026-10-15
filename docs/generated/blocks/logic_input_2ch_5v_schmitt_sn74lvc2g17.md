@@ -36,14 +36,14 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 | Port | Shape | Edge | Class | Wired to | Board net | Board class | GPIO | Meaning | On this board |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | west | PWR_3V3_LOCAL | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  | Buffer supply (VCC, pin 5), 1.65 to 5.5 V; always-on when the taps must be observable before firmware runs, switched when the consumer of IN_A/IN_B powers down with it (Ioff keeps the unpowered outputs off the bus). |  |
-| `GND` | passive | west | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Return for the buffer (pin 2), both filter capacitors and the four pull-downs. |  |
-| `IN_A` | output | east | Default | `TRIG_IN` | `/TRIG_IN` | Default |  | Conditioned channel A, 3.3 V logic from 1Y (pin 6); pulled down by R41005 when the rail is off. |  |
-| `IN_A_INST` | output | east | INSTRUMENT | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  | Instrument tap of IN_A through R41007 (100 ohm), INSTRUMENT class. |  |
-| `IN_A_RAW` | input | west | Default | `TRIG_RAW` | `/inputs/TRIG_RAW` | Default |  | Field-wired channel A input, 0 to 5.5 V legal at any VCC; pulled low by R41001 (100 k) when unplugged. |  |
-| `IN_B` | output | east | Default | `SYNC_IN` | `/SYNC_IN` | Default |  | Conditioned channel B, 3.3 V logic from 2Y (pin 4); pulled down by R41006 when the rail is off. |  |
-| `IN_B_INST` | output | east | INSTRUMENT | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  | Instrument tap of IN_B through R41008 (100 ohm), INSTRUMENT class. |  |
-| `IN_B_RAW` | input | west | Default | `SYNC_RAW` | `/inputs/SYNC_RAW` | Default |  | Field-wired channel B input, 0 to 5.5 V legal at any VCC; pulled low by R41002 (100 k) when unplugged. |  |
+| `+3.3V` | passive | west | PWR_3V3_LOCAL | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  | Buffer supply (VCC, pin 5), 1.65 to 5.5 V; always-on when the taps must be observable before firmware runs, switched when the consumer of IN_A/IN_B powers down with it (Ioff keeps the unpowered outputs off the bus). | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `GND` | passive | west | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Return for the buffer (pin 2), both filter capacitors and the four pull-downs. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `IN_A` | output | east | Default | `TRIG_IN` | `/TRIG_IN` | Default |  | Conditioned channel A, 3.3 V logic from 1Y (pin 6); pulled down by R41005 when the rail is off. | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
+| `IN_A_INST` | output | east | INSTRUMENT | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  | Instrument tap of IN_A through R41007 (100 ohm), INSTRUMENT class. | DIG0: the conditioned trigger after the Schmitt (the input block's IN_A_INST) |
+| `IN_A_RAW` | input | west | Default | `TRIG_RAW` | `/inputs/TRIG_RAW` | Default |  | Field-wired channel A input, 0 to 5.5 V legal at any VCC; pulled low by R41001 (100 k) when unplugged. | The TRIG IN jack to the ESD clamp and the input block's IN_A_RAW |
+| `IN_B` | output | east | Default | `SYNC_IN` | `/SYNC_IN` | Default |  | Conditioned channel B, 3.3 V logic from 2Y (pin 4); pulled down by R41006 when the rail is off. | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `IN_B_INST` | output | east | INSTRUMENT | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  | Instrument tap of IN_B through R41008 (100 ohm), INSTRUMENT class. | DIG1: the conditioned Rsync after the Schmitt (the input block's IN_B_INST) |
+| `IN_B_RAW` | input | west | Default | `SYNC_RAW` | `/inputs/SYNC_RAW` | Default |  | Field-wired channel B input, 0 to 5.5 V legal at any VCC; pulled low by R41002 (100 k) when unplugged. | The SYNC IN jack to the ESD clamp and the input block's IN_B_RAW |
 
 ## Parts
 

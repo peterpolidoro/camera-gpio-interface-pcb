@@ -32,8 +32,8 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 | Port | Shape | Edge | Class | Wired to | Board net | Board class | GPIO | Meaning | On this board |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `+5V_USB` | passive | east | Default | `+5V` | `/+5V` | PWR_5V_NARROW |  | VBUS through D31001 (Schottky, about 0.3 V drop) for diode-ORing with +5V_PYC. |  |
-| `GND` | passive | east | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | USB ground: J31001 A1, B1, A12, B12 and shell S1 to S4; clamp and Rd return. |  |
+| `+5V_USB` | passive | east | Default | `+5V` | `/+5V` | PWR_5V_NARROW |  | VBUS through D31001 (Schottky, about 0.3 V drop) for diode-ORing with +5V_PYC. | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `GND` | passive | east | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | USB ground: J31001 A1, B1, A12, B12 and shell S1 to S4; clamp and Rd return. | Board ground; every BNC shell and camera pins 5 and 6 |
 | `USB_D+` | bidirectional | east | USB_HS | open: no-connect flag |  |  |  | USB 2.0 D+, J31001 A6 and B6, after the U31001 clamp; USB_HS pair with USB_D-. |  |
 | `USB_D-` | bidirectional | east | USB_HS | open: no-connect flag |  |  |  | USB 2.0 D-, J31001 A7 and B7, after the U31001 clamp; USB_HS pair with USB_D+. |  |
 | `VBUS` | passive | east | Default | open: no-connect flag |  |  |  | Raw bus 5 V, J31001 A4, A9, B4, B9; bypassed by C31001, the clamp's reference. |  |

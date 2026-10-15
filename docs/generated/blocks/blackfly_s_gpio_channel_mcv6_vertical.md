@@ -28,17 +28,17 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 | Port | Shape | Edge | Class | Wired to | Board net | Board class | GPIO | Meaning | On this board |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | west | PWR_3V3_LOCAL | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  | Logic rail for U23001, U23002, U23003 and the L2/L1 pull-ups; always-on if the taps must read before firmware. |  |
-| `+5V` | passive | west | PWR_5V_LOCAL | `+5V` | `/+5V` | PWR_5V_NARROW |  | Must be a 5 V rail: the Line 0 opto drive level (R23003) and both ESD clamps' VBUS reference. |  |
-| `CAM_OUT_BNC` | output | west | Default | `CAM1_OUT_BNC` | `/CAM1_OUT_BNC` | Default |  | Exposure-active output: CAM_OUT through R23005 (470 ohm); the BNC itself is the board's. |  |
-| `GND` | passive | west | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Camera pins 5 (opto ground) and 6 (ground) both land here, with the logic and ESD returns. |  |
-| `L0_INST` | output | west | INSTRUMENT | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT |  | 100 ohm tap (R23007) on L0, camera Line 0 OPTOIN: the sync drive. |  |
-| `L1_INST` | output | west | INSTRUMENT | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT |  | 100 ohm tap (R23008) on L1_BUF, camera Line 1 OPTOOUT after the Schmitt buffer. |  |
-| `L2_INST` | output | west | INSTRUMENT | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT |  | 100 ohm tap (R23009) on L2, camera Line 2, the open-drain exposure output. |  |
-| `L3_INST` | output | west | INSTRUMENT | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT |  | 100 ohm tap (R23010) on L3, camera Line 3, the frame trigger. |  |
-| `OUT_INST` | output | west | INSTRUMENT | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT |  | 100 ohm tap (R23011) on CAM_OUT, the buffered exposure signal. |  |
-| `SYNC_IN` | input | west | Default | `SYNC_IN` | `/SYNC_IN` | Default |  | Conditioned 3.3 V Rsync from the board's input Schmitt into U23003 (pin 2). |  |
-| `TRIG_IN` | input | west | Default | `TRIG_IN` | `/TRIG_IN` | Default |  | Conditioned 3.3 V frame trigger from the board's input Schmitt into U23002 (pin 2). |  |
+| `+3.3V` | passive | west | PWR_3V3_LOCAL | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  | Logic rail for U23001, U23002, U23003 and the L2/L1 pull-ups; always-on if the taps must read before firmware. | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `+5V` | passive | west | PWR_5V_LOCAL | `+5V` | `/+5V` | PWR_5V_NARROW |  | Must be a 5 V rail: the Line 0 opto drive level (R23003) and both ESD clamps' VBUS reference. | VBUS after the USB block's Schottky (+5V_USB in the design record): the Line 0 pull-ups and every ESD array's clamp reference |
+| `CAM_OUT_BNC` | output | west | Default | `CAM1_OUT_BNC` | `/CAM1_OUT_BNC` | Default |  | Exposure-active output: CAM_OUT through R23005 (470 ohm); the BNC itself is the board's. | Camera 1 ExposureActive (Line 2, Schmitt-buffered) behind the block's 470 Ω, to the CAM1 OUT BNC |
+| `GND` | passive | west | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Camera pins 5 (opto ground) and 6 (ground) both land here, with the logic and ESD returns. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `L0_INST` | output | west | INSTRUMENT | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT |  | 100 ohm tap (R23007) on L0, camera Line 0 OPTOIN: the sync drive. | DIG3: camera 1 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `L1_INST` | output | west | INSTRUMENT | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT |  | 100 ohm tap (R23008) on L1_BUF, camera Line 1 OPTOOUT after the Schmitt buffer. | DIG4: camera 1 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `L2_INST` | output | west | INSTRUMENT | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT |  | 100 ohm tap (R23009) on L2, camera Line 2, the open-drain exposure output. | DIG5: camera 1 Line 2 raw open-drain node (ExposureActive) |
+| `L3_INST` | output | west | INSTRUMENT | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT |  | 100 ohm tap (R23010) on L3, camera Line 3, the frame trigger. | DIG6: camera 1 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `OUT_INST` | output | west | INSTRUMENT | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT |  | 100 ohm tap (R23011) on CAM_OUT, the buffered exposure signal. | DIG7: what the CAM1 OUT BNC carries |
+| `SYNC_IN` | input | west | Default | `SYNC_IN` | `/SYNC_IN` | Default |  | Conditioned 3.3 V Rsync from the board's input Schmitt into U23003 (pin 2). | Conditioned Rsync from the SYNC IN BNC, 3.3 V, to the three Line 0 drivers and the SYNC OUT driver |
+| `TRIG_IN` | input | west | Default | `TRIG_IN` | `/TRIG_IN` | Default |  | Conditioned 3.3 V frame trigger from the board's input Schmitt into U23002 (pin 2). | Conditioned 150 Hz frame trigger from the TRIG IN BNC, 3.3 V, to the three camera channels' Line 3 drivers |
 
 ## Parts
 

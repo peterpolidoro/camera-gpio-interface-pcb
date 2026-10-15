@@ -28,40 +28,40 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 | Port | Shape | Edge | Class | Wired to | Board net | Board class | GPIO | Meaning | On this board |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `+3.3V` | passive | west | PWR_3V3_LOCAL | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  | Always-on 3.3 V buffer supply (VCC pins 20); never reaches the cable. |  |
-| `DIG0` | input | west | Default | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  | Observation input 0 into U39001 A8 (pin 9); leaves on contact 2. |  |
-| `DIG1` | input | west | Default | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  | Observation input 1 into U39001 A7 (pin 8); leaves on contact 3. |  |
-| `DIG2` | input | west | Default | `SYNC_OUT_INST` | `/SYNC_OUT_INST` | INSTRUMENT |  | Observation input 2 into U39001 A6 (pin 7); leaves on contact 5. |  |
-| `DIG3` | input | west | Default | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT |  | Observation input 3 into U39001 A5 (pin 6); leaves on contact 6. |  |
-| `DIG4` | input | west | Default | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT |  | Observation input 4 into U39001 A4 (pin 5); leaves on contact 8. |  |
-| `DIG5` | input | west | Default | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT |  | Observation input 5 into U39001 A3 (pin 4); leaves on contact 9. |  |
-| `DIG6` | input | west | Default | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT |  | Observation input 6 into U39001 A2 (pin 3); leaves on contact 11. |  |
-| `DIG7` | input | west | Default | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT |  | Observation input 7 into U39001 A1 (pin 2); leaves on contact 12. |  |
-| `DIG8` | input | west | Default | `CAM2_L0_INST` | `/CAM2_L0_INST` | INSTRUMENT |  | Observation input 8 into U39002 A8 (pin 9); leaves on contact 14. |  |
-| `DIG9` | input | west | Default | `CAM2_L1_INST` | `/CAM2_L1_INST` | INSTRUMENT |  | Observation input 9 into U39002 A7 (pin 8); leaves on contact 15. |  |
-| `DIG10` | input | west | Default | `CAM2_L2_INST` | `/CAM2_L2_INST` | INSTRUMENT |  | Observation input 10 into U39002 A6 (pin 7); leaves on contact 17. |  |
-| `DIG11` | input | west | Default | `CAM2_L3_INST` | `/CAM2_L3_INST` | INSTRUMENT |  | Observation input 11 into U39002 A5 (pin 6); leaves on contact 18. |  |
-| `DIG12` | input | west | Default | `CAM2_OUT_INST` | `/CAM2_OUT_INST` | INSTRUMENT |  | Observation input 12 into U39002 A4 (pin 5); leaves on contact 20. |  |
-| `DIG13` | input | west | Default | `CAM3_L0_INST` | `/CAM3_L0_INST` | INSTRUMENT |  | Observation input 13 into U39002 A3 (pin 4); leaves on contact 21. |  |
-| `DIG14` | input | west | Default | `CAM3_L1_INST` | `/CAM3_L1_INST` | INSTRUMENT |  | Observation input 14 into U39002 A2 (pin 3); leaves on contact 23. |  |
-| `DIG15` | input | west | Default | `CAM3_L2_INST` | `/CAM3_L2_INST` | INSTRUMENT |  | Observation input 15 into U39002 A1 (pin 2); leaves on contact 24. |  |
-| `DIG16` | input | west | Default | `CAM3_L3_INST` | `/CAM3_L3_INST` | INSTRUMENT |  | Observation input 16 into U39003 A8 (pin 9); leaves on contact 27. |  |
-| `DIG17` | input | west | Default | `CAM3_OUT_INST` | `/CAM3_OUT_INST` | INSTRUMENT |  | Observation input 17 into U39003 A7 (pin 8); leaves on contact 28. |  |
-| `DIG18` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 18 into U39003 A6 (pin 7); leaves on contact 30. |  |
-| `DIG19` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 19 into U39003 A5 (pin 6); leaves on contact 31. |  |
-| `DIG20` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 20 into U39003 A4 (pin 5); leaves on contact 33. |  |
-| `DIG21` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 21 into U39003 A3 (pin 4); leaves on contact 34. |  |
-| `DIG22` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 22 into U39003 A2 (pin 3); leaves on contact 36. |  |
-| `DIG23` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 23 into U39003 A1 (pin 2); leaves on contact 37. |  |
-| `DIG24` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 24 into U39004 A8 (pin 9); leaves on contact 39. |  |
-| `DIG25` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 25 into U39004 A7 (pin 8); leaves on contact 40. |  |
-| `DIG26` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 26 into U39004 A6 (pin 7); leaves on contact 42. |  |
-| `DIG27` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 27 into U39004 A5 (pin 6); leaves on contact 43. |  |
-| `DIG28` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 28 into U39004 A4 (pin 5); leaves on contact 45. |  |
-| `DIG29` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 29 into U39004 A3 (pin 4); leaves on contact 46. |  |
-| `DIG30` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 30 into U39004 A2 (pin 3); leaves on contact 48. |  |
-| `DIG31` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 31 into U39004 A1 (pin 2); leaves on contact 49. |  |
-| `GND` | passive | west | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | 18 connector grounds, buffer GND pins and pads, bypass and OE pull-down return. |  |
+| `+3.3V` | passive | west | PWR_3V3_LOCAL | `+3.3V` | `/+3.3V` | PWR_3V3_NARROW |  | Always-on 3.3 V buffer supply (VCC pins 20); never reaches the cable. | The only logic rail, from the TPS73733 on the power sheet; always on while USB is present, as the InstrumentPort block requires |
+| `DIG0` | input | west | Default | `TRIG_IN_INST` | `/TRIG_IN_INST` | INSTRUMENT |  | Observation input 0 into U39001 A8 (pin 9); leaves on contact 2. | DIG0: the conditioned trigger after the Schmitt (the input block's IN_A_INST) |
+| `DIG1` | input | west | Default | `SYNC_IN_INST` | `/SYNC_IN_INST` | INSTRUMENT |  | Observation input 1 into U39001 A7 (pin 8); leaves on contact 3. | DIG1: the conditioned Rsync after the Schmitt (the input block's IN_B_INST) |
+| `DIG2` | input | west | Default | `SYNC_OUT_INST` | `/SYNC_OUT_INST` | INSTRUMENT |  | Observation input 2 into U39001 A6 (pin 7); leaves on contact 5. | DIG2: what the SYNC OUT BNC carries, at the driver output before the 470 Ω |
+| `DIG3` | input | west | Default | `CAM1_L0_INST` | `/CAM1_L0_INST` | INSTRUMENT |  | Observation input 3 into U39001 A5 (pin 6); leaves on contact 6. | DIG3: camera 1 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `DIG4` | input | west | Default | `CAM1_L1_INST` | `/CAM1_L1_INST` | INSTRUMENT |  | Observation input 4 into U39001 A4 (pin 5); leaves on contact 8. | DIG4: camera 1 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `DIG5` | input | west | Default | `CAM1_L2_INST` | `/CAM1_L2_INST` | INSTRUMENT |  | Observation input 5 into U39001 A3 (pin 4); leaves on contact 9. | DIG5: camera 1 Line 2 raw open-drain node (ExposureActive) |
+| `DIG6` | input | west | Default | `CAM1_L3_INST` | `/CAM1_L3_INST` | INSTRUMENT |  | Observation input 6 into U39001 A2 (pin 3); leaves on contact 11. | DIG6: camera 1 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `DIG7` | input | west | Default | `CAM1_OUT_INST` | `/CAM1_OUT_INST` | INSTRUMENT |  | Observation input 7 into U39001 A1 (pin 2); leaves on contact 12. | DIG7: what the CAM1 OUT BNC carries |
+| `DIG8` | input | west | Default | `CAM2_L0_INST` | `/CAM2_L0_INST` | INSTRUMENT |  | Observation input 8 into U39002 A8 (pin 9); leaves on contact 14. | DIG8: camera 2 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `DIG9` | input | west | Default | `CAM2_L1_INST` | `/CAM2_L1_INST` | INSTRUMENT |  | Observation input 9 into U39002 A7 (pin 8); leaves on contact 15. | DIG9: camera 2 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `DIG10` | input | west | Default | `CAM2_L2_INST` | `/CAM2_L2_INST` | INSTRUMENT |  | Observation input 10 into U39002 A6 (pin 7); leaves on contact 17. | DIG10: camera 2 Line 2 raw open-drain node (ExposureActive) |
+| `DIG11` | input | west | Default | `CAM2_L3_INST` | `/CAM2_L3_INST` | INSTRUMENT |  | Observation input 11 into U39002 A5 (pin 6); leaves on contact 18. | DIG11: camera 2 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `DIG12` | input | west | Default | `CAM2_OUT_INST` | `/CAM2_OUT_INST` | INSTRUMENT |  | Observation input 12 into U39002 A4 (pin 5); leaves on contact 20. | DIG12: what the CAM2 OUT BNC carries |
+| `DIG13` | input | west | Default | `CAM3_L0_INST` | `/CAM3_L0_INST` | INSTRUMENT |  | Observation input 13 into U39002 A3 (pin 4); leaves on contact 21. | DIG13: camera 3 pin 2 node (Line 0, the Rsync drive), 0 to 4.7 V open-drain |
+| `DIG14` | input | west | Default | `CAM3_L1_INST` | `/CAM3_L1_INST` | INSTRUMENT |  | Observation input 14 into U39002 A2 (pin 3); leaves on contact 23. | DIG14: camera 3 OPTOOUT (Line 1), Schmitt-buffered; a second camera output for diagnosing missed triggers |
+| `DIG15` | input | west | Default | `CAM3_L2_INST` | `/CAM3_L2_INST` | INSTRUMENT |  | Observation input 15 into U39002 A1 (pin 2); leaves on contact 24. | DIG15: camera 3 Line 2 raw open-drain node (ExposureActive) |
+| `DIG16` | input | west | Default | `CAM3_L3_INST` | `/CAM3_L3_INST` | INSTRUMENT |  | Observation input 16 into U39003 A8 (pin 9); leaves on contact 27. | DIG16: camera 3 pin 1 node (Line 3, the trigger) after the 220 Ω |
+| `DIG17` | input | west | Default | `CAM3_OUT_INST` | `/CAM3_OUT_INST` | INSTRUMENT |  | Observation input 17 into U39003 A7 (pin 8); leaves on contact 28. | DIG17: what the CAM3 OUT BNC carries |
+| `DIG18` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 18 into U39003 A6 (pin 7); leaves on contact 30. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG19` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 19 into U39003 A5 (pin 6); leaves on contact 31. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG20` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 20 into U39003 A4 (pin 5); leaves on contact 33. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG21` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 21 into U39003 A3 (pin 4); leaves on contact 34. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG22` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 22 into U39003 A2 (pin 3); leaves on contact 36. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG23` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 23 into U39003 A1 (pin 2); leaves on contact 37. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG24` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 24 into U39004 A8 (pin 9); leaves on contact 39. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG25` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 25 into U39004 A7 (pin 8); leaves on contact 40. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG26` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 26 into U39004 A6 (pin 7); leaves on contact 42. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG27` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 27 into U39004 A5 (pin 6); leaves on contact 43. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG28` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 28 into U39004 A4 (pin 5); leaves on contact 45. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG29` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 29 into U39004 A3 (pin 4); leaves on contact 46. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG30` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 30 into U39004 A2 (pin 3); leaves on contact 48. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `DIG31` | input | west | Default | `GND` | `/GND` | PWR_RETURN_LOCAL |  | Observation input 31 into U39004 A1 (pin 2); leaves on contact 49. | Board ground; every BNC shell and camera pins 5 and 6 |
+| `GND` | passive | west | PWR_RETURN_LOCAL | `GND` | `/GND` | PWR_RETURN_LOCAL |  | 18 connector grounds, buffer GND pins and pads, bypass and OE pull-down return. | Board ground; every BNC shell and camera pins 5 and 6 |
 
 ## Parts
 

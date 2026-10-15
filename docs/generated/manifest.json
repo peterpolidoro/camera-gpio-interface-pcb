@@ -1,6 +1,6 @@
 {
   "generated_by": "orb-weaver-kicad-docs",
-  "generated_at": "2026-10-15T13:32:30Z",
+  "generated_at": "2026-10-15T13:58:04Z",
   "kicad_cli_version": "10.0.6",
   "board": "camera-gpio-interface-pcb",
   "sources": {
@@ -17,7 +17,8 @@
     "kicad/power.kicad_sch": "ca278df26d98225b847de4a47bcdf3a128efe8a55eb5fd6b04d389a57bc9595e",
     "kicad/usb2_vertical.kicad_sch": "cf27bc17c1a4211a20e229efdb97d578ceabb0dfffdf3586ca81de6864f0609a",
     "renders": "d9e8878b118337c0b1392487a7428720417dfddcebf12115e01f8dfd0f63da70",
-    "kicad/board-manifest.yaml": "a236f02192cd387c1bfa93f3f3e97ae2313f75a02e1bee44a932cec268b8603b",
+    "kicad/board-manifest.yaml": "4aa196a6e29768388b522ac502818041918bc778454b6127ca79a80bd6149af2",
+    "kicad/board.yaml": "b5427f9a26b9a36b128e2123a9b30341e7e94b3ad7155287716c285ce616c9fe",
     "libs:design_block_families/blackfly_s_gpio_channel/family.json": "82c75de25b7fe585a361a06c191fb2f5ae7dd45f29bdea2c717bbad7c5529e05",
     "libs:design_block_families/blackfly_s_gpio_channel/release.json": "566a844725c5af3c6939bbec1ac069ef9b5860e23e6db637cf996d5ad61d665d",
     "libs:design_block_families/blackfly_s_gpio_channel/source/blackfly_s_gpio_channel.brief.yaml": "36d3e6e3ab367ef72d86fc3cbf34f0e6c1f8919b8215e140cb9c004e0003d204",
@@ -49,7 +50,7 @@
     "libs:design_blocks/schematic_sources/usb2_vertical/generation.json": "198125d280f136a5da676b861c157fd3ddc52949fd55ade6d287e8bd67c54270",
     "libs:design_blocks/schematic_sources/usb2_vertical/publication.json": "26f9f34f3c9a4671e02444b1e22d09d7fe3560acc53debcc6f175d06058d4c71",
     "libs:scripts/board_block_docs.py": "26924022c25060ed03981d37da87af08e31f727a9742d5b0ba93455562ed670d",
-    "board_view": "97fd9717f6547c2ed187c36c6baeaf1b54eb6cff87bab27f142b4e0b0c529567",
+    "board_view": "ee46ef4e0cbe393f7aea1a4f76aa2a4095a6cb5c3af4b6679377eea73ee39c91",
     "dimension_drawing": "4d505daf8c149515cca2f5462c0bce1a80dc3e0ecffd1b23936e838eff0bfd57",
     "site_index": "b4d68dc855d0f9476d3f2ee343853bd21bf82ea9960d0cf06661baa244439dd6",
     "materials_palette": "582981466a166f2174ed20923cdd31d46da7561e87e53aaa5148ea18f53c65b2",
@@ -206,6 +207,37 @@
         }
       ],
       "layouts": 7
+    },
+    "subsystems": {
+      "index": "subsystems/README.md",
+      "pages": [
+        "subsystems/inputs.md",
+        "subsystems/power.md",
+        "subsystems/outputs.md"
+      ],
+      "records": [
+        {
+          "name": "inputs",
+          "recipe": "subsystems/inputs.subsystem.yaml",
+          "kind": "local",
+          "page": "inputs.md",
+          "blocks": 1
+        },
+        {
+          "name": "power",
+          "recipe": "subsystems/power.subsystem.yaml",
+          "kind": "local",
+          "page": "power.md",
+          "blocks": 2
+        },
+        {
+          "name": "outputs",
+          "recipe": "subsystems/outputs.subsystem.yaml",
+          "kind": "local",
+          "page": "outputs.md",
+          "blocks": 0
+        }
+      ]
     }
   }
 }

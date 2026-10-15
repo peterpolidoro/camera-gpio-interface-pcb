@@ -1,0 +1,126 @@
+schema: orb-weaver/subsystem/1
+name: inputs
+summary: 'The two pyControl BNC inputs, TRIG IN and SYNC IN: each jack into the shared USBLC6 ESD clamp referenced to +5V,
+  then the logic_input_2ch_5v_schmitt_sn74lvc2g17 block, which conditions a 3.3 V or 5 V edge into clean 3.3 V logic (TRIG_IN,
+  SYNC_IN) and taps each for the InstrumentPort; a 680 Ω activity LED on each conditioned output.'
+source:
+  board: camera-gpio-interface-pcb
+  sheet: inputs.kicad_sch
+  derived: '2026-10-15'
+ports:
+- name: +3.3V
+  shape: passive
+  shared: true
+- name: +5V
+  shape: passive
+  shared: true
+- name: GND
+  shape: passive
+  shared: true
+- name: SYNC_IN
+  shape: output
+- name: SYNC_IN_INST
+  shape: output
+- name: TRIG_IN
+  shape: output
+- name: TRIG_IN_INST
+  shape: output
+blocks:
+- role: logic_input_2ch_5v_schmitt_sn74lvc2g17
+  block: orb_weaver_private:logic_input_2ch_5v_schmitt_sn74lvc2g17
+  connections:
+    +3.3V: +3.3V
+    GND: GND
+    IN_A: TRIG_IN
+    IN_A_INST: TRIG_IN_INST
+    IN_A_RAW: TRIG_RAW
+    IN_B: SYNC_IN
+    IN_B_INST: SYNC_IN_INST
+    IN_B_RAW: SYNC_RAW
+glue:
+  parts:
+  - part: OW-MISC-APHHS1005CGCK
+    references:
+    - D301
+    - D302
+    value: APHHS1005CGCK
+    role: activity LEDs on TRIG_IN (D301) and SYNC_IN (D302)
+  - part: OW-CONN-HL-BNC-KHDA
+    references:
+    - J301
+    - J302
+    value: HL-BNC-KHDA
+    role: 'the input BNC jacks: J301 TRIG IN, J302 SYNC IN; shells to ground'
+  - part: OW-PASS-RC0402FR-07680RL
+    references:
+    - R301
+    - R302
+    value: '680'
+    role: LED series resistors, about 1.8 mA
+  - part: OW-MISC-USBLC6-2P6
+    references:
+    - U301
+    value: USBLC6-2P6
+    role: ESD clamp across both raw inputs, VBUS on +5V
+  nets:
+  - name: +5V
+    kind: port
+    pins:
+    - U301.5
+    meaning: 'the clamp''s reference: above a 5 V logic high, so it never conducts on a signal'
+  - name: GND
+    kind: port
+    pins:
+    - D301.1
+    - D302.1
+    - J301.2
+    - J302.2
+    - U301.2
+    meaning: jack shells, the clamp's return, the LED cathodes
+  - name: SYNC_IN
+    kind: port
+    pins:
+    - R302.1
+    meaning: conditioned Rsync, 3.3 V, out to the root (the LED hangs on it)
+  - name: TRIG_IN
+    kind: port
+    pins:
+    - R301.1
+    meaning: conditioned 150 Hz trigger, 3.3 V, out to the root (the LED hangs on it)
+  - name: SYNC_RAW
+    kind: label
+    pins:
+    - J302.1
+    - U301.3
+    - U301.4
+    meaning: the SYNC IN jack to the clamp and the block's IN_B_RAW
+  - name: TRIG_RAW
+    kind: label
+    pins:
+    - J301.1
+    - U301.1
+    - U301.6
+    meaning: the TRIG IN jack to the clamp and the block's IN_A_RAW
+  - kind: wire
+    pins:
+    - D301.2
+    - R301.2
+    meaning: the TRIG IN LED's anode node
+  - kind: wire
+    pins:
+    - D302.2
+    - R302.2
+    meaning: the SYNC IN LED's anode node
+notes:
+- J301 is TRIG IN (the 150 Hz frame trigger, to the cameras' Line 3) and J302 is SYNC IN (the Rsync pulse, to Line 0 and to
+  SYNC OUT). Both chains are identical, so reversing the roles is a cable swap plus the cameras' TriggerSource. Shells to
+  ground, no termination footprint.
+- U301 (USBLC6-2P6) clamps TRIG_RAW and SYNC_RAW with its VBUS on +5V, so it sits above a 5 V logic high and never conducts
+  on a 3.3 V signal. The block behind it (4.7 kΩ series, 470 pF to ground, 100 kΩ pull-down on the jack side) tolerates a
+  5 V source or a ±5 V OneBox DAC plugged in by mistake, and an unplugged jack reads low, so the cameras receive nothing rather
+  than noise.
+- 'D301 and D302 through R301 and R302 (680 Ω, about 1.8 mA) show activity on TRIG_IN and SYNC_IN: a 25 ms Rsync pulse once
+  a second blinks, the 150 Hz trigger reads half-lit. The instrument taps TRIG_IN_INST and SYNC_IN_INST are the block''s own
+  IN_A_INST and IN_B_INST ports, so the board adds none.'
+- The conditioning delays a 3.3 V edge about 2 µs, the same on both inputs, so trigger-to-Rsync timing is preserved. TRIG_IN
+  then feeds the three Line 3 drivers and SYNC_IN the three Line 0 drivers and the SYNC OUT driver, through the root.
