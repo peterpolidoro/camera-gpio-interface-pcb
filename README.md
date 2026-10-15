@@ -124,6 +124,7 @@ footprints, so check the assembly preview before confirming an order.
 
 - [mouse-joystick-pcb](https://github.com/peterpolidoro/mouse-joystick-pcb): the rig's joystick controller board.
 - [mouse-joystick-firm](https://github.com/peterpolidoro/mouse-joystick-firm): its firmware and the pyControl device class.
+- [mouse-joysticks-mech](https://github.com/peterpolidoro/mouse-joysticks-mech): the two-joystick mechanical assembly, part by part, with [the atlas site](https://peterpolidoro.github.io/mouse-joysticks-mech/) and the PDF manual of the whole rig.
 - [joystick-rig](https://github.com/sourishmukh/joystick-rig): the rig's pyControl tasks, hardware definition and operating notes.
 
 ## Development
