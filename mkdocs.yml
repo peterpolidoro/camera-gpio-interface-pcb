@@ -1,0 +1,90 @@
+# The board's documentation site. `make site` builds docs/ into site/ with the
+# Guix mkdocs-material and `make site-serve` serves it locally;
+# .github/workflows/pages.yml builds the same from the committed pages and
+# deploys it on GitHub Pages (set Pages to "GitHub Actions" in the repository
+# settings). The generated pages, the renders and the viewer's model are
+# committed by `make docs`, so the build is mkdocs alone; while this file
+# exists, `make docs` also writes docs/index.md, the front page with the
+# turning board (kicad-libs docs/board-documentation.md, "The Site").
+site_name: camera-gpio-interface-pcb
+site_description: "Interface board for the three FLIR Blackfly S cameras in the Janelia Dudman lab joystick rig: camera GPIO terminals, pyControl BNC inputs, OneBox BNC outputs, an InstrumentPort-Digital-50 and USB power."
+site_url: https://peterpolidoro.github.io/camera-gpio-interface-pcb/
+repo_url: https://github.com/peterpolidoro/camera-gpio-interface-pcb
+repo_name: peterpolidoro/camera-gpio-interface-pcb
+edit_uri: ""
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Dark
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Light
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/site.css
+
+# Links from the pages to files outside docs/ (the fabrication package, the
+# KiCad sources) go to the repository on the forge instead of failing the build.
+hooks:
+  - docs/hooks/outward_links.py
+extra:
+  outward_links:
+    branch: main
+
+plugins:
+  - search
+
+# The hook is not a page.
+exclude_docs: |
+  hooks/
+
+nav:
+  - The board: index.md
+  - Documentation: generated/README.md
+  - Design blocks: generated/blocks/README.md
+  # No subsystem pages and no MCU pin table: the board has no board source
+  # (kicad/board.yaml) and no MCU. Add "Subsystems: generated/subsystems/README.md"
+  # when `make docs` writes them.
+  - Interfaces:
+      - Interface map: interface-map.md
+  - Design:
+      - Observability plan: observability-plan.md
+      - Rev 0 plan: rev0-plan.md
+  - Build and test:
+      - Development: development.md
+      - Fabrication log: fabrication-log.md
+      - Bring-up log: bringup-log.md
+      - Autoroute log: autoroute-log.md
+      - Routing session handoff, 2026-09-26: session-handoff-2026-09-26.md
+      - kicad-libs handoff, 2026-09-24: kicad-libs-handoff-2026-09-24.md
+
+# The front page is the board view, so the generated copy stays out of the
+# navigation; the block and subsystem pages are reached from their indexes.
+not_in_nav: |
+  generated/board-view.md
+  generated/blocks/*.md

@@ -40,16 +40,16 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 ## Parts
 
-As placed on the board's sheet; 6 of 6 paired with the brief's references by symbol identity, the rest given the brief's role where the internal part has one, else the catalog's role slug; the placement is the `Placement` field of the board's symbol, else of the library's (D38).
+As placed on the board's sheet; 6 of 6 paired with the brief's references by symbol identity, the rest given the brief's role where the internal part has one, else the catalog's role slug; the placement is the `Placement` field of the board's symbol, else of the library's (D38); the manufacturer part and the LCSC number are the board's BOM's.
 
-| Reference | Brief | Part | Value | Role | Placement |  |
-| --- | --- | --- | --- | --- | --- | --- |
-| `C901` | `C31001` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VBUS bypass at the clamp | beside U901.5 (VBUS), on VBUS |  |
-| `D901` | `D31001` | `OW-MISC-MBR120VLSFT1G` | MBR120VLSFT1G | Diode-OR Schottky | beside U901.5 (VBUS), on VBUS |  |
-| `J901` | `J31001` | `OW-CONN-USB-C-USB2-SMD-VERT` | USB-C | usb-connector |  |  |
-| `R901` | `R31001` | `OW-PASS-ERJ2GEJ512X` | 5.1k | CC Rd sink pulldowns |  |  |
-| `R902` | `R31002` | `OW-PASS-ERJ2GEJ512X` | 5.1k | CC Rd sink pulldowns |  |  |
-| `U901` | `U31001` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD clamp on D+, D- and VBUS |  |  |
+| Reference | Brief | Part | Value | Role | Placement | Manufacturer part | LCSC | DNP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `C901` | `C31001` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VBUS bypass at the clamp | beside U901.5 (VBUS), on VBUS | GRM155R62A104KE14D | [C162178](https://www.lcsc.com/product-detail/C162178.html) |  |
+| `D901` | `D31001` | `OW-MISC-MBR120VLSFT1G` | MBR120VLSFT1G | Diode-OR Schottky | beside U901.5 (VBUS), on VBUS | [MBR120VLSFT1G](https://www.onsemi.com/pdf/datasheet/mbr120vlsft1-d.pdf) | [C223608](https://www.lcsc.com/product-detail/C223608.html) |  |
+| `J901` | `J31001` | `OW-CONN-USB-C-USB2-SMD-VERT` | USB-C | usb-connector |  | [USB4145-03-0070-C](https://gct.co/files/drawings/usb4145.pdf) | [C5815189](https://www.lcsc.com/product-detail/C5815189.html) |  |
+| `R901` | `R31001` | `OW-PASS-ERJ2GEJ512X` | 5.1k | CC Rd sink pulldowns |  | ERJ2GEJ512X | [C413002](https://www.lcsc.com/product-detail/C413002.html) |  |
+| `R902` | `R31002` | `OW-PASS-ERJ2GEJ512X` | 5.1k | CC Rd sink pulldowns |  | ERJ2GEJ512X | [C413002](https://www.lcsc.com/product-detail/C413002.html) |  |
+| `U901` | `U31001` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD clamp on D+, D- and VBUS |  | [USBLC6-2P6](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) | [C2827693](https://www.lcsc.com/product-detail/C2827693.html) |  |
 
 ## Operating Notes
 
@@ -93,6 +93,6 @@ R31001 and R31002 (5.1 k) pull CC1 and CC2 to GND: the port presents itself as a
 | Published sheet | `938d8c968797018e` |
 | Published PCB | `55ced031728de451` |
 | Source lock | symbol snapshot `40ea67778de8e7b1`, published 2026-10-14 |
-| Placed sheet | `cf27bc17c1a4211a`: differs from the library's sheet; parts: the brief’s 6 by internal part; ports: the brief's |
-| Netlist check | not run (`--brief-check`, kicad-cli) |
+| Placed sheet | `cf27bc17c1a4211a`: matches the brief: its 6 parts by internal part, every port by name and shape; the file is the board's copy under its own designators |
+| Netlist check | ok on 2026-10-15: every pin on the brief's net; 9 identity records differ, the board's own instances |
 

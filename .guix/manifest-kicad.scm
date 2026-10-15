@@ -25,6 +25,7 @@
      "nss-certs"
      "openjdk@25"
      "ripgrep"
+     "ghostscript"
      "poppler"
      "sqlite"
      "unixodbc"))))

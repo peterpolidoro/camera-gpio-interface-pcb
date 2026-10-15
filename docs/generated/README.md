@@ -67,6 +67,7 @@ The [board view](board-view.md) numbers the design blocks on the model and on th
 | Assembled board, STEP, for FreeCAD | [camera-gpio-interface-pcb-assembled.step](3d/camera-gpio-interface-pcb-assembled.step) |
 | Assembled board, glTF, for a viewer (the library's materials written in) | [camera-gpio-interface-pcb.glb](3d/camera-gpio-interface-pcb.glb) |
 | Bill of materials | [table](bom/camera-gpio-interface-pcb-bom.md) · [CSV](bom/camera-gpio-interface-pcb-bom.csv) |
+| Outline and mounting holes, dimensioned drawing | [SVG](mechanical/board-dimensions.svg) · [PDF](mechanical/board-dimensions.pdf) · [PNG](mechanical/board-dimensions.png) |
 | Board dimensions and stackup | [board-dimensions.md](mechanical/board-dimensions.md) |
 | Board geometry, machine readable | [board-geometry.json](mechanical/board-geometry.json) |
 | Mounting holes | [mounting-holes.csv](mechanical/mounting-holes.csv) |
@@ -91,6 +92,10 @@ Every block the board places, documented from the library: [the index](blocks/RE
 Millimetres from the **centre of the board outline**, X right and Y up,
 looking at the top of the board. Extents are the part's courtyard, which is
 what a panel cutout has to clear. Full tables in [board-dimensions.md](mechanical/board-dimensions.md).
+
+![Outline and mounting holes, dimensioned](mechanical/board-dimensions.png)
+
+The outline and the mounting holes dimensioned, as KiCad draws them: [SVG](mechanical/board-dimensions.svg) · [PDF](mechanical/board-dimensions.pdf); the cross is the centre the tables measure from.
 
 **Mounting holes**
 

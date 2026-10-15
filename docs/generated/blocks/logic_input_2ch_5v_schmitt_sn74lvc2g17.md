@@ -47,22 +47,22 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 ## Parts
 
-As placed on the board's sheet; 12 of 12 paired with the brief's references by symbol identity, the rest given the brief's role where the internal part has one, else the catalog's role slug; the placement is the `Placement` field of the board's symbol, else of the library's (D38).
+As placed on the board's sheet; 12 of 12 paired with the brief's references by symbol identity, the rest given the brief's role where the internal part has one, else the catalog's role slug; the placement is the `Placement` field of the board's symbol, else of the library's (D38); the manufacturer part and the LCSC number are the board's BOM's.
 
-| Reference | Brief | Part | Value | Role | Placement |  |
-| --- | --- | --- | --- | --- | --- | --- |
-| `C1101` | `C41001` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101A.1 (1A), on IN_A_FILT |  |
-| `C1102` | `C41002` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101B.3 (2A), on IN_B_FILT |  |
-| `C1103` | `C41003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC bypass for U41001 | beside U1101C.5 (VCC), on +3.3V |  |
-| `R1101` | `R41001` | `OW-PASS-RC0402JR-07100KL` | 100k | Input idle-low pull-down, 100 k |  |  |
-| `R1102` | `R41002` | `OW-PASS-RC0402JR-07100KL` | 100k | Input idle-low pull-down, 100 k |  |  |
-| `R1103` | `R41003` | `OW-RES-4K7-0402` | 4.7k | Input series filter resistor, 4.7 k |  |  |
-| `R1104` | `R41004` | `OW-RES-4K7-0402` | 4.7k | Input series filter resistor, 4.7 k |  |  |
-| `R1105` | `R41005` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101A.6 (1Y), on IN_A |  |
-| `R1106` | `R41006` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101B.4 (2Y), on IN_B |  |
-| `R1107` | `R41007` | `OW-PASS-0402WGF1000TCE` | 100 | Instrument tap series resistor |  |  |
-| `R1108` | `R41008` | `OW-PASS-0402WGF1000TCE` | 100 | Instrument tap series resistor |  |  |
-| `U1101` | `U41001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt-trigger buffer |  |  |
+| Reference | Brief | Part | Value | Role | Placement | Manufacturer part | LCSC | DNP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `C1101` | `C41001` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101A.1 (1A), on IN_A_FILT | GRM1555C2A471JE01D | [C1518202](https://www.lcsc.com/product-detail/C1518202.html) |  |
+| `C1102` | `C41002` | `OW-CAP-470P-0402-C0G-100V` | 470pF | Input low-pass capacitor, 72 kHz with 4.7 k | beside U1101B.3 (2A), on IN_B_FILT | GRM1555C2A471JE01D | [C1518202](https://www.lcsc.com/product-detail/C1518202.html) |  |
+| `C1103` | `C41003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC bypass for U41001 | beside U1101C.5 (VCC), on +3.3V | GRM155R62A104KE14D | [C162178](https://www.lcsc.com/product-detail/C162178.html) |  |
+| `R1101` | `R41001` | `OW-PASS-RC0402JR-07100KL` | 100k | Input idle-low pull-down, 100 k |  | RC0402JR-07100KL | [C106234](https://www.lcsc.com/product-detail/C106234.html) |  |
+| `R1102` | `R41002` | `OW-PASS-RC0402JR-07100KL` | 100k | Input idle-low pull-down, 100 k |  | RC0402JR-07100KL | [C106234](https://www.lcsc.com/product-detail/C106234.html) |  |
+| `R1103` | `R41003` | `OW-RES-4K7-0402` | 4.7k | Input series filter resistor, 4.7 k |  | 0402WGF4701TCE | [C25900](https://www.lcsc.com/product-detail/C25900.html) |  |
+| `R1104` | `R41004` | `OW-RES-4K7-0402` | 4.7k | Input series filter resistor, 4.7 k |  | 0402WGF4701TCE | [C25900](https://www.lcsc.com/product-detail/C25900.html) |  |
+| `R1105` | `R41005` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101A.6 (1Y), on IN_A | RC0402JR-07100KL | [C106234](https://www.lcsc.com/product-detail/C106234.html) |  |
+| `R1106` | `R41006` | `OW-PASS-RC0402JR-07100KL` | 100k | Output pull-down, unpowered state | beside U1101B.4 (2Y), on IN_B | RC0402JR-07100KL | [C106234](https://www.lcsc.com/product-detail/C106234.html) |  |
+| `R1107` | `R41007` | `OW-PASS-0402WGF1000TCE` | 100 | Instrument tap series resistor |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `R1108` | `R41008` | `OW-PASS-0402WGF1000TCE` | 100 | Instrument tap series resistor |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `U1101` | `U41001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt-trigger buffer |  | [SN74LVC2G17DRYR](https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf) | [C2675856](https://www.lcsc.com/product-detail/C2675856.html) |  |
 
 ## Operating Notes
 
@@ -119,6 +119,6 @@ U41001 gates A (1A to 1Y) and B (2A to 2Y) square the filtered inputs into 3.3 V
 | Published sheet | `eb3efe0db8c09f06` |
 | Published PCB | `75189b4603e8f8c5` |
 | Source lock | symbol snapshot `d0f8273d1ebeb5a2`, published 2026-10-14 |
-| Placed sheet | `768774d53281c846`: differs from the library's sheet; parts: the brief’s 12 by internal part; ports: the brief's |
-| Netlist check | not run (`--brief-check`, kicad-cli) |
+| Placed sheet | `768774d53281c846`: matches the brief: its 12 parts by internal part, every port by name and shape; the file is the board's copy under its own designators |
+| Netlist check | ok on 2026-10-15: every pin on the brief's net; 14 identity records differ, the board's own instances |
 

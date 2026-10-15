@@ -1,6 +1,9 @@
 schema: orb-weaver/board-manifest/1
 board: camera-gpio-interface-pcb
 project: camera-gpio-interface-pcb.kicad_pro
+summary: 'Camera GPIO interface for the three FLIR Blackfly S cameras of the joystick rig: three pluggable screw-terminal
+  camera channels, two BNC inputs from the pyControl breakout, four 3.3 V BNC outputs to a Neuropixels OneBox, an
+  InstrumentPort-Digital-50 with every camera line tapped, USB power; no MCU; v1.0 as built.'
 rules:
   profiles:
   - instrument-taps

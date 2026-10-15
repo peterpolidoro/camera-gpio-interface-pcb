@@ -42,31 +42,31 @@ The brief's shape, edge, class and meaning for each port, then what the board wi
 
 ## Parts
 
-As placed on the board's sheet; 21 of 21 paired with the brief's references by symbol identity, the rest given the brief's role where the internal part has one, else the catalog's role slug; the placement is the `Placement` field of the board's symbol, else of the library's (D38).
+As placed on the board's sheet; 21 of 21 paired with the brief's references by symbol identity, the rest given the brief's role where the internal part has one, else the catalog's role slug; the placement is the `Placement` field of the board's symbol, else of the library's (D38); the manufacturer part and the LCSC number are the board's BOM's.
 
-| Reference | Brief | Part | Value | Role | Placement |  |
-| --- | --- | --- | --- | --- | --- | --- |
-| `C1201` | `C23001` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23002 | beside U1202.6 (VCC), on +3.3V |  |
-| `C1202` | `C23002` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23003 | beside U1203.6 (VCC), on +3.3V |  |
-| `C1203` | `C23003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 5 bypass, U23001 | beside U1201C.5 (VCC), on +3.3V |  |
-| `D1201` | `D23001` | `OW-MISC-APHHS1005CGCK` | APHHS1005CGCK | Exposure LED, green |  |  |
-| `J1201` | `J23001` | `OW-CONN-TBH-1X06-3P5-VERT` | TBH-1x06-3.5mm | Camera GPIO header, 6-pos 3.5 mm |  |  |
-| `R1201` | `R23001` | `OW-PASS-RC0402FR-071KL` | 1k | L2 pull-up to +3.3V, 1 k | beside U1201A.1 (1A), on L2 |  |
-| `R1202` | `R23002` | `OW-RES-4K7-0402` | 4.7k | L1 pull-up to +3.3V, 4.7 k | beside U1201B.3 (2A), on L1 |  |
-| `R1203` | `R23003` | `OW-PASS-FRC0402F8200TS` | 820 | L0 opto pull-up to +5V, 820 ohm | beside U1203.4, on L0 |  |
-| `R1204` | `R23004` | `OW-PASS-0603WAF2200T5E` | 220 | L3 trigger series, 220 ohm |  |  |
-| `R1205` | `R23005` | `OW-PASS-0603WAF4700T5E` | 470 | BNC drive series, 470 ohm |  |  |
-| `R1206` | `R23006` | `OW-PASS-RC0402FR-07680RL` | 680 | LED series, 680 ohm |  |  |
-| `R1207` | `R23007` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L0 to L0_INST |  |  |
-| `R1208` | `R23008` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L1_BUF to L1_INST |  |  |
-| `R1209` | `R23009` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L2 to L2_INST |  |  |
-| `R1210` | `R23010` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L3 to L3_INST |  |  |
-| `R1211` | `R23011` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, CAM_OUT to OUT_INST |  |  |
-| `U1201` | `U23001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt buffers, L2 and L1 |  |  |
-| `U1202` | `U23002` | `OW-MISC-SN74LVC1G125DRYR` | SN74LVC1G125DRYR | Line 3 trigger driver, always enabled |  |  |
-| `U1203` | `U23003` | `OW-MISC-SN74LVC1G07DRYR` | SN74LVC1G07DRYR | Line 0 sync driver, open drain |  |  |
-| `U1204` | `U23004` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L3/L0 |  |  |
-| `U1205` | `U23005` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L2/L1 |  |  |
+| Reference | Brief | Part | Value | Role | Placement | Manufacturer part | LCSC | DNP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `C1201` | `C23001` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23002 | beside U1202.6 (VCC), on +3.3V | GRM155R62A104KE14D | [C162178](https://www.lcsc.com/product-detail/C162178.html) |  |
+| `C1202` | `C23002` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 6 bypass, U23003 | beside U1203.6 (VCC), on +3.3V | GRM155R62A104KE14D | [C162178](https://www.lcsc.com/product-detail/C162178.html) |  |
+| `C1203` | `C23003` | `OW-CAP-100N-0402-X5R-16V` | 100nF | VCC pin 5 bypass, U23001 | beside U1201C.5 (VCC), on +3.3V | GRM155R62A104KE14D | [C162178](https://www.lcsc.com/product-detail/C162178.html) |  |
+| `D1201` | `D23001` | `OW-MISC-APHHS1005CGCK` | APHHS1005CGCK | Exposure LED, green |  | [APHHS1005CGCK](https://www.kingbrightusa.com/images/catalog/SPEC/APHHS1005CGCK.pdf) | [C2853065](https://www.lcsc.com/product-detail/C2853065.html) |  |
+| `J1201` | `J23001` | `OW-CONN-TBH-1X06-3P5-VERT` | TBH-1x06-3.5mm | Camera GPIO header, 6-pos 3.5 mm |  | [1843648](https://www.phoenixcontact.com/en-pc/products/1843648) | [C5443576](https://www.lcsc.com/product-detail/C5443576.html) |  |
+| `R1201` | `R23001` | `OW-PASS-RC0402FR-071KL` | 1k | L2 pull-up to +3.3V, 1 k | beside U1201A.1 (1A), on L2 | RC0402FR-071KL | [C106235](https://www.lcsc.com/product-detail/C106235.html) |  |
+| `R1202` | `R23002` | `OW-RES-4K7-0402` | 4.7k | L1 pull-up to +3.3V, 4.7 k | beside U1201B.3 (2A), on L1 | 0402WGF4701TCE | [C25900](https://www.lcsc.com/product-detail/C25900.html) |  |
+| `R1203` | `R23003` | `OW-PASS-FRC0402F8200TS` | 820 | L0 opto pull-up to +5V, 820 ohm | beside U1203.4, on L0 | FRC0402F8200TS | [C2909387](https://www.lcsc.com/product-detail/C2909387.html) |  |
+| `R1204` | `R23004` | `OW-PASS-0603WAF2200T5E` | 220 | L3 trigger series, 220 ohm |  | 0603WAF2200T5E | [C22962](https://www.lcsc.com/product-detail/C22962.html) |  |
+| `R1205` | `R23005` | `OW-PASS-0603WAF4700T5E` | 470 | BNC drive series, 470 ohm |  | 0603WAF4700T5E | [C23179](https://www.lcsc.com/product-detail/C23179.html) |  |
+| `R1206` | `R23006` | `OW-PASS-RC0402FR-07680RL` | 680 | LED series, 680 ohm |  | RC0402FR-07680RL | [C137948](https://www.lcsc.com/product-detail/C137948.html) |  |
+| `R1207` | `R23007` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L0 to L0_INST |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `R1208` | `R23008` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L1_BUF to L1_INST |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `R1209` | `R23009` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L2 to L2_INST |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `R1210` | `R23010` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, L3 to L3_INST |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `R1211` | `R23011` | `OW-PASS-0402WGF1000TCE` | 100 | 100 ohm tap, CAM_OUT to OUT_INST |  | 0402WGF1000TCE | [C25076](https://www.lcsc.com/product-detail/C25076.html) |  |
+| `U1201` | `U23001` | `OW-MISC-SN74LVC2G17DRYR` | SN74LVC2G17DRYR | Schmitt buffers, L2 and L1 |  | [SN74LVC2G17DRYR](https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf) | [C2675856](https://www.lcsc.com/product-detail/C2675856.html) |  |
+| `U1202` | `U23002` | `OW-MISC-SN74LVC1G125DRYR` | SN74LVC1G125DRYR | Line 3 trigger driver, always enabled |  | [SN74LVC1G125DRYR](https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf) | [C527546](https://www.lcsc.com/product-detail/C527546.html) |  |
+| `U1203` | `U23003` | `OW-MISC-SN74LVC1G07DRYR` | SN74LVC1G07DRYR | Line 0 sync driver, open drain |  | [SN74LVC1G07DRYR](https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf) | [C2675513](https://www.lcsc.com/product-detail/C2675513.html) |  |
+| `U1204` | `U23004` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L3/L0 |  | [USBLC6-2P6](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) | [C2827693](https://www.lcsc.com/product-detail/C2827693.html) |  |
+| `U1205` | `U23005` | `OW-MISC-USBLC6-2P6` | USBLC6-2P6 | ESD array for L2/L1 |  | [USBLC6-2P6](https://www.st.com/resource/en/datasheet/usblc6-2.pdf) | [C2827693](https://www.lcsc.com/product-detail/C2827693.html) |  |
 
 ## Operating Notes
 
@@ -143,6 +143,6 @@ U23004 clamps L3 and L0, U23005 clamps L2 and L1, both referenced to +5V and GND
 | Published sheet | `c9f98b3dd751f5b0` |
 | Published PCB | `bc94c2fa85826a2e` |
 | Family release | `blackfly_s_gpio_channel` variant `mcv6_vertical`, profile `gpio`; VERTICAL, top-entry 6-position 3.5 mm pluggable screw-terminal header, Phoenix MCV 1,5/6-G-3,5 (1843648), LCSC C5443576; geometry `76343d3e1fe7bf57`; copper `5697f9a330d24bc3`; hardware unvalidated; qualification matches |
-| Placed sheet | `c66fa0c5aaaae95b`: differs from the library's sheet; parts: the brief’s 21 by internal part; ports: the brief's |
-| Netlist check | not run (`--brief-check`, kicad-cli) |
+| Placed sheet | `c66fa0c5aaaae95b`: matches the brief: its 21 parts by internal part, every port by name and shape; the file is the board's copy under its own designators |
+| Netlist check | ok on 2026-10-15: every pin on the brief's net; 24 identity records differ, the board's own instances |
 

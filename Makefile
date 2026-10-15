@@ -6,10 +6,12 @@ GUIX_TIME_MACHINE = guix time-machine -C .guix/channels.scm
 GUIX_MANIFEST_AGENT ?= .guix/manifest-agent.scm
 GUIX_MANIFEST_KICAD ?= .guix/manifest-kicad.scm
 GUIX_MANIFEST_FREECAD ?= .guix/manifest-freecad.scm
+GUIX_MANIFEST_SITE ?= .guix/manifest-site.scm
 GUIX_SHELL_EXTRA_OPTIONS ?=
 GUIX_SHELL_AGENT = $(GUIX_TIME_MACHINE) -- shell $(GUIX_SHELL_EXTRA_OPTIONS) --pure -m $(GUIX_MANIFEST_AGENT)
 GUIX_SHELL_KICAD = $(GUIX_TIME_MACHINE) -- shell $(GUIX_SHELL_EXTRA_OPTIONS) --pure -m $(GUIX_MANIFEST_KICAD)
 GUIX_SHELL_FREECAD = $(GUIX_TIME_MACHINE) -- shell $(GUIX_SHELL_EXTRA_OPTIONS) --pure -m $(GUIX_MANIFEST_FREECAD)
+GUIX_SHELL_SITE = $(GUIX_TIME_MACHINE) -- shell $(GUIX_SHELL_EXTRA_OPTIONS) --pure -m $(GUIX_MANIFEST_SITE)
 GUIX_SHELL = $(GUIX_SHELL_AGENT)
 
 ORB_WEAVER_KICAD_LIBS_CHECKOUT ?= $(firstword $(wildcard $(abspath ../kicad-libs) $(abspath ../orb-weaver-kicad-libs)))
@@ -83,7 +85,7 @@ MANAGED_SHELL = $(AGENT_MANAGED_SHELL)
 LIBS_WORKSPACE := $(if $(wildcard $(ORB_WEAVER_KICAD_LIBS_CHECKOUT)),$(ORB_WEAVER_KICAD_LIBS_CHECKOUT),$(ORB_WEAVER_KICAD_LIBS))
 PCB_AGENT_EXTRA_DIRS ?= $(BOARD_INTERFACES_CHECKOUT) $(ORB_WEAVER_CONTEXT_CHECKOUT) $(GUIX_AGENT_TOOLS_CHECKOUT) $(MOUSE_JOYSTICK_PCB_CHECKOUT) $(LA5032_ADAPTER_CHECKOUT) $(JOYSTICK_RIG_CHECKOUT) $(PYCONTROL_H7_BREAKOUT_CHECKOUT) $(if $(LIBS_WORKSPACE),$(LIBS_WORKSPACE)) $(if $(wildcard $(AGENT_MEMORY_REPO_CHECKOUT)/AGENTS.md),$(AGENT_MEMORY_REPO_CHECKOUT))
 
-.PHONY: mechanical-datums board-manifest-derive board-manifest-check board-manifest-render sheet-pins compose compose-check expand expand-check refresh-block place-block block-spacing docs docs-check glb help test prepare-kicad-config check-kicad-libs shell kicad-shell kicad-version agent-reflection codex claude agent-project agent-libs agent-both agent-edits kicad-edits freecad-edits validate-db fab export-dsn freeroute import-ses clearance-baseline clearance-check
+.PHONY: mechanical-datums board-manifest-derive board-manifest-check board-manifest-render sheet-pins compose compose-check expand expand-check refresh-block place-block block-spacing docs docs-check site site-serve glb help test prepare-kicad-config check-kicad-libs shell kicad-shell kicad-version agent-reflection codex claude agent-project agent-libs agent-both agent-edits kicad-edits freecad-edits validate-db fab export-dsn freeroute import-ses clearance-baseline clearance-check
 
 help:
 	@printf '%s\n' \
@@ -95,6 +97,8 @@ help:
 	  'make fab               Generate Gerber/drill fabrication files for PROJECT' \
 	  'make docs             Generate published board documentation for PROJECT' \
 	  'make docs-check       Report whether the generated documentation is stale' \
+	  'make site             Build the documentation site from docs/ into site/ (mkdocs, strict)' \
+	  'make site-serve       Serve the documentation site locally' \
 	  'make glb               Export the assembled board as glTF for the rig atlas (tmp/glb/)' \
 	  'make export-dsn        Export the PCB to Specctra DSN for Freerouting (corrected export)' \
 	  'make freeroute         Export the DSN and open it in the Freerouting GUI' \
@@ -232,16 +236,31 @@ fab:
 # from the library's briefs, and with a board source the subsystem pages and the
 # GPIO allocation; both are passed when the files exist, and --review-schematic
 # adds the per-block review booklet.
-DOCS_BLOCK_OPTIONS = $(if $(wildcard $(BOARD_MANIFEST)),--manifest "$(BOARD_MANIFEST)") $(if $(wildcard $(BOARD_SOURCE)),--board-source "$(BOARD_SOURCE)")
+DOCS_BLOCK_OPTIONS = $(if $(wildcard $(BOARD_MANIFEST)),--manifest "$(BOARD_MANIFEST)" --brief-check) $(if $(wildcard $(BOARD_SOURCE)),--board-source "$(BOARD_SOURCE)")
+# With a site (mkdocs.yml), the documentation also writes docs/index.md, the
+# front page with the turning board (kicad-libs PLANS 2026-10-14, the board site).
+DOCS_SITE_OPTIONS = $(if $(wildcard mkdocs.yml),--site-index docs/index.md)
 
 docs:
 	@if [ -z "$(PROJECT)" ]; then echo "PROJECT=/path/to/project.kicad_pro is required"; exit 1; fi
 	$(MAKE) prepare-kicad-config
-	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_BLOCK_OPTIONS) --review-schematic $(DOCS_OPTIONS)
+	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_BLOCK_OPTIONS) $(DOCS_SITE_OPTIONS) --review-schematic $(DOCS_OPTIONS)
 
 docs-check:
 	@if [ -z "$(PROJECT)" ]; then echo "PROJECT=/path/to/project.kicad_pro is required"; exit 1; fi
-	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_BLOCK_OPTIONS) --review-schematic --check
+	$(KICAD_MANAGED_SHELL) "$(DOCS_TOOL)" --project "$(PROJECT)" --output-dir "$(DOCS_OUTPUT_DIR)" $(DOCS_BLOCK_OPTIONS) $(DOCS_SITE_OPTIONS) --review-schematic --check
+
+# The documentation site (kicad-libs PLANS 2026-10-14, the board site; docs/board-documentation.md
+# "The Site"): mkdocs-material from Guix builds docs/ into site/ (ignored), strictly, as the
+# Pages workflow does from the committed pages; `make site-serve` serves it at localhost:8000.
+SITE_DIR ?= site
+SITE_OPTIONS ?=
+
+site:
+	$(GUIX_SHELL_SITE) -- mkdocs build --strict --site-dir "$(SITE_DIR)" $(SITE_OPTIONS)
+
+site-serve:
+	$(GUIX_SHELL_SITE) -- mkdocs serve $(SITE_OPTIONS)
 
 # The assembled board as binary glTF, with components, silkscreen and soldermask,
 # for the rig atlas in mouse-joysticks-mech (atlas/boards/). Written under tmp/,

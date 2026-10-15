@@ -67,10 +67,10 @@ copper inside the InstrumentPort and USB block layouts, see
 `.agents/AGENTS.md`); `make clearance-check` passes against the routing
 baseline; `make fab` builds the JLCPCB package with all 151 parts in the BOM
 and placement files. **Five assembled boards were ordered from JLCPCB on
-2026-09-26 from commit `5ddb425`** ([docs/fabrication-log.md](docs/fabrication-log.md));
+2026-09-26 from commit `5ddb425`** ([docs/fabrication-log.md](fabrication-log.md));
 the placement preview showed every part oriented correctly, which verifies
 the Phoenix MCV 6 vertical and 0402 LED rotation rows for `kicad-libs`.
-Bring-up results go in [docs/bringup-log.md](docs/bringup-log.md).
+Bring-up results go in [docs/bringup-log.md](bringup-log.md).
 
 ## Developer Documents
 

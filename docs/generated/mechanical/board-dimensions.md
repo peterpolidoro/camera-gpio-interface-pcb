@@ -7,6 +7,12 @@ centre of the board outline**, with **X to the right and Y up** when looking at
 the top of the board. This is the frame mechanical CAD wants; it is not KiCad's.
 The frame origin sits at KiCad coordinates (150.0, 95.0).
 
+## Drawing
+
+![Outline and mounting holes, dimensioned](board-dimensions.png)
+
+The outline and the mounting holes dimensioned, plotted by KiCad from a copy of the board with the dimensions on its `Dwgs.User` layer: [SVG](board-dimensions.svg) · [PDF](board-dimensions.pdf) (the PDF is the board's page, 1:1 when printed at 100 %). The cross is the centre of the outline, the origin of the tables below.
+
 ## Outline
 
 | Property | Value |
