@@ -102,7 +102,8 @@ The outline and the mounting holes dimensioned, as KiCad draws them: [SVG](docs/
 - [Rev 0 plan](docs/rev0-plan.md): the design record
 - [Fabrication log](docs/fabrication-log.md): what was ordered, from which commit, with which package hashes
 - [Bring-up log](docs/bringup-log.md): bench results per board serial
-- [Generated board documentation](docs/generated/README.md): schematic, renders, STEP, BOM and enclosure geometry, rebuilt from the KiCad sources
+- [Generated board documentation](docs/generated/README.md): schematic PDF and SVGs, renders, STEP and glTF, BOM, enclosure geometry and the dimensioned outline drawing, one page per placed design block and per subsystem sheet, rebuilt from the KiCad sources
+- [The documentation site](https://peterpolidoro.github.io/camera-gpio-interface-pcb/): the same pages with the board turning and its design blocks clickable
 
 ## Fabrication
 

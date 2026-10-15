@@ -4,6 +4,23 @@ Use this file for multi-step or cross-session work in this repository.
 
 ## Current Focus
 
+- 2026-10-15: **v1.0 tagged and documented.** The repository is tagged
+  `v1.0` on the documented state of the fabricated revision (the copper is
+  the 2026-09-26 order's, `5ddb425`; since then the block sheets were
+  regenerated from the library with the copper kept, the PCB changing in
+  fields, paths, group ids and the private nets' names). The documentation
+  program run from kicad-libs (its PLANS, 2026-10-12 to 2026-10-15) is
+  finished here too: a page per placed block with the recorded netlist
+  check, `kicad/board.yaml` with the three sheets' recipes and every net's
+  meaning (so `docs/interface-map.md` carries meanings and
+  `docs/generated/subsystems/` the inputs, outputs and power pages), the
+  dimensioned outline and mounting hole drawing, the BOM with its sourcing,
+  the board view and the Pages site
+  (https://peterpolidoro.github.io/camera-gpio-interface-pcb/). `make docs`
+  is a no-op until a KiCad source changes; `make docs-check` gates a tag;
+  `make site` builds the site strictly. Next here: the bring-up results in
+  `docs/bringup-log.md` once the boards are measured, and the rig software
+  changes of `rev0-plan.md`.
 - 2026-09-26 (evening): **v1.0 ordered from JLCPCB, five assembled boards**,
   from commit `5ddb425`; the record is `docs/fabrication-log.md`, the
   evidence `docs/evidence/fab-2026-09-26/`. The placement preview showed

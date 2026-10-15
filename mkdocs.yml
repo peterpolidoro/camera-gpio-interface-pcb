@@ -69,6 +69,8 @@ nav:
   - Design blocks: generated/blocks/README.md
   - Subsystems: generated/subsystems/README.md
   # No MCU pin table: the board has no MCU.
+  - Bill of materials: generated/bom/camera-gpio-interface-pcb-bom.md
+  - Board dimensions: generated/mechanical/board-dimensions.md
   - Interfaces:
       - Interface map: interface-map.md
   - Design:
